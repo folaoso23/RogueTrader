@@ -1,0 +1,61 @@
+{
+    "BundlesLayout": {
+        "m_Guids": [],
+        "m_Bundles": []
+    },
+    "BundleDependencies": {
+        "m_List": [
+            {
+                "Key": "WeaponExpertPlus_BlueprintDirectReferences",
+                "Value": []
+            }
+        ]
+    },
+    "BlueprintPatches": [
+        {
+            "Guid": "4fa4dbc023474337990840e305d06fa4",
+            "Filename": "MeltaWeaponSpecialization",
+            "PatchType": 2
+        },
+        {
+            "Guid": "fdc990cb73114e4d8a7575813936cec9",
+            "Filename": "PlasmaWeaponSpecialization",
+            "PatchType": 2
+        },
+        {
+            "Guid": "72b608c024174a13b60b70675e4ca840",
+            "Filename": "BoltWeaponSpecialization",
+            "PatchType": 2
+        },
+        {
+            "Guid": "72b608c024174a13b60b70675e4ca840",
+            "Filename": "BoltWeaponSpecialization",
+            "PatchType": 2
+        },
+        {
+            "Guid": "2259197e773b45d0a2f51fc57ccd2133",
+            "Filename": "ChainWeaponSpecialization",
+            "PatchType": 2
+        },
+        {
+            "Guid": "30ef0b17c93444bb9b0a0169c6fffe06",
+            "Filename": "FlameWeaponSpecialization",
+            "PatchType": 2
+        },
+        {
+            "Guid": "baf7c232ef5943a186b8bb2a80990470",
+            "Filename": "LasWeaponSpecialization",
+            "PatchType": 2
+        },
+        {
+            "Guid": "9d82f293513e4bb390782188307f948f",
+            "Filename": "PowerWeaponSpecialization",
+            "PatchType": 2
+        },
+        {
+            "Guid": "21d6182a02014531a63f28fe5ff34530",
+            "Filename": "SolidProjectileWeaponSpecialization",
+            "PatchType": 2
+        }
+    ]
+}

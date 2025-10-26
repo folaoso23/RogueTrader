@@ -1,0 +1,36 @@
+{
+    "BundlesLayout": {
+        "m_Guids": [],
+        "m_Bundles": []
+    },
+    "BundleDependencies": {
+        "m_List": [
+            {
+                "Key": "OperativeBuffs_BlueprintDirectReferences",
+                "Value": []
+            }
+        ]
+    },
+    "BlueprintPatches": [
+        {
+            "Guid": "5f9c3a4d2f8e439883a1722c1d8b91b9",
+            "Filename": "Adept_PreciseAttack_Buff",
+            "PatchType": 2
+        },
+        {
+            "Guid": "197b8a8a12b0442db7ffee1067cf3d97",
+            "Filename": "Adept_ExposeWeakness_Ability",
+            "PatchType": 2
+        },
+        {
+            "Guid": "7b00b5ea0dc246e1a304619d5678ca5b",
+            "Filename": "Adept_PreciseAttack_Ability",
+            "PatchType": 2
+        },
+        {
+            "Guid": "349c91e2137a4a18a386d930bea58747",
+            "Filename": "Adept_TideOfExcellence_EffectBuff",
+            "PatchType": 2
+        }
+    ]
+}

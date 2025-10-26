@@ -1,0 +1,26 @@
+{
+    "BundlesLayout": {
+        "m_Guids": [],
+        "m_Bundles": []
+    },
+    "BundleDependencies": {
+        "m_List": [
+            {
+                "Key": "TacticianImproved_BlueprintDirectReferences",
+                "Value": []
+            }
+        ]
+    },
+    "BlueprintPatches": [
+        {
+            "Guid": "e627e3fb653840dab9661093828432c5",
+            "Filename": "TacticianFinishTheJobFeature",
+            "PatchType": 2
+        },
+        {
+            "Guid": "305858b91e6e4d89bff75431fa6030e6",
+            "Filename": "TacticianFervourAbility",
+            "PatchType": 2
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "BundlesLayout": {
+        "m_Guids": [],
+        "m_Bundles": []
+    },
+    "BundleDependencies": {
+        "m_List": [
+            {
+                "Key": "WarpSurgeBroochBuff_BlueprintDirectReferences",
+                "Value": []
+            }
+        ]
+    },
+    "BlueprintPatches": [
+        {
+            "Guid": "fa9c754a8c014127a25d0d9b5200720a",
+            "Filename": "WarpSurgeBrooch_Buff",
+            "PatchType": 2
+        }
+    ]
+}

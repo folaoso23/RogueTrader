@@ -1,0 +1,10 @@
+{
+    "UniqueName": "WarpSurgeBroochBuff",
+    "Version": "1.0.0",
+    "DisplayName": "WarpSurgeBroochBuff",
+    "Description": "Makes the Warp Surge Brooch work in every turn during combat.",
+    "Author": "",
+    "Repository": "",
+    "HomePage": "",
+    "Dependencies": []
+}
