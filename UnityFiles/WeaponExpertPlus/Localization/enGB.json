@@ -1,0 +1,28 @@
+{
+    "strings": {
+        "c06a7a72-385c-477d-aad6-7a7a84e6c1d0": {
+            "Text": "Melta weapon attacks gain the following bonuses:\n<b>Base Damage Bonus</b>: x2 minimum and 3x maximum.\n<b>Damage Bonus(%)</b>: (15 + {unit_stat|WarhammerBallisticSkill|bonus} + {unit_stat|WarhammerIntelligence|bonus}).\n<b>Single-shot AP Cost</b>: -1 AP (minimum 1)."
+        },
+        "cabcbd5c-e59f-4e49-a001-4b6d54ea2e63": {
+            "Text": "Plasma weapon gain the following bonuses:\n<b>{g|Encyclopedia:DamageGlossary}Damage{/g} Bonus %</b>: +(50 + {unit_stat|WarhammerBallisticSkill|bonus})\n<b>Hit Chance Bonus %</b>: 10 + {unit_stat|WarhammerPerception|bonus}.\n<b>Base Damage Bonus</b>: Current weapon's maximum damage."
+        },
+        "9cdcd518-1127-47c2-8c5b-b5f85a3f8804": {
+            "Text": "Bolt weapon attacks gain the following bonuses:\n<b>{g|Encyclopedia:ArmourPenetration}Armour Penetration{/g} Bonus %</b>: +(15 + {unit_stat|WarhammerPerception|bonus})\n<b>Base Damage Bonus</b>: +(Current weapon's minimum damage / 2)\n<b>Damage Bonus %</b>: +(35 + {unit_stat|WarhammerBallisticSkill|bonus})\n<b>Recoil</b>:-25%."
+        },
+        "2b816671-4493-4dcc-8cd1-5056ad133fdb": {
+            "Text": "Chain weapon attacks gain the following bonuses:\n<b>Base Damage Bonus</b>: +4\n<b>{g|Encyclopedia:ArmourPenetration}Armour Penetration{/g} Bonus %</b>: +5\n<b>Parry Reduction Bonus %</b>: -(5 + {unit_stat|WarhammerWeaponSkill|bonus} + {unit_stat|WarhammerStrength|bonus})\n<b>Bleed Damage Affliction Bonus</b>: Current Weapon Minimum Damage"
+        },
+        "a8ffba14-8b42-4fd0-b8c2-43ccdfaf9184": {
+            "Text": "Flame weapon attacks gain the following bonuses:\n<b>Weapon Attack {g|Encyclopedia:ActionPoints}AP{/g} Cost</b>: -1 AP (minimum 1)\n<b>Max Distance Bonus</b>: +4\n<b>Damage Bonus %</b>: +20\n<b>Burning Damage Affliction Bonus</b>: Current weapon's minimum damage + ({unit_stat|SkillDemolition}/10)."
+        },
+        "08f6b70a-6414-4c5d-a366-ee000e1efc1f": {
+            "Text": "Las weapons gain the following bonuses:\n<b>{g|Encyclopedia:DodgeGlossary}Dodge{/g} reduction against enemies</b>: −25% {g|Encyclopedia:Penalty}penalty{/g}\n<b>Critical Hit Chance Bonus %</b>: +(10 + {unit_stat|WarhammerPerception|bonus})\n<b>Critical Damage Bonus %</b>: +(25 + {unit_stat|WarhammerBallisticSkill|bonus})\n<b>Critical Base Damage Bonus</b>: (Current weapon's maximum damage / 3)\n<b>Fire Rate Bonus %</b>: +40"
+        },
+        "bb7f40fc-225a-4f9d-b8bd-908667ce8399": {
+            "Text": "Power weapon attacks gain the following bonuses:\n<b>{g|Encyclopedia:ArmourPenetration}Armor Penetration Bonus{/g} %</b>: +(15 + {unit_stat|WarhammerWeaponSkill|bonus})\n<b>Damage Bonus %</b>: +(50 + 5 x {unit_stat|WarhammerStrength|bonus})\n<b>Base Damage Bonus</b>: +Current weapon's maximum damage \n<b>Parry Reduction Bonus %</b>: -5"
+        },
+        "284cc94e-b4f2-478b-9967-721eb6144fa9": {
+            "Text": "Solid projectile weapon attacks gain the following bonuses:\n<b>Base Damage Bonus</b>: +(Current weapon's maximum damage / 3)\n<b>Damage Bonus %</b>: +(10 + {unit_stat|WarhammerBallisticSkill|bonus})\n<b>Reload AP Cost</b>: -1 AP (minimum 1)\n<b>Fire Rate Bonus</b>: +1\n<b>Bleed Damage Affliction Bonus</b>: Current weapon's minimum damage / 2"
+        }
+    }
+}

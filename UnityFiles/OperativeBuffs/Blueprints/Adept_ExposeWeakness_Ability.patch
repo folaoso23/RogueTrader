@@ -1,0 +1,81 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$1355b2d2-ec98-4460-8678-ae5157a378c5",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$PropertyCalculatorGetter$52ecefc8b2e14897845f4eb09edaba20",
+              "ElementPatch": {
+                "Value": {
+                  "Getters": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$SimplePropertyGetter$73057856689c44ea83d985d795c04729",
+                      "ElementPatch": {
+                        "Settings": {
+                          "Progression": "AsIs"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityRedirect$fb35799c-1f63-47f2-81fc-84c9e4086874",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$e7dba43c-c8ba-4f1e-bea2-6368ec63afd3"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$be676118-e110-4b51-8d1b-c0af6bcbf4ad",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "DamageBonus2",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
+              "name": "$SimplePropertyGetter$d2405667-3632-4cf0-9fca-b510eeb43e22",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 2,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Property": "PerceptionBonus"
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$AbilityRedirect$fb35799c-1f63-47f2-81fc-84c9e4086874"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$PropertyCalculatorComponent$a6f4090a-0a5d-4601-a1df-ad050d534ec4"
+    }
+  ]
+}

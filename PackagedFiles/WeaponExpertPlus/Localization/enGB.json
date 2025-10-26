@@ -19,7 +19,7 @@
             "Text": "Las weapons gain the following bonuses:\n<b>{g|Encyclopedia:DodgeGlossary}Dodge{/g} reduction against enemies</b>: −25% {g|Encyclopedia:Penalty}penalty{/g}\n<b>Critical Hit Chance Bonus %</b>: +(10 + {unit_stat|WarhammerPerception|bonus})\n<b>Critical Damage Bonus %</b>: +(25 + {unit_stat|WarhammerBallisticSkill|bonus})\n<b>Critical Base Damage Bonus</b>: (Current weapon's maximum damage / 3)\n<b>Fire Rate Bonus %</b>: +40"
         },
         "bb7f40fc-225a-4f9d-b8bd-908667ce8399": {
-            "Text": "Power weapon attacks gain the following bonuses:\n<b>{g|Encyclopedia:ArmourPenetration}Armor Penetration Bonus{/g} %</b>: +(15 + {unit_stat|WarhammerWeaponSkill|bonus})\n<b>Damage Bonus %</b>: +(50 + 5 x {unit_stat|WarhammerStrength|bonus})\n<b>Base Damage Bonus</b>: (Current weapon's maximum damage / 2)\n<b>Parry Reduction Bonus %</b>: -5"
+            "Text": "Power weapon attacks gain the following bonuses:\n<b>{g|Encyclopedia:ArmourPenetration}Armor Penetration Bonus{/g} %</b>: +(15 + {unit_stat|WarhammerWeaponSkill|bonus})\n<b>Damage Bonus %</b>: +(50 + 5 x {unit_stat|WarhammerStrength|bonus})\n<b>Base Damage Bonus</b>: +Current weapon's maximum damage \n<b>Parry Reduction Bonus %</b>: -5"
         },
         "284cc94e-b4f2-478b-9967-721eb6144fa9": {
             "Text": "Solid projectile weapon attacks gain the following bonuses:\n<b>Base Damage Bonus</b>: +(Current weapon's maximum damage / 3)\n<b>Damage Bonus %</b>: +(10 + {unit_stat|WarhammerBallisticSkill|bonus})\n<b>Reload AP Cost</b>: -1 AP (minimum 1)\n<b>Fire Rate Bonus</b>: +1\n<b>Bleed Damage Affliction Bonus</b>: Current weapon's minimum damage / 2"

@@ -1,10 +1,74 @@
 {
   "Components": [
     {
-      "PatchType": "Prepend",
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerOutgoingDodgeChancesBonus$8fbd6460-7196-4618-9143-06ae16b8cef7",
+      "ElementPatch": {
+        "Value": {
+          "Value": -25
+        }
+      }
+    },
+    {
+      "PatchType": "Insert",
       "NewElement": {
-        "$type": "28fa403fa7a94a2f9ea361583e66cdb4, WarhammerWeaponStatsModifierInitiator",
-        "name": "$WarhammerWeaponStatsModifierInitiator$6ded9175-acfb-436d-bf55-203fa681111d",
+        "$type": "67bded0d11ea5094b86798ea2fce7c63, WarhammerRighteousFuryBonus",
+        "name": "$WarhammerRighteousFuryBonus$c61a17f9-8a4c-4106-ade0-146cb84892d1",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": true,
+            "Getters": [
+              {
+                "$type": "ba648cd4033740aa987af4b641d583de, CheckAbilityWeaponFamilyGetter",
+                "name": "$CheckAbilityWeaponFamilyGetter$1e7593fb89c74852bf6e56facd144b98",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Families": [
+                  "Laser"
+                ]
+              }
+            ]
+          }
+        },
+        "Value": {
+          "ValueType": "CasterNamedProperty",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "SpecificRangeType": false,
+        "WeaponRangeType": "Melee",
+        "OnlyFromSpotWeaknessSide": false,
+        "m_SpotWeaknessBuff": null,
+        "DoubleCurrentChance": false
+      },
+      "InsertAfterTarget": "$WarhammerOutgoingDodgeChancesBonus$8fbd6460-7196-4618-9143-06ae16b8cef7"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "efafb8ff343e4071a216fe8fcb17e023, WarhammerCriticalDamageModifierInitiator",
+        "name": "$WarhammerCriticalDamageModifierInitiator$dcc49250-6aac-4a0d-9b77-cf58020ea45e",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "",
@@ -20,7 +84,7 @@
             "Getters": [
               {
                 "$type": "ba648cd4033740aa987af4b641d583de, CheckAbilityWeaponFamilyGetter",
-                "name": "$CheckAbilityWeaponFamilyGetter$a0b5f0212c9d4db98c34c2fc8fc47866",
+                "name": "$CheckAbilityWeaponFamilyGetter$1b5b95b896f1436989b357dca7128d44",
                 "Settings": {
                   "Progression": "AsIs",
                   "m_CustomProgression": [],
@@ -32,45 +96,13 @@
                   "Max": 0
                 },
                 "Families": [
-                  "Power"
+                  "Laser"
                 ]
               }
             ]
           }
         },
-        "Descriptor": "None",
-        "Damage": {
-          "ValueType": "CasterNamedProperty",
-          "Value": 0,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Value1",
-          "Enabled": true,
-          "ModifierType": "PctAdd"
-        },
-        "DamageMin": {
-          "ValueType": "CasterNamedProperty",
-          "Value": 0,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Dice1",
-          "Enabled": true
-        },
-        "DamageMax": {
-          "ValueType": "CasterNamedProperty",
-          "Value": 0,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Dice1",
-          "Enabled": true
-        },
-        "Penetration": {
+        "PercentCriticalDamageModifier": {
           "ValueType": "CasterNamedProperty",
           "Value": 0,
           "ValueRank": "Default",
@@ -78,10 +110,82 @@
           "Property": "None",
           "m_CustomProperty": null,
           "PropertyName": "Value2",
-          "Enabled": true,
-          "ModifierType": "ValAdd"
+          "Enabled": true
         },
-        "Recoil": {
+        "BonusCriticalDamageModifier": {
+          "ValueType": "CasterNamedProperty",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Dice1",
+          "Enabled": true
+        },
+        "BonusCriticalDamageMultipliers": {
+          "ValueType": "CasterNamedProperty",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value2",
+          "Enabled": false
+        },
+        "purePercentCriticalDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "ModifierDescriptor": "None"
+      },
+      "InsertAfterTarget": "$WarhammerRighteousFuryBonus$c61a17f9-8a4c-4106-ade0-146cb84892d1"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "28fa403fa7a94a2f9ea361583e66cdb4, WarhammerWeaponStatsModifierInitiator",
+        "name": "$WarhammerWeaponStatsModifierInitiator$584e043b-736d-4a74-a27a-a11993c829a1",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "ba648cd4033740aa987af4b641d583de, CheckAbilityWeaponFamilyGetter",
+                "name": "$CheckAbilityWeaponFamilyGetter$a2a4bc546cc846179931580bedfc0436",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Families": [
+                  "Laser"
+                ]
+              }
+            ]
+          }
+        },
+        "Descriptor": "None",
+        "Damage": {
           "ValueType": "Simple",
           "Value": 0,
           "ValueRank": "Default",
@@ -91,6 +195,48 @@
           "PropertyName": "Value1",
           "Enabled": false,
           "ModifierType": "ValAdd"
+        },
+        "DamageMin": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "DamageMax": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "Penetration": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "Recoil": {
+          "ValueType": "Simple",
+          "Value": 50,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "PctMul"
         },
         "AdditionalHitChance": {
           "ValueType": "Simple",
@@ -127,14 +273,14 @@
         },
         "RateOfFire": {
           "ValueType": "Simple",
-          "Value": 0,
+          "Value": 40,
           "ValueRank": "Default",
           "ValueShared": "Damage",
           "Property": "None",
           "m_CustomProperty": null,
           "PropertyName": "Value1",
-          "Enabled": false,
-          "ModifierType": "ValAdd"
+          "Enabled": true,
+          "ModifierType": "PctAdd"
         },
         "OverpenetrationFactor": {
           "ValueType": "Simple",
@@ -147,91 +293,14 @@
           "Enabled": false,
           "ModifierType": "ValAdd"
         }
-      }
-    },
-    {
-      "PatchType": "Insert",
-      "NewElement": {
-        "$type": "4b271a6d810c85c46a2750d3a2b50de9, WarhammerParryChanceModifierAttacker",
-        "name": "$WarhammerParryChanceModifierAttacker$8fda9357-3454-4bff-b456-3a1fa6a2c63c",
-        "m_Flags": 0,
-        "PrototypeLink": {
-          "guid": "",
-          "name": ""
-        },
-        "m_Overrides": [],
-        "Restrictions": {
-          "Property": {
-            "Operation": "Sum",
-            "TargetType": "CurrentEntity",
-            "TargetEvaluator": null,
-            "FailSilentlyIfNoTarget": false,
-            "Getters": [
-              {
-                "$type": "ba648cd4033740aa987af4b641d583de, CheckAbilityWeaponFamilyGetter",
-                "name": "$CheckAbilityWeaponFamilyGetter$b3ed7c1f93284821bba258c807a57670",
-                "Settings": {
-                  "Progression": "AsIs",
-                  "m_CustomProgression": [],
-                  "m_StartLevel": 0,
-                  "m_StepLevel": 0,
-                  "Negate": false,
-                  "Limit": "None",
-                  "Min": 0,
-                  "Max": 0
-                },
-                "Families": [
-                  "Power"
-                ]
-              }
-            ]
-          }
-        },
-        "Properties": "ParryChance",
-        "ParryChance": {
-          "ValueType": "Simple",
-          "Value": -5,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Value1"
-        },
-        "AttackerWeaponSkillBonus": {
-          "ValueType": "Simple",
-          "Value": 0,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Value1"
-        },
-        "DefenderWeaponSkillBonus": {
-          "ValueType": "Simple",
-          "Value": 0,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Value1"
-        },
-        "ParryChanceMultiplierValue": {
-          "ValueType": "Simple",
-          "Value": 1,
-          "ValueRank": "Default",
-          "ValueShared": "Damage",
-          "Property": "None",
-          "m_CustomProperty": null,
-          "PropertyName": "Value1"
-        }
       },
-      "InsertAfterTarget": "$WarhammerWeaponStatsModifierInitiator$6ded9175-acfb-436d-bf55-203fa681111d"
+      "InsertAfterTarget": "$WarhammerCriticalDamageModifierInitiator$dcc49250-6aac-4a0d-9b77-cf58020ea45e"
     },
     {
       "PatchType": "Insert",
       "NewElement": {
         "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
-        "name": "$PropertyCalculatorComponent$f1f9a86f-84dc-43cc-946d-6dfd86e8fdeb",
+        "name": "$PropertyCalculatorComponent$bad4e87c-fdab-466f-9356-8afba7b2dc45",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "",
@@ -248,7 +317,7 @@
           "Getters": [
             {
               "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
-              "name": "$ContextValueGetter$ebe5f88ef368441b89b9337914d3d58a",
+              "name": "$ContextValueGetter$1a0ba1a0-b837-4fc4-bc3b-20f3e90f3061",
               "Settings": {
                 "Progression": "AsIs",
                 "m_CustomProgression": [],
@@ -261,7 +330,7 @@
               },
               "Value": {
                 "ValueType": "Simple",
-                "Value": 50,
+                "Value": 10,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
@@ -270,8 +339,8 @@
               }
             },
             {
-              "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
-              "name": "$PropertyCalculatorGetter$bc3929aef7914b7c81c105fe64041b25",
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$79553581-7e71-42df-ba8f-966a56019e85",
               "Settings": {
                 "Progression": "AsIs",
                 "m_CustomProgression": [],
@@ -283,70 +352,25 @@
                 "Max": 0
               },
               "Value": {
-                "Operation": "Mul",
-                "TargetType": "CurrentEntity",
-                "TargetEvaluator": null,
-                "FailSilentlyIfNoTarget": false,
-                "Getters": [
-                  {
-                    "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
-                    "name": "$ContextValueGetter$aba09dc054164fe0822bd29dda17633d",
-                    "Settings": {
-                      "Progression": "AsIs",
-                      "m_CustomProgression": [],
-                      "m_StartLevel": 0,
-                      "m_StepLevel": 0,
-                      "Negate": false,
-                      "Limit": "None",
-                      "Min": 0,
-                      "Max": 0
-                    },
-                    "Value": {
-                      "ValueType": "Simple",
-                      "Value": 5,
-                      "ValueRank": "Default",
-                      "ValueShared": "Damage",
-                      "Property": "None",
-                      "m_CustomProperty": null,
-                      "PropertyName": "Value1"
-                    }
-                  },
-                  {
-                    "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
-                    "name": "$ContextValueGetter$f48952c9d03242b7840dc74d4da31040",
-                    "Settings": {
-                      "Progression": "AsIs",
-                      "m_CustomProgression": [],
-                      "m_StartLevel": 0,
-                      "m_StepLevel": 0,
-                      "Negate": false,
-                      "Limit": "None",
-                      "Min": 0,
-                      "Max": 0
-                    },
-                    "Value": {
-                      "ValueType": "CasterProperty",
-                      "Value": 0,
-                      "ValueRank": "Default",
-                      "ValueShared": "Damage",
-                      "Property": "StrengthBonus",
-                      "m_CustomProperty": null,
-                      "PropertyName": "Value1"
-                    }
-                  }
-                ]
+                "ValueType": "CasterProperty",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "PerceptionBonus",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
               }
             }
           ]
         }
       },
-      "InsertAfterTarget": "$WarhammerParryChanceModifierAttacker$8fda9357-3454-4bff-b456-3a1fa6a2c63c"
+      "InsertAfterTarget": "$WarhammerWeaponStatsModifierInitiator$584e043b-736d-4a74-a27a-a11993c829a1"
     },
     {
       "PatchType": "Insert",
       "NewElement": {
         "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
-        "name": "$PropertyCalculatorComponent$12f5af8e-9473-4364-b456-a8e0d7f5f5cd",
+        "name": "$PropertyCalculatorComponent$99b653c4-488c-4da8-9901-b363d15a9a90",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "",
@@ -363,7 +387,7 @@
           "Getters": [
             {
               "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
-              "name": "$ContextValueGetter$dc4c6dcd-5b1a-4eb7-9291-e00c19c76cd9",
+              "name": "$ContextValueGetter$3c4e7cd1-54e9-4563-97db-6783be764c15",
               "Settings": {
                 "Progression": "AsIs",
                 "m_CustomProgression": [],
@@ -376,7 +400,7 @@
               },
               "Value": {
                 "ValueType": "Simple",
-                "Value": 15,
+                "Value": 25,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
@@ -386,7 +410,7 @@
             },
             {
               "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
-              "name": "$ContextValueGetter$ba165869da0c48b5bd1f3de1b08df503",
+              "name": "$ContextValueGetter$b9b77438-72b8-4044-8554-0ac137210cec",
               "Settings": {
                 "Progression": "AsIs",
                 "m_CustomProgression": [],
@@ -402,7 +426,7 @@
                 "Value": 0,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
-                "Property": "WeaponSkillBonus",
+                "Property": "BallisticSkillBonus",
                 "m_CustomProperty": null,
                 "PropertyName": "Value1"
               }
@@ -410,13 +434,13 @@
           ]
         }
       },
-      "InsertAfterTarget": "$PropertyCalculatorComponent$f1f9a86f-84dc-43cc-946d-6dfd86e8fdeb"
+      "InsertAfterTarget": "$PropertyCalculatorComponent$bad4e87c-fdab-466f-9356-8afba7b2dc45"
     },
     {
       "PatchType": "Insert",
       "NewElement": {
         "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
-        "name": "$PropertyCalculatorComponent$38f0c07a-1e9b-4517-8c64-f8d3a77c87fa",
+        "name": "$PropertyCalculatorComponent$60fcefe4-377e-4bbe-bb45-def54641c054",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "",
@@ -433,12 +457,12 @@
           "Getters": [
             {
               "$type": "90e37f9c2bb670b4bb0adf1e9eadccde, CurrentWeaponBlueprintDamageGetter",
-              "name": "$CurrentWeaponBlueprintDamageGetter$85bcb98c-5f4f-403d-a834-9640fc5497ce",
+              "name": "$CurrentWeaponBlueprintDamageGetter$993f83b2-26be-4c5b-8530-ea1d3fa475f4",
               "Settings": {
                 "Progression": "DivStep",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 2,
+                "m_StepLevel": 3,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,
@@ -449,11 +473,7 @@
           ]
         }
       },
-      "InsertAfterTarget": "$PropertyCalculatorComponent$12f5af8e-9473-4364-b456-a8e0d7f5f5cd"
-    },
-    {
-      "PatchType": "RemoveFromEnd",
-      "Target": "$WarhammerModifyOutgoingAttackDamage$d471e21d-fbfd-47a1-8461-ab6765e4e8b2"
+      "InsertAfterTarget": "$PropertyCalculatorComponent$99b653c4-488c-4da8-9901-b363d15a9a90"
     }
   ]
 }
