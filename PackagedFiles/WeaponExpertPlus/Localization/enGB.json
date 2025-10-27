@@ -22,7 +22,7 @@
             "Text": "Power weapon attacks gain the following bonuses:\n<b>{g|Encyclopedia:ArmourPenetration}Armor Penetration Bonus{/g} %</b>: +(15 + {unit_stat|WarhammerWeaponSkill|bonus})\n<b>Damage Bonus %</b>: +(50 + 5 x {unit_stat|WarhammerStrength|bonus})\n<b>Base Damage Bonus</b>: +Current weapon's maximum damage \n<b>Parry Reduction Bonus %</b>: -5"
         },
         "284cc94e-b4f2-478b-9967-721eb6144fa9": {
-            "Text": "Solid projectile weapon attacks gain the following bonuses:\n<b>Base Damage Bonus</b>: +(Current weapon's maximum damage / 3)\n<b>Damage Bonus %</b>: +(10 + {unit_stat|WarhammerBallisticSkill|bonus})\n<b>Reload AP Cost</b>: -1 AP (minimum 1)\n<b>Fire Rate Bonus</b>: +1\n<b>Bleed Damage Affliction Bonus</b>: Current weapon's minimum damage / 2"
+            "Text": "Solid projectile weapon attacks gain the following bonuses:\n<b>Base Damage Bonus</b>: +(Current weapon's maximum damage / 3)\n<b>Damage Bonus %</b>: +(25 + {unit_stat|WarhammerBallisticSkill|bonus})\n<b>Reload AP Cost</b>: -1 AP (minimum 1)\n<b>Fire Rate Bonus</b>: +1\n<b>Bleed Damage Affliction Bonus</b>: Current weapon's minimum damage / 2"
         }
     }
 }
