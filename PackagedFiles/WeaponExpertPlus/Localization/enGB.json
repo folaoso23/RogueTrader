@@ -13,7 +13,7 @@
             "Text": "Chain weapon attacks gain the following bonuses:\n<b>Base Damage Bonus</b>: +Current Weapon Minimum Damage / 2\n<b>{g|Encyclopedia:ArmourPenetration}Armour Penetration{/g} Bonus %</b>: +5\n<b>Parry Reduction Bonus %</b>: -(5 + {unit_stat|WarhammerWeaponSkill|bonus} + {unit_stat|WarhammerStrength|bonus})\n<b>Bleed Damage Affliction Bonus</b>: +Current Weapon Minimum Damage"
         },
         "a8ffba14-8b42-4fd0-b8c2-43ccdfaf9184": {
-            "Text": "Flame weapon attacks gain the following bonuses:\n<b>Weapon Attack {g|Encyclopedia:ActionPoints}AP{/g} Cost</b>: -1 AP (minimum 1)\n<b>Max Distance Bonus</b>: +4\n<b>Damage Bonus %</b>: +50\n<b>Burning Damage Affliction</b>: Current weapon's maximum damage + ({unit_stat|SkillDemolition}/5)."
+            "Text": "Flame weapon attacks gain the following bonuses:\n<b>Weapon Attack {g|Encyclopedia:ActionPoints}AP{/g} Cost</b>: -1 AP (minimum 1)\n<b>Max Distance Bonus</b>: +4\n<b>Damage Bonus %</b>: +50\n<b>Burning Damage Affliction</b>: Current weapon's maximum damage / 2 + ({unit_stat|SkillDemolition}/5)."
         },
         "08f6b70a-6414-4c5d-a366-ee000e1efc1f": {
             "Text": "Las weapons gain the following bonuses:\n<b>{g|Encyclopedia:DodgeGlossary}Dodge{/g} reduction against enemies</b>: −25% {g|Encyclopedia:Penalty}penalty{/g}\n<b>Critical Hit Chance Bonus %</b>: +(10 + {unit_stat|WarhammerPerception|bonus})\n<b>Critical Damage Bonus %</b>: +(25 + {unit_stat|WarhammerBallisticSkill|bonus} x 2)\n<b>Critical Base Damage Bonus</b>: (Current weapon's maximum damage / 2)\n<b>Fire Rate Bonus %</b>: +40\n<b>Hit Chance Bonus %</b>: +5\n<b>Single Shot Base Damage Bonus </b>: +Current Weapon's Max Damage / 2"
@@ -31,7 +31,7 @@
             "Text": "Drukhari ranged weapons deal +(25 + {unit_stat|WarhammerBallisticSkill|bonus} x 2)% increased damage for each DoT affecting the target and additional base damage equal to their maximum damage divided by 2.\n<b>All</b> DoT effects applied to a target are increased by +(20 + {unit_stat|WarhammerPerception|bonus} x 2  + {unit_stat|SkillLoreXenos}/3)%."
         },
         "5dc453dc-f0fe-4a1f-bae2-cc8358348a7f": {
-            "Text": "Drukhari and Aeldari melee weapons damage scales with AGI instead of STR if its higher\nThey also do +(25 + ({unit_stat|WarhammerAgility|bonus} x 3)% critical damage, additional base damage equal to their minimum damage / 2, dodge reduction equal to -(5 + {unit_stat|WarhammerWeaponSkill|bonus}), and +15 critical hit chance." 
+            "Text": "Drukhari and Aeldari melee weapons damage scales with AGI instead of STR if its higher\nThey also do +(25 + ({unit_stat|WarhammerAgility|bonus} x 3)% critical damage, additional base damage equal to their minimum damage / 2, dodge reduction equal to -(5 + {unit_stat|WarhammerWeaponSkill|bonus}), and +15 critical hit chance."
         },
         "b19a55bb-d66d-4fbd-aeaf-ab05085e8bb6": {
             "Text": "Aeldari ranged weapons deal +{unit_stat|WarhammerPerception|bonus} base critical damage and +(20 + {unit_stat|WarhammerPerception|bonus} x 2)% critical damage.\nSingle-shot attacks deal additional damage equal to maximum weapon damage / 2 and gain +(15 + {unit_stat|WarhammerBallisticSkill|bonus})% armor penetration."
