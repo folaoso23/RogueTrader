@@ -40,3 +40,6 @@ MonoBehaviour:
   - Guid: 21d6182a02014531a63f28fe5ff34530
     Filename: SolidProjectileWeaponSpecialization
     PatchType: 2
+  - Guid: 2558102cf3d24a52ae8be0f0e898dec1
+    Filename: WeaponSpecialistTalent
+    PatchType: 2

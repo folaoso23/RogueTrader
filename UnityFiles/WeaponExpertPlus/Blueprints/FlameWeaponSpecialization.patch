@@ -41,7 +41,7 @@
         "Descriptor": "None",
         "Damage": {
           "ValueType": "Simple",
-          "Value": 20,
+          "Value": 50,
           "ValueRank": "Default",
           "ValueShared": "Damage",
           "Property": "None",
@@ -182,7 +182,7 @@
                 "Min": 0,
                 "Max": 0
               },
-              "Type": "Min"
+              "Type": "Max"
             },
             {
               "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
@@ -191,7 +191,7 @@
                 "Progression": "DivStep",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 10,
+                "m_StepLevel": 5,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,

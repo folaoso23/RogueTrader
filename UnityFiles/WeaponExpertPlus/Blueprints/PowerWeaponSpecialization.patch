@@ -261,7 +261,7 @@
               },
               "Value": {
                 "ValueType": "Simple",
-                "Value": 20,
+                "Value": 25,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
@@ -303,7 +303,7 @@
                     },
                     "Value": {
                       "ValueType": "Simple",
-                      "Value": 3,
+                      "Value": 4,
                       "ValueRank": "Default",
                       "ValueShared": "Damage",
                       "Property": "None",

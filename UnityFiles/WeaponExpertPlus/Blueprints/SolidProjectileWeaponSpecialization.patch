@@ -20,6 +20,10 @@
           "PropertyName": "Dice1",
           "Enabled": true
         },
+        "AdditionalHitChance": {
+          "Value": 10,
+          "Enabled": true
+        },
         "RateOfFire": {
           "Value": 1,
           "Enabled": true
@@ -114,7 +118,7 @@
               },
               "Value": {
                 "ValueType": "Simple",
-                "Value": 10,
+                "Value": 25,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
@@ -126,10 +130,10 @@
               "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
               "name": "$ContextValueGetter$5d4d74e7-97f2-48db-aca7-65f417e8f2fa",
               "Settings": {
-                "Progression": "AsIs",
+                "Progression": "MultiplyByModifier",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 0,
+                "m_StepLevel": 3,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,
@@ -173,7 +177,7 @@
               "$type": "90e37f9c2bb670b4bb0adf1e9eadccde, CurrentWeaponBlueprintDamageGetter",
               "name": "$CurrentWeaponBlueprintDamageGetter$0c00cb2b-7f7d-4df8-8808-29b28f7e2672",
               "Settings": {
-                "Progression": "DivStep",
+                "Progression": "AsIs",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
                 "m_StepLevel": 2,
@@ -312,7 +316,7 @@
                 "Progression": "DivStep",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 3,
+                "m_StepLevel": 2,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,

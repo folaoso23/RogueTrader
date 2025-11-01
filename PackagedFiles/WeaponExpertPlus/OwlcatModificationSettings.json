@@ -4,58 +4,68 @@
         "m_Bundles": []
     },
     "BundleDependencies": {
-        "m_List": [
-            {
-                "Key": "WeaponExpertPlus_BlueprintDirectReferences",
-                "Value": []
-            }
-        ]
+        "m_List": []
     },
     "BlueprintPatches": [
         {
             "Guid": "4fa4dbc023474337990840e305d06fa4",
-            "Filename": "MeltaWeaponSpecialization",
-            "PatchType": 2
+            "Filename": "MeltaWeaponSpecialization_Feature",
+            "PatchType": 1
         },
         {
             "Guid": "fdc990cb73114e4d8a7575813936cec9",
-            "Filename": "PlasmaWeaponSpecialization",
-            "PatchType": 2
+            "Filename": "PlasmaWeaponSpecialization_Feature",
+            "PatchType": 1
         },
         {
             "Guid": "72b608c024174a13b60b70675e4ca840",
-            "Filename": "BoltWeaponSpecialization",
-            "PatchType": 2
-        },
-        {
-            "Guid": "72b608c024174a13b60b70675e4ca840",
-            "Filename": "BoltWeaponSpecialization",
-            "PatchType": 2
+            "Filename": "BoltWeaponSpecialization_Feature",
+            "PatchType": 1
         },
         {
             "Guid": "2259197e773b45d0a2f51fc57ccd2133",
-            "Filename": "ChainWeaponSpecialization",
-            "PatchType": 2
+            "Filename": "ChainWeaponSpecialization_Feature",
+            "PatchType": 1
         },
         {
             "Guid": "30ef0b17c93444bb9b0a0169c6fffe06",
-            "Filename": "FlameWeaponSpecialization",
-            "PatchType": 2
+            "Filename": "FlameWeaponSpecialization_Feature",
+            "PatchType": 1
         },
         {
             "Guid": "baf7c232ef5943a186b8bb2a80990470",
             "Filename": "LasWeaponSpecialization",
-            "PatchType": 2
+            "PatchType": 1
         },
         {
             "Guid": "9d82f293513e4bb390782188307f948f",
             "Filename": "PowerWeaponSpecialization",
-            "PatchType": 2
+            "PatchType": 1
         },
         {
             "Guid": "21d6182a02014531a63f28fe5ff34530",
-            "Filename": "SolidProjectileWeaponSpecialization",
-            "PatchType": 2
+            "Filename": "SolidProjectileWeaponSpecialization_Feature",
+            "PatchType": 1
+        },
+        {
+            "Guid": "2558102cf3d24a52ae8be0f0e898dec1",
+            "Filename": "MeleeWeaponSpecialist_Feature",
+            "PatchType": 1
+        },
+        {
+            "Guid": "505223dbfb2d4be6a758818c46878908",
+            "Filename": "WhereItHurtsTheMost_Feature",
+            "PatchType": 1
+        },
+        {
+            "Guid": "ba334a21868849f1b198440d0eff98bc",
+            "Filename": "Finesse_Feature",
+            "PatchType": 1
+        },
+        {
+            "Guid": "d0313fe1cb894406a012329b2c46c48c",
+            "Filename": "TrueSight_Feature",
+            "PatchType": 1
         }
     ]
 }

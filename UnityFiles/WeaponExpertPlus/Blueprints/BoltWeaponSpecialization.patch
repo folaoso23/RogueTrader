@@ -113,13 +113,13 @@
         },
         "AdditionalHitChance": {
           "ValueType": "Simple",
-          "Value": 0,
+          "Value": 5,
           "ValueRank": "Default",
           "ValueShared": "Damage",
           "Property": "None",
           "m_CustomProperty": null,
           "PropertyName": "Value1",
-          "Enabled": false,
+          "Enabled": true,
           "ModifierType": "ValAdd"
         },
         "DodgePenetration": {
@@ -271,7 +271,7 @@
                 "Min": 0,
                 "Max": 0
               },
-              "Type": "Min"
+              "Type": "Max"
             }
           ]
         }
@@ -301,10 +301,10 @@
               "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
               "name": "$ContextValueGetter$5b374069-66df-4f61-aca1-814ee7588625",
               "Settings": {
-                "Progression": "AsIs",
+                "Progression": "MultiplyByModifier",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 0,
+                "m_StepLevel": 4,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,
@@ -335,7 +335,7 @@
               },
               "Value": {
                 "ValueType": "Simple",
-                "Value": 35,
+                "Value": 30,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",

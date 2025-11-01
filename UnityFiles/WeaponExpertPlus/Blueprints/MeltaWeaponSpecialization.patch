@@ -13,7 +13,6 @@
         },
         "DamageMin": {
           "ValueType": "CasterNamedProperty",
-          "PropertyName": "Value2",
           "Enabled": true
         },
         "DamageMax": {
@@ -132,7 +131,7 @@
               },
               "Value": {
                 "ValueType": "Simple",
-                "Value": 1,
+                "Value": 2,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
@@ -248,7 +247,7 @@
               },
               "Value": {
                 "ValueType": "Simple",
-                "Value": 15,
+                "Value": 25,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
@@ -260,10 +259,10 @@
               "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
               "name": "$ContextValueGetter$5e15c3595a7248648ba5ee038a74e7f1",
               "Settings": {
-                "Progression": "AsIs",
+                "Progression": "MultiplyByModifier",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 0,
+                "m_StepLevel": 2,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,
@@ -283,10 +282,10 @@
               "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
               "name": "$ContextValueGetter$1e9deb94d6024d05b76238a66a0aa0ae",
               "Settings": {
-                "Progression": "AsIs",
+                "Progression": "MultiplyByModifier",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 0,
+                "m_StepLevel": 2,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,
