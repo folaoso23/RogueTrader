@@ -66,6 +66,11 @@
             "Guid": "d0313fe1cb894406a012329b2c46c48c",
             "Filename": "TrueSight_Feature",
             "PatchType": 1
+        },
+        {
+            "Guid": "0618c379e430483bab1a17b2de559bc5",
+            "Filename": "PsykerBladeOfLightTalent",
+            "PatchType": 1
         }
     ]
 }
