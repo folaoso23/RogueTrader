@@ -1,7 +1,7 @@
 {
     "strings": {
         "c06a7a72-385c-477d-aad6-7a7a84e6c1d0": {
-            "Text": "Melta weapon attacks gain the following bonuses:\n<b>Base Damage Bonus</b>: + Weapons's Maximum Damage bonus.\n<b>Damage Bonus(%)</b>: +(50 + {unit_stat|WarhammerBallisticSkill|bonus} × 5 + {unit_stat|WarhammerIntelligence|bonus} × 2).\n<b>Single-shot AP Cost</b>: -1 AP (minimum 1)."
+            "Text": "Melta weapon attacks gain the following bonuses:\n<b>Base Damage Bonus</b>: + Weapon's Maximum Damage bonus.\n<b>Damage Bonus(%)</b>: +(50 + {unit_stat|WarhammerBallisticSkill|bonus} × 5 + {unit_stat|WarhammerIntelligence|bonus} × 2).\n<b>Single-shot AP Cost</b>: -1 AP (minimum 1)./nCrtical hits do additional base damage equal to the current weapon's maximum damage bonus."
         },
         "cabcbd5c-e59f-4e49-a001-4b6d54ea2e63": {
             "Text": "Plasma weapon gain the following bonuses:\n<b>{g|Encyclopedia:DamageGlossary}Damage{/g} Bonus %</b>: +(25 + ({unit_stat|WarhammerBallisticSkill|bonus} × 3) + {unit_stat|WarhammerIntelligence|bonus})\n<b>Hit Chance Bonus %</b>: (5 + {unit_stat|WarhammerPerception|bonus}/2).\n<b>Base Damage Bonus</b>: +(Current weapon's maximum damage / 2)\n<b>Critical Base Damage Bonus</b>: + Current weapon's minimum damage / 2"
@@ -31,7 +31,7 @@
             "Text": "Drukhari ranged weapons deal +(25 + {unit_stat|WarhammerBallisticSkill|bonus} × 2)% increased damage for each DoT affecting the target and additional base damage equal to their maximum damage divided by 2.\n<b>All</b> DoT effects applied to a target are increased by +(20 + {unit_stat|WarhammerPerception|bonus} × 2  + {unit_stat|SkillLoreXenos}/3)%.\nDrukhari Las Weapons gain the following bonuses in addition to the ones above:\n<b>Base Damage Bonus</b>: + Weapon's maximum damage × 2\n<b>Damage Bonus %</b>: 10 + ({unit_stat|WarhammerBallisticSkill|bonus} × 2) + {unit_stat|WarhammerPerception|bonus}"
         },
         "5dc453dc-f0fe-4a1f-bae2-cc8358348a7f": {
-            "Text": "Drukhari and Aeldari melee weapons damage scales with AGI instead of STR if its higher\nThey also do +(25 + ({unit_stat|WarhammerAgility|bonus} × 3)% critical damage, additional base damage equal to their minimum damage / 2, dodge reduction equal to -(5 + {unit_stat|WarhammerWeaponSkill|bonus}), and +15 critical hit chance."
+            "Text": "Drukhari and Aeldari melee weapons damage scales with AGI instead of STR if its higher\nThey also do + (25 + {unit_stat|WarhammerAgility|bonus} × 4)% critical damage, additional base damage equal to their max damage / 2, dodge reduction equal to -(5 + {unit_stat|WarhammerWeaponSkill|bonus}), and +(15 + {unit_stat|WarhammerWeaponSkill|bonus}) critical hit chance."
         },
         "b19a55bb-d66d-4fbd-aeaf-ab05085e8bb6": {
             "Text": "Aeldari ranged weapons deal +{unit_stat|WarhammerPerception|bonus} base critical damage and +(20 + {unit_stat|WarhammerPerception|bonus} × 2)% critical damage.\nSingle-shot attacks gain +(15 + {unit_stat|WarhammerBallisticSkill|bonus})% armor penetration."
