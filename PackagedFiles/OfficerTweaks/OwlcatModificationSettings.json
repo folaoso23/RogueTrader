@@ -66,6 +66,11 @@
             "Guid": "3f78bec2aea340a780e47f0a2a8dfb5f",
             "Filename": "LeaderDesperateAbility",
             "PatchType": 1
+        },
+        {
+            "Guid": "279842de6dd54fd7a21f753e242aba0d",
+            "Filename": "MoreThanPossible_Leader_BuffVoiceOfCommand",
+            "PatchType": 1
         }
     ]
 }
