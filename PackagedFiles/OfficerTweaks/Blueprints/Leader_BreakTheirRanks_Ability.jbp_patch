@@ -1,0 +1,11 @@
+{
+  "TargetGuid": "b509a3ee5ab44253b4b859dd5f3dbffb",
+  "FieldOverrides": [
+    {
+      "FieldName": "CanTargetSelf",
+      "FieldValue": true
+    }
+  ],
+  "ArrayPatches": [],
+  "ComponentsPatches": []
+}

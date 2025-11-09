@@ -1,0 +1,47 @@
+{
+  "TargetGuid": "35593034ffe240aba26ee38b5baa5a80",
+  "FieldOverrides": [
+    {
+      "FieldName": "m_Flags",
+      "FieldValue": 0
+    }
+  ],
+  "ArrayPatches": [],
+  "ComponentsPatches": [
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent\",\r\n    \"name\": \"$PropertyCalculatorComponent$0b2244b8-c802-48b9-9759-c412b5069625\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Name\": \"Value1\",\r\n    \"SaveToContext\": \"No\",\r\n    \"Value\": {\r\n      \"Operation\": \"Sum\",\r\n      \"TargetType\": \"ContextCaster\",\r\n      \"TargetEvaluator\": null,\r\n      \"FailSilentlyIfNoTarget\": false,\r\n      \"Getters\": [\r\n        {\r\n          \"$type\": \"fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter\",\r\n          \"name\": \"$SimplePropertyGetter$589c2534aca540299bcad859a4dd2519\",\r\n          \"Settings\": {\r\n            \"Progression\": \"MultiplyByModifier\",\r\n            \"m_CustomProgression\": [],\r\n            \"m_StartLevel\": 0,\r\n            \"m_StepLevel\": 2,\r\n            \"Negate\": false,\r\n            \"Limit\": \"None\",\r\n            \"Min\": 0,\r\n            \"Max\": 0\r\n          },\r\n          \"Property\": \"WillpowerBonus\"\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}",
+      "OperationType": "RemoveElement"
+    },
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"30bafd907bef48d0890a6e4a9265aa19, TemporaryHitPoints\",\r\n    \"name\": \"$TemporaryHitPoints$07435659-7919-4723-ad22-e67b4a9aa8e5\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Value\": {\r\n      \"ValueType\": \"CasterNamedProperty\",\r\n      \"Value\": 0,\r\n      \"ValueRank\": \"Default\",\r\n      \"ValueShared\": \"Damage\",\r\n      \"Property\": \"None\",\r\n      \"m_CustomProperty\": null,\r\n      \"PropertyName\": \"Value2\"\r\n    }\r\n  }\r\n}",
+      "OperationType": "InsertLast"
+    },
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"30bafd907bef48d0890a6e4a9265aa19, TemporaryHitPoints\",\r\n    \"name\": \"$TemporaryHitPoints$79ce6fee-bef2-43a0-96db-4d9df1c2f362\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Value\": {\r\n      \"ValueType\": \"CasterNamedProperty\",\r\n      \"Value\": 0,\r\n      \"ValueRank\": \"Default\",\r\n      \"ValueShared\": \"Damage\",\r\n      \"Property\": \"None\",\r\n      \"m_CustomProperty\": null,\r\n      \"PropertyName\": \"Value1\"\r\n    }\r\n  }\r\n}",
+      "OperationType": "RemoveElement"
+    },
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent\",\r\n    \"name\": \"$PropertyCalculatorComponent$0b9ed214-8e67-4d1d-8c0f-c95d6ba6878b\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Name\": \"Value2\",\r\n    \"SaveToContext\": \"No\",\r\n    \"Value\": {\r\n      \"Operation\": \"Sum\",\r\n      \"TargetType\": \"ContextCaster\",\r\n      \"TargetEvaluator\": null,\r\n      \"FailSilentlyIfNoTarget\": false,\r\n      \"Getters\": [\r\n        {\r\n          \"$type\": \"fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter\",\r\n          \"name\": \"$SimplePropertyGetter$689921cf-b543-47e9-b8cd-a45d692862b7\",\r\n          \"Settings\": {\r\n            \"Progression\": \"MultiplyByModifier\",\r\n            \"m_CustomProgression\": [],\r\n            \"m_StartLevel\": 0,\r\n            \"m_StepLevel\": 3,\r\n            \"Negate\": false,\r\n            \"Limit\": \"None\",\r\n            \"Min\": 0,\r\n            \"Max\": 0\r\n          },\r\n          \"Property\": \"WillpowerBonus\"\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}",
+      "OperationType": "InsertLast"
+    },
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"186465aada0f422b966541bbf050c271, WarhammerArmorBonus\",\r\n    \"name\": \"$WarhammerArmorBonus$5505f3bc-29a3-4d9b-b391-ed46714d985c\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Restrictions\": {\r\n      \"Property\": {\r\n        \"Operation\": \"Sum\",\r\n        \"TargetType\": \"CurrentEntity\",\r\n        \"TargetEvaluator\": null,\r\n        \"FailSilentlyIfNoTarget\": false,\r\n        \"Getters\": []\r\n      }\r\n    },\r\n    \"BonusDeflectionValue\": {\r\n      \"ValueType\": \"CasterNamedProperty\",\r\n      \"Value\": 0,\r\n      \"ValueRank\": \"Default\",\r\n      \"ValueShared\": \"Damage\",\r\n      \"Property\": \"FellowshipBonus\",\r\n      \"m_CustomProperty\": null,\r\n      \"PropertyName\": \"Dice2\",\r\n      \"Enabled\": true,\r\n      \"ModifierType\": \"ValAdd\"\r\n    },\r\n    \"BonusAbsorptionValue\": {\r\n      \"ValueType\": \"CasterNamedProperty\",\r\n      \"Value\": 0,\r\n      \"ValueRank\": \"Default\",\r\n      \"ValueShared\": \"Damage\",\r\n      \"Property\": \"Willpower\",\r\n      \"m_CustomProperty\": null,\r\n      \"PropertyName\": \"Dice1\",\r\n      \"Enabled\": true,\r\n      \"ModifierType\": \"ValAdd\"\r\n    },\r\n    \"ForceDeflectionMinimum\": false,\r\n    \"PctDeflectionMinimum\": 0,\r\n    \"DeflectionMinimumValue\": 0,\r\n    \"ForceAbsorptionMinimum\": false,\r\n    \"PctAbsorptionMinimum\": 0,\r\n    \"AbsorptionMinimumValue\": 0,\r\n    \"ModifierDescriptor\": \"None\"\r\n  }\r\n}",
+      "OperationType": "InsertLast"
+    },
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent\",\r\n    \"name\": \"$PropertyCalculatorComponent$6b36da85-e24e-4f3c-9487-534503322c44\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Name\": \"Dice2\",\r\n    \"SaveToContext\": \"No\",\r\n    \"Value\": {\r\n      \"Operation\": \"Sum\",\r\n      \"TargetType\": \"ContextCaster\",\r\n      \"TargetEvaluator\": null,\r\n      \"FailSilentlyIfNoTarget\": false,\r\n      \"Getters\": [\r\n        {\r\n          \"$type\": \"71959818449d4891939b89c19a6d9a91, ContextValueGetter\",\r\n          \"name\": \"$ContextValueGetter$6965037f19eb4e6da7b4fd296991ee4b\",\r\n          \"Settings\": {\r\n            \"Progression\": \"DivStep\",\r\n            \"m_CustomProgression\": [],\r\n            \"m_StartLevel\": 0,\r\n            \"m_StepLevel\": 2,\r\n            \"Negate\": false,\r\n            \"Limit\": \"None\",\r\n            \"Min\": 0,\r\n            \"Max\": 0\r\n          },\r\n          \"Value\": {\r\n            \"ValueType\": \"CasterProperty\",\r\n            \"Value\": 0,\r\n            \"ValueRank\": \"Default\",\r\n            \"ValueShared\": \"Damage\",\r\n            \"Property\": \"FellowshipBonus\",\r\n            \"m_CustomProperty\": null,\r\n            \"PropertyName\": \"Value1\"\r\n          }\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}",
+      "OperationType": "InsertLast"
+    },
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent\",\r\n    \"name\": \"$PropertyCalculatorComponent$d181e84e-3b4f-46f9-bc48-d28c526e82da\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Name\": \"Dice1\",\r\n    \"SaveToContext\": \"No\",\r\n    \"Value\": {\r\n      \"Operation\": \"Sum\",\r\n      \"TargetType\": \"ContextCaster\",\r\n      \"TargetEvaluator\": null,\r\n      \"FailSilentlyIfNoTarget\": false,\r\n      \"Getters\": [\r\n        {\r\n          \"$type\": \"71959818449d4891939b89c19a6d9a91, ContextValueGetter\",\r\n          \"name\": \"$ContextValueGetter$dca898bf-6902-431c-a393-7a9d3527d08e\",\r\n          \"Settings\": {\r\n            \"Progression\": \"DivStep\",\r\n            \"m_CustomProgression\": [],\r\n            \"m_StartLevel\": 0,\r\n            \"m_StepLevel\": 5,\r\n            \"Negate\": false,\r\n            \"Limit\": \"None\",\r\n            \"Min\": 0,\r\n            \"Max\": 0\r\n          },\r\n          \"Value\": {\r\n            \"ValueType\": \"CasterProperty\",\r\n            \"Value\": 0,\r\n            \"ValueRank\": \"Default\",\r\n            \"ValueShared\": \"Damage\",\r\n            \"Property\": \"Willpower\",\r\n            \"m_CustomProperty\": null,\r\n            \"PropertyName\": \"Value1\"\r\n          }\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}",
+      "OperationType": "InsertLast"
+    }
+  ]
+}

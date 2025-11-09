@@ -1,0 +1,31 @@
+{
+    "strings": {
+        "3ba0fbf3-62a3-4882-965d-1378256f29f0": {
+            "Text": "This {g|Encyclopedia:Ability}ability{/g} can only target the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} or allies who have enemies adjacent to them.\nUntil the start of the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s next turn, all {g|Encyclopedia:MeleeAttacksGlossary}melee attacks{/g} made by the target deal additional damage equal to {uip|BonusDamage|b509a3ee5ab44253b4b859dd5f3dbffb} multiplied by the number of enemies adjacent to the target when this ability is used.\nMelee attacks cost -1 AP (minimum 1) and the target can make an additional attack while under this condition.\nThe target also gains ({unit_stat|WarhammerWillpower}/5)% parry reduction.\nIf the target is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g}, they immediately make an {g|Encyclopedia:AttackOfOpportunityFullGlossary}attack of opportunity{/g} against an adjacent enemy, targeting the one with the lowest remaining {g|Encyclopedia:HitPoints}wounds{/g}."
+        },
+        "0bef0515-6b82-4ebe-b509-52096ab06e57":{
+            "Text": "Whenever the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} uses {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g} or {g|f:5bfccf14d8604ae1a041fb347fb8f19f}Bring It Down!{/g}, this ability costs −1 {g|Encyclopedia:ActionPoints}AP{/g} less."
+        },
+        "128181fd-09e5-4577-afc5-139af211780a": {
+            "Text": "The {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} increases an ally's {g|Encyclopedia:Resolve}resolve{/g} by +{uip|ResolveBonus|32c0e0539f8548b08780089f8006f54a}.\nTheir damage is increased by {unit_stat|WarhammerWillpower}% and critical chance increased by {g|Encyclopedia:Resolve}resolve{/g} until the end of combat.\nIf the target is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g}, they will start their next {g|Encyclopedia:Turn}turn{/g} with +1 additional {g|Encyclopedia:ActionPoints}action point{/g}."
+        },
+        "77e86ef4-93c4-439b-b9f4-b93b5b96befc": {
+            "Text": "The target's next attack will ignore {g|Encyclopedia:DetailsOfTheCoverGlossary}cover{/g}, have double the effective distance, no recoil, an additional ({unit_stat|WarhammerFellowship|bonus}×2)% hit chance and a bonus {unit_stat|WarhammerWillpower}% armor penetration.\nIf the target is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g}, this attack will ignore enemy block and {g|Encyclopedia:DodgeGlossary}dodge{/g}. Additionally, the {g|Encyclopedia:DamageGlossary}damage{/g} from this attack cannot be reduced below {uip|MimimumDamage|3a4d9ccff9cf40bd88fa018e05ec550d}% for any reason."
+        },
+        "91dde4ec-72f2-403e-865f-9d4da99ba97e": {
+            "Text": "<u>(3 × {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s {g|Encyclopedia:WarhammerWillpower}WP{/g} bonus)</u>"
+        },
+        "1d5e3a4b-0889-4d23-9d62-f59f6f0db5aa": {
+            "Text": "The {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} forces an ally to fully push themselves, increasing their {g|Encyclopedia:Characteristic}characteristics{/g} by +{uip|BonusStats|9c78e44bf8ff44a9afff8370c673c9ad} for 1 {g|Encyclopedia:Round}round{/g}.\nAdditionally, all of the Officer's {g|Encyclopedia:Ability}abilities{/g} can be applied to the target of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g} from any distance.\nA character who becomes the target of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g} cannot be targeted by this ability again for 1 round."
+        },
+        "ca26ae52-8b18-4f32-82dc-e1a340ddf138": {
+            "Text": "<u>(10 + {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s {g|Encyclopedia:WarhammerFellowship}FEL{/g} bonus × 2)</u>"
+        },
+        "da4856fc-0dd4-4a0f-9d65-145f305b1a4a": {
+            "Text": "The Officer encourages an ally, who immediately recovers from {g|Encyclopedia:BurningEffect}burning{/g}, {g|Encyclopedia:BleedingEffect}bleeding{/g}, {g|Encyclopedia:ToxinEffect}toxin{/g}, and {g|Encyclopedia:Stun}stunned{/g} effects.\nIf the target is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g}, they also gain +{uip|TemporaryWounds|083057fc1a6b47f29ea0409337135030} {g|Encyclopedia:TemporaryWounds}temporary wounds{/g},({unit_stat|WarhammerWillpower}/3)% armor and ({unit_stat|WarhammerFellowship|bonus}/2) bonus deflection."
+        },
+        "e71a976f-c9d7-4804-bb04-a66b06356dff": {
+            "Text": "<u>(2 + {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s {g|Encyclopedia:Resolve}resolve{/g})</u>"
+        }
+    }
+}
