@@ -1,11 +1,5 @@
 {
     "strings": {
-        "820c393d-bdcd-4268-8ada-7c76df7d77ae": {
-            "Text": "Alpha Strike"
-        },
-        "ca1a1af8-1d1b-4eef-892b-8d92b0a89d41": {
-            "Text": "For the next attack against a target affected by an {g|Encyclopedia:Exploit}exploit{/g}, that target's {g|Encyclopedia:DetailsOfTheCoverGlossary}cover efficiency{/g} and block will be reduced by −<u>(15 + {unit_stat|WarhammerPerception|bonus} × stacks of exploit)</u>%. This attack will have +<u>(15 + {unit_stat|WarhammerPerception|bonus} × stacks of exploit)</u>% {g|Encyclopedia:HitSequenceGlossary}hit chance{/g}.\nThe attack will also do increased damage on a critical based on the type of attack:\n<b>All attacks</b>: 5 x {unit_stat|WarhammerPerception|bonus} % Bonus Critical Damage\n<b>Single-shot and Single-target melee</b>: Max Weapon Damage x 2\n<b>Area</b>: Max Weapon Damage\n<b>Burst</b>: 2 x {unit_stat|WarhammerPerception|bonus} Bonus Critical Chance and bonus damage equal to Minimum Weapon Damage"
-        },
         "30ed5ec8-7e19-4620-a3b0-8fc5a94fa537": {
             "Text": "{g|Encyclopedia:WarhammerPerception}PER{/g} bonus"
         },
