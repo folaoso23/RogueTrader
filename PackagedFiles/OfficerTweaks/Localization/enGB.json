@@ -26,6 +26,9 @@
         },
         "e71a976f-c9d7-4804-bb04-a66b06356dff": {
             "Text": "<u>(2 + {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s {g|Encyclopedia:Resolve}resolve{/g})</u>"
+        },
+        "445fe3e6-606c-48e1-b549-c8ef42937c3e": {
+            "Text": "Whenever the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} uses an Officer {g|Encyclopedia:Career}archetype{/g} {g|Encyclopedia:Ability}ability{/g} that does not grant an {g|Encyclopedia:ExtraTurn}extra turn{/g} in one round, the Officer gains the {g|f:f02ddb75448343d8a867fbd7a725ec93}stand witness{/g} effect."
         }
     }
 }

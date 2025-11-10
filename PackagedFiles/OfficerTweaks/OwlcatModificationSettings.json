@@ -58,18 +58,18 @@
             "PatchType": 1
         },
         {
-            "Guid": "33c8c9db91694ca6ad3eff26e36dd0af",
-            "Filename": "LeaderUltimateAbility",
-            "PatchType": 1
-        },
-        {
-            "Guid": "3f78bec2aea340a780e47f0a2a8dfb5f",
-            "Filename": "LeaderDesperateAbility",
-            "PatchType": 1
-        },
-        {
             "Guid": "279842de6dd54fd7a21f753e242aba0d",
             "Filename": "MoreThanPossible_Leader_BuffVoiceOfCommand",
+            "PatchType": 1
+        },
+        {
+            "Guid": "13cef12ff4e646b4892977051d682e8a",
+            "Filename": "PersonalExample_Leader_SelfBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "b370f94b75ac4261b6812960138d19e7",
+            "Filename": "PersonalExample_Leader_Talent",
             "PatchType": 1
         }
     ]
