@@ -4,7 +4,7 @@
             "Text": "Can only be used on enemies with the unfinished business effect. This effect is applied to enemies which were attacked by the Master Tactician or the {g|Encyclopedia:CareerTacticianGlossary}Master Tactician{/g}'s allies and have less than 50% of their {g|Encyclopedia:MaxWounds}maximum wounds{/g} remaining.\nThe Master Tactician immediately attacks the target with a {g|Encyclopedia:SingleRangedAttacksGlossary}single shot{/g} or strike. This attack does not count toward the {g|Encyclopedia:AttacksPerTurn}attacks per turn{/g} limit, dealing an additional +{unit_stat|WarhammerBallisticSkill|bonus} x 3 damage."
         },
         "1f3eef73-6e06-48fa-8db0-854233642b0f": {
-            "Text": "The Master Tactician suffers {g|Encyclopedia:DirectDamage}direct damage{/g} equal to 20% of their {g|Encyclopedia:MaxWounds}maximum wounds{/g}, gains <u>Master Tactician's {g|Encyclopedia:Resolve}resolve{/g}</u> x 5 stacks of tactical advantage, and resets the {g|Encyclopedia:Cooldown}cooldown{/g} of <b>Linchpin</b>, <b>Inspire</b>, and <b>Strongpoint</b>. Until the end of the Master Tactician's turn, these abilities can only target the Master Tactician themselves."
+            "Text": "The Master Tactician suffers {g|Encyclopedia:DirectDamage}direct damage{/g} equal to 20% of their {g|Encyclopedia:MaxWounds}maximum wounds{/g}, gains <u>Master Tactician's {g|Encyclopedia:Resolve}resolve{/g}</u> stacks of tactical advantage, and resets the {g|Encyclopedia:Cooldown}cooldown{/g} of <b>Linchpin</b>, <b>Inspire</b>, and <b>Strongpoint</b>. Until the end of the Master Tactician's turn, these abilities can only target the Master Tactician themselves."
         }
     }
 }
