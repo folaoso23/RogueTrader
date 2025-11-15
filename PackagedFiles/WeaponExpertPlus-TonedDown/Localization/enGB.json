@@ -4,7 +4,7 @@
             "Text": "Melta weapon attacks gain the following bonuses:\n<b>Base Damage Bonus</b>: + Weapon's Maximum Damage bonus.\n<b>Damage Bonus(%)</b>: +(25 + {unit_stat|WarhammerBallisticSkill|bonus} × 3 + {unit_stat|SkillTechUse}/5).\n<b>Single-shot AP Cost</b>: -1 AP (minimum 1).\nCritical hits do additional base damage equal to the current weapon's minimum damage bonus."
         },
         "cabcbd5c-e59f-4e49-a001-4b6d54ea2e63": {
-            "Text": "Plasma weapon gain the following bonuses:\n<b>{g|Encyclopedia:DamageGlossary}Damage{/g} Bonus %</b>: +(25 + ({unit_stat|WarhammerBallisticSkill|bonus} × 3) + {unit_stat|SkillTechUse}/8)\n<b>Hit Chance Bonus %</b>: (5 + {unit_stat|WarhammerPerception|bonus}).\n<b>Critical Base Damage Bonus</b>: + Current weapon's minimum damage"
+            "Text": "Plasma weapon gain the following bonuses:\n<b>Base Damage Bonus</b>: +(Current weapon's maximum damage / 2)\n<b>{g|Encyclopedia:DamageGlossary}Damage{/g} Bonus %</b>: +(25 + ({unit_stat|WarhammerBallisticSkill|bonus} × 3) + {unit_stat|SkillTechUse}/8)\n<b>Hit Chance Bonus %</b>: (5 + {unit_stat|WarhammerPerception|bonus}).\n<b>Critical Base Damage Bonus</b>: + Current weapon's minimum damage / 2"
         },
         "9cdcd518-1127-47c2-8c5b-b5f85a3f8804": {
             "Text": "Bolt weapon attacks gain the following bonuses:\n<b>{g|Encyclopedia:ArmourPenetration}Armour Penetration{/g} Bonus %</b>: +(10 + {unit_stat|WarhammerPerception|bonus})\n<b>Damage Bonus %</b>: +(25 + {unit_stat|WarhammerBallisticSkill|bonus} × 4)\n<b>Recoil</b>:-25%.\n<b>Hit Chance Bonus %</b>: +5"
