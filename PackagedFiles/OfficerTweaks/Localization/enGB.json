@@ -18,9 +18,6 @@
         "1d5e3a4b-0889-4d23-9d62-f59f6f0db5aa": {
             "Text": "The {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} forces an ally to fully push themselves, increasing their {g|Encyclopedia:Characteristic}characteristics{/g} by +{uip|BonusStats|9c78e44bf8ff44a9afff8370c673c9ad} for 1 {g|Encyclopedia:Round}round{/g}.\nAdditionally, all of the Officer's {g|Encyclopedia:Ability}abilities{/g} can be applied to the target of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g} from any distance.\nA character who becomes the target of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g} cannot be targeted by this ability again for 1 round."
         },
-        "ca26ae52-8b18-4f32-82dc-e1a340ddf138": {
-            "Text": "<u>(10 + {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s {g|Encyclopedia:WarhammerFellowship}FEL{/g} bonus × 2)</u>"
-        },
         "da4856fc-0dd4-4a0f-9d65-145f305b1a4a": {
             "Text": "The Officer encourages an ally, who immediately recovers from {g|Encyclopedia:BurningEffect}burning{/g}, {g|Encyclopedia:BleedingEffect}bleeding{/g}, {g|Encyclopedia:ToxinEffect}toxin{/g}, and {g|Encyclopedia:Stun}stunned{/g} effects.\nIf the target is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g}, they also gain +{uip|TemporaryWounds|083057fc1a6b47f29ea0409337135030} {g|Encyclopedia:TemporaryWounds}temporary wounds{/g},({unit_stat|WarhammerWillpower}/3)% armor and ({unit_stat|WarhammerFellowship|bonus}/2) bonus deflection."
         },

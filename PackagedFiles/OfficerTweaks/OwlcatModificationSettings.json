@@ -43,11 +43,6 @@
             "PatchType": 1
         },
         {
-            "Guid": "cc5f2f561a434c53857a566650f0f70f",
-            "Filename": "LeaderListenToMyOrderBuff",
-            "PatchType": 1
-        },
-        {
             "Guid": "35593034ffe240aba26ee38b5baa5a80",
             "Filename": "LeaderYouAreStrongerThanThisBuff",
             "PatchType": 1
