@@ -1,0 +1,15 @@
+{
+  "TargetGuid": "7d145260c96243869af97d0b300d420a",
+  "FieldOverrides": [
+    {
+      "FieldName": "m_HoldingType",
+      "FieldValue": "TwoHanded"
+    },
+    {
+      "FieldName": "IsTwoHanded",
+      "FieldValue": true
+    }
+  ],
+  "ArrayPatches": [],
+  "ComponentsPatches": []
+}
