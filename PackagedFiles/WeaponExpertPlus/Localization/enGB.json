@@ -7,7 +7,7 @@
             "Text": "Plasma weapon gain the following bonuses:\n<b>Base Damage Bonus</b>: +(Current weapon's maximum damage / 2)\n<b>{g|Encyclopedia:DamageGlossary}Damage{/g} Bonus %</b>: +(25 + ({unit_stat|WarhammerBallisticSkill|bonus} × 3) + {unit_stat|SkillTechUse}/8)\n<b>Hit Chance Bonus %</b>: (5 + {unit_stat|WarhammerPerception|bonus}).\n<b>Critical Base Damage Bonus</b>: + Current weapon's minimum damage / 2"
         },
         "9cdcd518-1127-47c2-8c5b-b5f85a3f8804": {
-            "Text": "Bolt weapon attacks gain the following bonuses:\n<b>Base Damage Bonus</b>: +(Current weapon's maximum damage / 2)\n<b>{g|Encyclopedia:ArmourPenetration}Armour Penetration{/g} Bonus %</b>: +(10 + {unit_stat|WarhammerPerception|bonus})\n<b>Damage Bonus %</b>: +(25 + {unit_stat|WarhammerBallisticSkill|bonus} × 4)\n<b>Recoil</b>:-25%.\n<b>Hit Chance Bonus %</b>: +5"
+            "Text": "Bolt weapon attacks gain the following bonuses:\n<b>Base Damage Bonus</b>: +(Current weapon's maximum damage / 2)\n<b>{g|Encyclopedia:ArmourPenetration}Armour Penetration{/g} Bonus %</b>: +(10 + {unit_stat|WarhammerPerception|bonus})\n<b>Damage Bonus %</b>: +(25 + {unit_stat|WarhammerBallisticSkill|bonus} × 4)\n<b>Recoil</b>:-50%.\n<b>Hit Chance Bonus %</b>: +5"
         },
         "2b816671-4493-4dcc-8cd1-5056ad133fdb": {
             "Text": "Chain weapon attacks gain the following bonuses:\n<b>Base Damage Bonus</b>: +Current Weapon Minimum Damage / 2\n<b>Damage Bonus %</b>: 25 + ({unit_stat|WarhammerStrength|bonus} × 3)\n<b>{g|Encyclopedia:ArmourPenetration}Armour Penetration{/g} Bonus %</b>: +5\n<b>Parry Reduction Bonus %</b>: -(5 + {unit_stat|WarhammerWeaponSkill|bonus} + {unit_stat|WarhammerStrength|bonus})\n<b>Bleed Damage Affliction Bonus</b>: +Current Weapon Minimum Damage"
@@ -16,7 +16,7 @@
             "Text": "Flame weapon attacks gain the following bonuses:\n<b>Weapon Attack {g|Encyclopedia:ActionPoints}AP{/g} Cost</b>: -1 AP (minimum 1)\n<b>Max Distance Bonus</b>: +4\n<b>Damage Bonus %</b>: 25 + ({unit_stat|WarhammerBallisticSkill|bonus} × 3)\n<b>Burning Damage Affliction</b>: Current weapon's maximum damage + ({unit_stat|SkillDemolition}/5)."
         },
         "08f6b70a-6414-4c5d-a366-ee000e1efc1f": {
-            "Text": "Las weapons gain the following bonuses:\n<b>{g|Encyclopedia:DodgeGlossary}Dodge{/g} reduction against enemies</b>: −25% {g|Encyclopedia:Penalty}penalty{/g}\n<b>Critical Hit Chance Bonus %</b>: +(10 + {unit_stat|WarhammerPerception|bonus})\n<b>Critical Base Damage Bonus</b>: (Current weapon's maximum damage / 2)\n<b>Critical Damage Bonus %</b>: +(25 + {unit_stat|WarhammerBallisticSkill|bonus} × 3)\n<b>Fire Rate Bonus </b>: +1\n<b>Hit Chance Bonus %</b>: +5\n<b>Single Shot Base Damage Bonus </b>: +Current Weapon's Max Damage / 2\n<b>Recoil</b>-50%"
+            "Text": "Las weapons gain the following bonuses:\n<b>{g|Encyclopedia:DodgeGlossary}Dodge{/g} reduction against enemies</b>: −25% {g|Encyclopedia:Penalty}penalty{/g}\n<b>Critical Hit Chance Bonus %</b>: +(10 + {unit_stat|WarhammerPerception|bonus})\n<b>Fire Rate Bonus </b>: +1\n<b>Hit Chance Bonus %</b>: +10\n<b>Base Damage Bonus </b>: +Current Weapon's Max Damage / 2\n<b>Damage Bonus(%)</b>: (15 + {unit_stat|WarhammerBallisticSkill|bonus} × 2)\n<b>Recoil</b>-75%"
         },
         "bb7f40fc-225a-4f9d-b8bd-908667ce8399": {
             "Text": "Power weapon attacks gain the following bonuses:\n<b>Base Damage Bonus</b>: +Current weapon's maximum damage / 2\n<b>{g|Encyclopedia:ArmourPenetration}Armor Penetration Bonus{/g} %</b>: +(15 + {unit_stat|WarhammerWeaponSkill|bonus})\n<b>Damage Bonus %</b>: +(25 + {unit_stat|WarhammerStrength|bonus} × 4 + {unit_stat|SkillTechUse}/5)\n<b>Parry Reduction Bonus %</b>: -5"
@@ -41,6 +41,12 @@
         },
         "b1bd5f2a-3fed-4870-83cb-642dd8c8df66": {
             "Text": "<u>(3 + 3 × {g|Encyclopedia:PsyRating}psy rating{/g})</u>"
+        },
+        "411206e0-b73c-4dd5-b151-a3014ce1a7de": {
+            "Text": "Two single shots to one target. This attack has triple armor penetration and +9 range."
+        },
+        "49a7578b-8885-4272-a20c-0ae6822214d8": {
+            "Text": "A shotgun attack that has {uip|Penetration|027e75ab89364049b844a720feca85ec}% additional armour penetration, +50% damage, and applies {uip|Bleed|027e75ab89364049b844a720feca85ec} bleed to all targets hit."
         }
     }
 }
