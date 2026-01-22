@@ -33,14 +33,17 @@
         "43ab4851-d540-43eb-b72d-49d1df84a3f8": {
             "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} inflicts an {g|Encyclopedia:Exploit}exploit{/g} even on enemies which are out of the Operative's {g|Encyclopedia:LineOfSight}line of sight{/g} at the start of the {g|Encyclopedia:Turn}turn{/g}. If the {g|Encyclopedia:CareerAdeptGlossary}Operative's{/g} Perception is higher than their Agility, dodge chance is calculated using Perception instead."
         },
-        "e2921f84-b672-427f-95e9-d0acf6d9bbf2":{
+        "e2921f84-b672-427f-95e9-d0acf6d9bbf2": {
             "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} suffers −{uip|DamageReduction|4c56ec5c399f4c70815dd5596b0e7b83}% less {g|Encyclopedia:DamageGlossary}damage{/g} from enemies affected by {g|Encyclopedia:Exploit}exploits{/g}."
         },
-        "9ef1896c-a2ee-4600-b06a-31df580a0026":{
+        "9ef1896c-a2ee-4600-b06a-31df580a0026": {
             "Text": "<u>(15 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus)</u>"
         },
-        "0fccf8ad-f505-4048-a42f-521b745aae44":{
+        "0fccf8ad-f505-4048-a42f-521b745aae44": {
             "Text": "<u>{g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT{/g}</u>"
+        },
+        "1973b25f-e5c3-4428-a497-510eea0ccb7f": {
+            "Text": "The Operative gains +25% {g|Encyclopedia:DetailsOfTheCoverGlossary}cover{/g} efficiency (if in cover), +20 {g|Encyclopedia:WarhammerPerception}Perception{/g}, +20 {g|Encyclopedia:WarhammerBallisticSkill}Ballistic Skill{/g}, and a 75% recoil reduction.\nThis effect lasts until the Operative moves. Does not stack."
         }
     }
 }

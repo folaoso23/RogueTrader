@@ -41,6 +41,36 @@
             "Guid": "6cfd9b9830ea403db07a816843a8e39a",
             "Filename": "Adept_Keystone_Feature",
             "PatchType": 1
+        },
+        {
+            "Guid": "8341c8a0c79c4982a8cef0bbd2d1a2a2",
+            "Filename": "Adept_OffbeatSight_Talent",
+            "PatchType": 1
+        },
+        {
+            "Guid": "1d6a3bacdb914699b83d564a1f22bfbc",
+            "Filename": "Adept_CombatInsight_Talent",
+            "PatchType": 1
+        },
+        {
+            "Guid": "a2c8d30542b84a84bcc6480cf374c516",
+            "Filename": "Adept_ExposeWeakness_Buff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "740426ff3a6a4bbe97b81a4e6e7e4455",
+            "Filename": "Adept_OffencePrediction_Buff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "241156c970804b319d24604b8b7ab31a",
+            "Filename": "Adept_TideOfExcellence_Talent",
+            "PatchType": 1
+        },
+        {
+            "Guid": "bca05f1815dc49ed870306461a4cd686",
+            "Filename": "Adept_SnipingSHot_Buff",
+            "PatchType": 1
         }
     ]
 }
