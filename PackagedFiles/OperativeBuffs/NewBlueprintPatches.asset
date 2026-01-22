@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fe07f61edc4914ac44891e22e1fdf7, type: 3}
+  m_Name: NewBlueprintPatches
+  m_EditorClassIdentifier: 
+  Entries:
+  - Guid: 5f9c3a4d2f8e439883a1722c1d8b91b9
+    Filename: Adept_PreciseAttack_Buff
+    PatchType: 1
+  - Guid: 197b8a8a12b0442db7ffee1067cf3d97
+    Filename: Adept_ExposeWeakness_Ability
+    PatchType: 1
+  - Guid: 349c91e2137a4a18a386d930bea58747
+    Filename: Adept_TideOfExcellence_EffectBuff
+    PatchType: 1
+  - Guid: 59ea17f8f02347f8ae3c038cd62cf63b
+    Filename: Adept_CombatInsight_Buff
+    PatchType: 1
+  - Guid: 502b9195c84c42c5b180f3f63ed7955c
+    Filename: Adept_Keystone_Ability
+    PatchType: 1
+  - Guid: 882f658e49f34143a0e01ace79a3cfc7
+    Filename: Adept_PassiveLearning_Buff
+    PatchType: 1
+  - Guid: 6cfd9b9830ea403db07a816843a8e39a
+    Filename: Adept_Keystone_Feature
+    PatchType: 1
+  - Guid: 8341c8a0c79c4982a8cef0bbd2d1a2a2
+    Filename: Adept_OffbeatSight_Talent
+    PatchType: 1
+  - Guid: 1d6a3bacdb914699b83d564a1f22bfbc
+    Filename: Adept_CombatInsight_Talent
+    PatchType: 1
+  - Guid: a2c8d30542b84a84bcc6480cf374c516
+    Filename: Adept_ExposeWeakness_Buff
+    PatchType: 1
+  - Guid: 740426ff3a6a4bbe97b81a4e6e7e4455
+    Filename: Adept_OffencePrediction_Buff
+    PatchType: 1
+  - Guid: 241156c970804b319d24604b8b7ab31a
+    Filename: Adept_TideOfExcellence_Talent
+    PatchType: 1

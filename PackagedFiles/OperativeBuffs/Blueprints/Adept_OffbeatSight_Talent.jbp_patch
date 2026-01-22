@@ -1,0 +1,12 @@
+{
+  "TargetGuid": "8341c8a0c79c4982a8cef0bbd2d1a2a2",
+  "FieldOverrides": [],
+  "ArrayPatches": [],
+  "ComponentsPatches": [
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"0b4684d3bfe5495bb8e279792b7f961b, WarhammerDodgeChanceStatReplacement\",\r\n    \"name\": \"$WarhammerDodgeChanceStatReplacement$0dad3cdd-98d3-488f-b6d6-267924391a8c\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"AgilityReplacementStat\": \"WarhammerPerception\"\r\n  }\r\n}",
+      "OperationType": "InsertLast"
+    }
+  ]
+}
