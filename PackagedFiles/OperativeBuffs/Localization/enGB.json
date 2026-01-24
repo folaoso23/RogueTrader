@@ -15,11 +15,15 @@
         "30ed5ec8-7e19-4620-a3b0-8fc5a94fa537": {
             "Text": "{g|Encyclopedia:WarhammerPerception}PER{/g} bonus / 2"
         },
+
+        "04fcff06-a879-4b2f-b127-333726026b2d": {
+            "Text": "<u>20 + ({g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus x 2)</u>"
+        },
         "d9fe0ee9-f347-417a-9bdc-380fb74c9318": {
-            "Text": "Whenever the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} triggers an {g|Encyclopedia:Exploit}exploit{/g} on an enemy, the Operative gains +2 damage and +2% {g|Encyclopedia:ArmourPenetration}armour penetration{/g} until the end of combat. Only applies to the first strike or projectile in a {g|Encyclopedia:BurstAttacksGlossary}burst{/g} attack. Stacks.\nCritical hits will not count towards the attack limit, up to two attacks per round."
+            "Text": "Whenever the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} triggers an {g|Encyclopedia:Exploit}exploit{/g} on an enemy, the Operative gains +2 damage and +2% {g|Encyclopedia:ArmourPenetration}armour penetration{/g} until the end of combat. Only applies to the first strike or projectile in a {g|Encyclopedia:BurstAttacksGlossary}burst{/g} attack. Stacks.\nCritical hits will not count towards the attack limit, allowing up to two exra attacks per round."
         },
         "a6b9621a-5d74-43d9-9b6e-5d3402b6550b": {
-            "Text": "The Operative removes all {g|Encyclopedia:Exploit}exploits{/g} from the target, decreasing the target's {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:Parry}parry{/g}, and {g|Encyclopedia:WarhammerArmourGlossary}armour{/g} by −<u>(25 + exploits removed × {uip|multipliyer|fbdba5fe2a264c25bada29aecd64049a})</u>% until the start of the Operative's next turn.\nIf this ability reduces the target's armour to 0, the Operative removes only half of the exploits from the target.\nThe target will also suffer from an increased critical chance from attackers equal to (15 + {unit_stat|WarhammerIntelligence|bonus} x 2) "
+            "Text": "The Operative removes all {g|Encyclopedia:Exploit}exploits{/g} from the target, decreasing the target's {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:Parry}parry{/g}, and {g|Encyclopedia:WarhammerArmourGlossary}armour{/g} by −<u>(20 + exploits removed × {uip|multipliyer|fbdba5fe2a264c25bada29aecd64049a})</u>% until the start of the Operative's next turn.\nIf this ability reduces the target's armour to 0, the Operative removes only half of the exploits from the target.\nThe target will also suffer from an additional {uip|criticalbonus|fbdba5fe2a264c25bada29aecd64049a}% critical chance from attackers."
         },
         "3269e346-5c49-4e64-b9a9-7b6033a7d11a": {
             "Text": "While the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g}'s {g|Encyclopedia:WarhammerPerception}Perception{/g} bonus is 10 or higher, they gain +1 {g|Encyclopedia:ActionPoints}AP{/g} and ignore enemies' {g|Encyclopedia:Deflection}deflection{/g}.\nWeapon Skill and Ballistic Skill are increased by {uip|StatBonus|1d6a3bacdb914699b83d564a1f22bfbc}."
@@ -28,7 +32,7 @@
             "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} targets one enemy within {g|Encyclopedia:LineOfSight}line of sight{/g}. That target immediately gains +{uip|Exploits|502b9195c84c42c5b180f3f63ed7955c} {g|Encyclopedia:Exploit}exploits{/g}."
         },
         "6182489e-0ccc-43ad-b421-15ad236fdadf": {
-            "Text": "<u>(1 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus)</u>"
+            "Text": "<u>1 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus</u>"
         },
         "43ab4851-d540-43eb-b72d-49d1df84a3f8": {
             "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} inflicts an {g|Encyclopedia:Exploit}exploit{/g} even on enemies which are out of the Operative's {g|Encyclopedia:LineOfSight}line of sight{/g} at the start of the {g|Encyclopedia:Turn}turn{/g}. If the {g|Encyclopedia:CareerAdeptGlossary}Operative's{/g} Perception is higher than their Agility, dodge chance is calculated using Perception instead."
@@ -40,7 +44,7 @@
             "Text": "<u>(15 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus)</u>"
         },
         "0fccf8ad-f505-4048-a42f-521b745aae44": {
-            "Text": "<u>{g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT{/g}</u>"
+            "Text": "<u>5 + ({g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT bonus{/g})</u>"
         },
         "1973b25f-e5c3-4428-a497-510eea0ccb7f": {
             "Text": "The Operative gains +25% {g|Encyclopedia:DetailsOfTheCoverGlossary}cover{/g} efficiency (if in cover), +20 {g|Encyclopedia:WarhammerPerception}Perception{/g}, +20 {g|Encyclopedia:WarhammerBallisticSkill}Ballistic Skill{/g}, and a 75% recoil reduction.\nThis effect lasts until the Operative moves. Does not stack."

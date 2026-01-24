@@ -71,6 +71,11 @@
             "Guid": "bca05f1815dc49ed870306461a4cd686",
             "Filename": "Adept_SnipingSHot_Buff",
             "PatchType": 1
+        },
+        {
+            "Guid": "fbdba5fe2a264c25bada29aecd64049a",
+            "Filename": "Adept_ExposeWeakness_Feature",
+            "PatchType": 1
         }
     ]
 }
