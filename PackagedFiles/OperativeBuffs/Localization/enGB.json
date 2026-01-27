@@ -4,7 +4,7 @@
             "Text": "Alpha Strike"
         },
         "ca1a1af8-1d1b-4eef-892b-8d92b0a89d41": {
-            "Text": "For the next attack against a target affected by an {g|Encyclopedia:Exploit}exploit{/g}, that target's {g|Encyclopedia:DetailsOfTheCoverGlossary}cover efficiency{/g} and block will be reduced by −<u>(15 + ({unit_stat|WarhammerPerception|bonus} / 2) × stacks of exploit)</u>%. This attack will have +<u>(15 + ({unit_stat|WarhammerPerception|bonus} / 2) × stacks of exploit)</u>% {g|Encyclopedia:HitSequenceGlossary}hit chance{/g}. It will also do +(75 + {unit_stat|WarhammerPerception})% damage."
+            "Text": "For the next attack against a target affected by an {g|Encyclopedia:Exploit}exploit{/g}, that target's {g|Encyclopedia:DetailsOfTheCoverGlossary}cover efficiency{/g} and block will be reduced by −<u>(15 + ({unit_stat|WarhammerPerception|bonus} / 2) × stacks of exploit)</u>%. This attack will have +<u>(15 + ({unit_stat|WarhammerPerception|bonus} / 2) × stacks of exploit)</u>% {g|Encyclopedia:HitSequenceGlossary}hit chance{/g}. Single-shot and melee attacks will do +(50 + {unit_stat|WarhammerPerception})% damage."
         },
         "c9d22b73-9f30-40ec-8550-00bdbfa2f8c6": {
             "Text": "{g|f:7b00b5ea0dc246e1a304619d5678ca5b}Alpha Strike{/g} grants the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} a {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:WarhammerPerception}Perception{/g} equal to <u>(number of {g|Encyclopedia:Exploit}exploits{/g} removed)</u> (minimum 1) until the end of combat. Stacks."
@@ -17,13 +17,16 @@
         },
 
         "04fcff06-a879-4b2f-b127-333726026b2d": {
-            "Text": "<u>20 + ({g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus x 2)</u>"
+            "Text": "<u>25 + ({g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus x 2)</u>"
         },
         "d9fe0ee9-f347-417a-9bdc-380fb74c9318": {
-            "Text": "Whenever the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} triggers an {g|Encyclopedia:Exploit}exploit{/g} on an enemy, the Operative gains +2 damage and +2% {g|Encyclopedia:ArmourPenetration}armour penetration{/g} until the end of combat. Only applies to the first strike or projectile in a {g|Encyclopedia:BurstAttacksGlossary}burst{/g} attack. Stacks.\nCritical hits will not count towards the attack limit, allowing up to two exra attacks per round. If using a multi-hitting attack, this will only trigger if the first hit is a critical."
+            "Text": "Whenever the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} triggers an {g|Encyclopedia:Exploit}exploit{/g} on an enemy, the Operative gains +2 damage and +2% {g|Encyclopedia:ArmourPenetration}armour penetration{/g} until the end of combat. Only applies to the first strike or projectile in a {g|Encyclopedia:BurstAttacksGlossary}burst{/g} attack. Stacks."
         },
         "a6b9621a-5d74-43d9-9b6e-5d3402b6550b": {
-            "Text": "The Operative removes all {g|Encyclopedia:Exploit}exploits{/g} from the target, decreasing the target's {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:Parry}parry{/g}, and {g|Encyclopedia:WarhammerArmourGlossary}armour{/g} by −<u>(20 + exploits removed × {uip|multipliyer|fbdba5fe2a264c25bada29aecd64049a})</u>% until the start of the Operative's next turn.\nIf this ability reduces the target's armour to 0, the Operative removes only half of the exploits from the target.\nThe target will also suffer from an increased critical chance from attackers by {uip|criticalbonus|fbdba5fe2a264c25bada29aecd64049a}."
+            "Text": "The Operative removes all {g|Encyclopedia:Exploit}exploits{/g} from the target, decreasing the target's {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:Parry}parry{/g}, and {g|Encyclopedia:WarhammerArmourGlossary}armour{/g} by −<u>(20 + exploits removed × {uip|multipliyer|fbdba5fe2a264c25bada29aecd64049a})</u>% until the start of the Operative's next turn.\nIf this ability reduces the target's armour to 0, the Operative removes only half of the exploits from the target.\nThe target will suffer an increased {uip|criticalbonus|fbdba5fe2a264c25bada29aecd64049a}% critical chance from attackers.\nCritical hits against enemies that this Operative has exposed will not count towards the attack limit this turn. This effect will not trigger from burst or area attacks. It will also not trigger if the Operative has attacked at least {uip|limitbonus|fbdba5fe2a264c25bada29aecd64049a} times this round."
+        },
+        "7932a79a-37b6-429b-8164-975e17a1f77d": {
+            "Text": "<u>2 + ({g|Encyclopedia:WarhammerAgility}AGI{/g} bonus / 3)</u>"
         },
         "3269e346-5c49-4e64-b9a9-7b6033a7d11a": {
             "Text": "While the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g}'s {g|Encyclopedia:WarhammerPerception}Perception{/g} bonus is 10 or higher, they gain +1 {g|Encyclopedia:ActionPoints}AP{/g} and ignore enemies' {g|Encyclopedia:Deflection}deflection{/g}.\nWeapon Skill and Ballistic Skill are increased by {uip|StatBonus|1d6a3bacdb914699b83d564a1f22bfbc}."
