@@ -1,0 +1,17 @@
+{
+  "TargetGuid": "349c91e2137a4a18a386d930bea58747",
+  "FieldOverrides": [],
+  "ArrayPatches": [],
+  "ComponentsPatches": [
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent\",\r\n    \"name\": \"$PropertyCalculatorComponent$ee5335bb-227a-49a8-adea-2af28a51a349\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Name\": \"DamageBonus1\",\r\n    \"SaveToContext\": \"No\",\r\n    \"Value\": {\r\n      \"Operation\": \"Sum\",\r\n      \"TargetType\": \"ContextCaster\",\r\n      \"TargetEvaluator\": null,\r\n      \"FailSilentlyIfNoTarget\": false,\r\n      \"Getters\": [\r\n        {\r\n          \"$type\": \"af573f5008f24a98b3444959084f87f5, FactRankGetter\",\r\n          \"name\": \"$FactRankGetter$1033adc7c595467781c294ffee54c626\",\r\n          \"Settings\": {\r\n            \"Progression\": \"AsIs\",\r\n            \"m_CustomProgression\": [],\r\n            \"m_StartLevel\": 0,\r\n            \"m_StepLevel\": 10,\r\n            \"Negate\": false,\r\n            \"Limit\": \"None\",\r\n            \"Min\": 0,\r\n            \"Max\": 0\r\n          },\r\n          \"m_Fact\": \"!bp_349c91e2137a4a18a386d930bea58747\",\r\n          \"Aggregation\": \"Max\",\r\n          \"BuffWithCasterFromTargetType\": false,\r\n          \"Target\": \"CurrentEntity\"\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}",
+      "OperationType": "RemoveElement"
+    },
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent\",\r\n    \"name\": \"$PropertyCalculatorComponent$1bd6b1b2-ad1b-4457-b29d-df284edffb7b\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Name\": \"DamageBonus1\",\r\n    \"SaveToContext\": \"No\",\r\n    \"Value\": {\r\n      \"Operation\": \"Sum\",\r\n      \"TargetType\": \"ContextCaster\",\r\n      \"TargetEvaluator\": null,\r\n      \"FailSilentlyIfNoTarget\": false,\r\n      \"Getters\": [\r\n        {\r\n          \"$type\": \"af573f5008f24a98b3444959084f87f5, FactRankGetter\",\r\n          \"name\": \"$FactRankGetter$3e582ba2-3057-48b6-8367-37a74e71929f\",\r\n          \"Settings\": {\r\n            \"Progression\": \"MultiplyByModifier\",\r\n            \"m_CustomProgression\": [],\r\n            \"m_StartLevel\": 0,\r\n            \"m_StepLevel\": 2,\r\n            \"Negate\": false,\r\n            \"Limit\": \"None\",\r\n            \"Min\": 0,\r\n            \"Max\": 0\r\n          },\r\n          \"m_Fact\": \"!bp_349c91e2137a4a18a386d930bea58747\",\r\n          \"Aggregation\": \"Max\",\r\n          \"BuffWithCasterFromTargetType\": false,\r\n          \"Target\": \"CurrentEntity\"\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}",
+      "OperationType": "InsertLast"
+    }
+  ]
+}

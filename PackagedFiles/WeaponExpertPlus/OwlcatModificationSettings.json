@@ -71,6 +71,21 @@
             "Guid": "0618c379e430483bab1a17b2de559bc5",
             "Filename": "PsykerBladeOfLightTalent",
             "PatchType": 1
+        },
+        {
+            "Guid": "def7164545244af28d52cd38d0502525",
+            "Filename": "VigilsMasteryDoublet_Ability",
+            "PatchType": 1
+        },
+        {
+            "Guid": "ceb5513fc2134b7b89922f0579246dec",
+            "Filename": "ShotgunShot00_Doublet_AbilityFXSettings",
+            "PatchType": 1
+        },
+        {
+            "Guid": "027e75ab89364049b844a720feca85ec",
+            "Filename": "VigilsMasteryBurstOfParticles_Ability",
+            "PatchType": 1
         }
     ]
 }

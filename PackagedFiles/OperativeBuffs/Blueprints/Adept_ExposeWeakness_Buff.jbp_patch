@@ -1,0 +1,12 @@
+{
+  "TargetGuid": "a2c8d30542b84a84bcc6480cf374c516",
+  "FieldOverrides": [],
+  "ArrayPatches": [],
+  "ComponentsPatches": [
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"655d56d2a908e0846928313013cf0fc9, WarhammerRighteousFuryBonusTarget\",\r\n    \"name\": \"$WarhammerRighteousFuryBonusTarget$c3b573f0-702f-4fa8-a472-d9a7891356a9\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Value\": {\r\n      \"ValueType\": \"ContextProperty\",\r\n      \"Value\": 0,\r\n      \"ValueRank\": \"Default\",\r\n      \"ValueShared\": \"Damage\",\r\n      \"Property\": \"None\",\r\n      \"m_CustomProperty\": null,\r\n      \"PropertyName\": \"Value2\"\r\n    },\r\n    \"Multiplier\": {\r\n      \"ValueType\": \"Simple\",\r\n      \"Value\": 1,\r\n      \"ValueRank\": \"Default\",\r\n      \"ValueShared\": \"Damage\",\r\n      \"Property\": \"None\",\r\n      \"m_CustomProperty\": null,\r\n      \"PropertyName\": \"Value1\"\r\n    },\r\n    \"SpecificRangeType\": false,\r\n    \"WeaponRangeType\": \"Melee\",\r\n    \"OnlyFromSpotWeaknessSide\": false,\r\n    \"m_SpotWeaknessBuff\": null\r\n  }\r\n}",
+      "OperationType": "InsertLast"
+    }
+  ]
+}

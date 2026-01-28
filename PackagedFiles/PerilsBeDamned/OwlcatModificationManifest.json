@@ -1,0 +1,10 @@
+{
+    "UniqueName": "PerilsBeDamned",
+    "Version": "0.9.0",
+    "DisplayName": "Perils Be Damned",
+    "Description": "Stop your casters from dying when Perils of the Warp is triggered",
+    "Author": "VesperDuck",
+    "Repository": "",
+    "HomePage": "",
+    "Dependencies": []
+}

@@ -1,0 +1,15 @@
+{
+    "BundlesLayout": {
+        "m_Guids": [],
+        "m_Bundles": []
+    },
+    "BundleDependencies": {
+        "m_List": [
+            {
+                "Key": "PerilsBeDamned_BlueprintDirectReferences",
+                "Value": []
+            }
+        ]
+    },
+    "BlueprintPatches": []
+}
