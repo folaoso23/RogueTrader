@@ -66,6 +66,11 @@
             "Guid": "fbdba5fe2a264c25bada29aecd64049a",
             "Filename": "Adept_ExposeWeakness_Feature",
             "PatchType": 1
+        },
+        {
+            "Guid": "3d550e92570c4605a60d59c42e8125bf",
+            "Filename": "Adept_ReactiveStudy_AreaEffect",
+            "PatchType": 1
         }
     ]
 }

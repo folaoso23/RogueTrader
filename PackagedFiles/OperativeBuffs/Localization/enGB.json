@@ -4,7 +4,7 @@
             "Text": "Alpha Strike"
         },
         "ca1a1af8-1d1b-4eef-892b-8d92b0a89d41": {
-            "Text": "For the next attack against a target affected by an {g|Encyclopedia:Exploit}exploit{/g}, that target's {g|Encyclopedia:DetailsOfTheCoverGlossary}cover efficiency{/g} and block will be reduced by −<u>(15 + ({unit_stat|WarhammerPerception|bonus} / 2) × stacks of exploit)</u>%. This attack will have +<u>(15 + ({unit_stat|WarhammerPerception|bonus} / 2) × stacks of exploit)</u>% {g|Encyclopedia:HitSequenceGlossary}hit chance{/g}. Single-shot and melee attacks will do +(50 + {unit_stat|WarhammerPerception})% damage."
+            "Text": "For the next attack against a target affected by an {g|Encyclopedia:Exploit}exploit{/g}, that target's {g|Encyclopedia:DetailsOfTheCoverGlossary}cover efficiency{/g} and block will be reduced by −<u>(15 + ({unit_stat|WarhammerPerception|bonus} / 2) × stacks of exploit)</u>%. This attack will have +<u>(15 + ({unit_stat|WarhammerPerception|bonus} / 2) × stacks of exploit)</u>% {g|Encyclopedia:HitSequenceGlossary}hit chance{/g}. Single-shot and melee attacks will do +{unit_stat|WarhammerPerception}% damage."
         },
         "c9d22b73-9f30-40ec-8550-00bdbfa2f8c6": {
             "Text": "{g|f:7b00b5ea0dc246e1a304619d5678ca5b}Alpha Strike{/g} grants the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} a {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:WarhammerPerception}Perception{/g} equal to <u>(number of {g|Encyclopedia:Exploit}exploits{/g} removed)</u> (minimum 1) until the end of combat. Stacks."
@@ -53,6 +53,9 @@
         },
         "1973b25f-e5c3-4428-a497-510eea0ccb7f": {
             "Text": "The Operative gains +25% {g|Encyclopedia:DetailsOfTheCoverGlossary}cover{/g} efficiency (if in cover), +20 {g|Encyclopedia:WarhammerPerception}Perception{/g}, +20 {g|Encyclopedia:WarhammerBallisticSkill}Ballistic Skill{/g}, and a 75% recoil reduction.\nThis effect lasts until the Operative moves. Does not stack."
+        },
+        "b3653ca6-4344-436a-ac27-14e575b890d2": {
+            "Text": "If an enemy affected by an {g|Encyclopedia:Exploit}exploit{/g} within 10 cells from the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} attacks the Operative or their ally, that enemy suffers +1 additional exploit."
         }
     }
 }
