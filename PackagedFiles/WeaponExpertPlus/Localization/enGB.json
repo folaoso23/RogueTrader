@@ -4,7 +4,7 @@
             "Text": "Melta weapon attacks gain the following bonuses:\n<b>Base Damage Bonus</b>: + Weapon's Maximum Damage bonus.\n<b>Damage Bonus(%)</b>: +{uip|damagebonus|4fa4dbc023474337990840e305d06fa4}.\n<b>Single-shot AP Cost</b>: -1 AP (minimum 1).\nCritical hits do additional base damage equal to the current weapon's minimum damage bonus."
         },
         "adb88c4d-799a-45d6-8c75-be8ac5ec96e6": {
-            "Text": "<u>25 + ({g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 2) + (Tech Use / 6)</u>"
+            "Text": "<u>25 + ({g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 3) + (Tech Use / 6)</u>"
         },
         "cabcbd5c-e59f-4e49-a001-4b6d54ea2e63": {
             "Text": "Plasma weapon gain the following bonuses:\n<b>Base Damage Bonus</b>: +(Current weapon's maximum damage / 2)\n<b>{g|Encyclopedia:DamageGlossary}Damage{/g} Bonus %</b>: +{uip|damagebonus|fdc990cb73114e4d8a7575813936cec9}\n<b>Hit Chance Bonus %</b>: +5.\n<b>Critical Base Damage Bonus</b>: + Current weapon's minimum damage / 2"
