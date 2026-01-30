@@ -19,7 +19,7 @@
             "Text": "Whenever the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} triggers an {g|Encyclopedia:Exploit}exploit{/g} on an enemy, the Operative gains +2 damage and +2% {g|Encyclopedia:ArmourPenetration}armour penetration{/g} until the end of combat. Only applies to the first strike or projectile in a {g|Encyclopedia:BurstAttacksGlossary}burst{/g} attack. Stacks."
         },
         "a6b9621a-5d74-43d9-9b6e-5d3402b6550b": {
-            "Text": "The Operative removes all {g|Encyclopedia:Exploit}exploits{/g} from the target, decreasing the target's {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:Parry}parry{/g}, and {g|Encyclopedia:WarhammerArmourGlossary}armour{/g} by −<u>(20 + exploits removed × {uip|multipliyer|fbdba5fe2a264c25bada29aecd64049a})</u>% until the start of the Operative's next turn.\nIf this ability reduces the target's armour to 0, the Operative removes only half of the exploits from the target.\nThe target will suffer an increased {uip|criticalbonus|fbdba5fe2a264c25bada29aecd64049a}% critical chance from attackers.\nCritical hits against enemies that this Operative has exposed will not count towards their attack limit this turn. This effect will not trigger from burst or area attacks. It will also not trigger if the Operative has attacked at least {uip|limitbonus|fbdba5fe2a264c25bada29aecd64049a} times this round."
+            "Text": "The Operative removes all {g|Encyclopedia:Exploit}exploits{/g} from the target, decreasing the target's {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:Parry}parry{/g}, and {g|Encyclopedia:WarhammerArmourGlossary}armour{/g} by −<u>(20 + exploits removed × {uip|multipliyer|fbdba5fe2a264c25bada29aecd64049a})</u>% until the start of the Operative's next turn.\nIf this ability reduces the target's armour to 0, the Operative removes only half of the exploits from the target.\nThe target will suffer an increased {uip|criticalbonus|fbdba5fe2a264c25bada29aecd64049a}% critical chance from attackers.\nCritical hits against enemies that this Operative has exposed will not count towards their attack limit this turn. This effect will not trigger from burst or area attacks. It will also not trigger if the Operative has attacked at least {uip|limitbonus|fbdba5fe2a264c25bada29aecd64049a} times this round (including extra turns)."
         },
         "30ed5ec8-7e19-4620-a3b0-8fc5a94fa537": {
             "Text": "{g|Encyclopedia:WarhammerPerception}PER{/g} bonus / 2"
@@ -59,6 +59,15 @@
         },
         "b3653ca6-4344-436a-ac27-14e575b890d2": {
             "Text": "If an enemy affected by an {g|Encyclopedia:Exploit}exploit{/g} within 10 cells from the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} attacks the Operative or their ally, that enemy suffers +1 additional exploit."
+        },
+        "4670a313-ac58-4c74-a789-b4249ff00ece": {
+            "Text": "If the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} has not moved this {g|Encyclopedia:Turn}turn{/g}, they deal +{uip|DamageBonus|9a0e7e64902e491baa29d60469eae188} more damage with {g|Encyclopedia:SingleRangedAttacksGlossary}single-shot{/g} attacks for every 3 cells between them and the target and gain +{unit_stat|WarhammerPerception|bonus} {g|Encyclopedia:WarhammerBallisticSkill} Ballistic Skill{/g}. These bonuses do not stack and last until the Operative moves."
+        },
+        "a041c969-b3d2-427b-9592-64f62b5c868f": {
+            "Text": "<u>(4 + {g|Encyclopedia:CareerAdeptGlossary}Operative{/g}'s {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus / 2)</u>"
+        },
+        "5181bb6a-f7e8-4866-aa8d-2bd9dcf62fb6": {
+            "Text": "On their first {g|Encyclopedia:Turn}turn{/g} in combat, the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} randomly distributes the same number of {g|Encyclopedia:Exploit}exploits{/g} as when using {g|f:502b9195c84c42c5b180f3f63ed7955c}Analyse Enemies{/g} among all enemies in a 10-cell radius around the Operative. At the start of each of the Operative's subsequent turns, they distribute half as many exploits (half the base amount) among all enemies in a 3-cell radius around the Operative."
         }
     }
 }

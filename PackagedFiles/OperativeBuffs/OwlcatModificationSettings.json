@@ -76,6 +76,26 @@
             "Guid": "d9e00160ce96479281c1abe9a26ac4e5",
             "Filename": "Adept_PreciseAttack_Feature",
             "PatchType": 1
+        },
+        {
+            "Guid": "45fca2ad6687442ea64f166fe36edeeb",
+            "Filename": "Adept_Sharpshooter_EffectBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "663d238524554308bd50f3d149ada085",
+            "Filename": "Adept_JointOffence_AllyBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "832dd8b02731461a881775696d937d71",
+            "Filename": "Adept_JointOffence_Talent",
+            "PatchType": 1
+        },
+        {
+            "Guid": "663d238524554308bd50f3d149ada085",
+            "Filename": "Adept_JointOffence_AllyBuff",
+            "PatchType": 1
         }
     ]
 }
