@@ -112,10 +112,13 @@
             "Text": "<u>15 + {g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus</u>"
         },                       
         "74316417-b0df-4d28-9b5b-92ec943b7f92": {
-            "Text": "Force weapon attacks deal +{uip|DamageBonus|0618c379e430483bab1a17b2de559bc5} more base {g|Encyclopedia:DamageGlossary}damage{/g}, +(25 + 3 × {g|Encyclopedia:PsyRating}Psy Rating{/g})% damage, and have +{uip|ArmourPenetrationBonus|0618c379e430483bab1a17b2de559bc5}% more {g|Encyclopedia:ArmourPenetration}armour penetration{/g}."
+            "Text": "Force weapon attacks deal +{uip|DamageBonus|0618c379e430483bab1a17b2de559bc5} more base {g|Encyclopedia:DamageGlossary}damage{/g}, +{uip|PercentDamageBonus|0618c379e430483bab1a17b2de559bc5}% damage, and have +{uip|ArmourPenetrationBonus|0618c379e430483bab1a17b2de559bc5}% more {g|Encyclopedia:ArmourPenetration}armour penetration{/g}."
         },
         "b1bd5f2a-3fed-4870-83cb-642dd8c8df66": {
             "Text": "<u>(3 + 3 × {g|Encyclopedia:PsyRating}psy rating{/g})</u>"
+        },
+        "29c8a088-d9c2-46d7-96e6-e7b2639bd6f4":{
+            "Text": "<u>(25 + 3 × {g|Encyclopedia:PsyRating}Psy Rating{/g})</u>"
         },
         "411206e0-b73c-4dd5-b151-a3014ce1a7de": {
             "Text": "Two single shots to one target. This attack has triple armor penetration and +9 range."
