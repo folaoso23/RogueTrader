@@ -96,6 +96,16 @@
             "Guid": "663d238524554308bd50f3d149ada085",
             "Filename": "Adept_JointOffence_AllyBuff",
             "PatchType": 1
+        },
+        {
+            "Guid": "ed9d1434d0fd41e2a382a2efe0a2018a",
+            "Filename": "Adept_FreshTarget_Talent",
+            "PatchType": 1
+        },
+        {
+            "Guid": "6bc423e71af648d39d9f5d07b6f402dc",
+            "Filename": "Adept_FreshTarget_Buff",
+            "PatchType": 1
         }
     ]
 }
