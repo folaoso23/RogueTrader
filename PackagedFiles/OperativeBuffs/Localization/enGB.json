@@ -77,6 +77,9 @@
         },
         "cb30dab4-5aec-4e46-af25-83f85841adc4": {
             "Text": "<u>(3 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus)</u>"
-        }      
+        },
+        "c6540399-6208-4040-b0e3-b5b83d91ba1d": {
+            "Text": "The Operative immediately inflicts +1 {g|Encyclopedia:Exploit}exploit{/g} on each enemy in combat, then makes a free attack against a target (can even use a ranged weapon in melee range). This attack always {g|Encyclopedia:HitSequenceGlossary}hits{/g}.\nUntil the end of combat, the target of this attack suffers a −30% penalty to {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, {g|Encyclopedia:BlockChance}block{/g}, {g|Encyclopedia:DodgeGlossary}dodge{/g}, and {g|Encyclopedia:Parry}parry{/g}.\nThis heroic act can be used multiple times per combat but only once per round."
+        }
     }
 }

@@ -1,6 +1,11 @@
 {
   "TargetGuid": "c4c25ebbdea341c5a153c073240d574d",
-  "FieldOverrides": [],
+  "FieldOverrides": [
+    {
+      "FieldName": "CooldownRounds",
+      "FieldValue": 1
+    }
+  ],
   "ArrayPatches": [],
   "ComponentsPatches": [
     {
