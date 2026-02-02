@@ -106,6 +106,16 @@
             "Guid": "6bc423e71af648d39d9f5d07b6f402dc",
             "Filename": "Adept_FreshTarget_Buff",
             "PatchType": 1
+        },
+        {
+            "Guid": "d983fdecfc444017991a6f9b703da01a",
+            "Filename": "AdeptUltimateAbility_SecondHand",
+            "PatchType": 1
+        },
+        {
+            "Guid": "c4c25ebbdea341c5a153c073240d574d",
+            "Filename": "AdeptUltimateAbility",
+            "PatchType": 1
         }
     ]
 }

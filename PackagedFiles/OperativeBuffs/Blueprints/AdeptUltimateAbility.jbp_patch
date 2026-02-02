@@ -1,0 +1,17 @@
+{
+  "TargetGuid": "c4c25ebbdea341c5a153c073240d574d",
+  "FieldOverrides": [],
+  "ArrayPatches": [],
+  "ComponentsPatches": [
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"b8df90ef597f4a6f9fbb86bc2e18c656, AbilitySpecialMomentumAction\",\r\n    \"name\": \"$AbilitySpecialMomentumAction$6ef34bc1-9912-49bf-9776-35bfb7c92a9c\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"MomentumType\": \"HeroicAct\",\r\n    \"m_IgnoreUltimateCooldownFacts\": []\r\n  }\r\n}",
+      "OperationType": "RemoveElement"
+    },
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"b8df90ef597f4a6f9fbb86bc2e18c656, AbilitySpecialMomentumAction\",\r\n    \"name\": \"$AbilitySpecialMomentumAction$31adc7b3-f610-4a83-a46d-e99a16ae0ae1\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"MomentumType\": \"HeroicAct\",\r\n    \"m_IgnoreUltimateCooldownFacts\": [\r\n      \"!bp_264e8fc120fc4cdda336d31ddc0c15f7\"\r\n    ]\r\n  }\r\n}",
+      "OperationType": "InsertLast"
+    }
+  ]
+}
