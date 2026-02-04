@@ -125,6 +125,9 @@
         },
         "49a7578b-8885-4272-a20c-0ae6822214d8": {
             "Text": "A shotgun attack that has {uip|Penetration|027e75ab89364049b844a720feca85ec}% additional armour penetration, +50% damage, and applies {uip|Bleed|027e75ab89364049b844a720feca85ec} bleed to all targets hit."
+        },
+        "200bbad1-a4be-4e3f-b364-abdd91c2bdf9":{
+            "Text": "Dual attacks will no longer have an increased AP cost.\nAn additional attack with the second weapon will suffer no penalties or increased cost if the first attack was either an axe's {g|f:a270dbb75ea44128b951b5d18d0b6bed}Sweep{/g} or a hammer or mace's {g|f:bd5f109c46684a09b07fb13743d2a6d7}Harsh Shove{/g} ability."
         }
     }
 }

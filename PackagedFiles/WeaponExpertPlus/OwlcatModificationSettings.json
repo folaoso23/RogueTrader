@@ -86,6 +86,11 @@
             "Guid": "027e75ab89364049b844a720feca85ec",
             "Filename": "VigilsMasteryBurstOfParticles_Ability",
             "PatchType": 1
+        },
+        {
+            "Guid": "17efbe9bb204463db27116117da4576e",
+            "Filename": "DualWeaponSpecialistTalent",
+            "PatchType": 1
         }
     ]
 }
