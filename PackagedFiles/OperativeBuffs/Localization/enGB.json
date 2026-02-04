@@ -73,7 +73,7 @@
             "Text": "Whenever the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} attacks an enemy that is at 50% or higher {g|Encyclopedia:HitPoints}wounds{/g}, that attack deals +{uip|DamageBonus|ed9d1434d0fd41e2a382a2efe0a2018a}% more {g|Encyclopedia:DamageGlossary}damage{/g} to that enemy with a +{uip|CriticalBonus|ed9d1434d0fd41e2a382a2efe0a2018a}% increased critical chance.\nUpon killing a target who the Operative has marked with {g|f:197b8a8a12b0442db7ffee1067cf3d97}Expose Weakness{/g}, +1 AP is restored and the cooldown for {g|f:197b8a8a12b0442db7ffee1067cf3d97}Expose Weakness{/g} is reset."
         },
         "f0c8b64a-6a20-40dd-a4e6-b1801e866dba": {
-            "Text": "<u>(20 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus)</u>"
+            "Text": "<u>(10 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus)</u>"
         },
         "cb30dab4-5aec-4e46-af25-83f85841adc4": {
             "Text": "<u>(3 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus)</u>"
