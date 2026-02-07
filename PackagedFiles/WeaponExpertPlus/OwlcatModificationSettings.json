@@ -91,6 +91,11 @@
             "Guid": "17efbe9bb204463db27116117da4576e",
             "Filename": "DualWeaponSpecialistTalent",
             "PatchType": 1
+        },
+        {
+            "Guid": "76e37b6d00b14fbea50c39784b768098",
+            "Filename": "Vigilant_DoubleSlugMechanicsFeature",
+            "PatchType": 1
         }
     ]
 }

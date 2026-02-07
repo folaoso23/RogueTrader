@@ -121,7 +121,7 @@
             "Text": "<u>(25 + 3 × {g|Encyclopedia:PsyRating}Psy Rating{/g})</u>"
         },
         "411206e0-b73c-4dd5-b151-a3014ce1a7de": {
-            "Text": "Two single shots to one target. This attack has triple armor penetration and +9 range."
+            "Text": "Two single shots to one target. This attack has triple armor penetration and +7 range."
         },
         "49a7578b-8885-4272-a20c-0ae6822214d8": {
             "Text": "A shotgun attack that has {uip|Penetration|027e75ab89364049b844a720feca85ec}% additional armour penetration, +50% damage, and applies {uip|Bleed|027e75ab89364049b844a720feca85ec} bleed to all targets hit."
