@@ -52,13 +52,13 @@
             "Text": "The {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} gains +20 Initiative and deals an additional +{uip|DamageBonus|58073019ae10412e9509b6ac97006bf1}% {g|Encyclopedia:DamageGlossary}damage{/g} to enemies that have not yet acted this combat.\nFor the first round of combat, they will receive a +{uip|AllBonus|58073019ae10412e9509b6ac97006bf1}% bonus to armour, armour penetration, {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:DodgeReduction}dodge reduction{/g}, {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hit chance{/g}, critical damage, parry chance, +2 AP and +4 MP."
         },
         "9d68790d-b1bc-466a-8c0d-cc6e4efe0b7d": {
-            "Text": "<u>30 + {g|Encyclopedia:WarhammerFellowship}Fellowship{/g} bonus + {g|Encyclopedia:WarhammerWillpower}Willpower{/g} bonus</u>"
+            "Text": "<u>25 + ({g|Encyclopedia:WarhammerFellowship}Fellowship{/g} bonus + {g|Encyclopedia:WarhammerWillpower}Willpower{/g} bonus) × 2</u>"
         },
         "529b503f-b82e-4d44-af62-c18a3145b1e8": {
             "Text": "<u>10 + ({g|Encyclopedia:WarhammerFellowship}Fellowship{/g} bonus + {g|Encyclopedia:WarhammerWillpower}Willpower{/g} bonus) × 2</u>"
         },
         "a2ad8f02-3a53-42d6-ba4e-aa1c7264cbd8": {
-            "Text": "{g|f:5707cdc822e742f187d54627ae6ef4f9}Take Aim!{/g} also increases the {g|Encyclopedia:DamageGlossary}damage{/g} of the next ranged attack by +15%. This bonus is increased by +3% for each cell between the attacker and the target."
+            "Text": "{g|f:5707cdc822e742f187d54627ae6ef4f9}Take Aim!{/g} also increases the {g|Encyclopedia:DamageGlossary}damage{/g} of the next ranged attack by +30%. This bonus is increased by +2% for each cell between the attacker and the target."
         },
         "f0bdf9af-8099-4c8d-a2ae-9d1338ba9aeb": {
             "Text": "Whenever the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} makes an attack, they gain +5 {g|Encyclopedia:WarhammerFellowship}Fellowship{/g}, +5 {g|Encyclopedia:WarhammerWillpower}Willpower{/g}, and +3% critical damage until the end of combat."
