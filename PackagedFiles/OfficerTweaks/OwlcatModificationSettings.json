@@ -71,6 +71,51 @@
             "Guid": "b370f94b75ac4261b6812960138d19e7",
             "Filename": "PersonalExample_Leader_Talent",
             "PatchType": 1
+        },
+        {
+            "Guid": "58073019ae10412e9509b6ac97006bf1",
+            "Filename": "SeizeInitiative_Leader_Talent",
+            "PatchType": 1
+        },
+        {
+            "Guid": "d1aeb622ed00413f94fb5052b7ac66f1",
+            "Filename": "SeizeInitiative_Leader_Buff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "c70e614368cb4148a7b21e8b291dbcb4",
+            "Filename": "Steady_Leader_TemporaryBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "d30a4d35b09a408c9030526a506a8fa5",
+            "Filename": "Steady_Leader_Buff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "489a3d53b1b34a1d8e851103a494a425",
+            "Filename": "LeadByExample_Leader_EffectBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "5bfccf14d8604ae1a041fb347fb8f19f",
+            "Filename": "LeaderKeepFightingAbility",
+            "PatchType": 1
+        },
+        {
+            "Guid": "1cd606cf1f484b5796def1bfa7343702",
+            "Filename": "LeaderUltimateBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "33c8c9db91694ca6ad3eff26e36dd0af",
+            "Filename": "LeaderUltimateAbility",
+            "PatchType": 1
+        },
+        {
+            "Guid": "3f78bec2aea340a780e47f0a2a8dfb5f",
+            "Filename": "LeaderDesperateAbility",
+            "PatchType": 1
         }
     ]
 }

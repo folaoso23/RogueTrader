@@ -13,19 +13,19 @@
             "Text": "The {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} increases an ally's {g|Encyclopedia:Resolve}resolve{/g} by +{uip|ResolveBonus|32c0e0539f8548b08780089f8006f54a}.\nTheir damage is increased by {uip|DamageBonus|32c0e0539f8548b08780089f8006f54a}% and critical chance increased by {unit_stat|Resolve}% until the end of combat.\nIf the target is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g}, they will start their next {g|Encyclopedia:Turn}turn{/g} with +1 additional {g|Encyclopedia:ActionPoints}action point{/g}."
         },
         "766a09cd-6db5-44b3-a1ce-7ed58ea84a6e":{
-            "Text": "<u>10 + {g|Encyclopedia:WarhammerWillpower}Willpower{/g}</u>"
+            "Text": "<u>10 + ({g|Encyclopedia:WarhammerWillpower}Willpower{/g} / 2)</u>"
         },        
         "77e86ef4-93c4-439b-b9f4-b93b5b96befc": {
-            "Text": "For one round, the target's attacks will ignore {g|Encyclopedia:DetailsOfTheCoverGlossary}cover{/g}, have double the effective distance, -80% recoil, an additional {uip|HitChance|3a4d9ccff9cf40bd88fa018e05ec550d}% hit chance and a bonus {uip|Penetration|3a4d9ccff9cf40bd88fa018e05ec550d}% armor penetration.\nIf the target is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g}, these attacks will ignore enemy block and {g|Encyclopedia:DodgeGlossary}dodge{/g}. Additionally, the {g|Encyclopedia:DamageGlossary}damage{/g} from these attacks cannot be reduced below {uip|MimimumDamage|3a4d9ccff9cf40bd88fa018e05ec550d}% for any reason."
+            "Text": "For one round, the target's attacks will ignore {g|Encyclopedia:DetailsOfTheCoverGlossary}cover{/g}, have double the effective distance, -50% recoil, an additional {uip|HitChance|3a4d9ccff9cf40bd88fa018e05ec550d}% hit chance and a bonus {uip|Penetration|3a4d9ccff9cf40bd88fa018e05ec550d}% armor penetration.\nIf the target is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g}, these attacks will ignore enemy block and {g|Encyclopedia:DodgeGlossary}dodge{/g}. Additionally, the {g|Encyclopedia:DamageGlossary}damage{/g} from these attacks cannot be reduced below {uip|MimimumDamage|3a4d9ccff9cf40bd88fa018e05ec550d}% for any reason."
         },
         "91dde4ec-72f2-403e-865f-9d4da99ba97e": {
             "Text": "<u>(3 × {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s {g|Encyclopedia:WarhammerWillpower}WP{/g} bonus)</u>"
         },
         "0ca4d4a1-3aa0-4196-8fb9-8cc7186e1c4e":{
-            "Text": "<u>{g|Encyclopedia:WarhammerFellowship}Fellowship{/g} bonus × 2</u>"
+            "Text": "<u>5 + {g|Encyclopedia:WarhammerFellowship}Fellowship{/g} bonus</u>"
         },
         "b7b399f6-ba7a-4389-9256-dda0c68df53f":{
-            "Text": "<u>{g|Encyclopedia:WarhammerWillpower}Willpower{/g} / 3</u>"
+            "Text": "<u>15 + {g|Encyclopedia:WarhammerWillpower}Willpower{/g} bonus</u>"
         },                
         "1d5e3a4b-0889-4d23-9d62-f59f6f0db5aa": {
             "Text": "The {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} forces an ally to fully push themselves, increasing their {g|Encyclopedia:Characteristic}characteristics{/g} by +{uip|BonusStats|9c78e44bf8ff44a9afff8370c673c9ad} for 1 {g|Encyclopedia:Round}round{/g}.\nAdditionally, all of the Officer's {g|Encyclopedia:Ability}abilities{/g} can be applied to the target of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g} from any distance.\nA character who becomes the target of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g} cannot be targeted by this ability again for 1 round."
@@ -43,10 +43,31 @@
             "Text": "<u>1 + {g|Encyclopedia:WarhammerFellowship}Fellowship{/g} bonus / 3</u>"
         },                  
         "e71a976f-c9d7-4804-bb04-a66b06356dff": {
-            "Text": "<u>(2 + {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s {g|Encyclopedia:Resolve}resolve{/g})</u>"
+            "Text": "<u>(5 + {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s {g|Encyclopedia:Resolve}resolve{/g})</u>"
         },
         "445fe3e6-606c-48e1-b549-c8ef42937c3e": {
             "Text": "Whenever the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} uses an Officer {g|Encyclopedia:Career}archetype{/g} {g|Encyclopedia:Ability}ability{/g} that does not grant an {g|Encyclopedia:ExtraTurn}extra turn{/g} in one round, the Officer gains the {g|f:f02ddb75448343d8a867fbd7a725ec93}stand witness{/g} effect."
+        },
+        "aed5a5d1-9a2d-4e2f-953d-3536b9342f68": {
+            "Text": "The {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} gains +20 Initiative and deals an additional +{uip|DamageBonus|58073019ae10412e9509b6ac97006bf1}% {g|Encyclopedia:DamageGlossary}damage{/g} to enemies that have not yet acted this combat.\nFor the first round of combat, they will receive a +{uip|AllBonus|58073019ae10412e9509b6ac97006bf1}% bonus to armour, armour penetration, {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:DodgeReduction}dodge reduction{/g}, {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hit chance{/g}, critical damage, parry chance, +2 AP and +4 MP."
+        },
+        "9d68790d-b1bc-466a-8c0d-cc6e4efe0b7d": {
+            "Text": "<u>30 + {g|Encyclopedia:WarhammerFellowship}Fellowship{/g} bonus + {g|Encyclopedia:WarhammerWillpower}Willpower{/g} bonus</u>"
+        },
+        "529b503f-b82e-4d44-af62-c18a3145b1e8": {
+            "Text": "<u>10 + ({g|Encyclopedia:WarhammerFellowship}Fellowship{/g} bonus + {g|Encyclopedia:WarhammerWillpower}Willpower{/g} bonus) × 2</u>"
+        },
+        "a2ad8f02-3a53-42d6-ba4e-aa1c7264cbd8": {
+            "Text": "{g|f:5707cdc822e742f187d54627ae6ef4f9}Take Aim!{/g} also increases the {g|Encyclopedia:DamageGlossary}damage{/g} of the next ranged attack by +15%. This bonus is increased by +3% for each cell between the attacker and the target."
+        },
+        "f0bdf9af-8099-4c8d-a2ae-9d1338ba9aeb": {
+            "Text": "Whenever the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} makes an attack, they gain +5 {g|Encyclopedia:WarhammerFellowship}Fellowship{/g}, +5 {g|Encyclopedia:WarhammerWillpower}Willpower{/g}, and +3% critical damage until the end of combat."
+        },
+        "37d374be-3f91-4329-bb36-9ea7f862653a": {
+            "Text": "The {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} grants an ally an {g|Encyclopedia:ExtraTurn}extra turn{/g} with full {g|Encyclopedia:ActionPoints}AP{/g} and {g|Encyclopedia:MovementPoints}MP{/g}. During the extra {g|Encyclopedia:Turn}turn{/g}, there is no attack limit. The Officer may use this ability on themselves but it will not trigger an extra turn or refresh any abilities that are currently on cooldown."
+        },
+        "7ec55513-3d9c-44c2-9be5-65fd669681f0": {
+            "Text": "The Officer immediately grants an ally an {g|Encyclopedia:ExtraTurn}extra turn{/g} with 2 {g|Encyclopedia:ActionPoints}AP{/g} and no {g|Encyclopedia:MovementPoints}MP{/g}. Using this ability on themselves will instead give the Officer an additional attack this turn with a -1 AP bonus.\nIf the ally is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g} and kills an enemy before the end of the Officer's turn, the ally gains a one-time additional +{uip|Momentum|5bfccf14d8604ae1a041fb347fb8f19f} {g|Encyclopedia:MomentumWithDetailsGlossary}momentum{/g}.\nThis {g|Encyclopedia:Ability}ability{/g} cannot be used on the same ally more than once per round."
         }
     }
 }
