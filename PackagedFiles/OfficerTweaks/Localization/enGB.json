@@ -1,11 +1,14 @@
 {
     "strings": {
         "3ba0fbf3-62a3-4882-965d-1378256f29f0": {
-            "Text": "This {g|Encyclopedia:Ability}ability{/g} can only target the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} or allies who have enemies adjacent to them.\nUntil the start of the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s next turn, all {g|Encyclopedia:MeleeAttacksGlossary}melee attacks{/g} made by the target deal additional damage equal to {uip|BonusDamage|b509a3ee5ab44253b4b859dd5f3dbffb} multiplied by the number of enemies adjacent to the target when this ability is used.\nMelee attacks cost -1 AP (minimum 1) and the target can make an additional attack while under this condition.\nThe target also gains {uip|BonusParryReduction|b509a3ee5ab44253b4b859dd5f3dbffb}% parry reduction.\nIf the target is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g}, they immediately make an {g|Encyclopedia:AttackOfOpportunityFullGlossary}attack of opportunity{/g} against an adjacent enemy, targeting the one with the lowest remaining {g|Encyclopedia:HitPoints}wounds{/g}."
+            "Text": "This {g|Encyclopedia:Ability}ability{/g} can only target the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} or allies who have enemies adjacent to them.\nUntil the start of the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s next turn, all {g|Encyclopedia:MeleeAttacksGlossary}melee attacks{/g} made by the target deal additional damage equal to {uip|BonusDamage|b509a3ee5ab44253b4b859dd5f3dbffb} multiplied by the number of enemies adjacent to the target when this ability is used.\nMelee attacks cost -1 AP (minimum 1) and the target can make an additional attack while under this condition.\nThe target also gains +{uip|BonusParryReduction|b509a3ee5ab44253b4b859dd5f3dbffb}% parry reduction and +{uip|BonusPercentDamage|b509a3ee5ab44253b4b859dd5f3dbffb}% bonus damage.\nIf the target is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g}, they immediately make an {g|Encyclopedia:AttackOfOpportunityFullGlossary}attack of opportunity{/g} against an adjacent enemy, targeting the one with the lowest remaining {g|Encyclopedia:HitPoints}wounds{/g}."
         },
         "be556696-84ed-4725-8a80-93467682339d":{
             "Text": "<u>{g|Encyclopedia:WarhammerWillpower}Willpower{/g} / 5</u>"
         },
+        "071b106f-0ed9-4258-babb-43c8e1fc9c8d":{
+            "Text": "<u>25 + ({g|Encyclopedia:WarhammerWillpower}Willpower{/g} bonus × 2)</u>"
+        },        
         "0bef0515-6b82-4ebe-b509-52096ab06e57":{
             "Text": "Whenever the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} uses {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g} or {g|f:5bfccf14d8604ae1a041fb347fb8f19f}Bring It Down!{/g}, this ability costs −1 {g|Encyclopedia:ActionPoints}AP{/g} less."
         },
