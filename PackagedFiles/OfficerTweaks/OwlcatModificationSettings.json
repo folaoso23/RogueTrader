@@ -116,6 +116,16 @@
             "Guid": "3f78bec2aea340a780e47f0a2a8dfb5f",
             "Filename": "LeaderDesperateAbility",
             "PatchType": 1
+        },
+        {
+            "Guid": "cb64551ce0234a85880bd0d8da91637f",
+            "Filename": "LeaderMoveAbility",
+            "PatchType": 1
+        },
+        {
+            "Guid": "507d5622f0634d5f8425ca38ea11d767",
+            "Filename": "WatchYourself_Leader_Buff",
+            "PatchType": 1
         }
     ]
 }

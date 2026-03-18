@@ -52,8 +52,11 @@
             "Text": "Whenever the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} uses an Officer {g|Encyclopedia:Career}archetype{/g} {g|Encyclopedia:Ability}ability{/g} that does not grant an {g|Encyclopedia:ExtraTurn}extra turn{/g} in one round, the Officer gains the {g|f:f02ddb75448343d8a867fbd7a725ec93}stand witness{/g} effect."
         },
         "aed5a5d1-9a2d-4e2f-953d-3536b9342f68": {
-            "Text": "The {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} gains +20 Initiative and deals an additional +{uip|DamageBonus|58073019ae10412e9509b6ac97006bf1}% {g|Encyclopedia:DamageGlossary}damage{/g} to enemies that have not yet acted this combat.\nFor the first round of combat, they will receive a +{uip|AllBonus|58073019ae10412e9509b6ac97006bf1}% bonus to armour, armour penetration, {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:DodgeReduction}dodge reduction{/g}, {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hit chance{/g}, critical damage, parry chance, +2 AP and +4 MP."
+            "Text": "The {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} gains +{uip|InitiativeBonus|58073019ae10412e9509b6ac97006bf1} Initiative and deals an additional +{uip|DamageBonus|58073019ae10412e9509b6ac97006bf1}% {g|Encyclopedia:DamageGlossary}damage{/g} to enemies that have not yet acted this combat.\nFor the first round of combat, they will receive a +{uip|AllBonus|58073019ae10412e9509b6ac97006bf1}% bonus to armour, armour penetration, {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:DodgeReduction}dodge reduction{/g}, {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hit chance{/g}, critical damage, parry chance, +2 AP and +4 MP."
         },
+        "841137f1-907d-4530-935f-4b18dedd56fd": {
+            "Text": "<u>15 + {g|Encyclopedia:WarhammerFellowship}Fellowship{/g} bonus</u>"
+        },        
         "9d68790d-b1bc-466a-8c0d-cc6e4efe0b7d": {
             "Text": "<u>25 + ({g|Encyclopedia:WarhammerFellowship}Fellowship{/g} bonus + {g|Encyclopedia:WarhammerWillpower}Willpower{/g} bonus) × 2</u>"
         },
@@ -71,6 +74,12 @@
         },
         "7ec55513-3d9c-44c2-9be5-65fd669681f0": {
             "Text": "The Officer immediately grants an ally an {g|Encyclopedia:ExtraTurn}extra turn{/g} with 2 {g|Encyclopedia:ActionPoints}AP{/g} and no {g|Encyclopedia:MovementPoints}MP{/g}. Using this ability on themselves will instead give the Officer an additional attack this turn with a -1 AP bonus.\nIf the ally is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g} and kills an enemy before the end of the Officer's turn, the ally gains a one-time additional +{uip|Momentum|5bfccf14d8604ae1a041fb347fb8f19f} {g|Encyclopedia:MomentumWithDetailsGlossary}momentum{/g}.\nThis {g|Encyclopedia:Ability}ability{/g} cannot be used on the same ally more than once per round."
+        },
+        "d58a61f3-7d40-456b-b771-d039cc6e8435": {
+            "Text": "The Officer immediately grants an ally additional {g|Encyclopedia:MovementPoints}MP{/g} equal to {unit_stat|WarhammerFellowship|bonus}. The target can only use movement abilities, {g|Encyclopedia:HeroicAct}heroic acts{/g}, or {g|Encyclopedia:DesperateMeasure}desperate measures{/g} during this {g|Encyclopedia:ExtraTurn}extra turn{/g}. Targeting themselves with this ability will grant the Officer the additional MP only.\nIf the target is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g}, it ignores {g|Encyclopedia:AttackOfOpportunityFullGlossary}attacks of opportunity{/g} until the end of the Officer's turn."
+        },
+        "d34dbdd4-3abb-42d0-94cb-e38047a87c4c": {
+            "Text": "Targets of {g|f:d8008dcfa0004bcca41b26b802d839b2}Move, Move, Move!{/g} gain a +15% {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:DodgeGlossary}dodge{/g} and a +15% bonus to {g|Encyclopedia:DetailsOfTheCoverGlossary}cover efficiency{/g} until the start of the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s next {g|Encyclopedia:Turn}turn{/g}."
         }
     }
 }
