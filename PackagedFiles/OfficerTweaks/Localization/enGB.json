@@ -16,7 +16,7 @@
             "Text": "The {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} increases an ally's {g|Encyclopedia:Resolve}resolve{/g} by +{uip|ResolveBonus|32c0e0539f8548b08780089f8006f54a}.\nTheir damage is increased by {uip|DamageBonus|32c0e0539f8548b08780089f8006f54a}% and critical chance increased by {unit_stat|Resolve}% until the end of combat.\nIf the target is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g}, they will start their next {g|Encyclopedia:Turn}turn{/g} with +1 additional {g|Encyclopedia:ActionPoints}action point{/g}."
         },
         "766a09cd-6db5-44b3-a1ce-7ed58ea84a6e":{
-            "Text": "<u>10 + ({g|Encyclopedia:WarhammerWillpower}Willpower{/g} / 2)</u>"
+            "Text": "<u>15 + ({g|Encyclopedia:WarhammerWillpower}Willpower{/g} / 3)</u>"
         },        
         "77e86ef4-93c4-439b-b9f4-b93b5b96befc": {
             "Text": "For one round, the target's attacks will ignore {g|Encyclopedia:DetailsOfTheCoverGlossary}cover{/g}, have double the effective distance, -50% recoil, an additional {uip|HitChance|3a4d9ccff9cf40bd88fa018e05ec550d}% hit chance and a bonus {uip|Penetration|3a4d9ccff9cf40bd88fa018e05ec550d}% armor penetration.\nIf the target is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g}, these attacks will ignore enemy block and {g|Encyclopedia:DodgeGlossary}dodge{/g}. Additionally, the {g|Encyclopedia:DamageGlossary}damage{/g} from these attacks cannot be reduced below {uip|MimimumDamage|3a4d9ccff9cf40bd88fa018e05ec550d}% for any reason."
@@ -58,10 +58,10 @@
             "Text": "<u>15 + {g|Encyclopedia:WarhammerFellowship}Fellowship{/g} bonus</u>"
         },        
         "9d68790d-b1bc-466a-8c0d-cc6e4efe0b7d": {
-            "Text": "<u>25 + ({g|Encyclopedia:WarhammerFellowship}Fellowship{/g} bonus + {g|Encyclopedia:WarhammerWillpower}Willpower{/g} bonus) × 2</u>"
+            "Text": "<u>30 + ({g|Encyclopedia:WarhammerFellowship}Fellowship{/g} bonus + {g|Encyclopedia:WarhammerWillpower}Willpower{/g} bonus)</u>"
         },
         "529b503f-b82e-4d44-af62-c18a3145b1e8": {
-            "Text": "<u>10 + ({g|Encyclopedia:WarhammerFellowship}Fellowship{/g} bonus + {g|Encyclopedia:WarhammerWillpower}Willpower{/g} bonus) × 2</u>"
+            "Text": "<u>10 + ({g|Encyclopedia:WarhammerFellowship}Fellowship{/g} bonus + {g|Encyclopedia:WarhammerWillpower}Willpower{/g} bonus)</u>"
         },
         "a2ad8f02-3a53-42d6-ba4e-aa1c7264cbd8": {
             "Text": "{g|f:5707cdc822e742f187d54627ae6ef4f9}Take Aim!{/g} also increases the {g|Encyclopedia:DamageGlossary}damage{/g} of the next ranged attack by +30%. This bonus is increased by +2% for each cell between the attacker and the target."
