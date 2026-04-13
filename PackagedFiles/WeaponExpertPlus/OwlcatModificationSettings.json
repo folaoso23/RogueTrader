@@ -91,6 +91,11 @@
             "Guid": "17efbe9bb204463db27116117da4576e",
             "Filename": "DualWeaponSpecialistTalent",
             "PatchType": 1
+        },
+        {
+            "Guid": "52fee618a1b3423998aeaad8badb6e35",
+            "Filename": "VigilsMasteryDoublet_Buff",
+            "PatchType": 1
         }
     ]
 }
