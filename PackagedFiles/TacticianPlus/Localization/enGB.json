@@ -1,0 +1,13 @@
+{
+    "strings": {
+        "1f3eef73-6e06-48fa-8db0-854233642b0f": {
+            "Text": "The Master Tactician suffers {g|Encyclopedia:DirectDamage}direct damage{/g} equal to 10% of their {g|Encyclopedia:MaxWounds}maximum wounds{/g}, gains <u>twice the Master Tactician's {g|Encyclopedia:Resolve}resolve{/g}</u> stacks of tactical advantage, and resets the {g|Encyclopedia:Cooldown}cooldown{/g} of <b>Linchpin</b>, <b>Inspire</b>, and <b>Strongpoint</b>. Until the end of the Master Tactician's turn, these abilities can only target the Master Tactician themselves and their attacks will not expend MP.\nThe Master Tactician will also gain +2 AP and +{uip|MoveBonus|305858b91e6e4d89bff75431fa6030e6} MP, and can make an extra attack this turn."
+        },
+        "64ad1f25-7ee6-4164-a043-a2e2202ea291": {
+            "Text": "<u>5 + {g|Encyclopedia:WarhammerWillpower}WP{/g} bonus</u>"
+        },
+        "2c980c71-a981-4e79-bcab-ba5108749ee6": {
+            "Text": "At the beginning of the Master Tactician's turn, if their {g|Encyclopedia:MomentumWithDetailsGlossary}momentum{/g} is higher than 75, the first {g|Encyclopedia:BurstAttacksGlossary}burst{/g} attack or {g|Encyclopedia:AreaOfEffect}area attack{/g} used by the Master Tactician this turn costs −1 less {g|Encyclopedia:ActionPoints}action point{/g} (minimum 0)."
+        }
+    }
+}

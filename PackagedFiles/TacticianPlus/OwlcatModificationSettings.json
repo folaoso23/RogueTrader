@@ -1,0 +1,26 @@
+{
+    "BundlesLayout": {
+        "m_Guids": [],
+        "m_Bundles": []
+    },
+    "BundleDependencies": {
+        "m_List": []
+    },
+    "BlueprintPatches": [
+        {
+            "Guid": "305858b91e6e4d89bff75431fa6030e6",
+            "Filename": "TacticianFervourAbility",
+            "PatchType": 1
+        },
+        {
+            "Guid": "712c3b5de0504deaa7ca09b7c41a3a93",
+            "Filename": "TacticianTalent12Feature",
+            "PatchType": 1
+        },
+        {
+            "Guid": "23afc09d3f734603b7aa6e8fddb791ce",
+            "Filename": "TacticianFervourBuff",
+            "PatchType": 1
+        }
+    ]
+}
