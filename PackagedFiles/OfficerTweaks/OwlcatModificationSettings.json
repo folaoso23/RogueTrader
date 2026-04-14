@@ -33,18 +33,8 @@
             "PatchType": 1
         },
         {
-            "Guid": "06b5bc0045394c7b8fd516341218f1ac",
-            "Filename": "MoreThanPossible_Leader_Buff",
-            "PatchType": 1
-        },
-        {
             "Guid": "bf902ffd51c34e818e1d7a805b333669",
             "Filename": "Leader_TakeAim_Buff",
-            "PatchType": 1
-        },
-        {
-            "Guid": "cc5f2f561a434c53857a566650f0f70f",
-            "Filename": "LeaderListenToMyOrderBuff",
             "PatchType": 1
         },
         {
@@ -55,11 +45,6 @@
         {
             "Guid": "083057fc1a6b47f29ea0409337135030",
             "Filename": "LeaderYouAreStrongerThanThisAbility",
-            "PatchType": 1
-        },
-        {
-            "Guid": "279842de6dd54fd7a21f753e242aba0d",
-            "Filename": "MoreThanPossible_Leader_BuffVoiceOfCommand",
             "PatchType": 1
         },
         {
@@ -125,6 +110,11 @@
         {
             "Guid": "507d5622f0634d5f8425ca38ea11d767",
             "Filename": "WatchYourself_Leader_Buff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "cc5f2f561a434c53857a566650f0f70f",
+            "Filename": "LeaderListenToMyOrderBuff",
             "PatchType": 1
         }
     ]
