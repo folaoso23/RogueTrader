@@ -21,6 +21,21 @@
             "Guid": "23afc09d3f734603b7aa6e8fddb791ce",
             "Filename": "TacticianFervourBuff",
             "PatchType": 1
+        },
+        {
+            "Guid": "b63ba8048cc24d67b94bab19055fc596",
+            "Filename": "TacticianLinchpinBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "e627e3fb653840dab9661093828432c5",
+            "Filename": "TacticianFinishTheJobFeature",
+            "PatchType": 1
+        },
+        {
+            "Guid": "c83269460ed844208061780eb401a69d",
+            "Filename": "TacticianTalent14Feature",
+            "PatchType": 1
         }
     ]
 }
