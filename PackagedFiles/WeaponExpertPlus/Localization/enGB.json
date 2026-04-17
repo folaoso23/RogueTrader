@@ -7,7 +7,7 @@
             "Text": "<u>25 + ({g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 3) + (Tech Use / 6)</u>"
         },
         "cabcbd5c-e59f-4e49-a001-4b6d54ea2e63": {
-            "Text": "Plasma weapon gain the following bonuses:\n<b>Base Damage Bonus</b>: +(Current weapon's maximum damage / 2)\n<b>{g|Encyclopedia:DamageGlossary}Damage{/g} Bonus %</b>: +{uip|damagebonus|fdc990cb73114e4d8a7575813936cec9}\n<b>Hit Chance Bonus %</b>: +5.\n<b>Critical Base Damage Bonus</b>: + Current weapon's minimum damage / 2"
+            "Text": "Plasma weapon gain the following bonuses:\n<b>Base Damage Bonus</b>: +Current weapon's maximum damage\n<b>{g|Encyclopedia:DamageGlossary}Damage{/g} Bonus %</b>: +{uip|damagebonus|fdc990cb73114e4d8a7575813936cec9}\n<b>Hit Chance Bonus %</b>: +5.\n<b>Critical Base Damage Bonus</b>: + Current weapon's minimum damage / 2"
         },
         "0b1bb5af-0db6-4cdc-bf7e-d4ac4f9bca87": {
             "Text": "<u>25 + ({g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 2) + (Tech Use / 8)</u>"
@@ -112,16 +112,22 @@
             "Text": "<u>15 + {g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus</u>"
         },                       
         "74316417-b0df-4d28-9b5b-92ec943b7f92": {
-            "Text": "Force weapon attacks deal +{uip|DamageBonus|0618c379e430483bab1a17b2de559bc5} more base {g|Encyclopedia:DamageGlossary}damage{/g}, +(25 + 3 × {g|Encyclopedia:PsyRating}Psy Rating{/g})% damage, and have +{uip|ArmourPenetrationBonus|0618c379e430483bab1a17b2de559bc5}% more {g|Encyclopedia:ArmourPenetration}armour penetration{/g}."
+            "Text": "Force weapon attacks deal +{uip|DamageBonus|0618c379e430483bab1a17b2de559bc5} more base {g|Encyclopedia:DamageGlossary}damage{/g}, +{uip|PercentDamageBonus|0618c379e430483bab1a17b2de559bc5}% damage, and have +{uip|ArmourPenetrationBonus|0618c379e430483bab1a17b2de559bc5}% more {g|Encyclopedia:ArmourPenetration}armour penetration{/g}."
         },
         "b1bd5f2a-3fed-4870-83cb-642dd8c8df66": {
             "Text": "<u>(3 + 3 × {g|Encyclopedia:PsyRating}psy rating{/g})</u>"
         },
+        "29c8a088-d9c2-46d7-96e6-e7b2639bd6f4":{
+            "Text": "<u>(25 + 3 × {g|Encyclopedia:PsyRating}Psy Rating{/g})</u>"
+        },
         "411206e0-b73c-4dd5-b151-a3014ce1a7de": {
-            "Text": "Two single shots to one target. This attack has triple armor penetration and +9 range."
+            "Text": "Two single shots to one target. This attack has +5 range."
         },
         "49a7578b-8885-4272-a20c-0ae6822214d8": {
-            "Text": "A shotgun attack that has {uip|Penetration|027e75ab89364049b844a720feca85ec}% additional armour penetration, +50% damage, and applies {uip|Bleed|027e75ab89364049b844a720feca85ec} bleed to all targets hit."
+            "Text": "A shotgun attack that has {uip|Penetration|027e75ab89364049b844a720feca85ec}% additional armour penetration, +75% damage, and applies {uip|Bleed|027e75ab89364049b844a720feca85ec} bleed to all targets hit."
+        },
+        "200bbad1-a4be-4e3f-b364-abdd91c2bdf9":{
+            "Text": "Dual attacks will no longer have an increased AP cost.\nAn additional attack with the second weapon will suffer no penalties or increased cost if the first attack was either an axe's {g|f:a270dbb75ea44128b951b5d18d0b6bed}Sweep{/g} or a hammer or mace's {g|f:bd5f109c46684a09b07fb13743d2a6d7}Harsh Shove{/g} ability."
         }
     }
 }

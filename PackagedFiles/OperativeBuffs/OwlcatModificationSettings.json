@@ -71,6 +71,46 @@
             "Guid": "3d550e92570c4605a60d59c42e8125bf",
             "Filename": "Adept_ReactiveStudy_AreaEffect",
             "PatchType": 1
+        },
+        {
+            "Guid": "d9e00160ce96479281c1abe9a26ac4e5",
+            "Filename": "Adept_PreciseAttack_Feature",
+            "PatchType": 1
+        },
+        {
+            "Guid": "45fca2ad6687442ea64f166fe36edeeb",
+            "Filename": "Adept_Sharpshooter_EffectBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "663d238524554308bd50f3d149ada085",
+            "Filename": "Adept_JointOffence_AllyBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "832dd8b02731461a881775696d937d71",
+            "Filename": "Adept_JointOffence_Talent",
+            "PatchType": 1
+        },
+        {
+            "Guid": "ed9d1434d0fd41e2a382a2efe0a2018a",
+            "Filename": "Adept_FreshTarget_Talent",
+            "PatchType": 1
+        },
+        {
+            "Guid": "6bc423e71af648d39d9f5d07b6f402dc",
+            "Filename": "Adept_FreshTarget_Buff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "d983fdecfc444017991a6f9b703da01a",
+            "Filename": "AdeptUltimateAbility_SecondHand",
+            "PatchType": 1
+        },
+        {
+            "Guid": "c4c25ebbdea341c5a153c073240d574d",
+            "Filename": "AdeptUltimateAbility",
+            "PatchType": 1
         }
     ]
 }

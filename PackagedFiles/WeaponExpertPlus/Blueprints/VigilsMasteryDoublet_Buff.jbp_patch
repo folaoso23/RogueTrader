@@ -1,0 +1,12 @@
+{
+  "TargetGuid": "52fee618a1b3423998aeaad8badb6e35",
+  "FieldOverrides": [],
+  "ArrayPatches": [],
+  "ComponentsPatches": [
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"05fab0d4998390a4cbf88da0ab1e4123, AddMechanicsFeature\",\r\n    \"name\": \"$AddMechanicsFeature$5359a3ed-4b72-46a2-8f83-6520681a936e\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"m_Feature\": \"DisablePush\",\r\n    \"m_Restrictions\": {\r\n      \"Property\": {\r\n        \"Operation\": \"Sum\",\r\n        \"TargetType\": \"CurrentEntity\",\r\n        \"TargetEvaluator\": null,\r\n        \"FailSilentlyIfNoTarget\": false,\r\n        \"Getters\": []\r\n      }\r\n    }\r\n  }\r\n}",
+      "OperationType": "RemoveElement"
+    }
+  ]
+}

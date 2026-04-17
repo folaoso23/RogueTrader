@@ -1,0 +1,41 @@
+{
+    "BundlesLayout": {
+        "m_Guids": [],
+        "m_Bundles": []
+    },
+    "BundleDependencies": {
+        "m_List": []
+    },
+    "BlueprintPatches": [
+        {
+            "Guid": "1c61468f25fc410586a383c32050e971",
+            "Filename": "Enrage_Fighter_Talent",
+            "PatchType": 1
+        },
+        {
+            "Guid": "8dfe9059751047d7a3406bc1b78368d7",
+            "Filename": "Enrage_EffectBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "58eb38002ba04056af3fcdc1dfb31c5c",
+            "Filename": "FighterForcefulStrikeBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "b3a78f30d7094e809610bbb750fc9aee",
+            "Filename": "ThickSkin_Fighter_Talent",
+            "PatchType": 1
+        },
+        {
+            "Guid": "7763e9124d1646d5a5210037ea0cb4f1",
+            "Filename": "EndureBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "4d2f2a839d2340388d45cf4cf66c947b",
+            "Filename": "FighterEndure",
+            "PatchType": 1
+        }
+    ]
+}

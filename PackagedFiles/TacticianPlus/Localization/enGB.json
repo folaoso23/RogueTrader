@@ -1,0 +1,22 @@
+{
+    "strings": {
+        "1f3eef73-6e06-48fa-8db0-854233642b0f": {
+            "Text": "The Master Tactician suffers {g|Encyclopedia:DirectDamage}direct damage{/g} equal to 10% of their {g|Encyclopedia:MaxWounds}maximum wounds{/g}, gains <u>twice the Master Tactician's {g|Encyclopedia:Resolve}resolve{/g}</u> stacks of tactical advantage, and resets the {g|Encyclopedia:Cooldown}cooldown{/g} of <b>Linchpin</b>, <b>Inspire</b>, and <b>Strongpoint</b>. Until the end of the Master Tactician's turn, these abilities can only target the Master Tactician themselves and their attacks will not expend MP. They will also gain a damage bonus equal to 25% of the current momentum.\nThe Master Tactician will gain +2 AP,+{uip|MoveBonus|305858b91e6e4d89bff75431fa6030e6} MP, and can make an extra attack this turn."
+        },
+        "64ad1f25-7ee6-4164-a043-a2e2202ea291": {
+            "Text": "<u>5 + {g|Encyclopedia:WarhammerWillpower}WP{/g} bonus</u>"
+        },
+        "2c980c71-a981-4e79-bcab-ba5108749ee6": {
+            "Text": "At the beginning of the Master Tactician's turn, if their {g|Encyclopedia:MomentumWithDetailsGlossary}momentum{/g} is higher than 100, the first {g|Encyclopedia:BurstAttacksGlossary}burst{/g} attack or {g|Encyclopedia:AreaOfEffect}area attack{/g} used by the Master Tactician this turn costs −1 less {g|Encyclopedia:ActionPoints}action point{/g} (minimum 0)."
+        },
+        "8644abbf-d4fd-46ee-9564-22566f2d15cb": {
+            "Text": "The target ally or the {g|Encyclopedia:CareerTacticianGlossary}Master Tactician{/g} gains +1 {g|Encyclopedia:Resolve}resolve{/g} for every 5 stacks of {g|f:b669fe2c03a240fca1b3b2429ca87414}tactical advantage{/g} the Master Tactician has, but the Master Tactician loses half of their stacks of {g|f:b669fe2c03a240fca1b3b2429ca87414}tactical advantage{/g} (rounded up). This effect stacks and lasts until the end of combat. They will also gain +3% hit chance, dodge chance, and damage reduction for every 3 stacks of the Linchpin effect. \nUntil the beginning of the Master Tactician's next {g|Encyclopedia:Turn}turn{/g}, the Master Tactician gains stacks of {g|f:b669fe2c03a240fca1b3b2429ca87414}tactical advantage{/g} equal to {uip|AdditionalMomentum|ca8040427b6d4a3d859991b62609b318}% of all {g|Encyclopedia:MomentumWithDetailsGlossary}momentum{/g} the target gains (instead of the usual 20%)."
+        },
+        "02eb8892-330a-4cdd-974c-49dd74875bc8": {
+            "Text": "Can only be used on enemies with the unfinished business effect. This effect is applied to enemies which were attacked by the {g|Encyclopedia:CareerTacticianGlossary}Master Tactician{/g} or their allies and have less than 50% of their {g|Encyclopedia:MaxWounds}maximum wounds{/g} remaining.\nThe Master Tactician immediately attacks the target with a {g|Encyclopedia:SingleRangedAttacksGlossary}single shot{/g} or strike. This attack does not count toward the {g|Encyclopedia:AttacksPerTurn}attacks per turn{/g} limit, dealing half of the weapon's maximum damage and an additional +{unit_stat|WarhammerBallisticSkill|bonus} damage."
+        },
+        "da53b422-cdef-4662-9130-c9ea1856c8d1": {
+            "Text": "The {g|Encyclopedia:CareerTacticianGlossary}Master Tactician{/g} deals +20% more {g|Encyclopedia:DamageGlossary}damage{/g} to targets with less than 50% {g|Encyclopedia:HitPoints}wounds{/g} and heals +25% more wounds for targets with less than 50% wounds."
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "BundlesLayout": {
+        "m_Guids": [],
+        "m_Bundles": []
+    },
+    "BundleDependencies": {
+        "m_List": []
+    },
+    "BlueprintPatches": [
+        {
+            "Guid": "305858b91e6e4d89bff75431fa6030e6",
+            "Filename": "TacticianFervourAbility",
+            "PatchType": 1
+        },
+        {
+            "Guid": "712c3b5de0504deaa7ca09b7c41a3a93",
+            "Filename": "TacticianTalent12Feature",
+            "PatchType": 1
+        },
+        {
+            "Guid": "23afc09d3f734603b7aa6e8fddb791ce",
+            "Filename": "TacticianFervourBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "b63ba8048cc24d67b94bab19055fc596",
+            "Filename": "TacticianLinchpinBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "e627e3fb653840dab9661093828432c5",
+            "Filename": "TacticianFinishTheJobFeature",
+            "PatchType": 1
+        },
+        {
+            "Guid": "c83269460ed844208061780eb401a69d",
+            "Filename": "TacticianTalent14Feature",
+            "PatchType": 1
+        }
+    ]
+}

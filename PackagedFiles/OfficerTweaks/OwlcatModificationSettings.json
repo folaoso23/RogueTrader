@@ -33,18 +33,8 @@
             "PatchType": 1
         },
         {
-            "Guid": "06b5bc0045394c7b8fd516341218f1ac",
-            "Filename": "MoreThanPossible_Leader_Buff",
-            "PatchType": 1
-        },
-        {
             "Guid": "bf902ffd51c34e818e1d7a805b333669",
             "Filename": "Leader_TakeAim_Buff",
-            "PatchType": 1
-        },
-        {
-            "Guid": "cc5f2f561a434c53857a566650f0f70f",
-            "Filename": "LeaderListenToMyOrderBuff",
             "PatchType": 1
         },
         {
@@ -58,11 +48,6 @@
             "PatchType": 1
         },
         {
-            "Guid": "279842de6dd54fd7a21f753e242aba0d",
-            "Filename": "MoreThanPossible_Leader_BuffVoiceOfCommand",
-            "PatchType": 1
-        },
-        {
             "Guid": "13cef12ff4e646b4892977051d682e8a",
             "Filename": "PersonalExample_Leader_SelfBuff",
             "PatchType": 1
@@ -70,6 +55,66 @@
         {
             "Guid": "b370f94b75ac4261b6812960138d19e7",
             "Filename": "PersonalExample_Leader_Talent",
+            "PatchType": 1
+        },
+        {
+            "Guid": "58073019ae10412e9509b6ac97006bf1",
+            "Filename": "SeizeInitiative_Leader_Talent",
+            "PatchType": 1
+        },
+        {
+            "Guid": "d1aeb622ed00413f94fb5052b7ac66f1",
+            "Filename": "SeizeInitiative_Leader_Buff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "c70e614368cb4148a7b21e8b291dbcb4",
+            "Filename": "Steady_Leader_TemporaryBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "d30a4d35b09a408c9030526a506a8fa5",
+            "Filename": "Steady_Leader_Buff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "489a3d53b1b34a1d8e851103a494a425",
+            "Filename": "LeadByExample_Leader_EffectBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "5bfccf14d8604ae1a041fb347fb8f19f",
+            "Filename": "LeaderKeepFightingAbility",
+            "PatchType": 1
+        },
+        {
+            "Guid": "1cd606cf1f484b5796def1bfa7343702",
+            "Filename": "LeaderUltimateBuff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "33c8c9db91694ca6ad3eff26e36dd0af",
+            "Filename": "LeaderUltimateAbility",
+            "PatchType": 1
+        },
+        {
+            "Guid": "3f78bec2aea340a780e47f0a2a8dfb5f",
+            "Filename": "LeaderDesperateAbility",
+            "PatchType": 1
+        },
+        {
+            "Guid": "cb64551ce0234a85880bd0d8da91637f",
+            "Filename": "LeaderMoveAbility",
+            "PatchType": 1
+        },
+        {
+            "Guid": "507d5622f0634d5f8425ca38ea11d767",
+            "Filename": "WatchYourself_Leader_Buff",
+            "PatchType": 1
+        },
+        {
+            "Guid": "cc5f2f561a434c53857a566650f0f70f",
+            "Filename": "LeaderListenToMyOrderBuff",
             "PatchType": 1
         }
     ]
