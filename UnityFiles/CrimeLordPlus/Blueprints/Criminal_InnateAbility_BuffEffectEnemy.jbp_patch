@@ -1,0 +1,27 @@
+{
+  "TargetGuid": "abfd7e0bfc0d45e08d04971934a740bb",
+  "FieldOverrides": [],
+  "ArrayPatches": [],
+  "ComponentsPatches": [
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent\",\r\n    \"name\": \"$PropertyCalculatorComponent$c504e890-1327-4db5-8d2e-cb5d9289b810\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Name\": \"Value1\",\r\n    \"SaveToContext\": \"No\",\r\n    \"Value\": {\r\n      \"Operation\": \"Sum\",\r\n      \"TargetType\": \"CurrentEntity\",\r\n      \"TargetEvaluator\": null,\r\n      \"FailSilentlyIfNoTarget\": false,\r\n      \"Getters\": [\r\n        {\r\n          \"$type\": \"fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter\",\r\n          \"name\": \"$SimplePropertyGetter$c7b2a266bd434ba4900ddf1658cd8b7c\",\r\n          \"Settings\": {\r\n            \"Progression\": \"BonusValue\",\r\n            \"m_CustomProgression\": [],\r\n            \"m_StartLevel\": 0,\r\n            \"m_StepLevel\": 10,\r\n            \"Negate\": true,\r\n            \"Limit\": \"None\",\r\n            \"Min\": 0,\r\n            \"Max\": 0\r\n          },\r\n          \"Property\": \"IntelligenceBonus\"\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}",
+      "OperationType": "RemoveElement"
+    },
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent\",\r\n    \"name\": \"$PropertyCalculatorComponent$edfc58f1-9b6f-443f-9947-d5c6dbc72cbd\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Name\": \"Value2\",\r\n    \"SaveToContext\": \"No\",\r\n    \"Value\": {\r\n      \"Operation\": \"Sum\",\r\n      \"TargetType\": \"CurrentEntity\",\r\n      \"TargetEvaluator\": null,\r\n      \"FailSilentlyIfNoTarget\": false,\r\n      \"Getters\": [\r\n        {\r\n          \"$type\": \"fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter\",\r\n          \"name\": \"$SimplePropertyGetter$1672f663-7696-44c1-95c4-e87efe4ad704\",\r\n          \"Settings\": {\r\n            \"Progression\": \"BonusValue\",\r\n            \"m_CustomProgression\": [],\r\n            \"m_StartLevel\": 0,\r\n            \"m_StepLevel\": 10,\r\n            \"Negate\": false,\r\n            \"Limit\": \"None\",\r\n            \"Min\": 0,\r\n            \"Max\": 0\r\n          },\r\n          \"Property\": \"IntelligenceBonus\"\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}",
+      "OperationType": "RemoveElement"
+    },
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent\",\r\n    \"name\": \"$PropertyCalculatorComponent$c3a4a1f3-a953-4962-8ef8-6620abaa55a7\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Name\": \"Value1\",\r\n    \"SaveToContext\": \"No\",\r\n    \"Value\": {\r\n      \"Operation\": \"Sum\",\r\n      \"TargetType\": \"CurrentEntity\",\r\n      \"TargetEvaluator\": null,\r\n      \"FailSilentlyIfNoTarget\": false,\r\n      \"Getters\": [\r\n        {\r\n          \"$type\": \"fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter\",\r\n          \"name\": \"$SimplePropertyGetter$d04f5fa1-d191-4128-81cc-f11fe79e8d50\",\r\n          \"Settings\": {\r\n            \"Progression\": \"BonusValue\",\r\n            \"m_CustomProgression\": [],\r\n            \"m_StartLevel\": 0,\r\n            \"m_StepLevel\": 15,\r\n            \"Negate\": true,\r\n            \"Limit\": \"None\",\r\n            \"Min\": 0,\r\n            \"Max\": 0\r\n          },\r\n          \"Property\": \"IntelligenceBonus\"\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}",
+      "OperationType": "InsertLast"
+    },
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent\",\r\n    \"name\": \"$PropertyCalculatorComponent$437f30be-79e9-41c0-9e28-c53b2e494ba8\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Name\": \"Value2\",\r\n    \"SaveToContext\": \"No\",\r\n    \"Value\": {\r\n      \"Operation\": \"Sum\",\r\n      \"TargetType\": \"CurrentEntity\",\r\n      \"TargetEvaluator\": null,\r\n      \"FailSilentlyIfNoTarget\": false,\r\n      \"Getters\": [\r\n        {\r\n          \"$type\": \"fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter\",\r\n          \"name\": \"$SimplePropertyGetter$c24b19c1-decf-4cf7-8322-6d02a240681d\",\r\n          \"Settings\": {\r\n            \"Progression\": \"BonusValue\",\r\n            \"m_CustomProgression\": [],\r\n            \"m_StartLevel\": 0,\r\n            \"m_StepLevel\": 15,\r\n            \"Negate\": false,\r\n            \"Limit\": \"None\",\r\n            \"Min\": 0,\r\n            \"Max\": 0\r\n          },\r\n          \"Property\": \"IntelligenceBonus\"\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}",
+      "OperationType": "InsertLast"
+    }
+  ]
+}

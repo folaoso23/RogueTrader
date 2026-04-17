@@ -1,0 +1,51 @@
+{
+    "BundlesLayout": {
+        "m_Guids": [],
+        "m_Bundles": []
+    },
+    "BundleDependencies": {
+        "m_List": [
+            {
+                "Key": "CrimeLordPlus_BlueprintDirectReferences",
+                "Value": []
+            }
+        ]
+    },
+    "BlueprintPatches": [
+        {
+            "Guid": "340888e6d61c4cfea87d8c1a2a4ba6d1",
+            "Filename": "Criminal_InnateAbility_BuffEffect",
+            "PatchType": 1
+        },
+        {
+            "Guid": "abfd7e0bfc0d45e08d04971934a740bb",
+            "Filename": "Criminal_InnateAbility_BuffEffectEnemy",
+            "PatchType": 1
+        },
+        {
+            "Guid": "ee7a3a48179a463fb1da678bfd6562e2",
+            "Filename": "Criminal_InnateAbility_BuffEffectMove",
+            "PatchType": 1
+        },
+        {
+            "Guid": "d29bd0cb21184342a09e7b928eaac0dc",
+            "Filename": "Criminal_Talent01_Feature",
+            "PatchType": 1
+        },
+        {
+            "Guid": "1badb7fcaefb458a947f78ead3795587",
+            "Filename": "Criminal_Talent02_Feature",
+            "PatchType": 1
+        },
+        {
+            "Guid": "885ee31fc7ac49b9b75abd270004635d",
+            "Filename": "Criminal_Talent03_Feature",
+            "PatchType": 1
+        },
+        {
+            "Guid": "d339c2dd02004d81b377bcb7fabcdc4a",
+            "Filename": "Criminal_Talent04_Feature",
+            "PatchType": 1
+        }
+    ]
+}
