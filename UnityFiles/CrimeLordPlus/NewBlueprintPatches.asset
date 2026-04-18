@@ -34,3 +34,9 @@ MonoBehaviour:
   - Guid: d339c2dd02004d81b377bcb7fabcdc4a
     Filename: Criminal_Talent04_Feature
     PatchType: 1
+  - Guid: 881def61ed1e41d183e4d2788059c43a
+    Filename: Criminal_InnateAbility_Feature
+    PatchType: 1
+  - Guid: f94878a3ef1748489633ef5fcfbde2b4
+    Filename: Criminal_Talent05_Feature
+    PatchType: 1

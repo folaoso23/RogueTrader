@@ -1,7 +1,7 @@
 {
     "strings": {
         "444f44f9-6270-4e37-ab8a-0d1b19902a60": {
-            "Text": "At the start of combat, the crime lord gains +{unit_stat|WarhammerIntelligence|bonus} stacks of the sure-fire plan effect. Activation of this {g|Encyclopedia:Ability}ability{/g} consumes 1 stack and makes the next action stronger depending on the type of action:\n-<indent=5%>If the crime lord attacks, they deal +{uip|AdditionalDamage|f8fbdb667b6a4dca814aec2bb5f14097}% more {g|Encyclopedia:DamageGlossary}damage{/g}.</indent>\n-<indent=5%>If the crime lord moves, they gain +{uip|AdditionalDodge|f8fbdb667b6a4dca814aec2bb5f14097}% {g|Encyclopedia:DodgeGlossary}dodge{/g} and {g|Encyclopedia:Parry}parry{/g} until the start of their next turn.</indent>\n-<indent=5%>If the crime lord uses a non-damaging ability on an enemy, that enemy suffers a −{uip|AdditionalDamageTarget|f8fbdb667b6a4dca814aec2bb5f14097}% penalty to damage for one round.</indent>\nCan be used multiple times per turn."
+            "Text": "At the start of combat, the crime lord gains +{unit_stat|WarhammerPerception|bonus} stacks of the sure-fire plan effect. Activation of this {g|Encyclopedia:Ability}ability{/g} consumes 1 stack and makes the next action stronger depending on the type of action:\n-<indent=5%>If the crime lord attacks, they deal +{uip|AdditionalDamage|f8fbdb667b6a4dca814aec2bb5f14097}% more {g|Encyclopedia:DamageGlossary}damage{/g}.</indent>\n-<indent=5%>If the crime lord moves, they gain +{uip|AdditionalDodge|f8fbdb667b6a4dca814aec2bb5f14097}% {g|Encyclopedia:DodgeGlossary}dodge{/g} and {g|Encyclopedia:Parry}parry{/g} until the start of their next turn.</indent>\n-<indent=5%>If the crime lord uses a non-damaging ability on an enemy, that enemy suffers a −{uip|AdditionalDamageTarget|f8fbdb667b6a4dca814aec2bb5f14097}% penalty to damage for one round.</indent>\nCan be used multiple times per turn."
         },
         "b70a51b6-83a1-48fb-8901-a820d08ce132": {
             "Text": "<u>(15 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus)</u>"
@@ -10,10 +10,10 @@
             "Text": "<u>(15 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus)</u>"
         },
         "88159ef9-0f20-4078-8f39-cc7f8f1393b9": {
-            "Text": "<u>(15 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus)</u>"
+            "Text": "<u>(15 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus)</u>"
         },
         "185ef885-5fd4-4cdb-a8d8-0f7529843e9b": {
-            "Text": "The {g|Encyclopedia:Bonus}bonus{/g} {g|Encyclopedia:DamageGlossary}damage{/g} of sure-fire plan is increased by +{uip|DamageBonus|d29bd0cb21184342a09e7b928eaac0dc}%. Killing at least one enemy with the attack restores 1 stack of sure-fire plan.\nThe Crime Lord will passively gain +{uip|CritDamageBonus|d29bd0cb21184342a09e7b928eaac0dc}% critical damage. If attacking a target with less than 50% health, they will penetrate +{uip|ArmorPenetrationBonus|d29bd0cb21184342a09e7b928eaac0dc}% armor and +{uip|DeflectionBonus|d29bd0cb21184342a09e7b928eaac0dc} deflection."
+            "Text": "The {g|Encyclopedia:Bonus}bonus{/g} {g|Encyclopedia:DamageGlossary}damage{/g} of sure-fire plan is increased by +{uip|DamageBonus|d29bd0cb21184342a09e7b928eaac0dc}%. Killing at least one enemy with the attack restores 1 stack of sure-fire plan.\n<b>Passive Effect:</b> The Crime Lord will gain +{uip|CritDamageBonus|d29bd0cb21184342a09e7b928eaac0dc}% and +{unit_stat|WarhammerPerception|bonus} critical damage. If attacking a target with less than 50% health, they will gain +{uip|ArmorPenetrationBonus|d29bd0cb21184342a09e7b928eaac0dc}% armour penetration and ignore {uip|DeflectionBonus|d29bd0cb21184342a09e7b928eaac0dc} deflection."
         },
         "a8034349-0a3f-41b2-934a-04e8e9b38fa8": {
             "Text": "<u>({g|Encyclopedia:SkillAwareness}Awareness{/g} / 3)</u>"
@@ -23,30 +23,36 @@
         },
         "79e1d00b-504d-4e97-a4f7-108deaa728ed": {
             "Text": "<u>({g|Encyclopedia:SkillAwareness}Awareness{/g} / 10)</u>"
-        },        
+        },
         "3daa8f81-e7a4-43cd-be37-85bebb1c3b68": {
-            "Text": "<u>(25 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus)</u>"
+            "Text": "<u>(25 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus)</u>"
         },
         "971cdb14-a027-415d-8f15-666bd6b14b68": {
-            "Text": "The {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:DodgeGlossary}dodge{/g} and {g|Encyclopedia:Parry}parry{/g} from sure-fire plan is increased by +{uip|AdditionalDodge|1badb7fcaefb458a947f78ead3795587}% . Dodging or parrying at least one attack by the start of the next {g|Encyclopedia:Round}round{/g} restores 1 stack of sure-fire plan.\nThe Crime Lord will passively gain +{uip|PassiveDodge|1badb7fcaefb458a947f78ead3795587}% dodge and parry chance if their health is below 50%."
+            "Text": "The {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:DodgeGlossary}dodge{/g} and {g|Encyclopedia:Parry}parry{/g} from sure-fire plan is increased by +{uip|AdditionalDodge|1badb7fcaefb458a947f78ead3795587}%. Dodging or parrying at least one attack by the start of the next {g|Encyclopedia:Round}round{/g} restores 1 stack of sure-fire plan.\n<b>Passive Effect:</b> The Crime Lord will gain +{uip|PassiveDodge|1badb7fcaefb458a947f78ead3795587}% dodge and parry chance if their health is below 50%, and they can use {g|Encyclopedia:WarhammerPerception}Perception{/g} instead of {g|Encyclopedia:WarhammerAgility}Agility{/g} to calculate their dodge chance."
         },
         "4d2bb423-7d04-4ce2-bafc-8ffec530197d": {
-            "Text": "<u>({g|Encyclopedia:WarhammerAgility}AGI{/g} bonus x 2)</u>"
+            "Text": "<u>({g|Encyclopedia:WarhammerPerception}PER{/g} bonus x 2)</u>"
         },
         "9dcf2a38-0d50-4a99-97ef-18659e0d8189": {
             "Text": "<u>(10 + {g|Encyclopedia:SkillAwareness}Awareness{/g} / 10)</u>"
         },
         "6a93bc3c-bc9c-4533-971a-126c87fe55b2": {
-            "Text": "An enemy affected by sure-fire plan also suffers a −{uip|DodgeParryReduction|885ee31fc7ac49b9b75abd270004635d}% {g|Encyclopedia:Penalty}penalty{/g} to {g|Encyclopedia:DodgeGlossary}dodge{/g} and {g|Encyclopedia:Parry}parry{/g}.\nThe Crime Lord will passively apply {g|Encyclopedia:Perplexed}perplexed{/g} on critical hits if their target fails a Willpower check with a -10 bonus."
+            "Text": "An enemy affected by sure-fire plan also suffers a −{uip|DodgeParryReduction|885ee31fc7ac49b9b75abd270004635d}% {g|Encyclopedia:Penalty}penalty{/g} to {g|Encyclopedia:DodgeGlossary}dodge{/g} and {g|Encyclopedia:Parry}parry{/g}.\n<b>Passive Effect:</b>The Crime Lord will apply {g|Encyclopedia:PerplexedEffect}perplexed{/g} for 2 rounds on critical hits if their target fails a Willpower check with a −{uip|PerplexedPenalty|885ee31fc7ac49b9b75abd270004635d} penalty."
         },
         "3339b32b-4980-4841-8b7e-3bd708420039": {
             "Text": "<u>(15 + 2 × {g|Encyclopedia:WarhammerPerception}PER{/g} bonus)</u>"
         },
+        "23cc03bb-3050-45d7-b213-62b955419c06": {
+            "Text": "<u>(10 + {g|Encyclopedia:SkillAwareness}Awareness{/g} / 8)</u>"
+        },        
         "f83d8c0e-39ef-4b6d-ba1f-cb61fac0b4a6": {
-            "Text": "At the start of their {g|Encyclopedia:Turn}turn{/g}, if the crime lord has no stacks of sure-fire plan, they gain +1 stack.\nThe Crime Lord will use Intelligence instead of Fellowship if it is higher, and will be able to upgrade Intelligence even if their archetype does not allow it. They will also gain +{uip|StatBonus|d339c2dd02004d81b377bcb7fabcdc4a} {g|Encyclopedia:WarhammerWeaponSkill}Weapon Skill{/g} and {g|Encyclopedia:WarhammerBallisticSkill}Ballistic Skill{/g}.\nMissed attacks will be rerolled once."
+            "Text": "At the start of their {g|Encyclopedia:Turn}turn{/g}, if the crime lord has no stacks of sure-fire plan, they gain +1 stack.\n<b>Passive Effect:</b>The Crime Lord will gain +20 {g|Encyclopedia:SkillAwareness}Awareness{/g} and reroll all failed skill and attribute checks."
         },
-        "67d911d3-e9f5-4195-b700-2a153a728580": {
-            "Text": "<u>(5 + {g|Encyclopedia:SkillAwareness}Awareness{/g} / 10)</u>"
-        }  
+        "589b9a8a-af1a-4c7f-9426-e44f1d63e5d9": {
+            "Text": "The Ultimate Plan"
+        },
+        "5c64add2-1740-4827-b2b0-745d93d024b1": {
+            "Text": "Once per combat, if the crime lord has at least 1 stack of sure-fire plan, they do not die from lethal {g|Encyclopedia:DamageGlossary}damage{/g}. Instead, they heal <u>(5 × sure-fire plan stacks)</u>% of {g|Encyclopedia:MaxWounds}maximum wounds{/g}, lose all stacks, and can no longer gain sure-fire plan stacks.\n<b>Passive Effect:</b>The Crime Lord gains +5 to all characteristics as long as they have at least 1 stack of sure-fire plan."
+        }
     }
 }
