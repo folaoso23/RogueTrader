@@ -13,7 +13,7 @@
             "Text": "<u>(15 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus)</u>"
         },
         "185ef885-5fd4-4cdb-a8d8-0f7529843e9b": {
-            "Text": "The {g|Encyclopedia:Bonus}bonus{/g} {g|Encyclopedia:DamageGlossary}damage{/g} of sure-fire plan is increased by +{uip|DamageBonus|d29bd0cb21184342a09e7b928eaac0dc}%. Killing at least one enemy with the attack restores 1 stack of sure-fire plan.\n<b>Passive Effect:</b> The Crime Lord will gain +{uip|CritDamageBonus|d29bd0cb21184342a09e7b928eaac0dc}% and +{unit_stat|WarhammerPerception|bonus} critical damage. If attacking a target with less than 50% health, they will gain +{uip|ArmorPenetrationBonus|d29bd0cb21184342a09e7b928eaac0dc}% armour penetration and ignore {uip|DeflectionBonus|d29bd0cb21184342a09e7b928eaac0dc} deflection."
+            "Text": "The {g|Encyclopedia:Bonus}bonus{/g} {g|Encyclopedia:DamageGlossary}damage{/g} of sure-fire plan is increased by +{uip|DamageBonus|d29bd0cb21184342a09e7b928eaac0dc}%. Killing at least one enemy with the attack restores 1 stack of sure-fire plan.\n<b>Passive Effect:</b> The Crime Lord will gain +{uip|CritDamageBonus|d29bd0cb21184342a09e7b928eaac0dc}% critical damage. If attacking a target with less than 50% health, they will gain +{uip|ArmorPenetrationBonus|d29bd0cb21184342a09e7b928eaac0dc}% armour penetration and ignore {uip|DeflectionBonus|d29bd0cb21184342a09e7b928eaac0dc} deflection."
         },
         "a8034349-0a3f-41b2-934a-04e8e9b38fa8": {
             "Text": "<u>({g|Encyclopedia:SkillAwareness}Awareness{/g} / 3)</u>"
@@ -52,7 +52,7 @@
             "Text": "The Ultimate Plan"
         },
         "5c64add2-1740-4827-b2b0-745d93d024b1": {
-            "Text": "Once per combat, if the crime lord has at least 1 stack of sure-fire plan, they do not die from lethal {g|Encyclopedia:DamageGlossary}damage{/g}. Instead, they heal <u>(5 × sure-fire plan stacks)</u>% of {g|Encyclopedia:MaxWounds}maximum wounds{/g}, lose all stacks, and can no longer gain sure-fire plan stacks.\n<b>Passive Effect:</b>The Crime Lord gains +5 to all characteristics as long as they have at least 1 stack of sure-fire plan."
+            "Text": "Once per combat, if the crime lord has at least 1 stack of sure-fire plan, they do not die from lethal {g|Encyclopedia:DamageGlossary}damage{/g}. Instead, they heal <u>(5 × sure-fire plan stacks)</u>% of {g|Encyclopedia:MaxWounds}maximum wounds{/g}, lose all stacks, and can no longer gain sure-fire plan stacks.\n<b>Passive Effect:</b>The Crime Lord gains +10 to all characteristics as long as they have at least 1 stack of sure-fire plan."
         }
     }
 }
