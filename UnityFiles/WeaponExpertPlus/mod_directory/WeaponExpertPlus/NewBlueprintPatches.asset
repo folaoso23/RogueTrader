@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fe07f61edc4914ac44891e22e1fdf7, type: 3}
+  m_Name: NewBlueprintPatches
+  m_EditorClassIdentifier: 
+  Entries:
+  - Guid: 4fa4dbc023474337990840e305d06fa4
+    Filename: MeltaWeaponSpecialization_Feature
+    PatchType: 1
+  - Guid: fdc990cb73114e4d8a7575813936cec9
+    Filename: PlasmaWeaponSpecialization_Feature
+    PatchType: 1
+  - Guid: 72b608c024174a13b60b70675e4ca840
+    Filename: BoltWeaponSpecialization_Feature
+    PatchType: 1
+  - Guid: 2259197e773b45d0a2f51fc57ccd2133
+    Filename: ChainWeaponSpecialization_Feature
+    PatchType: 1
+  - Guid: 30ef0b17c93444bb9b0a0169c6fffe06
+    Filename: FlameWeaponSpecialization_Feature
+    PatchType: 1
+  - Guid: baf7c232ef5943a186b8bb2a80990470
+    Filename: LasWeaponSpecialization
+    PatchType: 1
+  - Guid: 9d82f293513e4bb390782188307f948f
+    Filename: PowerWeaponSpecialization
+    PatchType: 1
+  - Guid: 21d6182a02014531a63f28fe5ff34530
+    Filename: SolidProjectileWeaponSpecialization_Feature
+    PatchType: 1
+  - Guid: 2558102cf3d24a52ae8be0f0e898dec1
+    Filename: MeleeWeaponSpecialist_Feature
+    PatchType: 1
+  - Guid: 505223dbfb2d4be6a758818c46878908
+    Filename: WhereItHurtsTheMost_Feature
+    PatchType: 1
+  - Guid: ba334a21868849f1b198440d0eff98bc
+    Filename: Finesse_Feature
+    PatchType: 1
+  - Guid: d0313fe1cb894406a012329b2c46c48c
+    Filename: TrueSight_Feature
+    PatchType: 1
+  - Guid: 0618c379e430483bab1a17b2de559bc5
+    Filename: PsykerBladeOfLightTalent
+    PatchType: 1
+  - Guid: def7164545244af28d52cd38d0502525
+    Filename: VigilsMasteryDoublet_Ability
+    PatchType: 1
+  - Guid: ceb5513fc2134b7b89922f0579246dec
+    Filename: ShotgunShot00_Doublet_AbilityFXSettings
+    PatchType: 1
+  - Guid: 027e75ab89364049b844a720feca85ec
+    Filename: VigilsMasteryBurstOfParticles_Ability
+    PatchType: 1
+  - Guid: 17efbe9bb204463db27116117da4576e
+    Filename: DualWeaponSpecialistTalent
+    PatchType: 1
+  - Guid: 52fee618a1b3423998aeaad8badb6e35
+    Filename: VigilsMasteryDoublet_Buff
+    PatchType: 1
