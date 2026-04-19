@@ -1,0 +1,404 @@
+{
+  "AssetId": "48292d805e554b0baf02f6358c1a4b18",
+  "Data": {
+    "$type": "da11db195c86e0d4dae17a2c03a4ba9a, BlueprintAbility",
+    "PrototypeLink": "def7164545244af28d52cd38d0502525",
+    "m_Overrides": [
+      "ActionPointCost",
+      "$WarhammerWeaponStatsModifierInitiator$d05430aa-0964-48f2-8672-fcf062cd5674",
+      "$WarhammerDamageByDistanceModifier$125f74b7-69db-428c-b353-7810a830d03f",
+      "$WarhammerDamageModifierInitiator$5d3673d1-60a4-462d-a946-2886a0be5982",
+      "$WarhammerOverrideAbilityApCost$774f03e4-c38b-49e9-82e3-3ec5b79f3905",
+      "$WarhammerOverrideAbilityApCost$818771fe-be9b-41bc-8136-08f2931f0aee",
+      "$WarhammerOverrideAbilityApCost$a5db3b55-902e-42c9-b77f-4992cb42ddce",
+      "$WarhammerWeaponStatsModifierInitiator$8add2441-2ffa-4006-afdf-417be7cb2e45",
+      "$WarhammerWeaponStatsModifierInitiator$c22c8e69-9baf-407b-a014-8f7193e33f06",
+      "$WarhammerBonusActionPoints$9a82327d-753a-4f6c-9950-739d8af1f13c",
+      "$WarhammerOverrideAbilityApCost$a91c74b2-b495-4509-b463-5e41c9e7a1b3",
+      "$WarhammerDamageModifierInitiator$ae3360b7-e1aa-4af0-bed7-558f9dc2e2c7",
+      "$AbilityEffectRunAction$6b355ac8-6995-48c9-9f21-c6b606570cb5",
+      "$AbilityEffectRunAction$588f779b-7935-4e31-8bfb-afd22f07a15f",
+      "$AbilityEffectRunAction$ce0d8263-c610-40de-84b9-2bb3fafac8fc",
+      "$AbilityEffectRunAction$2ffe431d-fd23-4262-855f-c69c61f1925d",
+      "$AbilityEffectRunAction$b0e9b4d8-d465-4e2e-95d3-74a3a2ba175c"
+    ],
+    "Components": [
+      {
+        "$type": "224c1eb24ed98e942ae15b9e10e62724, WarhammerEndTurn",
+        "name": "$WarhammerEndTurn$0be30446-314e-4445-8b09-56a47b26893b",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "def7164545244af28d52cd38d0502525",
+          "name": "$WarhammerEndTurn$0be30446-314e-4445-8b09-56a47b26893b"
+        },
+        "m_Overrides": [],
+        "clearMPInsteadOfEndingTurn": true,
+        "Condition": {
+          "Operation": "And",
+          "Conditions": []
+        },
+        "m_BuffToCaster": null
+      },
+      {
+        "$type": "e6da52cf4bc945a1b3276a25991d7a68, WarhammerAbilityAttackDelivery",
+        "name": "$WarhammerAbilityAttackDelivery$351aed55-a5bd-4214-8952-ca01d4ff1e8d",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "def7164545244af28d52cd38d0502525",
+          "name": "$WarhammerAbilityAttackDelivery$351aed55-a5bd-4214-8952-ca01d4ff1e8d"
+        },
+        "m_Overrides": [],
+        "WeaponAttack": "Ranged",
+        "Special": "None",
+        "m_IsProjectile": false,
+        "UseBestShootingPosition": true,
+        "ControlledScatter": false,
+        "m_PatternSpreadWithProjectile": false,
+        "AdditionalDamageInstancesCount": 0,
+        "m_PatternSettings": {
+          "Pattern": {
+            "m_Type": "Circle",
+            "m_Blueprint": null,
+            "m_Radius": 0,
+            "m_Angle": 0
+          },
+          "Targets": "Enemy",
+          "CastOnSameLevel": false,
+          "m_IgnoreLos": false,
+          "m_UseMeleeLos": false,
+          "m_IgnoreLevelDifference": false,
+          "m_Directional": false,
+          "CalculateAttackFromPatternCentre": false
+        },
+        "m_DisableWeaponAttackDamage": false,
+        "m_DisableDodgeForAlly": false,
+        "m_DisableOverpenetration": false,
+        "m_AutoHit": false,
+        "m_IsLosDefinedByPattern": false
+      },
+      {
+        "$type": "1cdb53f94f674412b307c2142759b437, AbilityAmmoLogic",
+        "name": "$AbilityAmmoLogic$c664f090-d33a-49b3-b60f-c73ce3d72340",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "def7164545244af28d52cd38d0502525",
+          "name": "$AbilityAmmoLogic$c664f090-d33a-49b3-b60f-c73ce3d72340"
+        },
+        "m_Overrides": [],
+        "NoAmmoRequired": false,
+        "AdditionalAmmoCost": 1
+      },
+      {
+        "$type": "28fa403fa7a94a2f9ea361583e66cdb4, WarhammerWeaponStatsModifierInitiator",
+        "name": "$WarhammerWeaponStatsModifierInitiator$c22c8e69-9baf-407b-a014-8f7193e33f06",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "BoolOr",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "622b2e3118c34edebe1597cf4c03339e, CheckAbilityBlueprintGetter",
+                "name": "$CheckAbilityBlueprintGetter$64da1553-f7ca-4f59-ae2f-fc7111c993c8",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Abilities": [
+                  "!bp_def7164545244af28d52cd38d0502525"
+                ]
+              },
+              {
+                "$type": "622b2e3118c34edebe1597cf4c03339e, CheckAbilityBlueprintGetter",
+                "name": "$CheckAbilityBlueprintGetter$834be809-86ed-41c7-93c7-1daa3c37e431",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Abilities": [
+                  "!bp_b99fb9f9a630446aa2d7480e58b4b2f8"
+                ]
+              }
+            ]
+          }
+        },
+        "Descriptor": "None",
+        "Damage": {
+          "ValueType": "Simple",
+          "Value": 20,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "PctAdd"
+        },
+        "DamageMin": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "DamageMax": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "Penetration": {
+          "ValueType": "Simple",
+          "Value": 200,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "PctAdd"
+        },
+        "Recoil": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "AdditionalHitChance": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "DodgePenetration": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "MaxDistance": {
+          "ValueType": "Simple",
+          "Value": 5,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": true,
+          "ModifierType": "ValAdd"
+        },
+        "RateOfFire": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "OverpenetrationFactor": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        }
+      },
+      {
+        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
+        "name": "$AbilityEffectRunAction$b0e9b4d8-d465-4e2e-95d3-74a3a2ba175c",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "SavingThrowType": "Unknown",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "d5debd59683c7064fa9393bd52c9a624, ContextActionPush",
+              "name": "$ContextActionPush$ce80298f-198f-46a8-b0a1-b5a8d43fb4a6",
+              "Cells": {
+                "ValueType": "Simple",
+                "Value": 3,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ProvokeAttackOfOpportunity": false,
+              "m_UseFactOwnerAsCaster": false,
+              "m_PushBack": false
+            },
+            {
+              "$type": "120df4726e71c854e95f84b87a99a3c5, ContextActionSpawnFx",
+              "name": "$ContextActionSpawnFx$8f87dca4-bfdf-4e4a-a874-fd086f4507f2",
+              "PrefabLink": {
+                "AssetId": "72dad3f4a2c0a4f42906173951431bbf"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "$type": "18beb8746b848f6448d3ee6969a32467, WarhammerOverrideAbilityApCost",
+        "name": "$WarhammerOverrideAbilityApCost$a91c74b2-b495-4509-b463-5e41c9e7a1b3",
+        "m_Flags": "Disabled",
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "m_overrideMode": "CostBonus",
+        "m_newCost": 0,
+        "m_costBonus": -1,
+        "m_costMinimum": 1,
+        "m_Ability": "!bp_def7164545244af28d52cd38d0502525",
+        "m_AffectedGroup": null,
+        "m_AbilityGroupList": [],
+        "NotSelectedGroup": false,
+        "AffectOnlyMelee": false,
+        "AffectOnlyRanged": false,
+        "AffectOnlyAoE": false,
+        "AffectOnlyBurst": false,
+        "AffectOnlyHeavy": false
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "ee1c452d6ade91b47b1f32299e625dd8",
+        "stringkey": "8a6fbb32-8e36-4b83-af83-96d5dfdaabd6"
+      }
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "c4a14b7b11c46c3439a408e710f2db6f",
+        "stringkey": "411206e0-b73c-4dd5-b151-a3014ce1a7de"
+      }
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "Type": "Weapon",
+    "Range": "Weapon",
+    "CustomRange": 7,
+    "MinRange": 1,
+    "ActionPointCost": 2,
+    "AbilityParamsSource": "Weapon",
+    "PsychicPower": "Minor",
+    "VeilThicknessPointsToAdd": 1,
+    "ParamsSkill": "SkillAthletics",
+    "CooldownRounds": 0,
+    "CanTargetPoint": false,
+    "CanTargetEnemies": true,
+    "CanTargetFriends": true,
+    "CanTargetSelf": false,
+    "Hidden": false,
+    "HiddenInUI": false,
+    "DisableLog": false,
+    "DisableBestShootingPosition": false,
+    "NeedEquipWeapons": false,
+    "NotOffensive": false,
+    "ShowInDialogue": false,
+    "IsStarshipAbility": false,
+    "EffectOnAlly": "Harmful",
+    "EffectOnEnemy": "Harmful",
+    "m_Parent": null,
+    "Animation": "Directional",
+    "CastInOffHand": false,
+    "UseOnMechadendrite": false,
+    "UsedMechadendrite": "Utility",
+    "m_TargetMapObjects": false,
+    "IsFreeAction": false,
+    "ShouldTurnToTarget": true,
+    "SyncRotationAndAttack": false,
+    "SyncRotationDelay": 0.0,
+    "m_IsStratagem": false,
+    "UsingInThreateningArea": "CanUseWithoutAOO",
+    "UsingInOverwatchArea": "WillCauseAttack",
+    "CombatStateRestriction": "InCombatOnly",
+    "m_AbilityGroups": [
+      "!bp_c8ebd654ff0c4991ad30dd1c7668279f",
+      "!bp_1cf206b13141425491c379bc75ef0699",
+      "!bp_82cfccf9df3f45b5a0374e390a4188fd"
+    ],
+    "MaterialComponent": {
+      "m_Item": null,
+      "Count": 1
+    },
+    "ResourceAssetIds": [],
+    "m_FXSettings": "!bp_ceb5513fc2134b7b89922f0579246dec",
+    "m_AbilityTag": "None",
+    "m_CombatHudCommandsOverride": null
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

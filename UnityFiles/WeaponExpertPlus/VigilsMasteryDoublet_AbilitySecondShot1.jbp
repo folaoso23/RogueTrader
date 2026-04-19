@@ -1,0 +1,140 @@
+{
+  "AssetId": "3b9798819da24b36b4486c66980ab280",
+  "Data": {
+    "$type": "da11db195c86e0d4dae17a2c03a4ba9a, BlueprintAbility",
+    "PrototypeLink": "b99fb9f9a630446aa2d7480e58b4b2f8",
+    "m_Overrides": [
+      "$WarhammerWeaponStatsModifierInitiator$75a29427-0cc4-43f6-8c22-df7e557b5676",
+      "$WarhammerWeaponStatsModifierInitiator$b4020ade-5318-42cf-8843-88d9fdf26171",
+      "$WarhammerWeaponStatsModifierInitiator$1010aebc-aa94-4a35-a379-5deea942ac26",
+      "$AbilityEffectRunAction$328bec33-97f9-44f3-8830-dd44b02d0cb2",
+      "$AbilityEffectRunAction$5d047cce-a85b-47d7-bf89-3e81ef2740fa"
+    ],
+    "Components": [
+      {
+        "$type": "224c1eb24ed98e942ae15b9e10e62724, WarhammerEndTurn",
+        "name": "$WarhammerEndTurn$0be30446-314e-4445-8b09-56a47b26893b",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "b99fb9f9a630446aa2d7480e58b4b2f8",
+          "name": "$WarhammerEndTurn$0be30446-314e-4445-8b09-56a47b26893b"
+        },
+        "m_Overrides": [],
+        "clearMPInsteadOfEndingTurn": true,
+        "Condition": {
+          "Operation": "And",
+          "Conditions": []
+        },
+        "m_BuffToCaster": null
+      },
+      {
+        "$type": "e6da52cf4bc945a1b3276a25991d7a68, WarhammerAbilityAttackDelivery",
+        "name": "$WarhammerAbilityAttackDelivery$351aed55-a5bd-4214-8952-ca01d4ff1e8d",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "b99fb9f9a630446aa2d7480e58b4b2f8",
+          "name": "$WarhammerAbilityAttackDelivery$351aed55-a5bd-4214-8952-ca01d4ff1e8d"
+        },
+        "m_Overrides": [],
+        "WeaponAttack": "Ranged",
+        "Special": "None",
+        "m_IsProjectile": false,
+        "UseBestShootingPosition": true,
+        "ControlledScatter": false,
+        "m_PatternSpreadWithProjectile": false,
+        "AdditionalDamageInstancesCount": 0,
+        "m_PatternSettings": {
+          "Pattern": {
+            "m_Type": "Circle",
+            "m_Blueprint": null,
+            "m_Radius": 0,
+            "m_Angle": 0
+          },
+          "Targets": "Enemy",
+          "CastOnSameLevel": false,
+          "m_IgnoreLos": false,
+          "m_UseMeleeLos": false,
+          "m_IgnoreLevelDifference": false,
+          "m_Directional": false,
+          "CalculateAttackFromPatternCentre": false
+        },
+        "m_DisableWeaponAttackDamage": false,
+        "m_DisableDodgeForAlly": false,
+        "m_DisableOverpenetration": false,
+        "m_AutoHit": false,
+        "m_IsLosDefinedByPattern": false
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "2b306fbc-04f0-4f7c-a719-2816e1c78293",
+      "m_OwnerString": "b99fb9f9a630446aa2d7480e58b4b2f8",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\Backgrounds\\Occupations\\Arbitrator\\ArbitratorAbilities\\VigilsMasteryDoublet_AbilitySecondShot_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "c4a14b7b11c46c3439a408e710f2db6f",
+        "stringkey": "411206e0-b73c-4dd5-b151-a3014ce1a7de"
+      }
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "Type": "Weapon",
+    "Range": "Weapon",
+    "CustomRange": 7,
+    "MinRange": 1,
+    "ActionPointCost": 0,
+    "AbilityParamsSource": "Weapon",
+    "PsychicPower": "Minor",
+    "VeilThicknessPointsToAdd": 1,
+    "ParamsSkill": "SkillAthletics",
+    "CooldownRounds": 0,
+    "CanTargetPoint": false,
+    "CanTargetEnemies": true,
+    "CanTargetFriends": true,
+    "CanTargetSelf": false,
+    "Hidden": false,
+    "HiddenInUI": false,
+    "DisableLog": false,
+    "DisableBestShootingPosition": false,
+    "NeedEquipWeapons": false,
+    "NotOffensive": false,
+    "ShowInDialogue": false,
+    "IsStarshipAbility": false,
+    "EffectOnAlly": "Harmful",
+    "EffectOnEnemy": "Harmful",
+    "m_Parent": null,
+    "Animation": "Directional",
+    "CastInOffHand": false,
+    "UseOnMechadendrite": false,
+    "UsedMechadendrite": "Utility",
+    "m_TargetMapObjects": false,
+    "IsFreeAction": false,
+    "ShouldTurnToTarget": true,
+    "SyncRotationAndAttack": false,
+    "SyncRotationDelay": 0.0,
+    "m_IsStratagem": false,
+    "UsingInThreateningArea": "CanUseWithoutAOO",
+    "UsingInOverwatchArea": "WillCauseAttack",
+    "CombatStateRestriction": "InCombatOnly",
+    "m_AbilityGroups": [],
+    "MaterialComponent": {
+      "m_Item": null,
+      "Count": 1
+    },
+    "ResourceAssetIds": [],
+    "m_FXSettings": "!bp_ceb5513fc2134b7b89922f0579246dec",
+    "m_AbilityTag": "None",
+    "m_CombatHudCommandsOverride": null
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}
