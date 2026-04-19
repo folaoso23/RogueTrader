@@ -4,7 +4,12 @@
         "m_Bundles": []
     },
     "BundleDependencies": {
-        "m_List": []
+        "m_List": [
+            {
+                "Key": "WeaponExpertPlus_BlueprintDirectReferences",
+                "Value": []
+            }
+        ]
     },
     "BlueprintPatches": [
         {

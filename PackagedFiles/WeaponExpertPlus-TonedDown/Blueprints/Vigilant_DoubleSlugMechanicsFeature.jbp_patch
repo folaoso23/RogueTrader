@@ -1,0 +1,17 @@
+{
+  "TargetGuid": "76e37b6d00b14fbea50c39784b768098",
+  "FieldOverrides": [],
+  "ArrayPatches": [],
+  "ComponentsPatches": [
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"b787865cc7284095914908b39df0a903, AddAbilitiesToCurrentWeapon\",\r\n    \"name\": \"$AddAbilitiesToCurrentWeapon$5e6b4f13-c1c0-4cec-8ed6-3f96e39fe32a\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"m_WeaponClassification\": \"Shotgun\",\r\n    \"m_WeaponFamily\": \"None\",\r\n    \"m_WeaponHoldingType\": \"None\",\r\n    \"m_WeaponCategory\": \"None\",\r\n    \"m_WeaponAbilities\": [\r\n      {\r\n        \"Type\": \"Custom\",\r\n        \"Mode\": \"Default\",\r\n        \"m_Ability\": \"!bp_def7164545244af28d52cd38d0502525\",\r\n        \"m_FXSettings\": \"!bp_ceb5513fc2134b7b89922f0579246dec\",\r\n        \"OnHitOverrideType\": \"Add\",\r\n        \"m_OnHitActions\": null,\r\n        \"AP\": 2\r\n      }\r\n    ]\r\n  }\r\n}",
+      "OperationType": "RemoveElement"
+    },
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"b787865cc7284095914908b39df0a903, AddAbilitiesToCurrentWeapon\",\r\n    \"name\": \"$AddAbilitiesToCurrentWeapon$f2b36e34-c2d3-47d1-9be4-f464d9083cf8\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"m_WeaponClassification\": \"Shotgun\",\r\n    \"m_WeaponFamily\": \"None\",\r\n    \"m_WeaponHoldingType\": \"None\",\r\n    \"m_WeaponCategory\": \"None\",\r\n    \"m_WeaponAbilities\": [\r\n      {\r\n        \"Type\": \"SingleShot\",\r\n        \"Mode\": \"Default\",\r\n        \"m_Ability\": \"!bp_def7164545244af28d52cd38d0502525\",\r\n        \"m_FXSettings\": \"!bp_ceb5513fc2134b7b89922f0579246dec\",\r\n        \"OnHitOverrideType\": \"Add\",\r\n        \"m_OnHitActions\": null,\r\n        \"AP\": 1\r\n      }\r\n    ]\r\n  }\r\n}",
+      "OperationType": "InsertLast"
+    }
+  ]
+}

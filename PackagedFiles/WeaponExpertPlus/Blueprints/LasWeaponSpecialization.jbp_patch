@@ -1,6 +1,27 @@
 {
   "TargetGuid": "baf7c232ef5943a186b8bb2a80990470",
-  "FieldOverrides": [],
+  "FieldOverrides": [
+    {
+      "FieldName": "m_DisplayName",
+      "FieldValue": {
+        "m_Key": "",
+        "m_OwnerString": "",
+        "m_OwnerPropertyPath": "",
+        "m_JsonPath": "",
+        "Shared": null
+      }
+    },
+    {
+      "FieldName": "m_Description",
+      "FieldValue": {
+        "m_Key": "",
+        "m_OwnerString": "",
+        "m_OwnerPropertyPath": "",
+        "m_JsonPath": "",
+        "Shared": null
+      }
+    }
+  ],
   "ArrayPatches": [],
   "ComponentsPatches": [
     {
@@ -50,7 +71,7 @@
     },
     {
       "FieldName": "Components",
-      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"95e248f24866439681c312b1bff0693c, UIPropertiesComponent\",\r\n    \"name\": \"$UIPropertiesComponent$b6aa93ad-f39d-40ea-82f5-10d691cd7dd3\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Properties\": [\r\n      {\r\n        \"NameType\": \"Damage\",\r\n        \"m_Name\": {\r\n          \"m_Key\": \"\",\r\n          \"m_OwnerString\": \"\",\r\n          \"m_OwnerPropertyPath\": \"\",\r\n          \"m_JsonPath\": \"\",\r\n          \"Shared\": null\r\n        },\r\n        \"Description\": {\r\n          \"m_Key\": \"\",\r\n          \"m_OwnerString\": \"\",\r\n          \"m_OwnerPropertyPath\": \"\",\r\n          \"m_JsonPath\": \"\",\r\n          \"Shared\": {\r\n            \"assetguid\": \"1f071480271b63d41a6aeafda3b0dabe\",\r\n            \"stringkey\": \"f451238e-2c64-4cf1-806d-26aaf167b216\"\r\n          }\r\n        },\r\n        \"m_DescriptionFact\": \"!bp_baf7c232ef5943a186b8bb2a80990470\",\r\n        \"m_LinkProperty\": true,\r\n        \"m_PropertyName\": \"Value2\",\r\n        \"m_PropertySource\": \"!bp_baf7c232ef5943a186b8bb2a80990470\",\r\n        \"m_LinkKey\": \"damagebonus\",\r\n        \"Main\": false\r\n      },\r\n      {\r\n        \"NameType\": \"Damage\",\r\n        \"m_Name\": {\r\n          \"m_Key\": \"\",\r\n          \"m_OwnerString\": \"\",\r\n          \"m_OwnerPropertyPath\": \"\",\r\n          \"m_JsonPath\": \"\",\r\n          \"Shared\": null\r\n        },\r\n        \"Description\": {\r\n          \"m_Key\": \"\",\r\n          \"m_OwnerString\": \"\",\r\n          \"m_OwnerPropertyPath\": \"\",\r\n          \"m_JsonPath\": \"\",\r\n          \"Shared\": {\r\n            \"assetguid\": \"23f4e98d892453646ac92bed0af2e3bf\",\r\n            \"stringkey\": \"b6afe351-9d82-4e74-aebb-243530e55207\"\r\n          }\r\n        },\r\n        \"m_DescriptionFact\": \"!bp_baf7c232ef5943a186b8bb2a80990470\",\r\n        \"m_LinkProperty\": true,\r\n        \"m_PropertyName\": \"Value1\",\r\n        \"m_PropertySource\": \"!bp_baf7c232ef5943a186b8bb2a80990470\",\r\n        \"m_LinkKey\": \"critbonus\",\r\n        \"Main\": false\r\n      }\r\n    ]\r\n  }\r\n}",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"95e248f24866439681c312b1bff0693c, UIPropertiesComponent\",\r\n    \"name\": \"$UIPropertiesComponent$b6aa93ad-f39d-40ea-82f5-10d691cd7dd3\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Properties\": [\r\n      {\r\n        \"NameType\": \"Damage\",\r\n        \"m_Name\": {\r\n          \"m_Key\": \"\",\r\n          \"m_OwnerString\": \"\",\r\n          \"m_OwnerPropertyPath\": \"\",\r\n          \"m_JsonPath\": \"\",\r\n          \"Shared\": null\r\n        },\r\n        \"Description\": {\r\n          \"m_Key\": \"\",\r\n          \"m_OwnerString\": \"\",\r\n          \"m_OwnerPropertyPath\": \"\",\r\n          \"m_JsonPath\": \"\",\r\n          \"Shared\": {\r\n            \"assetguid\": \"0c66e8a09886cbe4ea7bde976569b9a3\",\r\n            \"stringkey\": \"0f891fe4-4c13-4cb4-a4ed-26763189f48d\"\r\n          }\r\n        },\r\n        \"m_DescriptionFact\": \"!bp_baf7c232ef5943a186b8bb2a80990470\",\r\n        \"m_LinkProperty\": true,\r\n        \"m_PropertyName\": \"Value2\",\r\n        \"m_PropertySource\": \"!bp_baf7c232ef5943a186b8bb2a80990470\",\r\n        \"m_LinkKey\": \"damagebonus\",\r\n        \"Main\": false\r\n      },\r\n      {\r\n        \"NameType\": \"Damage\",\r\n        \"m_Name\": {\r\n          \"m_Key\": \"\",\r\n          \"m_OwnerString\": \"\",\r\n          \"m_OwnerPropertyPath\": \"\",\r\n          \"m_JsonPath\": \"\",\r\n          \"Shared\": null\r\n        },\r\n        \"Description\": {\r\n          \"m_Key\": \"\",\r\n          \"m_OwnerString\": \"\",\r\n          \"m_OwnerPropertyPath\": \"\",\r\n          \"m_JsonPath\": \"\",\r\n          \"Shared\": {\r\n            \"assetguid\": \"5729171091217a347999f1fb818441e0\",\r\n            \"stringkey\": \"29c163f3-87cd-4adc-8c66-7e26028f88ca\"\r\n          }\r\n        },\r\n        \"m_DescriptionFact\": \"!bp_baf7c232ef5943a186b8bb2a80990470\",\r\n        \"m_LinkProperty\": true,\r\n        \"m_PropertyName\": \"Value1\",\r\n        \"m_PropertySource\": \"!bp_baf7c232ef5943a186b8bb2a80990470\",\r\n        \"m_LinkKey\": \"critbonus\",\r\n        \"Main\": false\r\n      }\r\n    ]\r\n  }\r\n}",
       "OperationType": "InsertLast"
     }
   ]

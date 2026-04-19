@@ -1,46 +1,133 @@
 {
     "strings": {
         "c06a7a72-385c-477d-aad6-7a7a84e6c1d0": {
-            "Text": "Melta weapon attacks gain the following bonuses:\n<b>Base Damage Bonus</b>: + Weapon's Maximum Damage bonus.\n<b>Damage Bonus(%)</b>: +(25 + {unit_stat|WarhammerBallisticSkill|bonus} × 3 + {unit_stat|SkillTechUse}/5).\n<b>Single-shot AP Cost</b>: -1 AP (minimum 1).\nCritical hits do additional base damage equal to the current weapon's minimum damage bonus."
+            "Text": "Melta weapon attacks gain the following bonuses:\n<b>Damage Bonus(%)</b>: +{uip|damagebonus|4fa4dbc023474337990840e305d06fa4}.\n<b>Single-shot AP Cost</b>: -1 AP (minimum 1).\nCritical hits do additional base damage equal to the current weapon's minimum damage bonus."
+        },
+        "ccf3131b-4597-4208-9e19-b31f7058822c": {
+            "Text": "<u>25 + ({g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 3) + (Tech Use / 6)</u>"
         },
         "cabcbd5c-e59f-4e49-a001-4b6d54ea2e63": {
-            "Text": "Plasma weapon gain the following bonuses:\n<b>Base Damage Bonus</b>: +(Current weapon's maximum damage / 2)\n<b>{g|Encyclopedia:DamageGlossary}Damage{/g} Bonus %</b>: +(25 + ({unit_stat|WarhammerBallisticSkill|bonus} × 3) + {unit_stat|SkillTechUse}/8)\n<b>Hit Chance Bonus %</b>: (5 + {unit_stat|WarhammerPerception|bonus}).\n<b>Critical Base Damage Bonus</b>: + Current weapon's minimum damage / 2"
+            "Text": "Plasma weapon gain the following bonuses:\n<b>{g|Encyclopedia:DamageGlossary}Damage{/g} Bonus %</b>: +{uip|damagebonus|fdc990cb73114e4d8a7575813936cec9}\n<b>Hit Chance Bonus %</b>: +5.\n<b>Critical Base Damage Bonus</b>: + Current weapon's minimum damage / 2"
+        },
+        "a1bd9317-183b-483e-8ddb-e2330cb67a5f": {
+            "Text": "<u>25 + ({g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 2) + (Tech Use / 8)</u>"
         },
         "9cdcd518-1127-47c2-8c5b-b5f85a3f8804": {
-            "Text": "Bolt weapon attacks gain the following bonuses:\n<b>{g|Encyclopedia:ArmourPenetration}Armour Penetration{/g} Bonus %</b>: +(10 + {unit_stat|WarhammerPerception|bonus})\n<b>Damage Bonus %</b>: +(25 + {unit_stat|WarhammerBallisticSkill|bonus} × 4)\n<b>Recoil</b>:-25%.\n<b>Hit Chance Bonus %</b>: +5"
+            "Text": "Bolt weapon attacks gain the following bonuses:\n<b>{g|Encyclopedia:ArmourPenetration}Armour Penetration{/g} Bonus %</b>: +{uip|penetrationbonus|72b608c024174a13b60b70675e4ca840}\n<b>Damage Bonus %</b>: +{uip|damagebonus|72b608c024174a13b60b70675e4ca840}\n<b>Recoil</b>:-25%.\n<b>Hit Chance Bonus %</b>: +5\n<b>Bleed Damage on Critical Hits</b>: Current weapon's minimum damage"
+        },
+        "a32a4be1-cf48-416c-a5f6-b636a4859eef":{
+            "Text": "<u>25 + {g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 3</u>"
+        },
+        "1c6d3cfa-bc20-4f44-896f-29117a317eb7": {
+            "Text": "<u>20 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus</u>"
         },
         "2b816671-4493-4dcc-8cd1-5056ad133fdb": {
-            "Text": "Chain weapon attacks gain the following bonuses:\n<b>Damage Bonus %</b>: 25 + ({unit_stat|WarhammerStrength|bonus} × 3)\n<b>{g|Encyclopedia:ArmourPenetration}Armour Penetration{/g} Bonus %</b>: +5\n<b>Parry Reduction Bonus %</b>: -(5 + {unit_stat|WarhammerWeaponSkill|bonus} + {unit_stat|WarhammerStrength|bonus})\n<b>Bleed Damage Affliction Bonus</b>: +Current Weapon Minimum Damage"
+            "Text": "Chain weapon attacks gain the following bonuses:\n<b>Damage Bonus %</b>: +{uip|damagebonus|2259197e773b45d0a2f51fc57ccd2133}\n<b>{g|Encyclopedia:ArmourPenetration}Armour Penetration{/g} Bonus %</b>: +5\n<b>Parry Reduction Bonus %</b>: -{uip|parrychance|2259197e773b45d0a2f51fc57ccd2133}\n<b>Bleed Damage Affliction Bonus</b>: +Current Weapon Minimum Damage"
+        },
+        "b229d44a-5c19-4921-85a2-c61d0e551a1f": {
+            "Text": "<u>25 + {g|Encyclopedia:WarhammerStrength}STR{/g} bonus × 2</u>"
+        },
+        "355e9c8d-0d54-40e7-a6ec-2cdbdbeda7a9": {
+            "Text": "<u>5 + {g|Encyclopedia:WarhammerWeaponSkill}WS{/g} bonus + {g|Encyclopedia:WarhammerStrength}STR{/g} bonus</u>"
         },
         "a8ffba14-8b42-4fd0-b8c2-43ccdfaf9184": {
-            "Text": "Flame weapon attacks gain the following bonuses:\n<b>Weapon Attack {g|Encyclopedia:ActionPoints}AP{/g} Cost</b>: -1 AP (minimum 1)\n<b>Max Distance Bonus</b>: +4\n<b>Damage Bonus %</b>: 25 + ({unit_stat|WarhammerBallisticSkill|bonus} × 3)\n<b>Burning Damage Affliction</b>: Current weapon's maximum damage + ({unit_stat|SkillDemolition}/5)."
+            "Text": "Flame weapon attacks gain the following bonuses:\n<b>Weapon Attack {g|Encyclopedia:ActionPoints}AP{/g} Cost</b>: -1 AP (minimum 1)\n<b>Max Distance Bonus</b>: +4\n<b>Damage Bonus %</b>: +{uip|damagebonus|30ef0b17c93444bb9b0a0169c6fffe06}\n<b>Burning Damage Affliction</b>: Current weapon's maximum damage + {uip|burnbonus|30ef0b17c93444bb9b0a0169c6fffe06}."
         },
+        "5381087a-81fe-49a0-8d72-abfa7ce59a9c": {
+            "Text": "<u>25 + {g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 2</u>"
+        },
+        "d212eaa7-837d-4d6e-8b2a-2b0283098a29": {
+            "Text": "<u>Demolition / 8</u>"
+        },                        
         "08f6b70a-6414-4c5d-a366-ee000e1efc1f": {
-            "Text": "Las weapons gain the following bonuses:\n<b>{g|Encyclopedia:DodgeGlossary}Dodge{/g} reduction against enemies</b>: −25% {g|Encyclopedia:Penalty}penalty{/g}\n<b>Critical Hit Chance Bonus %</b>: +(10 + {unit_stat|WarhammerPerception|bonus})\n<b>Critical Damage Bonus %</b>: +(25 + {unit_stat|WarhammerBallisticSkill|bonus} × 3)\n<b>Fire Rate Bonus </b>: +1\n<b>Hit Chance Bonus %</b>: +5\n<b>Single Shot Base Damage Bonus </b>: +Current Weapon's Max Damage / 2\n<b>Recoil</b>-50%"
+            "Text": "Las weapons gain the following bonuses:\n<b>{g|Encyclopedia:DodgeGlossary}Dodge{/g} reduction against enemies</b>: −25% {g|Encyclopedia:Penalty}penalty{/g}\n<b>Critical Hit Chance Bonus %</b>: +{uip|critbonus|baf7c232ef5943a186b8bb2a80990470}\n<b>Fire Rate Bonus </b>: +1\n<b>Hit Chance Bonus %</b>: +10\n<b>Damage Bonus(%)</b>: +{uip|damagebonus|baf7c232ef5943a186b8bb2a80990470}\n<b>Recoil</b>-75%"
         },
+        "29c163f3-87cd-4adc-8c66-7e26028f88ca": {
+            "Text": "<u>15 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus</u>"
+        },
+        "0f891fe4-4c13-4cb4-a4ed-26763189f48d": {
+            "Text": "<u>15 + {g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 2</u>"
+        },                
         "bb7f40fc-225a-4f9d-b8bd-908667ce8399": {
-            "Text": "Power weapon attacks gain the following bonuses:\n<b>{g|Encyclopedia:ArmourPenetration}Armor Penetration Bonus{/g} %</b>: +(15 + {unit_stat|WarhammerWeaponSkill|bonus})\n<b>Damage Bonus %</b>: +(25 + {unit_stat|WarhammerStrength|bonus} × 4 + {unit_stat|SkillTechUse}/5)\n<b>Parry Reduction Bonus %</b>: -5"
+            "Text": "Power weapon attacks gain the following bonuses:\n<b>{g|Encyclopedia:ArmourPenetration}Armor Penetration Bonus{/g} %</b>: +{uip|penetrationbonus|9d82f293513e4bb390782188307f948f}\n<b>Damage Bonus %</b>: +{uip|damagebonus|9d82f293513e4bb390782188307f948f}\n<b>Parry Reduction Bonus %</b>: -5\nPower weapons will also apply the staggered condition for 1 round if their target fails Toughness check."
         },
+       "86b08ace-f4a3-4bdd-af56-01ff2fd4a6e6": {
+            "Text": "<u>15 + {g|Encyclopedia:WarhammerWeaponSkill}WS{/g} bonus</u>"
+        },
+        "dedb5a35-4d3d-4fdd-b4d4-e2289397cff2": {
+            "Text": "<u>25 + ({g|Encyclopedia:WarhammerStrength}STR{/g} bonus × 3) + (Tech Use / 6)</u>"
+        },                
         "284cc94e-b4f2-478b-9967-721eb6144fa9": {
-            "Text": "Solid projectile weapon attacks gain the following bonuses:\n<b>Damage Bonus %</b>: +(25 + {unit_stat|WarhammerBallisticSkill|bonus} × 3)\n<b>Reload AP Cost</b>: -1 AP (minimum 1)\n<b>Fire Rate Bonus</b>: +1\n<b>Bleed Damage Affliction Bonus</b>: Current weapon's minimum damage\n<b>Hit Chance Bonus %</b>: +10"
+            "Text": "Solid projectile weapon attacks gain the following bonuses:\n<b>Damage Bonus %</b>: +{uip|damagebonus|21d6182a02014531a63f28fe5ff34530}\n<b>Reload AP Cost</b>: -2 AP (minimum 1)\n<b>Fire Rate Bonus</b>: +1\n<b>Bleed Damage on Critical Hits</b>: Current weapon's minimum damage / 2\n<b>Hit Chance Bonus %</b>: +5"
         },
+       "ea98e700-b9ce-4772-8def-4dd58ab315b6": {
+            "Text": "<u>25 + {g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 2</u>"
+        },            
         "8bd043c7-4aca-4315-81ae-ec25ee98913c": {
-            "Text": "The <b>Sweep</b> ability of an axe and the <b>Shove</b> ability of a hammer or mace cost −1 AP less (but no less than 1).\nHammers and mauls will apply a random trauma if the target fails a Toughness test with a +25 bonus.\nKnives recover {unit_stat|WarhammerAgility|bonus} MP upon a successful hit and do +{unit_stat|WarhammerWeaponSkill}% damage on targets with less than 50% HP.\nPrimitive melee weapons gain +(25 + {unit_stat|WarhammerWeaponSkill|bonus} × 2 + {unit_stat|WarhammerStrength|bonus} × 2)% bonus damage.\nBlade weapons gain critical damage equal to (25 + ({unit_stat|WarhammerAgility|bonus} × 3)%, dodge reduction equal to -(5 + {unit_stat|WarhammerWeaponSkill|bonus}), and +(10 + {unit_stat|WarhammerWeaponSkill|bonus}) critical hit chance."
+            "Text": "The <b>Sweep</b> ability of an axe and the <b>Shove</b> ability of a hammer or mace cost −1 AP less (but no less than 1).\n<b>Hammers and Mauls</b>: Applies a random trauma if the target fails a Toughness test with a +25 bonus.\n<b>Knives</b>: Recover {unit_stat|WarhammerAgility|bonus} MP upon a successful hit and do +{unit_stat|WarhammerWeaponSkill}% damage on targets with less than 50% HP.\n<b>Primitive Melee weapons</b>: +{uip|primitivedamagebonus|2558102cf3d24a52ae8be0f0e898dec1}% bonus damage.\n<b>Blade weapons</b>: +{uip|bladedamagebonus|2558102cf3d24a52ae8be0f0e898dec1}% critical damage, {uip|bladedodgebonus|2558102cf3d24a52ae8be0f0e898dec1}% dodge reduction, and +{uip|bladecritbonus|2558102cf3d24a52ae8be0f0e898dec1}% critical hit chance."
         },
+        "ce19df63-59a5-4ebd-98e7-b58c688c69d5": {
+            "Text": "<u>25 + {g|Encyclopedia:WarhammerWeaponSkill}WS{/g} bonus + ({g|Encyclopedia:WarhammerStrength}STR{/g} bonus × 2)</u>"
+        },
+        "bbdadc3b-7d46-4375-900d-f41eb6495d00": {
+            "Text": "<u>25 + {g|Encyclopedia:WarhammerAgility}AGI{/g} bonus × 2</u>"
+        },
+        "828ed3f9-2779-4952-b3f8-712d31266e9e": {
+            "Text": "<u>5 + {g|Encyclopedia:WarhammerWeaponSkill}WS{/g} bonus</u>"
+        },
+        "82bde4e9-39c6-4b2b-816b-a31660c7ebd1": {
+            "Text": "<u>10 + {g|Encyclopedia:WarhammerWeaponSkill}WS{/g} bonus</u>"
+        },                                                
         "c7785b19-93a0-4a18-b39b-cc85c865de33": {
-            "Text": "Drukhari ranged weapons deal +(25 + {unit_stat|WarhammerBallisticSkill|bonus} × 2)% increased damage for each DoT affecting the target.\n<b>All</b> DoT effects applied to a target are increased by +(20 + {unit_stat|WarhammerPerception|bonus} × 2  + {unit_stat|SkillLoreXenos}/3)%.\nDrukhari Las Weapons gain separate bonuses from the ones above:\n<b>Base Damage Bonus</b>: + Weapon's maximum damage\n<b>Damage Bonus %</b>: 25 + ({unit_stat|WarhammerBallisticSkill|bonus} × 2) + {unit_stat|SkillLoreXenos}/5"
+            "Text": "Drukhari ranged weapons deal +{uip|damagebonus|505223dbfb2d4be6a758818c46878908}% increased damage for each DoT affecting the target.\n<b>All</b> DoT effects applied to a target are increased by +{uip|dotdamagebonus|505223dbfb2d4be6a758818c46878908}%.\nDrukhari Las Weapons gain +{uip|lasdamagebonus|505223dbfb2d4be6a758818c46878908}% damage."
         },
+        "20bc52ac-c5c8-4007-b5c5-fbaec21ef6bb": {
+            "Text": "<u>15 + {g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus</u>"
+        },    
+        "d881c4df-025f-418f-a468-392c61c5788d": {
+            "Text": "<u>20 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus + (Lore(Xenos) / 3)</u>"
+        },    
+        "3e8bd7e7-c1f8-4bbc-81db-44a5d4bab2e8": {
+            "Text": "<u>25 + ({g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 2) + (Lore(Xenos) / 5)</u>"
+        },                            
         "5dc453dc-f0fe-4a1f-bae2-cc8358348a7f": {
-            "Text": "Drukhari and Aeldari melee weapons damage scales with AGI instead of STR if its higher\nThey also do + (25 + {unit_stat|WarhammerAgility|bonus} × 4)% critical damage, dodge reduction equal to -(5 + {unit_stat|WarhammerWeaponSkill|bonus}), and +(15 + {unit_stat|WarhammerWeaponSkill|bonus}) critical hit chance."
+            "Text": "Drukhari and Aeldari melee weapons damage scales with AGI instead of STR if its higher\nThey also do +{uip|critdamagebonus|ba334a21868849f1b198440d0eff98bc}% critical damage, gain {uip|dodgereduction|ba334a21868849f1b198440d0eff98bc}% dodge reduction, and +{uip|critbonus|ba334a21868849f1b198440d0eff98bc} critical hit chance."
         },
+        "a9f951c9-35f0-4efb-bfa6-d808673035d9": {
+            "Text": "<u>25 + ({g|Encyclopedia:WarhammerAgility}AGI{/g} bonus × 3)</u>"
+        },
+         "1b05fa94-3a1a-4ead-b020-9ce18a89951d": {
+            "Text": "<u>5 + {g|Encyclopedia:WarhammerWeaponSkill}WS{/g} bonus</u>"
+        },
+        "0c4befa6-9ab7-46e1-a176-9a3a51dc7f80": {
+            "Text": "<u>15 + {g|Encyclopedia:WarhammerWeaponSkill}WS{/g} bonus</u>"
+        },                        
         "b19a55bb-d66d-4fbd-aeaf-ab05085e8bb6": {
-            "Text": "Aeldari ranged weapons deal +{unit_stat|WarhammerPerception|bonus} base critical damage and +(20 + {unit_stat|WarhammerPerception|bonus} × 2 + {unit_stat|SkillLoreXenos}/5)% critical damage.\nSingle-shot attacks gain +(15 + {unit_stat|WarhammerBallisticSkill|bonus})% armor penetration."
+            "Text": "Aeldari ranged weapons deal +{unit_stat|WarhammerPerception|bonus} base critical damage.\nSingle-shot attacks gain +{uip|penetrationbonus|d0313fe1cb894406a012329b2c46c48c}% armor penetration."
         },
+        "d4bbf296-7cad-47c5-8ac7-080f0cd17453": {
+            "Text": "<u>20 + ({g|Encyclopedia:WarhammerPerception}PER{/g} bonus × 2) + (Lore(Xenos) / 6)</u>"
+        },
+        "964acabe-c8c6-47c6-aae7-475e22bdab6d": {
+            "Text": "<u>15 + {g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus</u>"
+        },                       
         "74316417-b0df-4d28-9b5b-92ec943b7f92": {
-            "Text": "Force weapon attacks deal +{uip|DamageBonus|0618c379e430483bab1a17b2de559bc5} more base {g|Encyclopedia:DamageGlossary}damage{/g}, +(25 + 3 × {g|Encyclopedia:PsyRating}Psy Rating{/g})% damage, and have +{uip|ArmourPenetrationBonus|0618c379e430483bab1a17b2de559bc5}% more {g|Encyclopedia:ArmourPenetration}armour penetration{/g}."
+            "Text": "Force weapon attacks deal +{uip|DamageBonus|0618c379e430483bab1a17b2de559bc5} more base {g|Encyclopedia:DamageGlossary}damage{/g}, +{uip|PercentDamageBonus|0618c379e430483bab1a17b2de559bc5}% damage, and have +{uip|ArmourPenetrationBonus|0618c379e430483bab1a17b2de559bc5}% more {g|Encyclopedia:ArmourPenetration}armour penetration{/g}."
         },
         "b1bd5f2a-3fed-4870-83cb-642dd8c8df66": {
-            "Text": "<u>(2 + 2 × {g|Encyclopedia:PsyRating}psy rating{/g})</u>"
+            "Text": "<u>(1 + {g|Encyclopedia:PsyRating}psy rating{/g})</u>"
+        },
+        "0deb2d77-fd5b-4545-9b38-15281559cdb4":{
+            "Text": "<u>(25 + 2 × {g|Encyclopedia:PsyRating}Psy Rating{/g})</u>"
+        },
+        "411206e0-b73c-4dd5-b151-a3014ce1a7de": {
+            "Text": "Two single shots to one target. This attack has +5 range."
+        },
+        "49a7578b-8885-4272-a20c-0ae6822214d8": {
+            "Text": "A shotgun attack that has {uip|Penetration|027e75ab89364049b844a720feca85ec}% additional armour penetration, +50% damage, and applies {uip|Bleed|027e75ab89364049b844a720feca85ec} bleed to all targets hit."
+        },
+        "200bbad1-a4be-4e3f-b364-abdd91c2bdf9":{
+            "Text": "Dual attacks will no longer have an increased AP cost.\nAn additional attack with the second weapon will suffer no penalties or increased cost if the first attack was either an axe's {g|f:a270dbb75ea44128b951b5d18d0b6bed}Sweep{/g} or a hammer or mace's {g|f:bd5f109c46684a09b07fb13743d2a6d7}Harsh Shove{/g} ability."
         }
     }
 }
