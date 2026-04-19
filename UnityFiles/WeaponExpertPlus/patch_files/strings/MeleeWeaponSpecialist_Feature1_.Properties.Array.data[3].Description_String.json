@@ -1,0 +1,26 @@
+{
+  "source": "enGB",
+  "key": "7177e477-67f5-4b6f-8335-fa4a52bb281d",
+  "ownerGuid": "b4f68f4da1173f74fbf210e60419415a",
+  "languages": [
+    {
+      "locale": "Sound",
+      "text": "",
+      "modification_date": "2026-01-24T21:02:41.3136849Z"
+    },
+    {
+      "locale": "enGB",
+      "text": "<u>10 + {g|Encyclopedia:WarhammerWeaponSkill}WS{/g} bonus</u>",
+      "modification_date": "2026-01-24T21:02:41.3146843Z",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2026-01-24T21:02:41.3146843Z",
+          "locale_text": "<u>10 + {g|Encyclopedia:WarhammerWeaponSkill}WS{/g} bonus</u>",
+          "speaker": "",
+          "speaker_gender": ""
+        }
+      ]
+    }
+  ]
+}

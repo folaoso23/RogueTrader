@@ -1,0 +1,26 @@
+{
+  "source": "enGB",
+  "key": "0b1bb5af-0db6-4cdc-bf7e-d4ac4f9bca87",
+  "ownerGuid": "bdddae9c82efc924096ede7295762cdd",
+  "languages": [
+    {
+      "locale": "Sound",
+      "text": "",
+      "modification_date": "2026-01-24T17:38:42.9830808Z"
+    },
+    {
+      "locale": "enGB",
+      "text": "<u>25 +{g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 2 + Tech Use / 8</u>",
+      "modification_date": "2026-01-24T17:38:52.2021633Z",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2026-01-24T17:38:52.2021633Z",
+          "locale_text": "<u>25 +{g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 2 + Tech Use / 8</u>",
+          "speaker": "",
+          "speaker_gender": ""
+        }
+      ]
+    }
+  ]
+}

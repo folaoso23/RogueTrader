@@ -1,0 +1,26 @@
+{
+  "source": "enGB",
+  "key": "ae6660a6-f4d1-4020-b904-ae0ddf675905",
+  "ownerGuid": "6d6dcdeecb88e0e4c983e97ce80f7d69",
+  "languages": [
+    {
+      "locale": "Sound",
+      "text": "",
+      "modification_date": "2026-01-24T22:20:06.2814204Z"
+    },
+    {
+      "locale": "enGB",
+      "text": "<u>25 + ({g|Encyclopedia:WarhammerAgility}AGI{/g} bonus × 3)</u>",
+      "modification_date": "2026-01-24T22:20:06.2819322Z",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2026-01-24T22:20:06.2819322Z",
+          "locale_text": "<u>25 + ({g|Encyclopedia:WarhammerAgility}AGI{/g} bonus × 3)</u>",
+          "speaker": "",
+          "speaker_gender": ""
+        }
+      ]
+    }
+  ]
+}

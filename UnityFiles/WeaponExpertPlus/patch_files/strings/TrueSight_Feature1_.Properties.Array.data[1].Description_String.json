@@ -1,0 +1,26 @@
+{
+  "source": "enGB",
+  "key": "2e512a88-07c3-4435-9453-9a3719a18840",
+  "ownerGuid": "23023133a5bf83b47a0272cc35ba2598",
+  "languages": [
+    {
+      "locale": "Sound",
+      "text": "",
+      "modification_date": "2026-01-24T22:25:26.4924454Z"
+    },
+    {
+      "locale": "enGB",
+      "text": "<u>15 + {g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus</u>",
+      "modification_date": "2026-01-24T22:25:26.4939602Z",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2026-01-24T22:25:26.4939602Z",
+          "locale_text": "<u>15 + {g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus</u>",
+          "speaker": "",
+          "speaker_gender": ""
+        }
+      ]
+    }
+  ]
+}

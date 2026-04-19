@@ -1,0 +1,26 @@
+{
+  "source": "enGB",
+  "key": "3c8fa884-746c-4372-b816-95ffccead8cb",
+  "ownerGuid": "6b5ec19bfb2db684e9bfe58c988fb989",
+  "languages": [
+    {
+      "locale": "Sound",
+      "text": "",
+      "modification_date": "2026-01-24T22:25:12.716299Z"
+    },
+    {
+      "locale": "enGB",
+      "text": "<u>20 + ({g|Encyclopedia:WarhammerPerception}PER{/g} bonus × 2) + (Lore(Xenos) / 6)</u>",
+      "modification_date": "2026-01-24T22:25:12.7172995Z",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2026-01-24T22:25:12.7172995Z",
+          "locale_text": "<u>20 + ({g|Encyclopedia:WarhammerPerception}PER{/g} bonus × 2) + (Lore(Xenos) / 6)</u>",
+          "speaker": "",
+          "speaker_gender": ""
+        }
+      ]
+    }
+  ]
+}

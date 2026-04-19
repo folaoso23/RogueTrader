@@ -1,0 +1,26 @@
+{
+  "source": "enGB",
+  "key": "406e79a4-8780-4164-b115-d3bc85f6fc9d",
+  "ownerGuid": "0d6a78cecbdd10543b9567d0a79fcf84",
+  "languages": [
+    {
+      "locale": "Sound",
+      "text": "",
+      "modification_date": "2026-01-24T18:03:54.9410437Z"
+    },
+    {
+      "locale": "enGB",
+      "text": "<u>5 + {g|Encyclopedia:WarhammerStrength}STR{/g} bonus × 2</u>",
+      "modification_date": "2026-01-24T18:07:32.5846353Z",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2026-01-24T18:07:32.5846353Z",
+          "locale_text": "<u>5 + {g|Encyclopedia:WarhammerStrength}STR{/g} bonus × 2</u>",
+          "speaker": "",
+          "speaker_gender": ""
+        }
+      ]
+    }
+  ]
+}

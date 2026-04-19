@@ -1,0 +1,26 @@
+{
+  "source": "enGB",
+  "key": "3f14d644-6af8-4e12-ac2f-3be5b811377a",
+  "ownerGuid": "d72ef256073137f4da1cc475ffc25b47",
+  "languages": [
+    {
+      "locale": "Sound",
+      "text": "",
+      "modification_date": "2026-01-24T21:01:29.5864717Z"
+    },
+    {
+      "locale": "enGB",
+      "text": "<u>25 + {g|Encyclopedia:WarhammerWeaponSkill}WS{/g} bonus + ({g|Encyclopedia:WarhammerStrength}STR{/g} bonus × 2)</u>",
+      "modification_date": "2026-01-24T21:01:29.5874786Z",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2026-01-24T21:01:29.5874786Z",
+          "locale_text": "<u>25 + {g|Encyclopedia:WarhammerWeaponSkill}WS{/g} bonus + ({g|Encyclopedia:WarhammerStrength}STR{/g} bonus × 2)</u>",
+          "speaker": "",
+          "speaker_gender": ""
+        }
+      ]
+    }
+  ]
+}

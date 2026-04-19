@@ -1,0 +1,26 @@
+{
+  "source": "enGB",
+  "key": "b6afe351-9d82-4e74-aebb-243530e55207",
+  "ownerGuid": "23f4e98d892453646ac92bed0af2e3bf",
+  "languages": [
+    {
+      "locale": "Sound",
+      "text": "",
+      "modification_date": "2026-01-24T18:42:14.670195Z"
+    },
+    {
+      "locale": "enGB",
+      "text": "<u>10 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus</u>",
+      "modification_date": "2026-01-24T18:42:14.670195Z",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2026-01-24T18:42:14.670195Z",
+          "locale_text": "<u>10 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus</u>",
+          "speaker": "",
+          "speaker_gender": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "source": "enGB",
+  "key": "6bca8308-a0b1-4371-ae32-a2fa250e0f58",
+  "ownerGuid": "175dfb4b29ae4b24e95126f81a3ef5f4",
+  "languages": [
+    {
+      "locale": "Sound",
+      "text": "",
+      "modification_date": "2026-01-24T20:12:00.5438809Z"
+    },
+    {
+      "locale": "enGB",
+      "text": "<u>25 + ({g|Encyclopedia:WarhammerStrength}STR{/g} bonus × 3) + (Tech Use / 6)</u>",
+      "modification_date": "2026-01-24T20:12:00.54488Z",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2026-01-24T20:12:00.54488Z",
+          "locale_text": "<u>25 + ({g|Encyclopedia:WarhammerStrength}STR{/g} bonus × 3) + (Tech Use / 6)</u>",
+          "speaker": "",
+          "speaker_gender": ""
+        }
+      ]
+    }
+  ]
+}

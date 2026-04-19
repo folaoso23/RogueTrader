@@ -1,0 +1,26 @@
+{
+  "source": "enGB",
+  "key": "2e3a704f-b936-4045-a5d6-d95165b90520",
+  "ownerGuid": "3f5ee12db6064de4cb7fe85aeadc6815",
+  "languages": [
+    {
+      "locale": "Sound",
+      "text": "",
+      "modification_date": "2026-01-24T21:54:02.6149405Z"
+    },
+    {
+      "locale": "enGB",
+      "text": "<u>25 + ({g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 2) + (Lore(Xenos) / 5)</u>",
+      "modification_date": "2026-01-24T21:54:02.615949Z",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2026-01-24T21:54:02.615949Z",
+          "locale_text": "<u>25 + ({g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 2) + (Lore(Xenos) / 5)</u>",
+          "speaker": "",
+          "speaker_gender": ""
+        }
+      ]
+    }
+  ]
+}

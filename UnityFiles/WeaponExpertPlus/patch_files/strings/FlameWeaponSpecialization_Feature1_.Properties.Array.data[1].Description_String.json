@@ -1,0 +1,26 @@
+{
+  "source": "enGB",
+  "key": "d212eaa7-837d-4d6e-8b2a-2b0283098a29",
+  "ownerGuid": "c007d0a5bbc53b9449c2b21ae1ab946e",
+  "languages": [
+    {
+      "locale": "Sound",
+      "text": "",
+      "modification_date": "2026-01-24T23:03:57.8290634Z"
+    },
+    {
+      "locale": "enGB",
+      "text": "<u>Demolition / 8</u>",
+      "modification_date": "2026-01-24T23:03:57.8290634Z",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2026-01-24T23:03:57.8290634Z",
+          "locale_text": "<u>Demolition / 8</u>",
+          "speaker": "",
+          "speaker_gender": ""
+        }
+      ]
+    }
+  ]
+}
