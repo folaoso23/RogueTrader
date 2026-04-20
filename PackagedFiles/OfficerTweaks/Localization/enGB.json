@@ -7,7 +7,7 @@
             "Text": "<u>{g|Encyclopedia:WarhammerWillpower}Willpower{/g} / 5</u>"
         },
         "071b106f-0ed9-4258-babb-43c8e1fc9c8d":{
-            "Text": "<u>25 + ({g|Encyclopedia:WarhammerWillpower}Willpower{/g} bonus × 2)</u>"
+            "Text": "<u>15 + ({g|Encyclopedia:WarhammerWillpower}Willpower{/g} bonus</u>"
         },        
         "128181fd-09e5-4577-afc5-139af211780a": {
             "Text": "The {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} increases an ally's {g|Encyclopedia:Resolve}resolve{/g} by +{uip|ResolveBonus|32c0e0539f8548b08780089f8006f54a}.\nTheir damage is increased by {uip|DamageBonus|32c0e0539f8548b08780089f8006f54a}% and critical chance increased by {unit_stat|Resolve}% until the end of combat.\nIf the target is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g}, they will start their next {g|Encyclopedia:Turn}turn{/g} with +1 additional {g|Encyclopedia:ActionPoints}action point{/g}."
