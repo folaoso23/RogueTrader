@@ -53,6 +53,9 @@
         },
         "5c64add2-1740-4827-b2b0-745d93d024b1": {
             "Text": "Once per combat, if the crime lord has at least 1 stack of sure-fire plan, they do not die from lethal {g|Encyclopedia:DamageGlossary}damage{/g}. Instead, they heal <u>(5 × sure-fire plan stacks)</u>% of {g|Encyclopedia:MaxWounds}maximum wounds{/g}, lose all stacks, and can no longer gain sure-fire plan stacks.\n<b>Passive Effect:</b>The Crime Lord gains +10 to all characteristics as long as they have at least 1 stack of sure-fire plan."
+        },
+        "f3f3f269-4895-46ba-b8bc-2f81d17dcb9e": {
+            "Text": "Execution Plan"
         }
     }
 }
