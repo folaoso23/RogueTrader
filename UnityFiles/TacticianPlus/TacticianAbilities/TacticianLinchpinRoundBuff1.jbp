@@ -1,0 +1,90 @@
+{
+  "AssetId": "009016a29c8248c88b40b071d5eb55d0",
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "PrototypeLink": "9e1574bcceee480da478cfeb1514c937",
+    "m_Overrides": [
+      "$AddMechanicsFeature$c692b3be-8c8d-4537-9116-a66335887f9d",
+      "$WarhammerHitChanceModifierInitiator$03fbf054-cb81-4254-b8ac-e3984beabee9",
+      "$DodgeAlliesAutomatically$741874bd-32a8-487c-a8dd-80a267a57fe3",
+      "$CounterAttack$fd6bf127-5988-4991-a89e-c537b303b911",
+      "$MomentumChangesModifier$f884e443-5821-4a77-ab72-9b0c8168d745",
+      "$AddMechanicsFeature$0cdaebf3-dc71-4624-bfe5-0de39ada2d4f"
+    ],
+    "Components": [
+      {
+        "$type": "0bd3b0417d194307b76dfa6a66522267, DodgeAlliesAutomatically",
+        "name": "$DodgeAlliesAutomatically$741874bd-32a8-487c-a8dd-80a267a57fe3",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        }
+      }
+    ],
+    "Author": "AlexanderGusev",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "53b8eec3fa0a4ea43bf8eca01f159e1f",
+        "stringkey": "b002ee7e-a9e4-4422-9330-f89391ff0000"
+      }
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "31077b99f2773b84aa61a4ae5ff48e10",
+        "stringkey": "8644abbf-d4fd-46ee-9564-22566f2d15cb"
+      }
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "m_Flags": 0,
+    "m_SoundTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "m_MuffledTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "Stacking": "Stack",
+    "ProlongWhenRankAdded": false,
+    "PriorityProperty": "Value1",
+    "Initiative": "ByCaster",
+    "Ranks": 6,
+    "FxOnStart": {
+      "AssetId": "1e32dd70fcc320b41bbc7a84f118de1f"
+    },
+    "FxOnRemove": {
+      "AssetId": ""
+    },
+    "m_FXSettings": null,
+    "ResourceAssetIds": [],
+    "PlayOnlyFirstHitSound": false,
+    "m_priorityInUI": 0,
+    "m_AbilityGroups": [],
+    "m_Cyclical": false,
+    "NeedCollapseStack": true
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}
