@@ -1,27 +1,6 @@
 {
   "TargetGuid": "baf7c232ef5943a186b8bb2a80990470",
-  "FieldOverrides": [
-    {
-      "FieldName": "m_DisplayName",
-      "FieldValue": {
-        "m_Key": "",
-        "m_OwnerString": "",
-        "m_OwnerPropertyPath": "",
-        "m_JsonPath": "",
-        "Shared": null
-      }
-    },
-    {
-      "FieldName": "m_Description",
-      "FieldValue": {
-        "m_Key": "",
-        "m_OwnerString": "",
-        "m_OwnerPropertyPath": "",
-        "m_JsonPath": "",
-        "Shared": null
-      }
-    }
-  ],
+  "FieldOverrides": [],
   "ArrayPatches": [],
   "ComponentsPatches": [
     {
