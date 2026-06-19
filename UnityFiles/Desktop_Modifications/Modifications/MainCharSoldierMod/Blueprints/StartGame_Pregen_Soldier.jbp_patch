@@ -1,0 +1,11 @@
+{
+  "TargetGuid": "478bd2c6192d4867a3145e463bc363d6",
+  "FieldOverrides": [
+    {
+      "FieldValue": 50,
+      "FieldName": "OldWarhammerBallisticSkill"
+    }
+  ],
+  "ArrayPatches": [],
+  "ComponentsPatches": []
+}

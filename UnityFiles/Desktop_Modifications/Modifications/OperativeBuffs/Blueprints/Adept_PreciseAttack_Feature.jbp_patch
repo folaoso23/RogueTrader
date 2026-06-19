@@ -1,0 +1,12 @@
+{
+  "TargetGuid": "d9e00160ce96479281c1abe9a26ac4e5",
+  "FieldOverrides": [],
+  "ArrayPatches": [],
+  "ComponentsPatches": [
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"95e248f24866439681c312b1bff0693c, UIPropertiesComponent\",\r\n    \"name\": \"$UIPropertiesComponent$97057f47-f43c-4faa-8b79-96b62ead5e68\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Properties\": [\r\n      {\r\n        \"NameType\": \"Damage\",\r\n        \"m_Name\": {\r\n          \"m_Key\": \"\",\r\n          \"m_OwnerString\": \"\",\r\n          \"m_OwnerPropertyPath\": \"\",\r\n          \"m_JsonPath\": \"\",\r\n          \"Shared\": null\r\n        },\r\n        \"Description\": {\r\n          \"m_Key\": \"\",\r\n          \"m_OwnerString\": \"\",\r\n          \"m_OwnerPropertyPath\": \"\",\r\n          \"m_JsonPath\": \"\",\r\n          \"Shared\": {\r\n            \"assetguid\": \"0114d8fbc3df64a44afd918d3ab22c4b\",\r\n            \"stringkey\": \"50f49e3a-b651-401f-8cc4-9f4e46e48ec2\"\r\n          }\r\n        },\r\n        \"m_DescriptionFact\": \"!bp_d9e00160ce96479281c1abe9a26ac4e5\",\r\n        \"m_LinkProperty\": true,\r\n        \"m_PropertyName\": \"Dice1\",\r\n        \"m_PropertySource\": \"!bp_5f9c3a4d2f8e439883a1722c1d8b91b9\",\r\n        \"m_LinkKey\": \"damagebonus\",\r\n        \"Main\": false\r\n      }\r\n    ]\r\n  }\r\n}",
+      "OperationType": "InsertLast"
+    }
+  ]
+}

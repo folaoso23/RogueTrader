@@ -1,0 +1,15 @@
+{
+  "TargetGuid": "51604d37ac0e499da70e2c4a4f086066",
+  "FieldOverrides": [],
+  "ArrayPatches": [
+    {
+      "OperationType": 3,
+      "Value": {
+        "guid": "9b2f575d3c344104bc5a3a3ceb90c874"
+      },
+      "TargetValueGuid": "7ba30f20f2a34c5db55f6a5128033ebf",
+      "TargetValue": null,
+      "FieldName": "m_AddFacts"
+    }
+  ]
+}

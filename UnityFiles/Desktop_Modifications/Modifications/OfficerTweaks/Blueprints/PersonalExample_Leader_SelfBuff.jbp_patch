@@ -1,0 +1,11 @@
+{
+  "TargetGuid": "13cef12ff4e646b4892977051d682e8a",
+  "FieldOverrides": [
+    {
+      "FieldName": "Ranks",
+      "FieldValue": 2
+    }
+  ],
+  "ArrayPatches": [],
+  "ComponentsPatches": []
+}

@@ -1,0 +1,11 @@
+{
+  "TargetGuid": "3d550e92570c4605a60d59c42e8125bf",
+  "FieldOverrides": [
+    {
+      "FieldName": "m_Pattern.m_Radius",
+      "FieldValue": 10
+    }
+  ],
+  "ArrayPatches": [],
+  "ComponentsPatches": []
+}

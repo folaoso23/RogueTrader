@@ -1,0 +1,25 @@
+{
+  "TargetGuid": "17efbe9bb204463db27116117da4576e",
+  "FieldOverrides": [],
+  "ArrayPatches": [
+    {
+      "FieldName": "Prerequisites.List",
+      "OperationType": "RemoveElement",
+      "Value": {
+        "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+        "name": "$PrerequisiteFact$cb474cf2c15d4bad99228418c08441ed",
+        "Not": false,
+        "m_Fact": "!bp_2558102cf3d24a52ae8be0f0e898dec1",
+        "MinRank": 0
+      },
+      "TargetValue": null
+    }
+  ],
+  "ComponentsPatches": [
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"fbdf123fc48f4c8c9070075459002f01, TwoWeaponFightingNoPenalties\",\r\n    \"name\": \"$TwoWeaponFightingNoPenalties$6d6b38fd-39ad-491f-9cc6-74911110f328\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"m_KeepAttackPenalty\": true,\r\n    \"m_Restrictions\": {\r\n      \"Property\": {\r\n        \"Operation\": \"Sum\",\r\n        \"TargetType\": \"CurrentEntity\",\r\n        \"TargetEvaluator\": null,\r\n        \"FailSilentlyIfNoTarget\": false,\r\n        \"Getters\": []\r\n      }\r\n    }\r\n  }\r\n}",
+      "OperationType": "InsertLast"
+    }
+  ]
+}

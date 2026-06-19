@@ -1,0 +1,11 @@
+{
+  "TargetGuid": "51604d37ac0e499da70e2c4a4f086066",
+  "FieldOverrides": [],
+  "ArrayPatches": [],
+  "ComponentsPatches": [
+    {
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"d79ad4ed064aa4f43ace0e9c238fb9b9, AddFacts\",\r\n    \"name\": \"$AddFacts$e14abfe0-637c-4eab-9b9d-95f38cdfbc52\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"m_Facts\": [\r\n      \"!bp_9b2f575d3c344104bc5a3a3ceb90c874\"\r\n    ],\r\n    \"Dummy\": null,\r\n    \"DoNotRestoreMissingFacts\": false,\r\n    \"HasDifficultyRequirements\": false,\r\n    \"InvertDifficultyRequirements\": false,\r\n    \"MinDifficulty\": \"Story\"\r\n  }\r\n}",
+      "FieldName": "Components"
+    }
+  ]
+}

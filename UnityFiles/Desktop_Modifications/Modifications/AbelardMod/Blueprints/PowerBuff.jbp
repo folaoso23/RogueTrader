@@ -1,0 +1,69 @@
+{
+  "AssetId": "9145c42d3a5e4fa3b09f78081fef33ed",
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "a2844c135c0324e439072bd3cc2f9260, AddStatBonus",
+        "name": "$AddStatBonus$70fe3db2-af8a-4f42-9582-42ab830653c1",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Descriptor": "None",
+        "Stat": "Power",
+        "Value": 9000
+      }
+    ],
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "82013e23-3811-4e7f-a04f-cc40574c7b3d",
+      "m_OwnerString": "9145c42d3a5e4fa3b09f78081fef33ed",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\Units\\Companions\\AbelardCompanion\\PowerBuff_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "68b2249a-bec9-406e-a457-29bf26ee12e4",
+      "m_OwnerString": "9145c42d3a5e4fa3b09f78081fef33ed",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\Units\\Companions\\AbelardCompanion\\PowerBuff_m_Description.json",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "IsClassFeature": false,
+    "m_Flags": 0,
+    "m_SoundTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "m_MuffledTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "Stacking": "Replace",
+    "PriorityProperty": "Value1",
+    "Initiative": "ByCaster",
+    "Ranks": 0,
+    "TickEachSecond": false,
+    "Frequency": "TenMinutes",
+    "FxOnStart": {
+      "AssetId": ""
+    },
+    "FxOnRemove": {
+      "AssetId": ""
+    },
+    "m_FXSettings": null,
+    "ResourceAssetIds": [],
+    "PlayOnlyFirstHitSound": false,
+    "m_AbilityGroups": []
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

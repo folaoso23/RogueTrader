@@ -1,0 +1,12 @@
+{
+  "TargetGuid": "06b5bc0045394c7b8fd516341218f1ac",
+  "FieldOverrides": [],
+  "ArrayPatches": [],
+  "ComponentsPatches": [
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"6ebdb034bf2f486b932f9342e175ec6d, AbilityLifecycleTriggerCaster\",\r\n    \"name\": \"$AbilityLifecycleTriggerCaster$c820ab68-de5c-4a45-b06a-65c280bdc426\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Condition\": {\r\n      \"Operation\": \"Sum\",\r\n      \"TargetType\": \"CurrentEntity\",\r\n      \"TargetEvaluator\": null,\r\n      \"FailSilentlyIfNoTarget\": false,\r\n      \"Getters\": [\r\n        {\r\n          \"$type\": \"622b2e3118c34edebe1597cf4c03339e, CheckAbilityBlueprintGetter\",\r\n          \"name\": \"$CheckAbilityBlueprintGetter$6d431e04-24b2-4459-bff5-fd42c1114061\",\r\n          \"Settings\": {\r\n            \"Progression\": \"AsIs\",\r\n            \"m_CustomProgression\": [],\r\n            \"m_StartLevel\": 0,\r\n            \"m_StepLevel\": 0,\r\n            \"Negate\": false,\r\n            \"Limit\": \"None\",\r\n            \"Min\": 0,\r\n            \"Max\": 0\r\n          },\r\n          \"m_Abilities\": [\r\n            \"!bp_5bfccf14d8604ae1a041fb347fb8f19f\"\r\n          ]\r\n        }\r\n      ]\r\n    },\r\n    \"StartActions\": {\r\n      \"Actions\": []\r\n    },\r\n    \"EndActions\": {\r\n      \"Actions\": [\r\n        {\r\n          \"$type\": \"1e0ebe55f7204066b7cdb0eb124b863a, ContextActionRemoveSelf\",\r\n          \"name\": \"$ContextActionRemoveSelf$a2087454-ec0c-4fef-a6b6-11e467b36c0d\"\r\n        }\r\n      ]\r\n    },\r\n    \"m_Facts\": [],\r\n    \"m_FactsToCheckOnOwner\": []\r\n  }\r\n}",
+      "OperationType": "RemoveElement"
+    }
+  ]
+}

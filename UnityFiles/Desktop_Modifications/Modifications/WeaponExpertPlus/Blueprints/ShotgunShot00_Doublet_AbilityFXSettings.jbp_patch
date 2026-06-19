@@ -1,0 +1,11 @@
+{
+  "TargetGuid": "ceb5513fc2134b7b89922f0579246dec",
+  "FieldOverrides": [
+    {
+      "FieldName": "m_VisualFXSettings",
+      "FieldValue": "!bp_afde0e8c0c9848deba8e38a1279ee7df"
+    }
+  ],
+  "ArrayPatches": [],
+  "ComponentsPatches": []
+}

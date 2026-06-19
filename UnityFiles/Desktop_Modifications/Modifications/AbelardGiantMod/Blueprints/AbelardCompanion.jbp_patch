@@ -1,0 +1,10 @@
+{
+  "TargetGuid": "51604d37ac0e499da70e2c4a4f086066",
+  "FieldOverrides": [
+    {
+      "FieldValue": 5,
+      "FieldName": "Size"
+    }
+  ],
+  "ArrayPatches": []
+}

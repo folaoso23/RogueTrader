@@ -1,0 +1,11 @@
+{
+  "TargetGuid": "530b6d2cefef42f180b90c7bdbb99f90",
+  "FieldOverrides": [
+    {
+      "FieldName": "ActionPointCost",
+      "FieldValue": 0
+    }
+  ],
+  "ArrayPatches": [],
+  "ComponentsPatches": []
+}

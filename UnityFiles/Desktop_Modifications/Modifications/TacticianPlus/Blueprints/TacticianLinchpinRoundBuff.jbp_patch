@@ -1,0 +1,12 @@
+{
+  "TargetGuid": "9e1574bcceee480da478cfeb1514c937",
+  "FieldOverrides": [],
+  "ArrayPatches": [],
+  "ComponentsPatches": [
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"0bd3b0417d194307b76dfa6a66522267, DodgeAlliesAutomatically\",\r\n    \"name\": \"$DodgeAlliesAutomatically$741874bd-32a8-487c-a8dd-80a267a57fe3\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"Restrictions\": {\r\n      \"Property\": {\r\n        \"Operation\": \"Sum\",\r\n        \"TargetType\": \"CurrentEntity\",\r\n        \"TargetEvaluator\": null,\r\n        \"FailSilentlyIfNoTarget\": false,\r\n        \"Getters\": []\r\n      }\r\n    }\r\n  }\r\n}",
+      "OperationType": "InsertLast"
+    }
+  ]
+}

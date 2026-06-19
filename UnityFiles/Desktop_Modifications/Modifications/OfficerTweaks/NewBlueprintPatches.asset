@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fe07f61edc4914ac44891e22e1fdf7, type: 3}
+  m_Name: NewBlueprintPatches
+  m_EditorClassIdentifier: 
+  Entries:
+  - Guid: b509a3ee5ab44253b4b859dd5f3dbffb
+    Filename: Leader_BreakTheirRanks_Ability
+    PatchType: 1
+  - Guid: 59e769a14ac143f9b114224d0669ee36
+    Filename: Leader_BreakTheirRanks_ApplyBuff
+    PatchType: 1
+  - Guid: d36653bcf9b643f68c5dac1fc76fab4a
+    Filename: Leader_AirOfAuthority_Buff
+    PatchType: 1
+  - Guid: 3a4d9ccff9cf40bd88fa018e05ec550d
+    Filename: Leader_TakeAim_Ability
+    PatchType: 1
+  - Guid: 32c0e0539f8548b08780089f8006f54a
+    Filename: Leader_AirOfAuthority_Ability
+    PatchType: 1
+  - Guid: bf902ffd51c34e818e1d7a805b333669
+    Filename: Leader_TakeAim_Buff
+    PatchType: 1
+  - Guid: 35593034ffe240aba26ee38b5baa5a80
+    Filename: LeaderYouAreStrongerThanThisBuff
+    PatchType: 1
+  - Guid: 083057fc1a6b47f29ea0409337135030
+    Filename: LeaderYouAreStrongerThanThisAbility
+    PatchType: 1
+  - Guid: 13cef12ff4e646b4892977051d682e8a
+    Filename: PersonalExample_Leader_SelfBuff
+    PatchType: 1
+  - Guid: b370f94b75ac4261b6812960138d19e7
+    Filename: PersonalExample_Leader_Talent
+    PatchType: 1
+  - Guid: 58073019ae10412e9509b6ac97006bf1
+    Filename: SeizeInitiative_Leader_Talent
+    PatchType: 1
+  - Guid: d1aeb622ed00413f94fb5052b7ac66f1
+    Filename: SeizeInitiative_Leader_Buff
+    PatchType: 1
+  - Guid: c70e614368cb4148a7b21e8b291dbcb4
+    Filename: Steady_Leader_TemporaryBuff
+    PatchType: 1
+  - Guid: d30a4d35b09a408c9030526a506a8fa5
+    Filename: Steady_Leader_Buff
+    PatchType: 1
+  - Guid: 489a3d53b1b34a1d8e851103a494a425
+    Filename: LeadByExample_Leader_EffectBuff
+    PatchType: 1
+  - Guid: 5bfccf14d8604ae1a041fb347fb8f19f
+    Filename: LeaderKeepFightingAbility
+    PatchType: 1
+  - Guid: 1cd606cf1f484b5796def1bfa7343702
+    Filename: LeaderUltimateBuff
+    PatchType: 1
+  - Guid: 33c8c9db91694ca6ad3eff26e36dd0af
+    Filename: LeaderUltimateAbility
+    PatchType: 1
+  - Guid: 3f78bec2aea340a780e47f0a2a8dfb5f
+    Filename: LeaderDesperateAbility
+    PatchType: 1
+  - Guid: cb64551ce0234a85880bd0d8da91637f
+    Filename: LeaderMoveAbility
+    PatchType: 1
+  - Guid: 507d5622f0634d5f8425ca38ea11d767
+    Filename: WatchYourself_Leader_Buff
+    PatchType: 1
+  - Guid: cc5f2f561a434c53857a566650f0f70f
+    Filename: LeaderListenToMyOrderBuff
+    PatchType: 1

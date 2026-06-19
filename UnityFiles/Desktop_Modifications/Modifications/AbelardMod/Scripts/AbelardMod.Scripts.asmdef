@@ -1,0 +1,17 @@
+{
+    "name": "AbelardMod.Scripts",
+    "rootNamespace": "",
+    "references": [
+        "GUID:493eeb1ed5fc4dc8aebbb2d76f015b6f",
+        "GUID:917a9b02b689c264887ce87870647bc0"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

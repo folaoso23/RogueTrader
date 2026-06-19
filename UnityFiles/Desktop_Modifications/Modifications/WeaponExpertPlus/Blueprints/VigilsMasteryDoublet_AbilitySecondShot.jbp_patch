@@ -1,0 +1,17 @@
+{
+  "TargetGuid": "b99fb9f9a630446aa2d7480e58b4b2f8",
+  "FieldOverrides": [],
+  "ArrayPatches": [],
+  "ComponentsPatches": [
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction\",\r\n    \"name\": \"$AbilityEffectRunAction$328bec33-97f9-44f3-8830-dd44b02d0cb2\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"SavingThrowType\": \"Unknown\",\r\n    \"Actions\": {\r\n      \"Actions\": []\r\n    }\r\n  }\r\n}",
+      "OperationType": "RemoveElement"
+    },
+    {
+      "FieldName": "Components",
+      "FieldValue": "{\r\n  \"ComponentValue\": {\r\n    \"$type\": \"66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction\",\r\n    \"name\": \"$AbilityEffectRunAction$5d047cce-a85b-47d7-bf89-3e81ef2740fa\",\r\n    \"m_Flags\": \"0\",\r\n    \"PrototypeLink\": {\r\n      \"guid\": \"\",\r\n      \"name\": \"\"\r\n    },\r\n    \"m_Overrides\": [],\r\n    \"SavingThrowType\": \"Unknown\",\r\n    \"Actions\": {\r\n      \"Actions\": [\r\n        {\r\n          \"$type\": \"d5debd59683c7064fa9393bd52c9a624, ContextActionPush\",\r\n          \"name\": \"$ContextActionPush$7c14fafd-9755-4f41-8e15-79b4fb27fa53\",\r\n          \"Cells\": {\r\n            \"ValueType\": \"Simple\",\r\n            \"Value\": 3,\r\n            \"ValueRank\": \"Default\",\r\n            \"ValueShared\": \"Damage\",\r\n            \"Property\": \"None\",\r\n            \"m_CustomProperty\": null,\r\n            \"PropertyName\": \"Value1\"\r\n          },\r\n          \"ProvokeAttackOfOpportunity\": false,\r\n          \"m_UseFactOwnerAsCaster\": false,\r\n          \"m_PushBack\": false\r\n        },\r\n        {\r\n          \"$type\": \"120df4726e71c854e95f84b87a99a3c5, ContextActionSpawnFx\",\r\n          \"name\": \"$ContextActionSpawnFx$e9857385-8738-44f0-9fb0-00dc619758a8\",\r\n          \"PrefabLink\": {\r\n            \"AssetId\": \"72dad3f4a2c0a4f42906173951431bbf\"\r\n          }\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}",
+      "OperationType": "InsertLast"
+    }
+  ]
+}

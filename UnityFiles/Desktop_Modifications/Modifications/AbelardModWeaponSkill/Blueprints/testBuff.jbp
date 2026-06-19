@@ -1,0 +1,72 @@
+{
+  "AssetId": "9b2f575d3c344104bc5a3a3ceb90c874",
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "a2844c135c0324e439072bd3cc2f9260, AddStatBonus",
+        "name": "$AddStatBonus$8aa80918-7288-4040-a423-b57ee9252567",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Descriptor": "None",
+        "Stat": "WarhammerWeaponSkill",
+        "Value": 50
+      }
+    ],
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "fe275a38-aea7-4192-aab5-83119c200424",
+      "m_OwnerString": "9b2f575d3c344104bc5a3a3ceb90c874",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\Units\\Companions\\AbelardCompanion\\testBuff_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "9533c70d-dce7-4f8e-bc54-8b7a10a6bab2",
+      "m_OwnerString": "9b2f575d3c344104bc5a3a3ceb90c874",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\Units\\Companions\\AbelardCompanion\\testBuff_m_Description.json",
+      "Shared": null
+    },
+    "m_Icon": {
+      "guid": "79052246fd8f28649b1d4b86a1ec3a2b",
+      "fileid": 21300000
+    },
+    "m_AllowNonContextActions": false,
+    "IsClassFeature": false,
+    "m_Flags": 0,
+    "m_SoundTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "m_MuffledTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "Stacking": "Replace",
+    "PriorityProperty": "Value1",
+    "Initiative": "ByCaster",
+    "Ranks": 0,
+    "TickEachSecond": false,
+    "Frequency": "Rounds",
+    "FxOnStart": {
+      "AssetId": ""
+    },
+    "FxOnRemove": {
+      "AssetId": ""
+    },
+    "m_FXSettings": null,
+    "ResourceAssetIds": [],
+    "PlayOnlyFirstHitSound": false,
+    "m_AbilityGroups": []
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}
