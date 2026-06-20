@@ -1,0 +1,147 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "ee0460f02f7745b0a9894e1ebe22370d, GlobalDamageTrigger",
+        "name": "$GlobalDamageTrigger$c730a3a1-114c-479e-84ae-beaa813026cf",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Restrictions": {
+          "Property": {
+            "Operation": "BoolAnd",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "4515e962e6b6e6e43a2206ad6fcd0caa, CheckIsSpaceCombatGetter",
+                "name": "$CheckIsSpaceCombatGetter$0aade57a-31f7-4c55-9086-7a401d3991f5",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": true,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                }
+              }
+            ]
+          }
+        },
+        "ActionsOnAttacker": {
+          "Actions": []
+        },
+        "ActionsOnTarget": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "$ContextActionApplyBuff$d8b95555-98fa-4950-8282-8d8cfe132307",
+              "m_Buff": "!bp_51069e5ffcc24964b106add37e309e5e",
+              "BuffEndCondition": "CombatEnd",
+              "Permanent": true,
+              "DurationValue": {
+                "BonusValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "ToCaster": false,
+              "AsChild": false,
+              "SameDuration": false,
+              "Ranks": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionsOnApply": {
+                "Actions": []
+              },
+              "ActionsOnImmune": {
+                "Actions": []
+              },
+              "AddFactSource": false
+            }
+          ]
+        },
+        "ActionsOnCaster": {
+          "Actions": []
+        },
+        "ConditionsOnTarget": {
+          "Operation": "And",
+          "Conditions": [
+            {
+              "$type": "b0c4370c781db0142b035f14ca13a6a5, ContextConditionIsEnemy",
+              "name": "$ContextConditionIsEnemy$8fe6adb5-3674-42f9-b3b4-b0311051481f",
+              "Not": false
+            },
+            {
+              "$type": "4219677f5e7c45a7bf8c0f0103ef5a23, ContextConditionIsUnitHealthLessThan",
+              "name": "$ContextConditionIsUnitHealthLessThan$e534cb83-954f-4768-94c4-9ba67abbac78",
+              "Not": false,
+              "PercentValue": 50
+            }
+          ]
+        },
+        "ConditionsOnAttacker": {
+          "Operation": "And",
+          "Conditions": [
+            {
+              "$type": "c5b3b6002404ca249add2943e99f366a, ContextConditionIsAlly",
+              "name": "$ContextConditionIsAlly$97a5e74c-9b6b-448d-be1c-41c8df7d6d5a",
+              "Not": false
+            }
+          ]
+        },
+        "ConditionsOnCaster": {
+          "Operation": "And",
+          "Conditions": []
+        },
+        "TriggersForDamageOverTime": true
+      },
+      "InsertAfterTarget": "$AddFacts$663b564f-2190-4883-9e90-ca7a0e1f700d"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$WarhammerDamageModifierInitiator$c5c4b81b-4b50-4bac-8595-c762176c66be",
+      "InsertAfterTarget": "$GlobalDamageTrigger$c730a3a1-114c-479e-84ae-beaa813026cf"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$e4ca339c-cd94-4ad3-b4de-7c98bea89aea",
+      "InsertAfterTarget": "$WarhammerDamageModifierInitiator$c5c4b81b-4b50-4bac-8595-c762176c66be"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$PropertyCalculatorComponent$33ef8b54-cb8a-44bf-939f-d5538b8e469a"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$GlobalDamageTrigger$79de0680-26cf-472a-837b-4fb2edf89d65"
+    }
+  ]
+}

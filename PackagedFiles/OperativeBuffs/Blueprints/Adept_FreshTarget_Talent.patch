@@ -1,0 +1,141 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$UIPropertiesComponent$224d0969-dc18-47be-ba2a-2b939b95b11e",
+      "ElementPatch": {
+        "Properties": [
+          {
+            "PatchType": "PatchElement",
+            "Target": "Value1",
+            "ElementPatch": {
+              "Description": {
+                "Shared": {
+                  "stringkey": "dee07ee5-1dcd-4ee1-8801-1448552c7a6e"
+                }
+              }
+            }
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": {
+              "NameType": "Damage",
+              "m_Name": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": null
+              },
+              "Description": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": null
+              },
+              "m_DescriptionFact": "!bp_ed9d1434d0fd41e2a382a2efe0a2018a",
+              "m_LinkProperty": true,
+              "m_PropertyName": "Value2",
+              "m_PropertySource": "!bp_6bc423e71af648d39d9f5d07b6f402dc",
+              "m_LinkKey": "CriticalBonus",
+              "Main": false
+            },
+            "InsertAfterTarget": "Value1"
+          }
+        ]
+      }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "6d519a34c3e747bfa7d858a3c9a4b978, WarhammerKillTrigger",
+        "name": "$WarhammerKillTrigger$4a65dca8-7036-4fae-b430-4aadc3431da1",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "82e9cd41675f4262b09a9ae2e42a537a, CheckTargetHasBuffFromEntity",
+                "name": "$CheckTargetHasBuffFromEntity$78b4e3e4-632e-40a5-b76d-c1b76b1c300e",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Buff": "!bp_a2c8d30542b84a84bcc6480cf374c516",
+                "CheckTargetHasBuffFrom": "CurrentEntity"
+              }
+            ]
+          }
+        },
+        "ActionsOnKill": {
+          "Actions": [
+            {
+              "$type": "0bd97a65cf824c9db33fe4d1538535df, WarhammerContextActionRemoveAbilityCooldown",
+              "name": "$WarhammerContextActionRemoveAbilityCooldown$8453e6d0-940d-4d25-87df-362044bb25ce",
+              "m_Ability": "!bp_197b8a8a12b0442db7ffee1067cf3d97"
+            },
+            {
+              "$type": "d1933e412cc64482ae7990aaacdf44a8, WarhammerContextActionRestoreActionPoints",
+              "name": "$WarhammerContextActionRestoreActionPoints$d226c173-8768-4ef4-bad1-2652e67ab1b2",
+              "ActionPoints": {
+                "ValueType": "Simple",
+                "Value": 1,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "MovePoints": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionPointsToMax": false,
+              "MovePointsToMax": false,
+              "IgnoreMovePointsMaximum": false,
+              "IgnoreActionPointsMaximum": false
+            }
+          ]
+        },
+        "ActionsOnSurvive": {
+          "Actions": []
+        },
+        "ActionsOnTarget": false,
+        "RefundActionPointsOnKill": false,
+        "RefundActionPointsOnSurvive": false,
+        "ResetCooldownOnKill": false,
+        "ResetCooldownOnSurvive": false,
+        "RemoveOnKill": false,
+        "RemoveOnSurvive": false,
+        "OnlyEnemyKill": false,
+        "m_AffectedGroup": null,
+        "m_OtherAffectedGroupList": [],
+        "m_FilterFacts": [],
+        "ContextPropertyName": "Value1",
+        "PropertyToSave": "None"
+      },
+      "InsertAfterTarget": "$UIPropertiesComponent$224d0969-dc18-47be-ba2a-2b939b95b11e"
+    }
+  ]
+}

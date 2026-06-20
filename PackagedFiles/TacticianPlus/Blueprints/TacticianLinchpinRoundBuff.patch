@@ -1,0 +1,26 @@
+{
+  "Components": [
+    {
+      "PatchType": "Prepend",
+      "NewElement": {
+        "$type": "0bd3b0417d194307b76dfa6a66522267, DodgeAlliesAutomatically",
+        "name": "$DodgeAlliesAutomatically$741874bd-32a8-487c-a8dd-80a267a57fe3",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        }
+      }
+    }
+  ]
+}

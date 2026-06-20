@@ -1,0 +1,50 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "95e248f24866439681c312b1bff0693c, UIPropertiesComponent",
+        "name": "$UIPropertiesComponent$566bd72c-6c86-45b6-b570-4275c1a37d04",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Properties": [
+          {
+            "NameType": "Damage",
+            "m_Name": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": null
+            },
+            "Description": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": {
+                "assetguid": "2bc3829a5582966419172048fa1ea9fc",
+                "stringkey": "a041c969-b3d2-427b-9592-64f62b5c868f"
+              }
+            },
+            "m_DescriptionFact": "!bp_832dd8b02731461a881775696d937d71",
+            "m_LinkProperty": true,
+            "m_PropertyName": "Value1",
+            "m_PropertySource": "!bp_663d238524554308bd50f3d149ada085",
+            "m_LinkKey": "HitChanceBonus",
+            "Main": false
+          }
+        ]
+      },
+      "InsertAfterTarget": "$GlobalCombatStateTrigger$188c395b-16b4-473a-a6e7-865414efa75e"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$UIPropertiesComponent$2e2ad202-cac2-49e0-a17c-028c910299d4"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "Components": [
+    {
+      "PatchType": "Prepend",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$4d398161-1ef9-407a-94e0-4c7fd33007d9",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Value1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "ContextCaster",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
+              "name": "$SimplePropertyGetter$6d23b5c5-0c7c-4ccf-98a7-b97bf1f1cfb1",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": -3,
+                "Negate": true,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Property": "IntelligenceBonus"
+            },
+            {
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$8d01daff-12ed-4818-bbfe-6b391c2c9b6a",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": true,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "ValueType": "Simple",
+                "Value": 15,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$WarhammerDamageModifierTarget$68de98b5-8732-44b6-866a-48400afa9e39",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$4d398161-1ef9-407a-94e0-4c7fd33007d9"
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerDamageModifierTarget$68de98b5-8732-44b6-866a-48400afa9e39",
+      "ElementPatch": {
+        "Restrictions": {
+          "Property": {
+            "Getters": [
+              {
+                "PatchType": "PatchElement",
+                "Target": "$FactRankGetter$ce5f8167a52b4309a1067dfeb11c6988",
+                "ElementPatch": {
+                  "Target": "ContextCaster"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$PropertyCalculatorComponent$d44914c8-a12e-4203-99b4-f2bc873da676"
+    }
+  ]
+}

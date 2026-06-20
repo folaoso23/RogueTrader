@@ -37,7 +37,7 @@
             "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} targets one enemy within {g|Encyclopedia:LineOfSight}line of sight{/g}. That target immediately gains +{uip|Exploits|502b9195c84c42c5b180f3f63ed7955c} {g|Encyclopedia:Exploit}exploits{/g}."
         },
         "6182489e-0ccc-43ad-b421-15ad236fdadf": {
-            "Text": "<u>2 + ({g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus / 2)</u>"
+            "Text": "<u>1 + ({g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus / 2)</u>"
         },
         "43ab4851-d540-43eb-b72d-49d1df84a3f8": {
             "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} inflicts an {g|Encyclopedia:Exploit}exploit{/g} even on enemies which are out of the Operative's {g|Encyclopedia:LineOfSight}line of sight{/g} at the start of the {g|Encyclopedia:Turn}turn{/g}. They will also gain a {uip|dodgebonus|8341c8a0c79c4982a8cef0bbd2d1a2a2}% increase to their dodge chance."
@@ -57,9 +57,6 @@
         "1973b25f-e5c3-4428-a497-510eea0ccb7f": {
             "Text": "The Operative gains +25% {g|Encyclopedia:DetailsOfTheCoverGlossary}cover{/g} efficiency (if in cover), +20 {g|Encyclopedia:WarhammerPerception}Perception{/g}, +20 {g|Encyclopedia:WarhammerBallisticSkill}Ballistic Skill{/g}, and a 75% recoil reduction.\nThis effect lasts until the Operative moves. Does not stack."
         },
-        "b3653ca6-4344-436a-ac27-14e575b890d2": {
-            "Text": "If an enemy affected by an {g|Encyclopedia:Exploit}exploit{/g} within 10 cells from the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} attacks the Operative or their ally, that enemy suffers +1 additional exploit."
-        },
         "4670a313-ac58-4c74-a789-b4249ff00ece": {
             "Text": "If the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} has not moved this {g|Encyclopedia:Turn}turn{/g}, they deal +{uip|DamageBonus|9a0e7e64902e491baa29d60469eae188} more damage with {g|Encyclopedia:SingleRangedAttacksGlossary}single-shot{/g} attacks for every 3 cells between them and the target and gain +{unit_stat|WarhammerPerception|bonus} {g|Encyclopedia:WarhammerBallisticSkill} Ballistic Skill{/g}. These bonuses do not stack and last until the Operative moves."
         },
@@ -77,9 +74,6 @@
         },
         "cb30dab4-5aec-4e46-af25-83f85841adc4": {
             "Text": "<u>(3 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus)</u>"
-        },
-        "c6540399-6208-4040-b0e3-b5b83d91ba1d": {
-            "Text": "The Operative immediately inflicts +1 {g|Encyclopedia:Exploit}exploit{/g} on each enemy in combat, then makes a free attack against a target (can even use a ranged weapon in melee range). This attack always {g|Encyclopedia:HitSequenceGlossary}hits{/g}.\nUntil the end of combat, the target of this attack suffers a −30% penalty to {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, {g|Encyclopedia:BlockChance}block{/g}, {g|Encyclopedia:DodgeGlossary}dodge{/g}, and {g|Encyclopedia:Parry}parry{/g}.\nThis heroic act can be used multiple times per combat but only once per round."
         }
     }
 }

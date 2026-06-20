@@ -1,0 +1,19 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "0b4684d3bfe5495bb8e279792b7f961b, WarhammerDodgeChanceStatReplacement",
+        "name": "$WarhammerDodgeChanceStatReplacement$d53cfa86-d1a6-4560-b1c9-6d8f65739a00",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "AgilityReplacementStat": "WarhammerPerception"
+      },
+      "InsertAfterTarget": "$AbilityEffectRunAction$632a4c7d-0ce7-4186-bd9d-37b8642bdb83"
+    }
+  ]
+}

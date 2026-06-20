@@ -1,0 +1,40 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "655d56d2a908e0846928313013cf0fc9, WarhammerRighteousFuryBonusTarget",
+        "name": "$WarhammerRighteousFuryBonusTarget$c3b573f0-702f-4fa8-a472-d9a7891356a9",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Value": {
+          "ValueType": "ContextProperty",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value2"
+        },
+        "Multiplier": {
+          "ValueType": "Simple",
+          "Value": 1,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "SpecificRangeType": false,
+        "WeaponRangeType": "Melee",
+        "OnlyFromSpotWeaknessSide": false,
+        "m_SpotWeaknessBuff": null
+      },
+      "InsertAfterTarget": "$WarhammerDodgeChanceModifierDefender$cade46d8-8c07-4ea3-bccb-72c3d7343d49"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$68b054a9-8422-4db0-b073-f9be5e9602e3",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "StatBonus2",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Mul",
+          "TargetType": "ContextCaster",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
+              "name": "$SimplePropertyGetter$3462a0c4-285a-4c8f-92b4-877897e3e60f",
+              "Settings": {
+                "Progression": "Div2",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Property": "IntelligenceBonus"
+            },
+            {
+              "$type": "8cc2fc2a697041af82344696abdf3c4d, DistanceGetter",
+              "name": "$DistanceGetter$4c03c401-fc22-42ff-b98d-cff8007baa29",
+              "Settings": {
+                "Progression": "DivStep",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 3,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Target": "RuleTarget"
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$PropertyCalculatorComponent$c5bc35bb-139b-4c6f-b8eb-d54cb6a1d969"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$WarhammerDamageModifierInitiator$f7d3350c-98b0-498f-ba56-afd986c1ca53",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$68b054a9-8422-4db0-b073-f9be5e9602e3"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$MovedInCombatTrigger$45cbbae4-cc92-436a-950a-b6dadb7a1b49",
+      "InsertAfterTarget": "$WarhammerDamageModifierInitiator$f7d3350c-98b0-498f-ba56-afd986c1ca53"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$PropertyCalculatorComponent$24ee447b-2204-4dc5-b518-710d870e92b9"
+    }
+  ]
+}

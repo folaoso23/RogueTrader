@@ -1,0 +1,31 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$InitiatorHealModifier$855a900f-2456-419f-822d-103ba18bc95c",
+      "ElementPatch": {
+        "PercentBonus": {
+          "Value": 25
+        }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerDamageModifierInitiator$101c7c32-f32a-4fb6-aa53-99248d21be51",
+      "ElementPatch": {
+        "PercentDamageModifier": {
+          "Value": 20
+        }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerDamageModifierInitiator$e79611f9-052d-40ed-bc6f-b417fc11b14d",
+      "ElementPatch": {
+        "PercentDamageModifier": {
+          "Value": 20
+        }
+      }
+    }
+  ]
+}

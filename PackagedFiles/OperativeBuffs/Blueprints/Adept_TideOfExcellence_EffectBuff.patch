@@ -1,0 +1,77 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$1bd6b1b2-ad1b-4457-b29d-df284edffb7b",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "DamageBonus1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "ContextCaster",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+              "name": "$FactRankGetter$3e582ba2-3057-48b6-8367-37a74e71929f",
+              "Settings": {
+                "Progression": "MultiplyByModifier",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 2,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "m_Fact": "!bp_349c91e2137a4a18a386d930bea58747",
+              "Aggregation": "Max",
+              "BuffWithCasterFromTargetType": false,
+              "Target": "CurrentEntity"
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$WarhammerDamageModifierInitiator$72478f7a-1689-4407-9745-fb313d2a2f4b"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$5e89389e-a96c-42e4-9a36-79b1a8f97faa",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$1bd6b1b2-ad1b-4457-b29d-df284edffb7b"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$WarhammerDamageModifierInitiator$f51fe2be-9076-43be-9305-c299aace55fe",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$5e89389e-a96c-42e4-9a36-79b1a8f97faa"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "a2844c135c0324e439072bd3cc2f9260, AddStatBonus",
+        "name": "$AddStatBonus$53652e94-f392-4697-9d81-29ccbd33c135",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Descriptor": "None",
+        "Stat": "WarhammerIntelligence",
+        "Value": 5
+      },
+      "InsertAfterTarget": "$WarhammerDamageModifierInitiator$f51fe2be-9076-43be-9305-c299aace55fe"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$PropertyCalculatorComponent$ee5335bb-227a-49a8-adea-2af28a51a349"
+    }
+  ]
+}
