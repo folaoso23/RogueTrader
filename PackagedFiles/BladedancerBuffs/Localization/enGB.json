@@ -1,0 +1,19 @@
+{
+    "strings": {
+         "b4d6760a-56a2-48ee-b494-8794e9ec3307": {
+            "Text": "+<u>(2 × {g|Encyclopedia:WarhammerAgility}AGI{/g} {g|Encyclopedia:Bonus}bonus{/g})</u>"
+        },
+        "3e84c648-47f6-4269-ac51-e0c91cdb7f23": {
+            "Text": "The {g|Encyclopedia:CareerBladedancerGlossary}Bladedancer{/g} gains +4 {g|Encyclopedia:WarhammerWeaponSkill}Weapon Skill{/g} and +4 {g|Encyclopedia:WarhammerAgility}Agility{/g} for every {g|Encyclopedia:Injury}injury{/g} they are currently suffering and +15 Weapon Skill and +15 Agility for every {g|Encyclopedia:Traumas}trauma{/g}."
+        },
+        "b4f148db-9d90-4b45-a676-1b725410e06b": {
+            "Text": "Each attack made by the {g|Encyclopedia:CareerBladedancerGlossary}Bladedancer{/g} increases the {g|Encyclopedia:DamageGlossary}damage{/g} of all subsequent attacks they make this {g|Encyclopedia:Turn}turn{/g} by +25% and increases Weapon Skill, Agility, and Strength by 5. This effect stacks up to 3 times. Area attacks, burst attacks (including the {g|f:e955823f54d24088ae1fdefe88d3684d}Blade Dance{/g}), and any other attacks that deal multiple hits are considered single attacks."
+        },
+        "1ecf325f-485f-4cc9-9191-dcf1746fd201": {
+            "Text": "The {g|Encyclopedia:CareerBladedancerGlossary}Bladedancer{/g} targets a single enemy, vowing to dispatch their mark. The Bladedancer's next attack against their selected enemy cannot be {g|Encyclopedia:DodgeGlossary}dodged{/g} or parried and deals double damage. If this attack kills the target, the Bladedancer regains +{uip|Heal|590c990c1d684fd09ae883754d28a8ac} {g|Encyclopedia:HitPoints}wounds{/g} and gains +1 {g|Encyclopedia:ActionPoints}AP{/g} along with an additional attack this {g|Encyclopedia:Turn}turn{/g}.\nThis {g|Encyclopedia:Ability}ability{/g} can be used multiple times per turn, but it grants +1 {g|Encyclopedia:ActionPoints}AP{/g} and an additional attack only once per {g|Encyclopedia:Round}round{/g}."
+        },
+        "69e3723c-ebef-4b58-866e-eeff390817d0": {
+            "Text": "Whenever the {g|Encyclopedia:CareerBladedancerGlossary}Bladedancer{/g} kills an enemy, the Bladedancer's {g|Encyclopedia:Resolve}resolve{/g} is increased by +2, critical damage is increased by +15%, and critical chance increased by +7% until the end of combat."
+        }
+    }
+}

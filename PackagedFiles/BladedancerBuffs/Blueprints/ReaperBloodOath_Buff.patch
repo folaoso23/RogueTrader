@@ -1,0 +1,122 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "c0a2f956ae0c481c8f8d1468d1ba6212, WarhammerModifyIncomingAttackDamage",
+        "name": "$WarhammerModifyIncomingAttackDamage$2ed482ce-f909-43bd-8296-a8a51ae9c5d1",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "RuleInitiator",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "9e76955a7d544abd89b5b968ee8f0957, CheckEntityIsCaster",
+                "name": "$CheckEntityIsCaster$9c08932c-6b53-41a3-97cb-48c0bf9aef85",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                }
+              }
+            ]
+          }
+        },
+        "AdditionalDamageMin": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "AdditionalDamageMax": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "AdditionalArmorPenetration": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "AdditionalAbsorption": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "AdditionalDeflection": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "AdditionalRighteousFuryChances": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "PercentDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 200,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "OnlyFirstAttack": false,
+        "OnlyAgainstCaster": false,
+        "OnlyAgainstCasterPriorityTarget": false,
+        "OnlyAgainstDirection": false,
+        "ActionsOnlyOnMelee": false,
+        "DoNotUseOnDOTs": false,
+        "ActionsOnAttack": {
+          "Actions": []
+        },
+        "m_TargetBuff": null,
+        "Multiplier": 1.0,
+        "SpecificRangeType": false,
+        "WeaponRangeType": "Melee",
+        "MultiplyByBuffRank": false,
+        "m_StackingBuff": null,
+        "OnlyAgainstFact": false,
+        "m_CheckFact": null
+      },
+      "InsertAfterTarget": "$WarhammerAfterAttackRollTriggerTarget$fd70e092-ddc2-4044-80b1-100621195af0"
+    }
+  ]
+}

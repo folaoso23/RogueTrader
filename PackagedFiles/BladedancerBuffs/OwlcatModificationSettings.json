@@ -1,0 +1,41 @@
+{
+    "BundlesLayout": {
+        "m_Guids": [],
+        "m_Bundles": []
+    },
+    "BundleDependencies": {
+        "m_List": [
+            {
+                "Key": "BladedancerBuffs_BlueprintDirectReferences",
+                "Value": []
+            }
+        ]
+    },
+    "BlueprintPatches": [
+        {
+            "Guid": "d43ff11da6d2482faa74d46097fdb082",
+            "Filename": "ReaperTalent13Buff",
+            "PatchType": 2
+        },
+        {
+            "Guid": "2b2f1b1ed2784eb78b4d3a6f5a9f7df5",
+            "Filename": "ReaperTalent4Feature",
+            "PatchType": 2
+        },
+        {
+            "Guid": "d4be859eb6d84504aeed852ef248f6fa",
+            "Filename": "ReaperTalent27Feature",
+            "PatchType": 2
+        },
+        {
+            "Guid": "53e51f9147f848019b54d062e370e02f",
+            "Filename": "ReaperTalent20Buff",
+            "PatchType": 2
+        },
+        {
+            "Guid": "91028e859ede4a698744a9ee148ee778",
+            "Filename": "ReaperBloodOath_Buff",
+            "PatchType": 2
+        }
+    ]
+}

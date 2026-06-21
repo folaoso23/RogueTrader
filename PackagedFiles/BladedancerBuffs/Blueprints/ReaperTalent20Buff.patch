@@ -1,0 +1,114 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$AddContextStatBonus$02f865fd-e29a-4b03-8646-451378a6b891",
+      "ElementPatch": {
+        "Value": {
+          "Value": 2
+        }
+      }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "efafb8ff343e4071a216fe8fcb17e023, WarhammerCriticalDamageModifierInitiator",
+        "name": "$WarhammerCriticalDamageModifierInitiator$4a5660dc-7051-4cc8-acb8-2c58adb0d891",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "PercentCriticalDamageModifier": {
+          "ValueType": "CasterBuffRank",
+          "Value": 15,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": true
+        },
+        "BonusCriticalDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "BonusCriticalDamageMultipliers": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "purePercentCriticalDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "ModifierDescriptor": "None"
+      },
+      "InsertAfterTarget": "$AddContextStatBonus$02f865fd-e29a-4b03-8646-451378a6b891"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "67bded0d11ea5094b86798ea2fce7c63, WarhammerRighteousFuryBonus",
+        "name": "$WarhammerRighteousFuryBonus$95fdae45-64f5-41ec-865f-8bb72426d270",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "Value": {
+          "ValueType": "CasterBuffRank",
+          "Value": 7,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "SpecificRangeType": false,
+        "WeaponRangeType": "Melee",
+        "OnlyFromSpotWeaknessSide": false,
+        "m_SpotWeaknessBuff": null,
+        "DoubleCurrentChance": false
+      },
+      "InsertAfterTarget": "$WarhammerCriticalDamageModifierInitiator$4a5660dc-7051-4cc8-acb8-2c58adb0d891"
+    }
+  ]
+}

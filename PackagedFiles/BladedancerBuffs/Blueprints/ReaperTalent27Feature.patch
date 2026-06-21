@@ -1,0 +1,47 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$de6277dd-d306-418d-8c6e-c7c14a13e06e",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$ConditionalGetter$4e15d246b73a4eafba965d60185d9e11",
+              "ElementPatch": {
+                "True": {
+                  "Getters": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$ContextValueGetter$9e1b0d6e853f4b9aa3e04283e8190433",
+                      "ElementPatch": {
+                        "Settings": {
+                          "Progression": "MultiplyByModifier",
+                          "m_StepLevel": 2
+                        }
+                      }
+                    }
+                  ]
+                },
+                "False": {
+                  "Getters": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$ContextValueGetter$70b3dc8d-ac5c-4420-ae94-223cc356c180",
+                      "ElementPatch": {
+                        "Settings": {
+                          "m_StepLevel": 4
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

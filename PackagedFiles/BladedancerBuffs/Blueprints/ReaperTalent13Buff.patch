@@ -1,0 +1,130 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerDamageModifierInitiator$3bb59df9-0638-4efd-b543-dd55d289309e",
+      "ElementPatch": {
+        "PercentDamageModifier": {
+          "Value": 25
+        }
+      }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f08844ce14d498a45a9fc64582489a2a, AddContextStatBonus",
+        "name": "$AddContextStatBonus$4fd359f7-4fd7-4bc3-b6d1-89009247f2bd",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "Descriptor": "None",
+        "Stat": "WarhammerWeaponSkill",
+        "Multiplier": 1,
+        "Value": {
+          "ValueType": "CasterBuffRank",
+          "Value": 5,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "IsPercentModifier": false,
+        "m_ActionsOnAdd": {
+          "Actions": []
+        }
+      },
+      "InsertAfterTarget": "$TurnBasedModeEventsTrigger$7747953c-a106-4e02-821c-42570dafbf6f"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f08844ce14d498a45a9fc64582489a2a, AddContextStatBonus",
+        "name": "$AddContextStatBonus$326af41e-9efa-4efd-90c8-d6ee0012532e",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "Descriptor": "None",
+        "Stat": "WarhammerAgility",
+        "Multiplier": 1,
+        "Value": {
+          "ValueType": "CasterBuffRank",
+          "Value": 5,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "IsPercentModifier": false,
+        "m_ActionsOnAdd": {
+          "Actions": []
+        }
+      },
+      "InsertAfterTarget": "$AddContextStatBonus$4fd359f7-4fd7-4bc3-b6d1-89009247f2bd"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f08844ce14d498a45a9fc64582489a2a, AddContextStatBonus",
+        "name": "$AddContextStatBonus$97c55f28-2921-4634-a967-3309f92e2afd",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "Descriptor": "None",
+        "Stat": "WarhammerStrength",
+        "Multiplier": 1,
+        "Value": {
+          "ValueType": "CasterBuffRank",
+          "Value": 5,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "IsPercentModifier": false,
+        "m_ActionsOnAdd": {
+          "Actions": []
+        }
+      },
+      "InsertAfterTarget": "$AddContextStatBonus$326af41e-9efa-4efd-90c8-d6ee0012532e"
+    }
+  ]
+}
