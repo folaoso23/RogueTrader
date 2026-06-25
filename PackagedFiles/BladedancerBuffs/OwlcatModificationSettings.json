@@ -33,8 +33,28 @@
             "PatchType": 2
         },
         {
-            "Guid": "91028e859ede4a698744a9ee148ee778",
-            "Filename": "ReaperBloodOath_Buff",
+            "Guid": "8b7bcaa093224422ac66c80ffcf69f6d",
+            "Filename": "ReaperBladeShroud_Ability",
+            "PatchType": 2
+        },
+        {
+            "Guid": "9c6be704af4a4a438b42ba707b1daee7",
+            "Filename": "ReaperOathOfVengeanceBuff",
+            "PatchType": 2
+        },
+        {
+            "Guid": "bc9759f0c41a4a3e84300557bea51dea",
+            "Filename": "ReaperTalent10Feature",
+            "PatchType": 2
+        },
+        {
+            "Guid": "590c990c1d684fd09ae883754d28a8ac",
+            "Filename": "ReaperBloodOath_Ability",
+            "PatchType": 2
+        },
+        {
+            "Guid": "3774147440ac412a876725b9b2b24682",
+            "Filename": "ReaperOathOfVengeanceAbility",
             "PatchType": 2
         }
     ]

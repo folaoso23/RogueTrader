@@ -1,0 +1,89 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityResourceWounds$2a8f0cfa-59ba-461d-99e5-fff818658d9f",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$f2149c5d-cd84-4b55-acf8-0d030131ef95",
+      "InsertAfterTarget": "$AbilityResourceWounds$2a8f0cfa-59ba-461d-99e5-fff818658d9f"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$0fdc1595-740a-4f51-b7ae-b87c361e2474",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$f2149c5d-cd84-4b55-acf8-0d030131ef95"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$73f4c15a-73a8-471c-a742-ab4cee733ca0",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$0fdc1595-740a-4f51-b7ae-b87c361e2474"
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$73f4c15a-73a8-471c-a742-ab4cee733ca0",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$ContextValueGetter$930765d6-96a7-41e9-bf55-4be8fc286fcb",
+              "ElementPatch": {
+                "Value": {
+                  "Value": 50
+                }
+              }
+            },
+            {
+              "PatchType": "PatchElement",
+              "Target": "$ContextValueGetter$0aa864a6-3d66-4b6b-9800-798d86771b13",
+              "ElementPatch": {
+                "Settings": {
+                  "m_StepLevel": 5
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$UIPropertiesComponent$4778d0cc-4d8a-42dc-aeba-7bcd64191405",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$73f4c15a-73a8-471c-a742-ab4cee733ca0"
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$UIPropertiesComponent$4778d0cc-4d8a-42dc-aeba-7bcd64191405",
+      "ElementPatch": {
+        "Properties": [
+          {
+            "PatchType": "PatchElement",
+            "Target": "DamageBonus2",
+            "ElementPatch": {
+              "Main": false
+            }
+          },
+          {
+            "PatchType": "PatchElement",
+            "Target": "DamageBonus1",
+            "ElementPatch": {
+              "Main": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AddStringToFactDescription$f3bc8ac1-723b-43ca-aac2-5584db400c43",
+      "InsertAfterTarget": "$UIPropertiesComponent$4778d0cc-4d8a-42dc-aeba-7bcd64191405"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$f67710a8-a7a6-4813-aed1-6ed2337f45ad",
+      "InsertAfterTarget": "$AbilityEffectRunAction$d8fdb75b-296b-411c-a954-be5123c98682"
+    }
+  ]
+}

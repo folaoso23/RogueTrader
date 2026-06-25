@@ -31,7 +31,7 @@
         },
         "PercentCriticalDamageModifier": {
           "ValueType": "CasterBuffRank",
-          "Value": 15,
+          "Value": 5,
           "ValueRank": "Default",
           "ValueShared": "Damage",
           "Property": "None",
@@ -95,7 +95,7 @@
         },
         "Value": {
           "ValueType": "CasterBuffRank",
-          "Value": 7,
+          "Value": 2,
           "ValueRank": "Default",
           "ValueShared": "Damage",
           "Property": "None",

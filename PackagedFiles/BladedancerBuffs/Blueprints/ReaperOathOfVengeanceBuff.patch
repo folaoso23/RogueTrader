@@ -1,0 +1,32 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$24765730-597b-4922-89fd-ffe670202fe0",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$ContextValueGetter$fe240e76e28c4129940792361bd23ded",
+              "ElementPatch": {
+                "Value": {
+                  "Value": 50
+                }
+              }
+            },
+            {
+              "PatchType": "PatchElement",
+              "Target": "$ContextValueGetter$a42d4b95c2254f198c872e7d42f4dc95",
+              "ElementPatch": {
+                "Settings": {
+                  "m_StepLevel": 5
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

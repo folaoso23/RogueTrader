@@ -1,0 +1,23 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$CombatStateTrigger$9706906d-a79e-4dfc-9741-938dbd9637fa",
+      "ElementPatch": {
+        "CombatStartActions": {
+          "Actions": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$ContextActionApplyBuff$201907eb5b0f4209b5a3e1e42f98b116",
+              "ElementPatch": {
+                "Ranks": {
+                  "Property": "PerceptionBonus"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

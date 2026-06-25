@@ -91,7 +91,7 @@
         },
         "PercentDamageModifier": {
           "ValueType": "Simple",
-          "Value": 200,
+          "Value": 75,
           "ValueRank": "Default",
           "ValueShared": "Damage",
           "Property": "None",
