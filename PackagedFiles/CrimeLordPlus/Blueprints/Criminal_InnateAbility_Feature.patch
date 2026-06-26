@@ -18,6 +18,28 @@
           ]
         }
       }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "b2a17e3404004ded87b8179ff8634ef2, OverrideAnimationSet",
+        "name": "$OverrideAnimationSet$275c674e-c7d0-45d0-8b29-3b8298db446a",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_AnimationSetMale": {
+          "guid": "3821b6f112ddc784697335c155bf2ac0",
+          "fileid": 11400000
+        },
+        "m_AnimationSetFemale": {
+          "guid": "985c0d0298c597c4082d61c52384abce",
+          "fileid": 11400000
+        }
+      },
+      "InsertAfterTarget": "$AddFacts$bd78ba1e-cbb0-4274-a285-c5b5ff879bd7"
     }
   ]
 }
