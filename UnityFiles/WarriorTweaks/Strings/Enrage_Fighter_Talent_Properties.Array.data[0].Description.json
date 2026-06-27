@@ -1,0 +1,177 @@
+{
+  "source": "enGB",
+  "key": "4061b6e5-fc8a-45b0-8eaf-3f0ba0932272",
+  "ownerGuid": "1c61468f25fc410586a383c32050e971#$UIPropertiesComponent$4fdece1f-46d9-4881-830c-ce1b61b54130",
+  "languages": [
+    {
+      "locale": "enGB",
+      "text": "<u>(5 + ({g|Encyclopedia:WarhammerToughness}TGH{/g} bonus + {g|Encyclopedia:WarhammerAgility}AGI{/g} bonus))</u>",
+      "modification_date": "2024-09-24T13:38:35.1751179+00:00",
+      "translated_from": "ruRU",
+      "translation_date": "2023-10-18T13:13:31.2198508+00:00",
+      "original_text": "<u>(5 + бонус {g|Encyclopedia:WarhammerToughness}ВЫН{/g} + бонус {g|Encyclopedia:WarhammerAgility}ЛВК{/g})</u>",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2023-10-12T10:07:59.1436045+00:00",
+          "locale_text": "(5 + ({g|Encyclopedia:WarhammerToughness}TGH{/g} {g|Encyclopedia:Bonus}bonus{/g} + {g|Encyclopedia:WarhammerAgility}AGI{/g} bonus))"
+        },
+        {
+          "trait": "Translated",
+          "trait_date": "2023-10-18T13:13:41.3771422+00:00",
+          "locale_text": "(5 + ({g|Encyclopedia:WarhammerToughness}TGH{/g} {g|Encyclopedia:Bonus}bonus{/g} + {g|Encyclopedia:WarhammerAgility}AGI{/g} bonus))"
+        },
+        {
+          "trait": "Edited",
+          "trait_date": "2023-10-18T13:13:41.3771425+00:00",
+          "locale_text": "(5 + ({g|Encyclopedia:WarhammerToughness}TGH{/g} {g|Encyclopedia:Bonus}bonus{/g} + {g|Encyclopedia:WarhammerAgility}AGI{/g} bonus))"
+        },
+        {
+          "trait": "Turkish",
+          "trait_date": "2024-11-21T08:24:30.6024057+00:00",
+          "locale_text": "<u>(5 + ({g|Encyclopedia:WarhammerToughness}TGH{/g} bonus + {g|Encyclopedia:WarhammerAgility}AGI{/g} bonus))</u>"
+        }
+      ]
+    },
+    {
+      "locale": "ruRU",
+      "text": "<u>(5 + бонус {g|Encyclopedia:WarhammerToughness}ВЫН{/g} + бонус {g|Encyclopedia:WarhammerAgility}ЛВК{/g})</u>",
+      "modification_date": "2024-09-24T13:38:35.1751179+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2023-10-18T13:14:25.9272823+00:00",
+      "original_text": "<u>(5 + ({g|Encyclopedia:WarhammerToughness}TGH{/g} bonus + {g|Encyclopedia:WarhammerAgility}AGI{/g} bonus))</u>",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2023-10-13T22:04:16.7588635+00:00",
+          "locale_text": "(5 +{g|Encyclopedia:Bonus}бонус{/g} {g|Encyclopedia:WarhammerToughness}ВЫН{/g} + бонус {g|Encyclopedia:WarhammerAgility}ЛВК{/g})"
+        },
+        {
+          "trait": "Translated",
+          "trait_date": "2023-10-18T13:14:34.4522829+00:00",
+          "locale_text": "(5 +{g|Encyclopedia:Bonus}бонус{/g} {g|Encyclopedia:WarhammerToughness}ВЫН{/g} + бонус {g|Encyclopedia:WarhammerAgility}ЛВК{/g})"
+        }
+      ]
+    },
+    {
+      "locale": "zhCN",
+      "text": "<u>（5+（{g|Encyclopedia:WarhammerToughness}坚韧{/g}加值+{g|Encyclopedia:WarhammerAgility}敏捷{/g}加值））</u>",
+      "modification_date": "2024-11-25T12:35:18.893657+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2023-10-18T13:35:50.8325827+00:00",
+      "original_text": "<u>(5 + ({g|Encyclopedia:WarhammerToughness}TGH{/g} bonus + {g|Encyclopedia:WarhammerAgility}AGI{/g} bonus))</u>",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2023-10-12T10:07:59.1561995+00:00",
+          "locale_text": "（5+（{g|Encyclopedia:WarhammerToughness}坚韧{/g}{g|Encyclopedia:Bonus}加值{/g}+{g|Encyclopedia:WarhammerAgility}敏捷{/g}加值））"
+        },
+        {
+          "trait": "Translated",
+          "trait_date": "2023-10-18T13:36:00.1364938+00:00",
+          "locale_text": "（5+（{g|Encyclopedia:WarhammerToughness}坚韧{/g}{g|Encyclopedia:Bonus}加值{/g}+{g|Encyclopedia:WarhammerAgility}敏捷{/g}加值））"
+        }
+      ]
+    },
+    {
+      "locale": "esES",
+      "text": "<u>(5 + (bonificación por {g|Encyclopedia:WarhammerToughness}RES{/g} + bonificación por {g|Encyclopedia:WarhammerAgility}AGI{/g}))</u>",
+      "modification_date": "2024-10-29T08:41:00.0632114+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2023-10-18T13:36:09.9767932+00:00",
+      "original_text": "<u>(5 + ({g|Encyclopedia:WarhammerToughness}TGH{/g} bonus + {g|Encyclopedia:WarhammerAgility}AGI{/g} bonus))</u>",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2023-10-12T10:07:59.162882+00:00",
+          "locale_text": "(5 + ({g|Encyclopedia:Bonus}bonificación{/g} por {g|Encyclopedia:WarhammerToughness}RES{/g} + bonificación por {g|Encyclopedia:WarhammerAgility}AGI{/g}))"
+        },
+        {
+          "trait": "Translated",
+          "trait_date": "2023-10-18T13:36:17.931724+00:00",
+          "locale_text": "(5 + ({g|Encyclopedia:Bonus}bonificación{/g} por {g|Encyclopedia:WarhammerToughness}RES{/g} + bonificación por {g|Encyclopedia:WarhammerAgility}AGI{/g}))"
+        }
+      ]
+    },
+    {
+      "locale": "deDE",
+      "text": "<u>(5 + ({g|Encyclopedia:WarhammerToughness}ZÄH{/g}-Bonus + {g|Encyclopedia:WarhammerAgility}BEW{/g}-Bonus))</u>",
+      "modification_date": "2024-11-21T10:59:19.4938291+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2023-10-18T13:14:42.9365011+00:00",
+      "original_text": "<u>(5 + ({g|Encyclopedia:WarhammerToughness}TGH{/g} bonus + {g|Encyclopedia:WarhammerAgility}AGI{/g} bonus))</u>",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2023-10-12T10:07:59.169877+00:00",
+          "locale_text": "(5 + ({g|Encyclopedia:WarhammerToughness}ZÄH-{/g}{g|Encyclopedia:Bonus}Bonus{/g} + {g|Encyclopedia:WarhammerAgility}BEW-{/g}Bonus))"
+        },
+        {
+          "trait": "Translated",
+          "trait_date": "2023-10-18T13:14:50.7324251+00:00",
+          "locale_text": "(5 + ({g|Encyclopedia:WarhammerToughness}ZÄH-{/g}{g|Encyclopedia:Bonus}Bonus{/g} + {g|Encyclopedia:WarhammerAgility}BEW-{/g}Bonus))"
+        }
+      ]
+    },
+    {
+      "locale": "frFR",
+      "text": "<u>(5 + (bonus d'{g|Encyclopedia:WarhammerToughness}END{/g} + bonus d'{g|Encyclopedia:WarhammerAgility}AGI{/g}))</u>",
+      "modification_date": "2024-11-26T07:18:55.1359524+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2024-11-26T07:49:53.5848813+00:00",
+      "original_text": "<u>(5 + ({g|Encyclopedia:WarhammerToughness}TGH{/g} bonus + {g|Encyclopedia:WarhammerAgility}AGI{/g} bonus))</u>",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2023-10-12T10:07:59.1764551+00:00",
+          "locale_text": "(5 + ({g|Encyclopedia:Bonus}bonus{/g} de {g|Encyclopedia:WarhammerToughness}RES{/g} + bonus d'{g|Encyclopedia:WarhammerAgility}AGI{/g}))"
+        },
+        {
+          "trait": "Translated",
+          "trait_date": "2023-10-18T13:15:14.17508+00:00",
+          "locale_text": "(5 + ({g|Encyclopedia:Bonus}bonus{/g} de {g|Encyclopedia:WarhammerToughness}RES{/g} + bonus d'{g|Encyclopedia:WarhammerAgility}AGI{/g}))"
+        }
+      ]
+    },
+    {
+      "locale": "jaJP",
+      "text": "<u>(5 + ({g|Encyclopedia:WarhammerToughness}TGH{/g}ボーナス+{g|Encyclopedia:WarhammerAgility}AGI{/g}ボーナス))</u>",
+      "modification_date": "2025-02-19T11:30:59.2877876+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2025-02-19T11:30:59.2877878+00:00",
+      "original_text": "<u>(5 + ({g|Encyclopedia:WarhammerToughness}TGH{/g} bonus + {g|Encyclopedia:WarhammerAgility}AGI{/g} bonus))</u>",
+      "traits": [
+        {
+          "trait": "CheckMe",
+          "trait_date": "2023-10-12T10:07:59.1833095+00:00",
+          "locale_text": "(5 + ({g|Encyclopedia:WarhammerToughness}TGH{/g} {g|Encyclopedia:Bonus}ボーナス{/g} + {g|Encyclopedia:WarhammerAgility}AGI{/g} ボーナス))"
+        },
+        {
+          "trait": "Translated",
+          "trait_date": "2025-02-19T11:30:59.2877883+00:00",
+          "locale_text": "<u>(5 + ({g|Encyclopedia:WarhammerToughness}TGH{/g}ボーナス+{g|Encyclopedia:WarhammerAgility}AGI{/g}ボーナス))</u>"
+        }
+      ]
+    },
+    {
+      "locale": "trTR",
+      "text": "<u>(5 + ({g|Encyclopedia:WarhammerToughness}DAY{/g} bonusu + {g|Encyclopedia:WarhammerAgility}ÇEV{/g} bonusu))</u>",
+      "modification_date": "2024-12-02T15:10:29.411661+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2024-12-02T15:10:29.4116612+00:00",
+      "original_text": "<u>(5 + ({g|Encyclopedia:WarhammerToughness}TGH{/g} bonus + {g|Encyclopedia:WarhammerAgility}AGI{/g} bonus))</u>"
+    }
+  ],
+  "string_traits": [
+    {
+      "trait": "Formula",
+      "trait_date": "2024-10-10T14:10:35.211253+00:00",
+      "locale_text": ""
+    },
+    {
+      "trait": "левшеяп",
+      "trait_date": "2025-01-17T14:09:35.8562319+00:00",
+      "locale_text": ""
+    }
+  ]
+}

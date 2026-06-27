@@ -1,0 +1,147 @@
+{
+  "source": "enGB",
+  "key": "bbc75492-7e3a-4b54-a7cf-f782d499809e",
+  "ownerGuid": "1c61468f25fc410586a383c32050e971",
+  "languages": [
+    {
+      "locale": "enGB",
+      "text": "Enrage",
+      "modification_date": "2023-02-15T09:56:06.8355322+00:00",
+      "translated_from": "ruRU",
+      "translation_date": "2023-08-02T13:11:02.9889696+03:00",
+      "original_text": "Ярость",
+      "traits": [
+        {
+          "trait": "TK_ed",
+          "trait_date": "2023-04-24T18:39:27.2500513+03:00",
+          "locale_text": "Enrage"
+        },
+        {
+          "trait": "Edited",
+          "trait_date": "2023-06-08T16:26:11.9428098+03:00",
+          "locale_text": "Enrage"
+        },
+        {
+          "trait": "DF_ed",
+          "trait_date": "2023-06-08T17:25:52.3585929+03:00",
+          "locale_text": "Enrage"
+        },
+        {
+          "trait": "Turkish",
+          "trait_date": "2024-11-08T06:45:09.581407+00:00",
+          "locale_text": "Enrage"
+        }
+      ]
+    },
+    {
+      "locale": "ruRU",
+      "text": "Ярость",
+      "modification_date": "2023-06-28T20:58:24.8699724+03:00",
+      "translated_from": "enGB",
+      "translation_date": "2023-07-07T13:04:54.522246+03:00",
+      "original_text": "Enrage",
+      "traits": [
+        {
+          "trait": "Translated",
+          "trait_date": "2023-07-07T13:04:54.5222472+03:00",
+          "locale_text": "Ярость"
+        },
+        {
+          "trait": "ASA_tr",
+          "trait_date": "2023-07-07T13:04:54.5222474+03:00",
+          "locale_text": "Ярость"
+        }
+      ]
+    },
+    {
+      "locale": "zhCN",
+      "text": "怒不可遏",
+      "modification_date": "2023-08-24T09:37:19.0116839+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2023-08-24T09:37:19.0116841+00:00",
+      "original_text": "Enrage",
+      "traits": [
+        {
+          "trait": "Translated",
+          "trait_date": "2023-08-24T09:37:19.0116851+00:00",
+          "locale_text": "怒不可遏"
+        }
+      ]
+    },
+    {
+      "locale": "esES",
+      "text": "Enfurecimiento",
+      "modification_date": "2023-09-04T09:42:19.2768978+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2023-09-04T09:42:19.2768981+00:00",
+      "original_text": "Enrage",
+      "traits": [
+        {
+          "trait": "Translated",
+          "trait_date": "2023-09-04T09:42:19.2768998+00:00",
+          "locale_text": "Enfurecimiento"
+        }
+      ]
+    },
+    {
+      "locale": "deDE",
+      "text": "Wutanfall",
+      "modification_date": "2023-09-04T18:30:02.2059101+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2024-11-26T12:41:26.4535033+00:00",
+      "original_text": "Enrage",
+      "traits": [
+        {
+          "trait": "Translated",
+          "trait_date": "2023-09-04T18:30:02.2059121+00:00",
+          "locale_text": "Wutanfall"
+        }
+      ]
+    },
+    {
+      "locale": "frFR",
+      "text": "Rage",
+      "modification_date": "2023-09-04T18:31:26.879519+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2024-11-26T07:18:55.1295984+00:00",
+      "original_text": "Enrage",
+      "traits": [
+        {
+          "trait": "Translated",
+          "trait_date": "2023-09-04T18:31:26.8795207+00:00",
+          "locale_text": "Rage"
+        }
+      ]
+    },
+    {
+      "locale": "jaJP",
+      "text": "エンレイジ",
+      "modification_date": "2023-09-04T18:32:26.6053872+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2025-02-19T11:30:59.276991+00:00",
+      "original_text": "Enrage",
+      "traits": [
+        {
+          "trait": "Translated",
+          "trait_date": "2025-02-19T11:30:59.2769917+00:00",
+          "locale_text": "エンレイジ"
+        }
+      ]
+    },
+    {
+      "locale": "trTR",
+      "text": "Öfkeden Köpüren",
+      "modification_date": "2024-12-02T15:09:24.1574431+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2024-12-02T15:09:24.1574433+00:00",
+      "original_text": "Enrage"
+    }
+  ],
+  "string_traits": [
+    {
+      "trait": "левшеяп",
+      "trait_date": "2025-01-17T14:09:35.8459506+00:00",
+      "locale_text": ""
+    }
+  ]
+}

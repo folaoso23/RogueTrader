@@ -1,0 +1,182 @@
+{
+  "source": "enGB",
+  "key": "af26970c-f579-46fa-8afb-38ff77f0ae83",
+  "ownerGuid": "1c61468f25fc410586a383c32050e971",
+  "languages": [
+    {
+      "locale": "enGB",
+      "text": "If the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} has less than 50% {g|Encyclopedia:HitPoints}wounds{/g}, they gain +{uip|BonusDamage|1c61468f25fc410586a383c32050e971}% {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hit chance{/g}.",
+      "modification_date": "2023-10-30T20:37:25.9161821+00:00",
+      "translated_from": "ruRU",
+      "translation_date": "2023-08-02T13:11:02.8619211+03:00",
+      "original_text": "Если у {g|Encyclopedia:CareerFighterGlossary}воина{/g} осталось менее 50% {g|Encyclopedia:HitPoints}здоровья{/g}, он получает +{uip|BonusDamage|1c61468f25fc410586a383c32050e971}% к шансу {g|Encyclopedia:CritChancesAndCritDamageGlossary}критического попадания{/g}.",
+      "traits": [
+        {
+          "trait": "TK_ed",
+          "trait_date": "2023-04-24T18:39:27.2447408+03:00",
+          "locale_text": "If the Fighter has less than 50% Wounds, they gain +<u>10+2×(TOU Bonus+AGI Bonus)%</u> to Critical Hit Chance."
+        },
+        {
+          "trait": "Edited",
+          "trait_date": "2023-06-08T16:26:11.9384861+03:00",
+          "locale_text": "If the Fighter has less than 50% Wounds, they gain +<u>10+2×(TGH Bonus+AGI Bonus)%</u> to Critical Hit Chance."
+        },
+        {
+          "trait": "DF_ed",
+          "trait_date": "2023-06-08T17:25:52.3584651+03:00",
+          "locale_text": "If the Fighter has less than 50% Wounds, they gain +<u>10+2×(TGH Bonus+AGI Bonus)%</u> to Critical Hit Chance."
+        },
+        {
+          "trait": "CheckMe",
+          "trait_date": "2023-10-17T16:18:23.8801508+00:00",
+          "locale_text": "If the Fighter has less than 50% {g|Encyclopedia:HitPoints}wounds{/g}, they gain +{uip|BonusDamage|1c61468f25fc410586a383c32050e971}% {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hit{/g} chance."
+        },
+        {
+          "trait": "Turkish",
+          "trait_date": "2024-11-08T06:45:09.5769613+00:00",
+          "locale_text": "If the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} has less than 50% {g|Encyclopedia:HitPoints}wounds{/g}, they gain +{uip|BonusDamage|1c61468f25fc410586a383c32050e971}% {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hit chance{/g}."
+        }
+      ]
+    },
+    {
+      "locale": "ruRU",
+      "text": "Если у {g|Encyclopedia:CareerFighterGlossary}воина{/g} осталось менее 50% {g|Encyclopedia:HitPoints}здоровья{/g}, он получает +{uip|BonusDamage|1c61468f25fc410586a383c32050e971}% к шансу {g|Encyclopedia:CritChancesAndCritDamageGlossary}критического попадания{/g}.",
+      "modification_date": "2024-02-26T12:27:47.935841+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2023-07-07T13:04:54.5144797+03:00",
+      "original_text": "If the Fighter has less than 50% Wounds, they gain +<u>10+2×(TGH Bonus+AGI Bonus)%</u> to Critical Hit Chance.",
+      "traits": [
+        {
+          "trait": "Translated",
+          "trait_date": "2023-07-07T13:04:54.5144811+03:00",
+          "locale_text": "Если у воина осталось менее 50% от запаса здоровья, он получает +<u>10+2×(бонус ВЫН+бонус ЛВК)%</u> к шансу критического попадания."
+        },
+        {
+          "trait": "ASA_tr",
+          "trait_date": "2023-07-07T13:04:54.5144814+03:00",
+          "locale_text": "Если у воина осталось менее 50% от запаса здоровья, он получает +<u>10+2×(бонус ВЫН+бонус ЛВК)%</u> к шансу критического попадания."
+        },
+        {
+          "trait": "CheckMe",
+          "trait_date": "2023-10-17T16:18:23.8811469+00:00",
+          "locale_text": "Если у воина осталось менее 50% от запаса {g|Encyclopedia:HitPoints}здоровья{/g}, он получает +{uip|BonusDamage|1c61468f25fc410586a383c32050e971}% к шансу {g|Encyclopedia:CritChancesAndCritDamageGlossary}критического попадания{/g}."
+        }
+      ]
+    },
+    {
+      "locale": "zhCN",
+      "text": "当{g|Encyclopedia:CareerFighterGlossary}战士{/g}的{g|Encyclopedia:HitPoints}生命值{/g}低于50%时，{g|Encyclopedia:CritChancesAndCritDamageGlossary}暴击率{/g}提高{uip|BonusDamage|1c61468f25fc410586a383c32050e971}%。",
+      "modification_date": "2024-01-23T18:43:45.5689337+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2024-01-23T18:43:45.5689338+00:00",
+      "original_text": "If the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} has less than 50% {g|Encyclopedia:HitPoints}wounds{/g}, they gain +{uip|BonusDamage|1c61468f25fc410586a383c32050e971}% {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hit chance{/g}.",
+      "traits": [
+        {
+          "trait": "Translated",
+          "trait_date": "2023-08-24T09:37:19.0074357+00:00",
+          "locale_text": "当战士的{g|Encyclopedia:HitPoints}生命值{/g}低于50%时，{g|Encyclopedia:CritChancesAndCritDamageGlossary}暴击{/g}率提高<u>（10+2×（{g|Encyclopedia:WarhammerToughness}坚韧{/g}{g|Encyclopedia:Bonus}加值{/g}+{g|Encyclopedia:WarhammerAgility}敏捷{/g}加值））</u>%。"
+        },
+        {
+          "trait": "CheckMe",
+          "trait_date": "2023-10-17T16:18:23.882143+00:00",
+          "locale_text": "当战士的{g|Encyclopedia:HitPoints}生命值{/g}低于50%时，{g|Encyclopedia:CritChancesAndCritDamageGlossary}暴击{/g}率提高{uip|BonusDamage|1c61468f25fc410586a383c32050e971}%。"
+        }
+      ]
+    },
+    {
+      "locale": "esES",
+      "text": "Si el {g|Encyclopedia:CareerFighterGlossary}guerrero{/g} tiene menos del 50 % de sus {g|Encyclopedia:HitPoints}heridas{/g}, gana un +{uip|BonusDamage|1c61468f25fc410586a383c32050e971} % de {g|Encyclopedia:CritChancesAndCritDamageGlossary}probabilidad de impacto crítico{/g}.",
+      "modification_date": "2023-11-13T13:40:39.3675711+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2023-11-02T16:40:02.5313057+00:00",
+      "original_text": "If the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} has less than 50% {g|Encyclopedia:HitPoints}wounds{/g}, they gain +{uip|BonusDamage|1c61468f25fc410586a383c32050e971}% {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hit chance{/g}.",
+      "traits": [
+        {
+          "trait": "Translated",
+          "trait_date": "2023-11-02T16:40:02.5313072+00:00",
+          "locale_text": "Si el guerrero tiene menos del 50 % de sus {g|Encyclopedia:HitPoints}heridas{/g}, gana un +{uip|BonusDamage|1c61468f25fc410586a383c32050e971} % de {g|Encyclopedia:CritChancesAndCritDamageGlossary}probabilidad de impacto crítico{/g}."
+        },
+        {
+          "trait": "CheckMe",
+          "trait_date": "2023-10-17T16:18:23.8831404+00:00",
+          "locale_text": "Si el guerrero tiene menos del 50 % de sus {g|Encyclopedia:HitPoints}heridas{/g}, gana un +{uip|BonusDamage|1c61468f25fc410586a383c32050e971} % de probabilidad de {g|Encyclopedia:CritChancesAndCritDamageGlossary}impacto crítico{/g}."
+        }
+      ]
+    },
+    {
+      "locale": "deDE",
+      "text": "Wenn der {g|Encyclopedia:CareerFighterGlossary}Krieger{/g} weniger als 50 % {g|Encyclopedia:HitPoints}Wunden{/g} hat, erhält er +{uip|BonusDamage|1c61468f25fc410586a383c32050e971} % {g|Encyclopedia:CritChancesAndCritDamageGlossary}kritische Trefferchance{/g}.",
+      "modification_date": "2023-11-28T14:58:02.1504641+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2024-11-26T12:41:26.4462703+00:00",
+      "original_text": "If the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} has less than 50% {g|Encyclopedia:HitPoints}wounds{/g}, they gain +{uip|BonusDamage|1c61468f25fc410586a383c32050e971}% {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hit chance{/g}.",
+      "traits": [
+        {
+          "trait": "Translated",
+          "trait_date": "2023-11-03T18:43:01.639232+00:00",
+          "locale_text": "Wenn der Krieger weniger als 50 % {g|Encyclopedia:HitPoints}Wunden{/g} hat, erhält er +{uip|BonusDamage|1c61468f25fc410586a383c32050e971} % {g|Encyclopedia:CritChancesAndCritDamageGlossary}kritische Trefferchance{/g}."
+        },
+        {
+          "trait": "CheckMe",
+          "trait_date": "2023-10-17T16:18:23.884136+00:00",
+          "locale_text": "Wenn der Kämpfer weniger als 50% {g|Encyclopedia:HitPoints}Wunden{/g} hat, erhält er +{uip|BonusDamage|1c61468f25fc410586a383c32050e971}% {g|Encyclopedia:CritChancesAndCritDamageGlossary}kritische Trefferchance{/g}."
+        }
+      ]
+    },
+    {
+      "locale": "frFR",
+      "text": "Si la réserve de {g|Encyclopedia:HitPoints}blessures{/g} du {g|Encyclopedia:CareerFighterGlossary}guerrier{/g} est inférieure à 50 %, il bénéficie de +{uip|BonusDamage|1c61468f25fc410586a383c32050e971} % de {g|Encyclopedia:CritChancesAndCritDamageGlossary}chances de coup critique{/g}.",
+      "modification_date": "2024-11-26T07:18:55.1225061+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2024-11-26T07:18:55.1225063+00:00",
+      "original_text": "If the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} has less than 50% {g|Encyclopedia:HitPoints}wounds{/g}, they gain +{uip|BonusDamage|1c61468f25fc410586a383c32050e971}% {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hit chance{/g}.",
+      "traits": [
+        {
+          "trait": "Translated",
+          "trait_date": "2023-09-04T18:31:26.8789263+00:00",
+          "locale_text": "Si la réserve de {g|Encyclopedia:HitPoints}blessures{/g} du Combattant est inférieure à 50 %, il bénéficie de +<u>(10 + 2 × ({g|Encyclopedia:Bonus}bonus{/g} de {g|Encyclopedia:WarhammerToughness}RES{/g} + bonus d'{g|Encyclopedia:WarhammerAgility}AGI{/g}))</u> % de chances d'infliger un {g|Encyclopedia:CritChancesAndCritDamageGlossary}coup critique{/g}."
+        },
+        {
+          "trait": "CheckMe",
+          "trait_date": "2023-10-17T16:18:23.8851322+00:00",
+          "locale_text": "Si la réserve de {g|Encyclopedia:HitPoints}blessures{/g} du Combattant est inférieure à 50 %, il bénéficie de +{uip|BonusDamage|1c61468f25fc410586a383c32050e971} % de chances d'infliger un {g|Encyclopedia:CritChancesAndCritDamageGlossary}coup critique{/g}."
+        }
+      ]
+    },
+    {
+      "locale": "jaJP",
+      "text": "{g|Encyclopedia:CareerFighterGlossary}ファイター{/g}の{g|Encyclopedia:HitPoints}傷{/g}が50%未満の場合、{g|Encyclopedia:CritChancesAndCritDamageGlossary}クリティカル率{/g}が+{uip|BonusDamage|1c61468f25fc410586a383c32050e971}%増加する。",
+      "modification_date": "2025-02-19T11:30:59.2653066+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2025-02-19T11:30:59.2653067+00:00",
+      "original_text": "If the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} has less than 50% {g|Encyclopedia:HitPoints}wounds{/g}, they gain +{uip|BonusDamage|1c61468f25fc410586a383c32050e971}% {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hit chance{/g}.",
+      "traits": [
+        {
+          "trait": "Translated",
+          "trait_date": "2025-02-19T11:30:59.2653072+00:00",
+          "locale_text": "{g|Encyclopedia:CareerFighterGlossary}ファイター{/g}の{g|Encyclopedia:HitPoints}傷{/g}が50%未満の場合、{g|Encyclopedia:CritChancesAndCritDamageGlossary}クリティカル率{/g}が+{uip|BonusDamage|1c61468f25fc410586a383c32050e971}%増加する。"
+        },
+        {
+          "trait": "CheckMe",
+          "trait_date": "2023-10-17T16:18:23.8861306+00:00",
+          "locale_text": "ファイターの{g|Encyclopedia:HitPoints}体力{/g}が50%以下の場合、{g|Encyclopedia:CritChancesAndCritDamageGlossary}クリティカルヒット{/g}率が+{uip|BonusDamage|1c61468f25fc410586a383c32050e971}%される"
+        }
+      ]
+    },
+    {
+      "locale": "trTR",
+      "text": "{g|Encyclopedia:CareerFighterGlossary}Savaşçı{/g}, {g|Encyclopedia:HitPoints}sağlık{/g} puanı %50'nin altına inmişse +%{uip|BonusDamage|1c61468f25fc410586a383c32050e971} {g|Encyclopedia:CritChancesAndCritDamageGlossary}kritik vuruş olasılığı{/g} kazanır.",
+      "modification_date": "2024-12-02T15:09:24.1458747+00:00",
+      "translated_from": "enGB",
+      "translation_date": "2024-12-02T15:09:24.1458748+00:00",
+      "original_text": "If the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} has less than 50% {g|Encyclopedia:HitPoints}wounds{/g}, they gain +{uip|BonusDamage|1c61468f25fc410586a383c32050e971}% {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hit chance{/g}."
+    }
+  ],
+  "string_traits": [
+    {
+      "trait": "левшеяп",
+      "trait_date": "2025-01-17T14:09:35.8350493+00:00",
+      "locale_text": ""
+    }
+  ]
+}
