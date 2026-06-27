@@ -1,0 +1,89 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "6ebdb034bf2f486b932f9342e175ec6d, AbilityLifecycleTriggerCaster",
+        "name": "$AbilityLifecycleTriggerCaster$485fd724-d350-4a29-b17e-6a91e14cc8b0",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Condition": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "622b2e3118c34edebe1597cf4c03339e, CheckAbilityBlueprintGetter",
+              "name": "$CheckAbilityBlueprintGetter$10d3ce3dcd9448d99f839c7c660cc04c",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "m_Abilities": [
+                "!bp_4955b43454f6488f82892e166c76c995"
+              ]
+            }
+          ]
+        },
+        "StartActions": {
+          "Actions": []
+        },
+        "EndActions": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "$ContextActionApplyBuff$a4742929e4864170a237eff3e0277f1e",
+              "m_Buff": "!bp_a1a82655a37c4981b2ae8fca5f952338",
+              "BuffEndCondition": "CombatEnd",
+              "Permanent": true,
+              "DurationValue": {
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "ToCaster": false,
+              "AsChild": false,
+              "SameDuration": false,
+              "Ranks": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionsOnApply": {
+                "Actions": []
+              },
+              "ActionsOnImmune": {
+                "Actions": []
+              },
+              "AddFactSource": false
+            }
+          ]
+        },
+        "m_Facts": [],
+        "m_FactsToCheckOnOwner": []
+      },
+      "InsertAfterTarget": "$AddFacts$4678f538-5cb0-41d0-8990-e20f66f832ac"
+    }
+  ]
+}

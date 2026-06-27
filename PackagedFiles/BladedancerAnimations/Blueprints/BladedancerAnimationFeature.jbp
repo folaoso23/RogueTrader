@@ -1,0 +1,79 @@
+{
+  "AssetId": "8e26116c778f4a4f8749546563f983d5",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "b2a17e3404004ded87b8179ff8634ef2, OverrideAnimationSet",
+        "name": "$OverrideAnimationSet$61f7585e-0032-41eb-8d70-bb33dc2afce7",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_AnimationSetMale": {
+          "guid": "3821b6f112ddc784697335c155bf2ac0",
+          "fileid": 11400000
+        },
+        "m_AnimationSetFemale": {
+          "guid": "985c0d0298c597c4082d61c52384abce",
+          "fileid": 11400000
+        }
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "f7cea43e3476e034bbbf5703996a2148",
+        "stringkey": "ecdb7a85-1a2d-46ea-9f59-6c01717fd4d1"
+      }
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "a52bdd55d10e93a4a8e65cee494b9617",
+        "stringkey": "cc258bd4-afa5-4596-a34e-03b7bb668140"
+      }
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": []
+    },
+    "FeatureTypes": [
+      "Defense"
+    ],
+    "TalentIconInfo": {
+      "AllGroups": "Debuff",
+      "MainGroup": "Debuff"
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

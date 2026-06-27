@@ -1,0 +1,23 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$ee0fde77-91ff-4238-9818-c7d1642fbd6c",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$SimplePropertyGetter$a05330d0111248499ce1725e75c16be9",
+              "ElementPatch": {
+                "Settings": {
+                  "m_StepLevel": 3
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

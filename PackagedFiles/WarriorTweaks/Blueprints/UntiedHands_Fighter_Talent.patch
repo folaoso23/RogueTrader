@@ -1,0 +1,233 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$UIPropertiesComponent$ebade305-7b6b-43f7-9b8d-f642bd4654ed",
+      "ElementPatch": {
+        "Properties": [
+          {
+            "PatchType": "Insert",
+            "NewElement": {
+              "NameType": "Damage",
+              "m_Name": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": null
+              },
+              "Description": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": {
+                  "assetguid": "25fce196a0f1fce408ce15042368aa47",
+                  "stringkey": "457d4a8b-768e-41f8-9c77-b0177ed4531a"
+                }
+              },
+              "m_DescriptionFact": "!bp_ea7d851dd97441e2867fe29f23364f3c",
+              "m_LinkProperty": true,
+              "m_PropertyName": "Value2",
+              "m_PropertySource": "!bp_ea7d851dd97441e2867fe29f23364f3c",
+              "m_LinkKey": "TwoHandBonus",
+              "Main": false
+            },
+            "InsertAfterTarget": "Value1"
+          }
+        ]
+      }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "cf4a4d014c2610548a3f9213c3de882e, WarhammerDamageModifierInitiator",
+        "name": "$WarhammerDamageModifierInitiator$6986239e-9de6-4642-8249-fefe45661ec9",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "4a65f37aabb64aaa8d459f405fb5e369, CheckAbilityWeaponTwoHandedGetter",
+                "name": "$CheckAbilityWeaponTwoHandedGetter$d993976ab5464fdbbb7b9da5e889f6ac",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                }
+              }
+            ]
+          }
+        },
+        "MinimumDamage": {
+          "ValueType": "CasterNamedProperty",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value2",
+          "Enabled": true
+        },
+        "MaximumDamage": {
+          "ValueType": "CasterNamedProperty",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value2",
+          "Enabled": true
+        },
+        "PenetrationMod": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "PercentDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "AbsorptionPenetration": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "DeflectionPenetration": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "UnmodifiableFlatDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "UnmodifiablePercentDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "ModifierDescriptor": "None",
+        "ModifyEvenDirectDamage": false,
+        "ModifyEvenDamageOverTime": false
+      },
+      "InsertAfterTarget": "$UIPropertiesComponent$ebade305-7b6b-43f7-9b8d-f642bd4654ed"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$d1c348cc-b02f-43ed-8cff-ef25d2e87bbd",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Value2",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$cbd769fe39474aed909c22b1cb720fe3",
+              "Settings": {
+                "Progression": "MultiplyByModifier",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 1,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "ValueType": "CasterProperty",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "StrengthBonus",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            },
+            {
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$efc59757bde6401186e0582d765c2f71",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "ValueType": "Simple",
+                "Value": 3,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$WarhammerDamageModifierInitiator$6986239e-9de6-4642-8249-fefe45661ec9"
+    }
+  ]
+}

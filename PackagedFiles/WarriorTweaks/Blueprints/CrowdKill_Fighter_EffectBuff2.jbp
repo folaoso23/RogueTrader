@@ -1,0 +1,190 @@
+{
+  "AssetId": "a1a82655a37c4981b2ae8fca5f952338",
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "efafb8ff343e4071a216fe8fcb17e023, WarhammerCriticalDamageModifierInitiator",
+        "name": "$WarhammerCriticalDamageModifierInitiator$eb889bcd-8a36-4277-b2e4-c2fc845f2389",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "ContextCaster",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "PercentCriticalDamageModifier": {
+          "ValueType": "CasterNamedProperty",
+          "Value": 600,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "DamageBonus1",
+          "Enabled": true
+        },
+        "BonusCriticalDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "BonusCriticalDamageMultipliers": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "purePercentCriticalDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "ModifierDescriptor": "None"
+      },
+      {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$10b02690-eb64-4f6c-a06e-0d26cb861557",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "DamageBonus1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Mul",
+          "TargetType": "ContextCaster",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$593705c24b0d4baf88aa51f0b45325d6",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "ValueType": "Simple",
+                "Value": 10,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            },
+            {
+              "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+              "name": "$FactRankGetter$835d824a-6a4b-4556-a0c7-f7a709d29025",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 3,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "m_Fact": "!bp_a1a82655a37c4981b2ae8fca5f952338",
+              "CheckTarget": "CurrentEntity",
+              "Aggregation": "Max",
+              "BuffWithCasterFromTargetType": true,
+              "BuffCaster": "CurrentEntity"
+            }
+          ]
+        }
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "861f2ef6a9373604d8d9c42491ef2eff",
+        "stringkey": "db5ba148-75cd-45e1-a85f-1bb3a8937e30"
+      }
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "30113b6968d07f043b6cffc544e32594",
+        "stringkey": "e3a95e22-8aee-48d7-8a61-bbe49708617c"
+      }
+    },
+    "m_Icon": {
+      "guid": "480ec32a5f044d34ab87a323086b9052",
+      "fileid": 21300000
+    },
+    "m_AllowNonContextActions": false,
+    "m_Flags": "NeedsNoVisual",
+    "m_SoundTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "m_MuffledTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "Stacking": "Rank",
+    "ProlongWhenRankAdded": false,
+    "PriorityProperty": "Value1",
+    "Initiative": "ByCaster",
+    "Ranks": 100,
+    "FxOnStart": {
+      "AssetId": ""
+    },
+    "FxOnRemove": {
+      "AssetId": ""
+    },
+    "m_FXSettings": null,
+    "ResourceAssetIds": [],
+    "PlayOnlyFirstHitSound": false,
+    "m_priorityInUI": 0,
+    "m_AbilityGroups": [],
+    "m_Cyclical": false,
+    "NeedCollapseStack": true,
+    "IsImportantBuff": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

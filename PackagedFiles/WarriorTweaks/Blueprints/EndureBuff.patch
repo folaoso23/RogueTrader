@@ -1,0 +1,220 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$WarhammerArmorBonus$02f15034-1266-4531-a566-2911c72e86ea",
+      "InsertAfterTarget": "$AddFactContextActions$45ce8c56-10b7-42f3-9e5b-f66e19e45176"
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerArmorBonus$02f15034-1266-4531-a566-2911c72e86ea",
+      "ElementPatch": {
+        "BonusAbsorptionValue": {
+          "ValueType": "CasterNamedProperty",
+          "PropertyName": "Value2",
+          "Enabled": true
+        }
+      }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$a20a88a4-4539-431d-a68d-89985d104030",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Value2",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$50d198e435b347149ffc57bffa32f04e",
+              "Settings": {
+                "Progression": "MultiplyByModifier",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 3,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "ValueType": "CasterProperty",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "ToughnessBonus",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$EntityPropertyCalculatorComponent$58576691-f717-449c-905a-4c6dc690572a"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "cf4a4d014c2610548a3f9213c3de882e, WarhammerDamageModifierInitiator",
+        "name": "$WarhammerDamageModifierInitiator$202b763d-6d56-46f0-8456-1194c28c681b",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "MinimumDamage": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "MaximumDamage": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "PenetrationMod": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "PercentDamageModifier": {
+          "ValueType": "CasterNamedProperty",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Bonus1",
+          "Enabled": true
+        },
+        "AbsorptionPenetration": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "DeflectionPenetration": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "UnmodifiableFlatDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "UnmodifiablePercentDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "ModifierDescriptor": "None",
+        "ModifyEvenDirectDamage": false,
+        "ModifyEvenDamageOverTime": false
+      },
+      "InsertAfterTarget": "$PropertyCalculatorComponent$a20a88a4-4539-431d-a68d-89985d104030"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$c528a365-b63d-45d7-a3e2-65ea1d0e45f6",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Bonus1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$5327cefcd140469595932736ec6c4afd",
+              "Settings": {
+                "Progression": "MultiplyByModifier",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 10,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "ValueType": "CasterProperty",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "StrengthBonus",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$WarhammerDamageModifierInitiator$202b763d-6d56-46f0-8456-1194c28c681b"
+    }
+  ]
+}

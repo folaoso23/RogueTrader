@@ -1,0 +1,219 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$AbilityEffectRunAction$7803e921-5fd8-4774-a23c-dab2c69034af",
+      "ElementPatch": {
+        "Actions": {
+          "Actions": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$Conditional$51e45ec9-56f8-4bd0-a8dc-9c4651c2fe6f",
+              "ElementPatch": {
+                "IfTrue": {
+                  "Actions": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$Conditional$be35b397-c58b-40b2-873f-5006cba5ff61",
+                      "ElementPatch": {
+                        "ConditionsChecker": {
+                          "Conditions": [
+                            {
+                              "PatchType": "PatchElement",
+                              "Target": "$ContextConditionProperty$093ca56e07fc4ccdb854a67bdb17a268",
+                              "ElementPatch": {
+                                "Property": {
+                                  "TargetEvaluator": null
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "IfTrue": {
+                          "Actions": [
+                            {
+                              "PatchType": "PatchElement",
+                              "Target": "$ContextActionRemoveBuffsFromGroup$a4c08f9522f145678392abc248176ffb",
+                              "ElementPatch": {
+                                "RemoveBuffsNotInGroups": false
+                              }
+                            }
+                          ]
+                        },
+                        "IfFalse": {
+                          "Actions": [
+                            {
+                              "PatchType": "PatchElement",
+                              "Target": "$Conditional$51b64ccf-d5e2-41a0-b331-3532ba1a3c9d",
+                              "ElementPatch": {
+                                "IfTrue": {
+                                  "Actions": [
+                                    {
+                                      "PatchType": "PatchElement",
+                                      "Target": "$ContextActionRemoveBuffsFromGroup$5b2d4101-e8e8-46db-b7f7-c4d39772dc9c",
+                                      "ElementPatch": {
+                                        "RemoveBuffsNotInGroups": false
+                                      }
+                                    }
+                                  ]
+                                },
+                                "IfFalse": {
+                                  "Actions": [
+                                    {
+                                      "PatchType": "PatchElement",
+                                      "Target": "$Conditional$cac2c753-06cb-4166-8998-2fdd2c35fe01",
+                                      "ElementPatch": {
+                                        "IfTrue": {
+                                          "Actions": [
+                                            {
+                                              "PatchType": "PatchElement",
+                                              "Target": "$ContextActionRemoveBuffsFromGroup$70b233a7-dacf-499f-81af-5e4fc961fe1b",
+                                              "ElementPatch": {
+                                                "RemoveBuffsNotInGroups": false
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                "name": "$ContextActionApplyBuff$bbe5f20e587948a1b50ac5c2c2e0a272",
+                "m_Buff": "!bp_a1a82655a37c4981b2ae8fca5f952338",
+                "BuffEndCondition": "CombatEnd",
+                "Permanent": true,
+                "DurationValue": {
+                  "RoundsValue": {
+                    "ValueType": "Simple",
+                    "Value": 0,
+                    "ValueRank": "Default",
+                    "ValueShared": "Damage",
+                    "Property": "None",
+                    "m_CustomProperty": null,
+                    "PropertyName": "Value1"
+                  }
+                },
+                "ToCaster": false,
+                "AsChild": false,
+                "SameDuration": false,
+                "Ranks": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "ActionsOnApply": {
+                  "Actions": []
+                },
+                "ActionsOnImmune": {
+                  "Actions": []
+                },
+                "AddFactSource": false
+              },
+              "InsertAfterTarget": "$Conditional$51e45ec9-56f8-4bd0-a8dc-9c4651c2fe6f"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$UIPropertiesComponent$f439fefc-c7cb-4075-8b4e-1098f35377fa",
+      "ElementPatch": {
+        "Properties": [
+          {
+            "PatchType": "PatchElement",
+            "Target": "Value1",
+            "ElementPatch": {
+              "Main": false
+            }
+          },
+          {
+            "PatchType": "PatchElement",
+            "Target": "Value1",
+            "ElementPatch": {
+              "Main": false
+            }
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": {
+              "NameType": "Custom",
+              "m_Name": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": null
+              },
+              "Description": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": {
+                  "assetguid": "235ef57a7ab9b5b44a9599dde634a693",
+                  "stringkey": "fd04b580-8f84-4315-b74b-7b509071a648"
+                }
+              },
+              "m_DescriptionFact": "!bp_4d2f2a839d2340388d45cf4cf66c947b",
+              "m_LinkProperty": true,
+              "m_PropertyName": "Value2",
+              "m_PropertySource": "!bp_7763e9124d1646d5a5210037ea0cb4f1",
+              "m_LinkKey": "ArmorBonus",
+              "Main": false
+            },
+            "InsertAfterTarget": "Value1"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": {
+              "NameType": "Custom",
+              "m_Name": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": null
+              },
+              "Description": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": {
+                  "assetguid": "6702790cfa1b4ee4d9758ad4e0dcb68e",
+                  "stringkey": "d9e8bb4f-d59f-449f-bfad-44ded0ebf622"
+                }
+              },
+              "m_DescriptionFact": "!bp_4d2f2a839d2340388d45cf4cf66c947b",
+              "m_LinkProperty": true,
+              "m_PropertyName": "Bonus1",
+              "m_PropertySource": "!bp_7763e9124d1646d5a5210037ea0cb4f1",
+              "m_LinkKey": "StrengthBonus",
+              "Main": false
+            },
+            "InsertAfterTarget": "Value2"
+          }
+        ]
+      }
+    }
+  ]
+}

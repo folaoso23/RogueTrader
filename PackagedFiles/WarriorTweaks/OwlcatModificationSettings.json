@@ -4,38 +4,63 @@
         "m_Bundles": []
     },
     "BundleDependencies": {
-        "m_List": []
+        "m_List": [
+            {
+                "Key": "WarriorTweaks_BlueprintDirectReferences",
+                "Value": []
+            }
+        ]
     },
     "BlueprintPatches": [
         {
-            "Guid": "1c61468f25fc410586a383c32050e971",
-            "Filename": "Enrage_Fighter_Talent",
-            "PatchType": 1
-        },
-        {
             "Guid": "8dfe9059751047d7a3406bc1b78368d7",
             "Filename": "Enrage_EffectBuff",
-            "PatchType": 1
+            "PatchType": 2
         },
         {
             "Guid": "58eb38002ba04056af3fcdc1dfb31c5c",
             "Filename": "FighterForcefulStrikeBuff",
-            "PatchType": 1
+            "PatchType": 2
         },
         {
             "Guid": "b3a78f30d7094e809610bbb750fc9aee",
             "Filename": "ThickSkin_Fighter_Talent",
-            "PatchType": 1
+            "PatchType": 2
         },
         {
             "Guid": "7763e9124d1646d5a5210037ea0cb4f1",
             "Filename": "EndureBuff",
-            "PatchType": 1
+            "PatchType": 2
         },
         {
             "Guid": "4d2f2a839d2340388d45cf4cf66c947b",
             "Filename": "FighterEndure",
-            "PatchType": 1
+            "PatchType": 2
+        },
+        {
+            "Guid": "1c61468f25fc410586a383c32050e971",
+            "Filename": "Enrage_Fighter_Talent",
+            "PatchType": 2
+        },
+        {
+            "Guid": "038401f387f3417dac61f8e16831c53f",
+            "Filename": "CrowdKill_Fighter_Talent",
+            "PatchType": 2
+        },
+        {
+            "Guid": "ea7d851dd97441e2867fe29f23364f3c",
+            "Filename": "UntiedHands_Fighter_Talent",
+            "PatchType": 2
+        },
+        {
+            "Guid": "d139e202d3994c3dbcc010b69705973f",
+            "Filename": "DefensiveStance_EffectBuff",
+            "PatchType": 2
+        },
+        {
+            "Guid": "6a4310c9966946a3b82ed7acc94464da",
+            "Filename": "Charge_Feature",
+            "PatchType": 2
         }
     ]
 }

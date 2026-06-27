@@ -1,0 +1,54 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$UIPropertiesComponent$4fdece1f-46d9-4881-830c-ce1b61b54130",
+      "ElementPatch": {
+        "Properties": [
+          {
+            "PatchType": "PatchElement",
+            "Target": "Value1",
+            "ElementPatch": {
+              "Description": {
+                "m_Key": "4061b6e5-fc8a-45b0-8eaf-3f0ba0932272",
+                "m_OwnerString": "1c61468f25fc410586a383c32050e971#$UIPropertiesComponent$4fdece1f-46d9-4881-830c-ce1b61b54130",
+                "m_OwnerPropertyPath": "Properties.Array.data[0].Description",
+                "m_JsonPath": "Strings/Mechanics/Blueprints\\Classes\\Fighter\\FighterTalent\\Enrage_Fighter_Talent_Properties.Array.data[0].Description.json"
+              }
+            }
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": {
+              "NameType": "Damage",
+              "m_Name": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": null
+              },
+              "Description": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": {
+                  "assetguid": "4558fb6f1d9036e4e9f1c4a9c90863e5",
+                  "stringkey": "18e5bbf5-ff46-499f-922e-2022c01d9eb5"
+                }
+              },
+              "m_DescriptionFact": "!bp_1c61468f25fc410586a383c32050e971",
+              "m_LinkProperty": true,
+              "m_PropertyName": "Value2",
+              "m_PropertySource": "!bp_8dfe9059751047d7a3406bc1b78368d7",
+              "m_LinkKey": "DamageReduction",
+              "Main": false
+            },
+            "InsertAfterTarget": "Value1"
+          }
+        ]
+      }
+    }
+  ]
+}

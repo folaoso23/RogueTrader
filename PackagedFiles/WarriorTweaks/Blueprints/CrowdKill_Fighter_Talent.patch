@@ -1,0 +1,95 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "67bd9d5235e74484bb1d673b885ab430, WarhammerWeaponHitTriggerInitiator",
+        "name": "$WarhammerWeaponHitTriggerInitiator$c70c8098-c510-4d04-b080-44581a608a54",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "And",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "76fa6ff8c9162f9489df4de07a55750c, CheckAbilityAttackTypeGetter",
+                "name": "$CheckAbilityAttackTypeGetter$73ce1e54ae064cac9f89588b9aaed9f7",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Type": "Pattern"
+              }
+            ]
+          }
+        },
+        "ActionOnSelfHit": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "$ContextActionApplyBuff$4ba1d3af-e6e0-4ced-86b6-8680caf2883b",
+              "m_Buff": "!bp_a1a82655a37c4981b2ae8fca5f952338",
+              "BuffEndCondition": "CombatEnd",
+              "Permanent": true,
+              "DurationValue": {
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "ToCaster": false,
+              "AsChild": false,
+              "SameDuration": false,
+              "Ranks": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionsOnApply": {
+                "Actions": []
+              },
+              "ActionsOnImmune": {
+                "Actions": []
+              },
+              "AddFactSource": false
+            }
+          ]
+        },
+        "ActionOnSelfMiss": {
+          "Actions": []
+        },
+        "ActionsOnTargetHit": {
+          "Actions": []
+        },
+        "ActionsOnTargetMiss": {
+          "Actions": []
+        },
+        "OnlyRighteousFury": false,
+        "OnlyMelee": false
+      },
+      "InsertAfterTarget": "$UIPropertiesComponent$8dccce85-80c4-48b1-922b-a3986fea56d3"
+    }
+  ]
+}

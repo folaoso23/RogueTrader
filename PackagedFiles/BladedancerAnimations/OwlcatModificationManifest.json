@@ -1,0 +1,10 @@
+{
+    "UniqueName": "BladedancerAnimations",
+    "Version": "1.0.0",
+    "DisplayName": "Bladedancer Animations",
+    "Description": "Adds a feature that adds bladancer animations. Look for \"BladedancerAnimationFeature\" or \"Bladedancer Animation\" in Toybox.",
+    "Author": "",
+    "Repository": "",
+    "HomePage": "",
+    "Dependencies": []
+}

@@ -1,37 +1,72 @@
 {
-    "strings": {
-        "1858b001-c823-4334-a6cf-3ceb483322b0": {
-            "Text": "The {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} gains +1 damage {g|Encyclopedia:Deflection}deflection{/g}. Their {g|Encyclopedia:Parry}parry{/g} chance is increased by +25% of the Warrior's total {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}.\nIf the Warrior is wearing heavy armor or power armor, they will gain an addtional +2 deflection and +{uip|ArmorBonus|b3a78f30d7094e809610bbb750fc9aee}% armor."
-        },
-        "5a22bfbe-0798-49b1-bf17-8f8ded2b4d28": {
-            "Text": "<u>10 + {g|Encyclopedia:WarhammerToughness}TGH{/g} bonus</u>"
-        },
-        "af26970c-f579-46fa-8afb-38ff77f0ae83": {
-            "Text": "The {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} gains +{uip|BonusMP|1c61468f25fc410586a383c32050e971} MP and +{uip|CritDamage|1c61468f25fc410586a383c32050e971}% {g|Encyclopedia:HitPoints}wounds{/g}, they gain +{uip|BonusDamage|1c61468f25fc410586a383c32050e971}% {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical damage{/g}.\nIf the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} has less than 50% {g|Encyclopedia:HitPoints}wounds{/g}, they gain +{uip|BonusDamage|1c61468f25fc410586a383c32050e971}% {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hit chance{/g} and reduce damage taken by -{uip|DamageReduction|1c61468f25fc410586a383c32050e971}%."
-        },
-        "4061b6e5-fc8a-45b0-8eaf-3f0ba0932272": {
-            "Text": "<u>(10 + ({g|Encyclopedia:WarhammerToughness}TGH{/g} bonus + {g|Encyclopedia:WarhammerAgility}AGI{/g} bonus))</u>"
-        },
-        "c4c9aa95-64cf-4580-9acb-afb860fa01d6": {
-            "Text": "<u>5 + {g|Encyclopedia:WarhammerToughness}TGH{/g} bonus</u>"
-        },
-        "990167f8-0739-47f7-904c-8908f57ca365": {
-            "Text": "<u>2 + ({g|Encyclopedia:WarhammerToughness}AGI{/g} bonus / 3)</u>"
-        },
-        "3b18bb79-6521-49b1-a86c-aab01e26a35d": {
-            "Text": "<u>5 + ({g|Encyclopedia:WarhammerToughness}STR{/g} bonus × 3)</u>"
-        },
-        "4015878d-03b8-4c4d-82ed-c420aaf85b38": {
-            "Text": "Until the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g}'s next {g|Encyclopedia:Turn}turn{/g}, they gain +{uip|TOU|4d2f2a839d2340388d45cf4cf66c947b} {g|Encyclopedia:Deflection}deflection{/g}, +{uip|ArmorBonus|4d2f2a839d2340388d45cf4cf66c947b} {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, and +{uip|THP|4d2f2a839d2340388d45cf4cf66c947b} {g|Encyclopedia:TemporaryWounds}temporary wounds{/g}."
-        },
-        "dd3e9880-ee06-4526-979b-f6d380ad34f0": {
-            "Text": "<u>({g|Encyclopedia:WarhammerToughness}TGH{/g} {g|Encyclopedia:Bonus}bonus{/g} × 2)</u>"
-        },
-        "cef41f94-8d87-491a-a939-130bf155dacb": {
-            "Text": "The {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} gathers all their might for a crushing strike. Their next {g|Encyclopedia:MeleeAttacksGlossary}melee attack{/g} pushes the enemy away. The distance of the {g|Encyclopedia:PushGlossary}push{/g} is equal to {uip|Push|93d58dfeb6c648858c130e0a902f6ed6} cells. If the target fails a {g|Encyclopedia:WarhammerToughness}Toughness{/g} check, they will gain a stack of {g|Encyclopedia:FatiguedEffect}fatigue{/g}.\nThis {g|Encyclopedia:Ability}ability{/g} cannot be used with a heavy rock saw."
-        },
-        "e49103bf-b3bd-4d85-a3a7-a9d30a754238": {
-            "Text": "<u>(2 + {g|Encyclopedia:WarhammerStrength}STR{/g} bonus)</u>"
-        }
+  "strings": {
+    "4061b6e5-fc8a-45b0-8eaf-3f0ba0932272": {
+      "Offset": 0,
+      "Text": "<u>(10 + ({g|Encyclopedia:WarhammerToughness}TGH{/g} bonus + {g|Encyclopedia:WarhammerAgility}AGI{/g} bonus))</u>"
+    },
+    "1858b001-c823-4334-a6cf-3ceb483322b0": {
+      "Offset": 0,
+      "Text": "The {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} gains +1 damage {g|Encyclopedia:Deflection}deflection{/g}. Their {g|Encyclopedia:Parry}parry{/g} chance is increased by +25% of the Warrior's total {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}.\nIf the Warrior is wearing heavy armor or power armor, they will gain an addtional +2 deflection and +{uip|ArmorBonus|b3a78f30d7094e809610bbb750fc9aee}% armor."
+    },
+    "3b647675-4f32-4ae9-9189-8c8466e73d53": {
+      "Offset": 0,
+      "Text": "<u>10 + {g|Encyclopedia:WarhammerToughness}TGH{/g} bonus</u>"
+    },
+    "af26970c-f579-46fa-8afb-38ff77f0ae83": {
+      "Offset": 0,
+      "Text": "If the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} has less than 50% {g|Encyclopedia:HitPoints}wounds{/g}, they gain +{uip|BonusDamage|1c61468f25fc410586a383c32050e971}% {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical hit chance{/g} and reduce damage taken by -{uip|DamageReduction|1c61468f25fc410586a383c32050e971}%."
+    },
+    "18e5bbf5-ff46-499f-922e-2022c01d9eb5": {
+      "Offset": 0,
+      "Text": "<u>5 + {g|Encyclopedia:WarhammerToughness}TGH{/g} bonus</u>"
+    },
+    "4015878d-03b8-4c4d-82ed-c420aaf85b38": {
+      "Offset": 0,
+      "Text": "Until the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g}'s next {g|Encyclopedia:Turn}turn{/g}, they gain +{uip|TOU|4d2f2a839d2340388d45cf4cf66c947b} {g|Encyclopedia:Deflection}deflection{/g}, +{uip|ArmorBonus|4d2f2a839d2340388d45cf4cf66c947b}% {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, +{uip|THP|4d2f2a839d2340388d45cf4cf66c947b} {g|Encyclopedia:TemporaryWounds}temporary wounds{/g}, and +{uip|StrengthBonus|4d2f2a839d2340388d45cf4cf66c947b}% damage. They will also gain +1 stack of {g|f:a1a82655a37c4981b2ae8fca5f952338}juggernaut{/g}."
+    },
+    "fd04b580-8f84-4315-b74b-7b509071a648": {
+      "Offset": 0,
+      "Text": "<u>{g|Encyclopedia:WarhammerToughness}TGH{/g} {g|Encyclopedia:Bonus}bonus{/g} × 3</u>"
+    },
+    "d9e8bb4f-d59f-449f-bfad-44ded0ebf622": {
+      "Offset": 0,
+      "Text": "<u>{g|Encyclopedia:WarhammerStrength}STR{/g} bonus × 10</u>"
+    },
+    "cef41f94-8d87-491a-a939-130bf155dacb": {
+      "Offset": 0,
+      "Text": "The {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} gathers all their might for a crushing strike. Their next {g|Encyclopedia:MeleeAttacksGlossary}melee attack{/g} pushes the enemy away. The distance of the {g|Encyclopedia:PushGlossary}push{/g} is equal to {uip|Push|93d58dfeb6c648858c130e0a902f6ed6} cells. If the target fails a {g|Encyclopedia:WarhammerToughness}Toughness{/g} check, they will gain a stack of {g|Encyclopedia:FatiguedEffect}fatigue{/g}.\nThis {g|Encyclopedia:Ability}ability{/g} cannot be used with a heavy rock saw."
+    },
+    "e49103bf-b3bd-4d85-a3a7-a9d30a754238": {
+      "Offset": 0,
+      "Text": "<u>(2 + {g|Encyclopedia:WarhammerStrength}STR{/g} bonus)</u>"
+    },
+    "6f7363ea-7767-429d-b91c-5f28446b441b": {
+      "Offset": 0,
+      "Text": "<u>(10 + 3 × {g|Encyclopedia:WarhammerToughness}TGH{/g} bonus)</u>"
+    },
+    "0ac05259-00b5-4a78-83e8-096d86673894": {
+      "Offset": 0,
+      "Text": "{g|Encyclopedia:AreaOfEffect}Area attacks{/g} deal an additional +{uip|BonusDamage|038401f387f3417dac61f8e16831c53f} {g|Encyclopedia:DamageGlossary}damage{/g} for each enemy in the area of effect. Each melee area attack grants +1 stack of {g|f:a1a82655a37c4981b2ae8fca5f952338}juggernaut{/g} for the rest of combat."
+    },
+    "db5ba148-75cd-45e1-a85f-1bb3a8937e30": {
+      "Offset": 0,
+      "Text": "Juggernaut"
+    },
+    "e3a95e22-8aee-48d7-8a61-bbe49708617c": {
+      "Offset": 0,
+      "Text": "+5 Strength, +5 Toughness, and +5% critical damage per stack."
+    },
+    "87cdc39f-a6d0-4c6d-8538-7a88af98703e": {
+      "Offset": 0,
+      "Text": "If there are no enemies adjacent to the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} at the start of the {g|Encyclopedia:Turn}turn{/g}, the Warrior's {g|Encyclopedia:DamageGlossary}damage{/g} is increased by +{uip|DamageBonus|ea7d851dd97441e2867fe29f23364f3c} for one {g|Encyclopedia:MeleeAttacksGlossary}melee attack{/g}.\nTwo-handed attacks with melee weapons deal +{uip|TwoHandBonus|ea7d851dd97441e2867fe29f23364f3c} damage."
+    },
+    "457d4a8b-768e-41f8-9c77-b0177ed4531a": {
+      "Offset": 0,
+      "Text": "<u>3 + {g|Encyclopedia:WarhammerStrength}STR{/g} bonus</u>"
+    },
+    "88dd56a4-5b39-4ce2-9691-8b982110da5f": {
+      "Offset": 0,
+      "Text": "The {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} moves in a straight line and launches a {g|Encyclopedia:MeleeAttacksGlossary}melee attack{/g} against any target in the Warrior's path. This attack does not count toward the limit of the Warrior's {g|Encyclopedia:AttacksPerTurn}attacks per turn{/g}.\nThere must be at least 2 free cells between the Warrior and the target to use {g|f:4955b43454f6488f82892e166c76c995}Charge{/g}.\nThe Warrior will gain +1 stack of {g|f:a1a82655a37c4981b2ae8fca5f952338}juggernaut{/g} after using this ability."
     }
+  }
 }

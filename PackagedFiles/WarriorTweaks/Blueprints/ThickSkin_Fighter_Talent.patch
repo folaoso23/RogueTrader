@@ -1,0 +1,196 @@
+{
+  "Components": [
+    {
+      "PatchType": "Prepend",
+      "NewElement": {
+        "$type": "4eaba0ad9abe479eae3618b5e97d5c71, WarhammerArmorBonusConditional",
+        "name": "$WarhammerArmorBonusConditional$b2bf678c-fe2e-41f3-a28f-509ea04308fe",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "BoolOr",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "8703e4add55040949b18648d71bcdd3e, CheckArmorTypeGetter",
+                "name": "$CheckArmorTypeGetter$0358f792e18a4d25a404f7403a20f2d3",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Target": "CurrentEntity",
+                "m_ArmorType": "Heavy"
+              },
+              {
+                "$type": "8703e4add55040949b18648d71bcdd3e, CheckArmorTypeGetter",
+                "name": "$CheckArmorTypeGetter$6327931f6c4344d791cf6ee1d6a25ecf",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Target": "CurrentEntity",
+                "m_ArmorType": "Power"
+              }
+            ]
+          }
+        },
+        "BonusDeflectionValue": {
+          "ValueType": "Simple",
+          "Value": 2,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "BonusAbsorptionValue": {
+          "ValueType": "CasterNamedProperty",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value2"
+        },
+        "SpecificRangeType": false,
+        "WeaponRangeType": "Melee",
+        "SpecificDamageType": false,
+        "Type": "Impact",
+        "AllDamageExceptThisType": false,
+        "OnlyFromAlliedAttacks": false,
+        "IgnoreArmour": false
+      }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$d453bf22-466a-4e32-8f76-8c209218ebd1",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Value2",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$c67c0d41253540c3b4320f01602b8f00",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "ValueType": "Simple",
+                "Value": 10,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            },
+            {
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$e35c33f782aa4eff89193ff68ad70d55",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "ValueType": "CasterProperty",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "ToughnessBonus",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$WarhammerArmorBonusConditional$b2bf678c-fe2e-41f3-a28f-509ea04308fe"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "95e248f24866439681c312b1bff0693c, UIPropertiesComponent",
+        "name": "$UIPropertiesComponent$c4288310-b8a4-40a4-a032-04a21327b573",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Properties": [
+          {
+            "NameType": "Damage",
+            "m_Name": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": null
+            },
+            "Description": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": {
+                "assetguid": "84a6ddd64fc203340a277b439b539e7b",
+                "stringkey": "3b647675-4f32-4ae9-9189-8c8466e73d53"
+              }
+            },
+            "m_DescriptionFact": "!bp_b3a78f30d7094e809610bbb750fc9aee",
+            "m_LinkProperty": true,
+            "m_PropertyName": "Value2",
+            "m_PropertySource": "!bp_b3a78f30d7094e809610bbb750fc9aee",
+            "m_LinkKey": "ArmorBonus",
+            "Main": false
+          }
+        ]
+      },
+      "InsertAfterTarget": "$WarhammerParryChanceModifierDefender$5ee74944-7d30-4363-b0be-5bb5ff61088a"
+    }
+  ]
+}
