@@ -1,0 +1,92 @@
+{
+  "AssetId": "150c8b6382dc4cfd8b667d931659272b",
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "PrototypeLink": "279842de6dd54fd7a21f753e242aba0d",
+    "m_Overrides": [
+      "$AbilityLifecycleTriggerCaster$ee9c56e4-012c-435f-81f9-b3fde778ebcb"
+    ],
+    "Components": [
+      {
+        "$type": "18beb8746b848f6448d3ee6969a32467, WarhammerOverrideAbilityApCost",
+        "name": "$WarhammerOverrideAbilityApCost$dc5710bf-5189-4946-a7a1-3d9dc9927be8",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "279842de6dd54fd7a21f753e242aba0d",
+          "name": "$WarhammerOverrideAbilityApCost$dc5710bf-5189-4946-a7a1-3d9dc9927be8"
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "m_overrideMode": "CostBonus",
+        "m_newCost": 0,
+        "m_costBonus": -1,
+        "m_costMinimum": -1,
+        "m_Ability": "!bp_9c78e44bf8ff44a9afff8370c673c9ad",
+        "m_AffectedGroup": null,
+        "m_AbilityGroupList": [],
+        "NotSelectedGroup": false,
+        "AffectOnlyMelee": false,
+        "AffectOnlyRanged": false,
+        "AffectOnlyAoE": false,
+        "AffectOnlyBurst": false,
+        "AffectOnlyHeavy": false
+      }
+    ],
+    "Author": "AlexanderGusev",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "m_Flags": "HiddenInUi",
+    "m_SoundTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "m_MuffledTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "Stacking": "Replace",
+    "ProlongWhenRankAdded": false,
+    "PriorityProperty": "Value1",
+    "Initiative": "ByCaster",
+    "Ranks": 0,
+    "FxOnStart": {
+      "AssetId": ""
+    },
+    "FxOnRemove": {
+      "AssetId": ""
+    },
+    "m_FXSettings": null,
+    "ResourceAssetIds": [],
+    "PlayOnlyFirstHitSound": false,
+    "m_priorityInUI": 0,
+    "m_AbilityGroups": [],
+    "m_Cyclical": false,
+    "NeedCollapseStack": true
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}
