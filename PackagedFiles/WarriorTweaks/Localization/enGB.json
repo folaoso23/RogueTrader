@@ -6,7 +6,7 @@
     },
     "1858b001-c823-4334-a6cf-3ceb483322b0": {
       "Offset": 0,
-      "Text": "The {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} gains +1 damage {g|Encyclopedia:Deflection}deflection{/g}. Their {g|Encyclopedia:Parry}parry{/g} chance is increased by +25% of the Warrior's total {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}.\nIf the Warrior is wearing heavy armor or power armor, they will gain an addtional +2 deflection and +{uip|ArmorBonus|b3a78f30d7094e809610bbb750fc9aee}% armor."
+      "Text": "The {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} gains +1 damage {g|Encyclopedia:Deflection}deflection{/g}. Their {g|Encyclopedia:Parry}parry{/g} chance is increased by +25% of the Warrior's total {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}.\nIf the Warrior is wearing heavy armor or power armor, they will gain an addtional +2 deflection and +10% armor."
     },
     "3b647675-4f32-4ae9-9189-8c8466e73d53": {
       "Offset": 0,
@@ -58,7 +58,7 @@
     },
     "87cdc39f-a6d0-4c6d-8538-7a88af98703e": {
       "Offset": 0,
-      "Text": "If there are no enemies adjacent to the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} at the start of the {g|Encyclopedia:Turn}turn{/g}, the Warrior's {g|Encyclopedia:DamageGlossary}damage{/g} is increased by +{uip|DamageBonus|ea7d851dd97441e2867fe29f23364f3c} for one {g|Encyclopedia:MeleeAttacksGlossary}melee attack{/g}.\nTwo-handed attacks with melee weapons deal +{uip|TwoHandBonus|ea7d851dd97441e2867fe29f23364f3c} damage."
+      "Text": "If there are no enemies adjacent to the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} at the start of the {g|Encyclopedia:Turn}turn{/g}, the Warrior's {g|Encyclopedia:DamageGlossary}damage{/g} is increased by +{uip|DamageBonus|ea7d851dd97441e2867fe29f23364f3c} for one {g|Encyclopedia:MeleeAttacksGlossary}melee attack{/g}."
     },
     "457d4a8b-768e-41f8-9c77-b0177ed4531a": {
       "Offset": 0,
@@ -67,6 +67,10 @@
     "88dd56a4-5b39-4ce2-9691-8b982110da5f": {
       "Offset": 0,
       "Text": "The {g|Encyclopedia:CareerFighterGlossary}Warrior{/g} moves in a straight line and launches a {g|Encyclopedia:MeleeAttacksGlossary}melee attack{/g} against any target in the Warrior's path. This attack does not count toward the limit of the Warrior's {g|Encyclopedia:AttacksPerTurn}attacks per turn{/g}.\nThere must be at least 2 free cells between the Warrior and the target to use {g|f:4955b43454f6488f82892e166c76c995}Charge{/g}.\nThe Warrior will gain +1 stack of {g|f:a1a82655a37c4981b2ae8fca5f952338}juggernaut{/g} after using this ability."
+    },
+    "db879785-2678-4b1e-9892-b320a7997e88": {
+      "Offset": 0,
+      "Text": "The Warrior's next {g|Encyclopedia:MeleeAttacksGlossary}melee attack{/g} gains +{uip|BonusPenetetration|ad2a77c5012c4ffd9a19204dcf794266}% {g|Encyclopedia:ArmourPenetration}armour penetration{/g} and +{uip|BonusDamage|ad2a77c5012c4ffd9a19204dcf794266} damage and ignores {uip|ParryPenetration|ad2a77c5012c4ffd9a19204dcf794266}% of the target's {g|Encyclopedia:Parry}parry{/g}.Two handed attacks gain an additional +{unit_stat|WarhammerStrength|bonus} damage.\nEvery enemy who survives an attack enhanced by this {g|Encyclopedia:Ability}ability{/g} will attack the Warrior in return, including creatures with ranged weapons."
     }
   }
 }

@@ -5,7 +5,7 @@
       "NewElement": {
         "$type": "4eaba0ad9abe479eae3618b5e97d5c71, WarhammerArmorBonusConditional",
         "name": "$WarhammerArmorBonusConditional$b2bf678c-fe2e-41f3-a28f-509ea04308fe",
-        "m_Flags": 0,
+        "m_Flags": "Disabled",
         "PrototypeLink": {
           "guid": "",
           "name": ""
@@ -121,29 +121,6 @@
                 "m_CustomProperty": null,
                 "PropertyName": "Value1"
               }
-            },
-            {
-              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
-              "name": "$ContextValueGetter$e35c33f782aa4eff89193ff68ad70d55",
-              "Settings": {
-                "Progression": "AsIs",
-                "m_CustomProgression": [],
-                "m_StartLevel": 0,
-                "m_StepLevel": 0,
-                "Negate": false,
-                "Limit": "None",
-                "Min": 0,
-                "Max": 0
-              },
-              "Value": {
-                "ValueType": "CasterProperty",
-                "Value": 0,
-                "ValueRank": "Default",
-                "ValueShared": "Damage",
-                "Property": "ToughnessBonus",
-                "m_CustomProperty": null,
-                "PropertyName": "Value1"
-              }
             }
           ]
         }
@@ -191,6 +168,131 @@
         ]
       },
       "InsertAfterTarget": "$WarhammerParryChanceModifierDefender$5ee74944-7d30-4363-b0be-5bb5ff61088a"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "186465aada0f422b966541bbf050c271, WarhammerArmorBonus",
+        "name": "$WarhammerArmorBonus$4480376f-0dfc-443d-828f-f04011689d53",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "8703e4add55040949b18648d71bcdd3e, CheckArmorTypeGetter",
+                "name": "$CheckArmorTypeGetter$c7d03c35-cfe8-441d-836d-ec13cb0f8426",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Target": "CurrentEntity",
+                "m_ArmorType": "Heavy"
+              },
+              {
+                "$type": "8703e4add55040949b18648d71bcdd3e, CheckArmorTypeGetter",
+                "name": "$CheckArmorTypeGetter$b41da328-d76a-4253-8b3d-992b3c1d0896",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Target": "CurrentEntity",
+                "m_ArmorType": "Power"
+              }
+            ]
+          }
+        },
+        "BonusDeflectionValue": {
+          "ValueType": "Simple",
+          "Value": 2,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": true,
+          "ModifierType": "ValAdd"
+        },
+        "BonusAbsorptionValue": {
+          "ValueType": "Simple",
+          "Value": 10,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value2",
+          "Enabled": true,
+          "ModifierType": "ValAdd"
+        },
+        "ForceDeflectionMinimum": false,
+        "PctDeflectionMinimum": 0,
+        "DeflectionMinimumValue": 0,
+        "ForceAbsorptionMinimum": false,
+        "PctAbsorptionMinimum": 0,
+        "AbsorptionMinimumValue": 0,
+        "ForcePctAbsorptionMaximum": false,
+        "PctAbsorptionMaximum": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "ForceAbsorptionMaximum": false,
+        "AbsorptionMaximumValue": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "ForcePctDeflectionMaximum": false,
+        "PctDeflectionMaximum": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "ForceDeflectionMaximum": false,
+        "DeflectionMaximumValue": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "ModifierDescriptor": "None"
+      },
+      "InsertAfterTarget": "$UIPropertiesComponent$c4288310-b8a4-40a4-a032-04a21327b573"
     }
   ]
 }

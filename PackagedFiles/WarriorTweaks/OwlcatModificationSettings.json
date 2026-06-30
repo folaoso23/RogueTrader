@@ -48,11 +48,6 @@
             "PatchType": 2
         },
         {
-            "Guid": "ea7d851dd97441e2867fe29f23364f3c",
-            "Filename": "UntiedHands_Fighter_Talent",
-            "PatchType": 2
-        },
-        {
             "Guid": "d139e202d3994c3dbcc010b69705973f",
             "Filename": "DefensiveStance_EffectBuff",
             "PatchType": 2
@@ -60,6 +55,11 @@
         {
             "Guid": "6a4310c9966946a3b82ed7acc94464da",
             "Filename": "Charge_Feature",
+            "PatchType": 2
+        },
+        {
+            "Guid": "b3234ca0339d4c13ad448820d70d0275",
+            "Filename": "Fighter_RecklessStrike_Buff",
             "PatchType": 2
         }
     ]
