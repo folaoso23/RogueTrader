@@ -22,7 +22,7 @@
     },
     "4015878d-03b8-4c4d-82ed-c420aaf85b38": {
       "Offset": 0,
-      "Text": "Until the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g}'s next {g|Encyclopedia:Turn}turn{/g}, they gain +{uip|TOU|4d2f2a839d2340388d45cf4cf66c947b} {g|Encyclopedia:Deflection}deflection{/g}, +{uip|ArmorBonus|4d2f2a839d2340388d45cf4cf66c947b}% {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, +{uip|THP|4d2f2a839d2340388d45cf4cf66c947b} {g|Encyclopedia:TemporaryWounds}temporary wounds{/g}, and +{uip|StrengthBonus|4d2f2a839d2340388d45cf4cf66c947b}% damage. They will also gain +1 stack of {g|f:a1a82655a37c4981b2ae8fca5f952338}juggernaut{/g}."
+      "Text": "Until the {g|Encyclopedia:CareerFighterGlossary}Warrior{/g}'s next {g|Encyclopedia:Turn}turn{/g}, they gain +{uip|TOU|4d2f2a839d2340388d45cf4cf66c947b} {g|Encyclopedia:Deflection}deflection{/g}, +{uip|ArmorBonus|4d2f2a839d2340388d45cf4cf66c947b}% {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, +{uip|THP|4d2f2a839d2340388d45cf4cf66c947b} {g|Encyclopedia:TemporaryWounds}temporary wounds{/g}, and +{uip|DamageBonus|4d2f2a839d2340388d45cf4cf66c947b}% damage. They will also gain +1 stack of {g|f:a1a82655a37c4981b2ae8fca5f952338}juggernaut{/g}."
     },
     "fd04b580-8f84-4315-b74b-7b509071a648": {
       "Offset": 0,
@@ -30,7 +30,7 @@
     },
     "d9e8bb4f-d59f-449f-bfad-44ded0ebf622": {
       "Offset": 0,
-      "Text": "<u>{g|Encyclopedia:WarhammerStrength}STR{/g} bonus × 10</u>"
+      "Text": "<u>{g|Encyclopedia:WarhammerToughness}TGH{/g} bonus × 8</u>"
     },
     "cef41f94-8d87-491a-a939-130bf155dacb": {
       "Offset": 0,
@@ -54,7 +54,7 @@
     },
     "e3a95e22-8aee-48d7-8a61-bbe49708617c": {
       "Offset": 0,
-      "Text": "+5 Strength, +5 Toughness, and +5% critical damage per stack."
+      "Text": "+2 Strength, +2 Toughness, and +5% critical damage per stack."
     },
     "87cdc39f-a6d0-4c6d-8538-7a88af98703e": {
       "Offset": 0,

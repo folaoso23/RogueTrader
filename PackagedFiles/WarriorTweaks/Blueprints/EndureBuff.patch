@@ -195,7 +195,7 @@
                 "Progression": "MultiplyByModifier",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 10,
+                "m_StepLevel": 8,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,
@@ -206,7 +206,7 @@
                 "Value": 0,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
-                "Property": "StrengthBonus",
+                "Property": "ToughnessBonus",
                 "m_CustomProperty": null,
                 "PropertyName": "Value1"
               }

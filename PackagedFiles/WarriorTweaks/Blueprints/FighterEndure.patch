@@ -207,7 +207,7 @@
               "m_LinkProperty": true,
               "m_PropertyName": "Bonus1",
               "m_PropertySource": "!bp_7763e9124d1646d5a5210037ea0cb4f1",
-              "m_LinkKey": "StrengthBonus",
+              "m_LinkKey": "DamageBonus",
               "Main": false
             },
             "InsertAfterTarget": "Value2"

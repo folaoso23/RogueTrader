@@ -150,7 +150,7 @@
         "Multiplier": 1,
         "Value": {
           "ValueType": "CasterBuffRank",
-          "Value": 5,
+          "Value": 2,
           "ValueRank": "Default",
           "ValueShared": "Damage",
           "Property": "None",
@@ -185,7 +185,7 @@
         "Multiplier": 1,
         "Value": {
           "ValueType": "CasterBuffRank",
-          "Value": 5,
+          "Value": 2,
           "ValueRank": "Default",
           "ValueShared": "Damage",
           "Property": "None",
@@ -220,10 +220,7 @@
         "stringkey": "e3a95e22-8aee-48d7-8a61-bbe49708617c"
       }
     },
-    "m_Icon": {
-      "guid": "66f90ec9e7ccd5f46ab0c3ddcdea72fb",
-      "fileid": 21300000
-    },
+    "m_Icon": null,
     "m_AllowNonContextActions": false,
     "m_Flags": "NeedsNoVisual",
     "m_SoundTypeSwitch": {
