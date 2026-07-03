@@ -13,13 +13,33 @@
     },
     "BlueprintPatches": [
         {
+            "Guid": "7b00b5ea0dc246e1a304619d5678ca5b",
+            "Filename": "Adept_PreciseAttack_Ability",
+            "PatchType": 2
+        },
+        {
             "Guid": "5f9c3a4d2f8e439883a1722c1d8b91b9",
             "Filename": "Adept_PreciseAttack_Buff",
             "PatchType": 2
         },
         {
+            "Guid": "d9e00160ce96479281c1abe9a26ac4e5",
+            "Filename": "Adept_PreciseAttack_Feature",
+            "PatchType": 2
+        },
+        {
             "Guid": "197b8a8a12b0442db7ffee1067cf3d97",
             "Filename": "Adept_ExposeWeakness_Ability",
+            "PatchType": 2
+        },
+        {
+            "Guid": "fbdba5fe2a264c25bada29aecd64049a",
+            "Filename": "Adept_ExposeWeakness_Feature",
+            "PatchType": 2
+        },
+        {
+            "Guid": "a2c8d30542b84a84bcc6480cf374c516",
+            "Filename": "Adept_ExposeWeakness_Buff",
             "PatchType": 2
         },
         {
@@ -43,11 +63,6 @@
             "PatchType": 2
         },
         {
-            "Guid": "a2c8d30542b84a84bcc6480cf374c516",
-            "Filename": "Adept_ExposeWeakness_Buff",
-            "PatchType": 2
-        },
-        {
             "Guid": "740426ff3a6a4bbe97b81a4e6e7e4455",
             "Filename": "Adept_OffencePrediction_Buff",
             "PatchType": 2
@@ -55,16 +70,6 @@
         {
             "Guid": "bca05f1815dc49ed870306461a4cd686",
             "Filename": "Adept_SnipingSHot_Buff",
-            "PatchType": 2
-        },
-        {
-            "Guid": "fbdba5fe2a264c25bada29aecd64049a",
-            "Filename": "Adept_ExposeWeakness_Feature",
-            "PatchType": 2
-        },
-        {
-            "Guid": "d9e00160ce96479281c1abe9a26ac4e5",
-            "Filename": "Adept_PreciseAttack_Feature",
             "PatchType": 2
         },
         {
@@ -90,6 +95,41 @@
         {
             "Guid": "6bc423e71af648d39d9f5d07b6f402dc",
             "Filename": "Adept_FreshTarget_Buff",
+            "PatchType": 2
+        },
+        {
+            "Guid": "6cfd9b9830ea403db07a816843a8e39a",
+            "Filename": "Adept_Keystone_Feature",
+            "PatchType": 2
+        },
+        {
+            "Guid": "502b9195c84c42c5b180f3f63ed7955c",
+            "Filename": "Adept_Keystone_Ability",
+            "PatchType": 2
+        },
+        {
+            "Guid": "264e8fc120fc4cdda336d31ddc0c15f7",
+            "Filename": "AdeptUltimateFeature",
+            "PatchType": 2
+        },
+        {
+            "Guid": "c4c25ebbdea341c5a153c073240d574d",
+            "Filename": "AdeptUltimateAbility",
+            "PatchType": 2
+        },
+        {
+            "Guid": "d983fdecfc444017991a6f9b703da01a",
+            "Filename": "AdeptUltimateAbility_SecondHand",
+            "PatchType": 2
+        },
+        {
+            "Guid": "0b34f40754f84c85ac4b12ea289b12e8",
+            "Filename": "AdeptDesperateAbility",
+            "PatchType": 2
+        },
+        {
+            "Guid": "765e3c47c4a649648b315a5e353592ce",
+            "Filename": "AdeptDesperateAbility_SecondHand",
             "PatchType": 2
         }
     ]

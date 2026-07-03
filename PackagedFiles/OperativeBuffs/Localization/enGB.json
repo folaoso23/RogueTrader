@@ -1,14 +1,14 @@
 {
     "strings": {
         "820c393d-bdcd-4268-8ada-7c76df7d77ae": {
-            "Text": "Precise Attack"
+            "Text": "Precise Attacks"
         },
         "ca1a1af8-1d1b-4eef-892b-8d92b0a89d41": {
-            "Text": "For the next attack against a target affected by an {g|Encyclopedia:Exploit}exploit{/g}, that target's {g|Encyclopedia:DetailsOfTheCoverGlossary}cover efficiency{/g} and block will be reduced by −<u>(15 + ({unit_stat|WarhammerPerception|bonus} / 2) × stacks of exploit)</u>%. This attack will have +<u>(15 + ({unit_stat|WarhammerPerception|bonus} / 2) × stacks of exploit)</u>% {g|Encyclopedia:HitSequenceGlossary}hit chance{/g}. Single-shot and melee attacks will do +{uip|damagebonus|d9e00160ce96479281c1abe9a26ac4e5}% critical damage."
+            "Text": "For one round, attacks against a target affected by an {g|Encyclopedia:Exploit}exploit{/g}, that target's {g|Encyclopedia:DetailsOfTheCoverGlossary}cover efficiency{/g} and block will be reduced by −<u>(15 + ({unit_stat|WarhammerPerception|bonus} / 2) × stacks of exploit)</u>%. This attack will have +<u>(15 + ({unit_stat|WarhammerPerception|bonus} / 2) × stacks of exploit)</u>% {g|Encyclopedia:HitSequenceGlossary}hit chance{/g}. Single-shot and melee attacks will do +{uip|damagebonus|d9e00160ce96479281c1abe9a26ac4e5}% critical damage."
         },
         "50f49e3a-b651-401f-8cc4-9f4e46e48ec2": {
             "Text": "<u>25 + {g|Encyclopedia:WarhammerPerception}Perception{/g}</u>"
-        },      
+        },
         "c9d22b73-9f30-40ec-8550-00bdbfa2f8c6": {
             "Text": "{g|f:7b00b5ea0dc246e1a304619d5678ca5b}Precise Attack{/g} grants the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} a {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:WarhammerPerception}Perception{/g} equal to <u>(number of {g|Encyclopedia:Exploit}exploits{/g} removed)</u> (minimum 1) until the end of combat. Stacks."
         },
@@ -19,17 +19,17 @@
             "Text": "Whenever the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} triggers an {g|Encyclopedia:Exploit}exploit{/g} on an enemy, the Operative gains +2 damage, +2% {g|Encyclopedia:ArmourPenetration}armour penetration{/g}, and +5 {g|Encyclopedia:WarhammerIntelligence}Intelligence{/g} until the end of combat. Only applies to the first strike or projectile in a {g|Encyclopedia:BurstAttacksGlossary}burst{/g} attack. Stacks."
         },
         "a6b9621a-5d74-43d9-9b6e-5d3402b6550b": {
-            "Text": "The Operative removes all {g|Encyclopedia:Exploit}exploits{/g} from the target, decreasing the target's {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:Parry}parry{/g}, and {g|Encyclopedia:WarhammerArmourGlossary}armour{/g} by −<u>(20 + exploits removed × {uip|multipliyer|fbdba5fe2a264c25bada29aecd64049a})</u>% until the start of the Operative's next turn.\nIf this ability reduces the target's armour to 0, the Operative removes only half of the exploits from the target.\nThe target will suffer an increased {uip|criticalbonus|fbdba5fe2a264c25bada29aecd64049a}% critical chance from attackers.\nCritical hits against enemies that this Operative has exposed will not count towards their attack limit this turn. This effect will not trigger from burst or area attacks. It will also not trigger if the Operative has attacked at least three times this round, including extra turns."
+            "Text": "The Operative removes all {g|Encyclopedia:Exploit}exploits{/g} from the target, decreasing the target's {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:Parry}parry{/g}, and {g|Encyclopedia:WarhammerArmourGlossary}armour{/g} by −<u>(20 + exploits removed × {uip|multipliyer|fbdba5fe2a264c25bada29aecd64049a})</u>% until the start of the Operative's next turn.\nIf this ability reduces the target's armour to 0, the Operative removes only half of the exploits from the target.\nThe target will suffer an increased {uip|criticalbonus|fbdba5fe2a264c25bada29aecd64049a}% critical chance from attackers, and the first single target attack each turn against this target by the Operative will not count towards the attack limit.\nIf the target is not affected by any {g|Encyclopedia:Exploit}exploits{/g}, the Operative will do an additional +{uip|exposedamagebonus|fbdba5fe2a264c25bada29aecd64049a}%. damage to exposed targets."
         },
         "30ed5ec8-7e19-4620-a3b0-8fc5a94fa537": {
             "Text": "{g|Encyclopedia:WarhammerPerception}PER{/g} bonus / 2"
-        },        
+        },
         "7932a79a-37b6-429b-8164-975e17a1f77d": {
             "Text": "<u>2 + ({g|Encyclopedia:WarhammerAgility}AGI{/g} bonus / 3)</u>"
         },
         "04fcff06-a879-4b2f-b127-333726026b2d": {
-            "Text": "<u>25 + ({g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus x 2)</u>"
-        },        
+            "Text": "<u>50 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus</u>"
+        },
         "3269e346-5c49-4e64-b9a9-7b6033a7d11a": {
             "Text": "While the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g}'s {g|Encyclopedia:WarhammerPerception}Perception{/g} bonus is 10 or higher, they gain +1 {g|Encyclopedia:ActionPoints}AP{/g} and ignore enemies' {g|Encyclopedia:Deflection}deflection{/g}.\nWeapon Skill and Ballistic Skill are increased by {uip|StatBonus|1d6a3bacdb914699b83d564a1f22bfbc}."
         },
@@ -37,14 +37,14 @@
             "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} targets one enemy within {g|Encyclopedia:LineOfSight}line of sight{/g}. That target immediately gains +{uip|Exploits|502b9195c84c42c5b180f3f63ed7955c} {g|Encyclopedia:Exploit}exploits{/g}."
         },
         "6182489e-0ccc-43ad-b421-15ad236fdadf": {
-            "Text": "<u>1 + ({g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus / 2)</u>"
+            "Text": "<u>2 + ({g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus / 2)</u>"
         },
         "43ab4851-d540-43eb-b72d-49d1df84a3f8": {
             "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} inflicts an {g|Encyclopedia:Exploit}exploit{/g} even on enemies which are out of the Operative's {g|Encyclopedia:LineOfSight}line of sight{/g} at the start of the {g|Encyclopedia:Turn}turn{/g}. They will also gain a {uip|dodgebonus|8341c8a0c79c4982a8cef0bbd2d1a2a2}% increase to their dodge chance."
         },
         "18cc94aa-bd2a-4f9e-ac78-2f551ae950a9": {
             "Text": "<u>5 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus</u>"
-        },        
+        },
         "e2921f84-b672-427f-95e9-d0acf6d9bbf2": {
             "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} suffers −{uip|DamageReduction|4c56ec5c399f4c70815dd5596b0e7b83}% less {g|Encyclopedia:DamageGlossary}damage{/g} from enemies affected by {g|Encyclopedia:Exploit}exploits{/g}."
         },
@@ -74,6 +74,21 @@
         },
         "cb30dab4-5aec-4e46-af25-83f85841adc4": {
             "Text": "<u>(3 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus)</u>"
+        },
+        "c6540399-6208-4040-b0e3-b5b83d91ba1d": {
+            "Text": "The Operative immediately inflicts +1 {g|Encyclopedia:Exploit}exploit{/g} on each enemy in combat, then makes a free attack against a target (can even use a ranged weapon in melee range). This attack always {g|Encyclopedia:HitSequenceGlossary}hits{/g}.\nUntil the end of combat, the target of this attack suffers a −30% penalty to {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, {g|Encyclopedia:BlockChance}block{/g}, {g|Encyclopedia:DodgeGlossary}dodge{/g}, and {g|Encyclopedia:Parry}parry{/g}.\nFor the rest of combat, the Operative will start each turn prepared for an {g|f:0d6fd1192a5646da86594c8419b48201}alpha strike{/g}."
+        },
+        "4062b857-ced4-4728-9eed-0574cacbe313": {
+            "Text": "Alpha Strike"
+        },
+        "efbbf011-472f-4df9-a464-130e83f9b80d": {
+            "Text": "The first attack each round will automatically be a critical hit and will not consume movement points.\nIf the target is under the effect of {g|f:197b8a8a12b0442db7ffee1067cf3d97}Expose Weakness{/g} they will receive an additional +<u>(5 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT bonus{/g})</u> damage and will suffer the effects of {g|f:264e8fc120fc4cdda336d31ddc0c15f7}dismantling attack{/g} for one round."
+        },
+        "3c836c63-459b-444b-9b7f-64342e5a01db": {
+            "Text": "<u>5 + ({g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT bonus{/g})</u>"
+        },
+        "945ac069-a2c8-4a34-9b8f-2e82d52edd6a": {
+            "Text": "The Operative immediately inflicts +1 {g|Encyclopedia:Exploit}exploit{/g} on each enemy in combat, then makes a free attack against a target (can even use a ranged weapon in melee range). This attack always {g|Encyclopedia:HitSequenceGlossary}hits{/g} and for the rest of combat, the Operative will start each turn prepared for an {g|f:0d6fd1192a5646da86594c8419b48201}alpha strike{/g}.\n-<indent=5%>Until the end of combat, the target of this attack suffers a −30% penalty to {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, {g|Encyclopedia:BlockChance}block{/g}, {g|Encyclopedia:DodgeGlossary}dodge{/g}, and {g|Encyclopedia:Parry}parry{/g}.</indent>\n-<indent=5%>Until the end of combat, the Operative's attacks cost +1 {g|Encyclopedia:ActionPoints}AP{/g} more.</indent>"
         }
     }
 }

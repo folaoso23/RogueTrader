@@ -1,0 +1,46 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "95e248f24866439681c312b1bff0693c, UIPropertiesComponent",
+        "name": "$UIPropertiesComponent$9d9a5fc5-f6aa-4813-b4c5-6dd2a309e806",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Properties": [
+          {
+            "NameType": "Damage",
+            "m_Name": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": null
+            },
+            "Description": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": {
+                "assetguid": "b21f0f24b2ba8594999350a26ec40b63",
+                "stringkey": "3c836c63-459b-444b-9b7f-64342e5a01db"
+              }
+            },
+            "m_DescriptionFact": "!bp_264e8fc120fc4cdda336d31ddc0c15f7",
+            "m_LinkProperty": false,
+            "m_PropertyName": "Value1",
+            "m_PropertySource": "!bp_0d6fd1192a5646da86594c8419b48201",
+            "m_LinkKey": "damagebonus",
+            "Main": false
+          }
+        ]
+      },
+      "InsertAfterTarget": "$AbilityTriggerInitiator$1aedb239-86bc-470e-a0be-ae441cca6487"
+    }
+  ]
+}

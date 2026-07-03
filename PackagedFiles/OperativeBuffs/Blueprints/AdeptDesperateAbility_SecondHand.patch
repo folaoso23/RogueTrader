@@ -1,0 +1,96 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$AbilityEffectRunAction$bff88f77-35ea-4003-a54b-423e69d70289",
+      "ElementPatch": {
+        "Actions": {
+          "Actions": [
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                "name": "$ContextActionApplyBuff$cdf77766-2624-4f01-b8d8-b5814b6c59bf",
+                "m_Buff": "!bp_0d6fd1192a5646da86594c8419b48201",
+                "BuffEndCondition": "CombatEnd",
+                "Permanent": true,
+                "DurationValue": {
+                  "RoundsValue": {
+                    "ValueType": "Simple",
+                    "Value": 0,
+                    "ValueRank": "Default",
+                    "ValueShared": "Damage",
+                    "Property": "None",
+                    "m_CustomProperty": null,
+                    "PropertyName": "Value1"
+                  }
+                },
+                "ToCaster": true,
+                "AsChild": false,
+                "SameDuration": false,
+                "Ranks": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "ActionsOnApply": {
+                  "Actions": []
+                },
+                "ActionsOnImmune": {
+                  "Actions": []
+                },
+                "AddFactSource": false
+              },
+              "InsertAfterTarget": "$ContextActionAttackWithFirstWeaponAbility$4433ac04ad1c431ab2637919ebdee48c"
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                "name": "$ContextActionApplyBuff$10b6b089-c916-42ef-85ab-d3509d73f496",
+                "m_Buff": "!bp_8e41aca8b6fb47e584ae1ad4a1b561c3",
+                "BuffEndCondition": "CombatEnd",
+                "Permanent": true,
+                "DurationValue": {
+                  "RoundsValue": {
+                    "ValueType": "Simple",
+                    "Value": 0,
+                    "ValueRank": "Default",
+                    "ValueShared": "Damage",
+                    "Property": "None",
+                    "m_CustomProperty": null,
+                    "PropertyName": "Value1"
+                  }
+                },
+                "ToCaster": true,
+                "AsChild": true,
+                "SameDuration": false,
+                "Ranks": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "ActionsOnApply": {
+                  "Actions": []
+                },
+                "ActionsOnImmune": {
+                  "Actions": []
+                },
+                "AddFactSource": false
+              },
+              "InsertAfterTarget": "$ContextActionApplyBuff$cdf77766-2624-4f01-b8d8-b5814b6c59bf"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

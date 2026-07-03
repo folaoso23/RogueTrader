@@ -1,0 +1,63 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerDamageTriggerInitiator$5c1f7685-289f-4c69-b086-1253349bc4a4",
+      "ElementPatch": {
+        "Actions": {
+          "Actions": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$Conditional$48c08af4-b38a-4f3e-974e-407e974c90b3",
+              "ElementPatch": {
+                "IfFalse": {
+                  "Actions": [
+                    {
+                      "PatchType": "Insert",
+                      "NewElement": {
+                        "$type": "2f9cfff2340b8c344ab4fd92c2eb61f2, ContextActionCastSpell",
+                        "name": "",
+                        "m_Spell": "!bp_e46cbc0ae962416bb5e0d8685c0dbb2f",
+                        "OverrideDC": false,
+                        "DC": {
+                          "ValueType": "Simple",
+                          "Value": 0,
+                          "ValueRank": "Default",
+                          "ValueShared": "Damage",
+                          "Property": "None",
+                          "m_CustomProperty": null,
+                          "PropertyName": "Value1"
+                        },
+                        "OverrideSpellLevel": false,
+                        "SpellLevel": {
+                          "ValueType": "Simple",
+                          "Value": 0,
+                          "ValueRank": "Default",
+                          "ValueShared": "Damage",
+                          "Property": "None",
+                          "m_CustomProperty": null,
+                          "PropertyName": "Value1"
+                        },
+                        "CastByTarget": true,
+                        "UseFullAbilityCastCycle": false
+                      },
+                      "InsertAfterTarget": "$Conditional$83e0825c-b3aa-489d-bd32-37e5ab26cb3a"
+                    },
+                    {
+                      "PatchType": "RemoveFromEnd",
+                      "Target": "$ContextActionCastSpell$c2fac967-7359-48ea-adb8-82652b526019"
+                    },
+                    {
+                      "PatchType": "RemoveFromEnd",
+                      "Target": "$ContextActionRemoveBuff$348a8edc-1142-4507-9d4b-cedc03b1dfff"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

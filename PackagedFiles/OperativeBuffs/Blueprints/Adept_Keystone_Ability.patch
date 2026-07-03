@@ -1,0 +1,23 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$821de1be-b31d-417e-a417-b70edd1371e5",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$ContextValueGetter$37ffc003c40a4798905621481f0a0ef5",
+              "ElementPatch": {
+                "Value": {
+                  "Value": 2
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
