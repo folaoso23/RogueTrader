@@ -22,11 +22,11 @@
             "Text": "The Operative removes all {g|Encyclopedia:Exploit}exploits{/g} from the target, decreasing the target's {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:Parry}parry{/g}, and {g|Encyclopedia:WarhammerArmourGlossary}armour{/g} by −<u>(20 + exploits removed × {uip|multipliyer|fbdba5fe2a264c25bada29aecd64049a})</u>% until the start of the Operative's next turn.\nIf this ability reduces the target's armour to 0, the Operative removes only half of the exploits from the target.\nThe target will suffer an increased {uip|criticalbonus|fbdba5fe2a264c25bada29aecd64049a}% critical chance from attackers, and the first single target attack each turn against this target by the Operative will not count towards the attack limit.\nIf the target is not affected by any {g|Encyclopedia:Exploit}exploits{/g}, the Operative will do an additional +{uip|exposedamagebonus|fbdba5fe2a264c25bada29aecd64049a}%. damage to exposed targets."
         },
         "30ed5ec8-7e19-4620-a3b0-8fc5a94fa537": {
-            "Text": "{g|Encyclopedia:WarhammerPerception}PER{/g} bonus / 2"
+            "Text": "<u>{g|Encyclopedia:WarhammerPerception}PER{/g} bonus / 2</u>"
         },
-        "7932a79a-37b6-429b-8164-975e17a1f77d": {
-            "Text": "<u>2 + ({g|Encyclopedia:WarhammerAgility}AGI{/g} bonus / 3)</u>"
-        },
+        "fa174334-2066-4a4f-ba8c-36cbf2e0c536": {
+            "Text": "<u>5 × {g|Encyclopedia:WarhammerPerception}PER{/g} bonus</u>"
+        },        
         "04fcff06-a879-4b2f-b127-333726026b2d": {
             "Text": "<u>50 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus</u>"
         },

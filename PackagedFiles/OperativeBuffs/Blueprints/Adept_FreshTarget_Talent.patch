@@ -32,11 +32,14 @@
                 "m_OwnerString": "",
                 "m_OwnerPropertyPath": "",
                 "m_JsonPath": "",
-                "Shared": null
+                "Shared": {
+                  "assetguid": "253f30426a9dee048ad2fe020685da44",
+                  "stringkey": "cb30dab4-5aec-4e46-af25-83f85841adc4"
+                }
               },
               "m_DescriptionFact": "!bp_ed9d1434d0fd41e2a382a2efe0a2018a",
               "m_LinkProperty": true,
-              "m_PropertyName": "Value2",
+              "m_PropertyName": "Dice1",
               "m_PropertySource": "!bp_6bc423e71af648d39d9f5d07b6f402dc",
               "m_LinkKey": "CriticalBonus",
               "Main": false
