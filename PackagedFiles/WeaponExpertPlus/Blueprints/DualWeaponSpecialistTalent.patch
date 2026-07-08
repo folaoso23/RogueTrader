@@ -1,0 +1,36 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "fbdf123fc48f4c8c9070075459002f01, TwoWeaponFightingNoPenalties",
+        "name": "$TwoWeaponFightingNoPenalties$6d6b38fd-39ad-491f-9cc6-74911110f328",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_KeepAttackPenalty": true,
+        "m_Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        }
+      },
+      "InsertAfterTarget": "$AbilityRuleTriggerInitiator$e3e3fb69-c771-47c2-82b6-716f9b59170b"
+    }
+  ],
+  "Prerequisites": {
+    "List": [
+      {
+        "PatchType": "RemoveFromEnd",
+        "Target": "$PrerequisiteFact$cb474cf2c15d4bad99228418c08441ed"
+      }
+    ]
+  }
+}

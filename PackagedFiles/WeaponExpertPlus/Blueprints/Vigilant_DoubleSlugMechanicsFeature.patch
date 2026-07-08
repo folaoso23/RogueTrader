@@ -1,0 +1,36 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$AddAbilitiesToCurrentWeapon$5e6b4f13-c1c0-4cec-8ed6-3f96e39fe32a",
+      "ElementPatch": {
+        "m_WeaponAbilities": [
+          {
+            "PatchType": "Prepend",
+            "NewElement": {
+              "Type": "Custom",
+              "Mode": "Default",
+              "m_Ability": "!bp_def7164545244af28d52cd38d0502525",
+              "m_FXSettings": "!bp_ceb5513fc2134b7b89922f0579246dec",
+              "OnHitOverrideType": "Add",
+              "m_OnHitActions": null,
+              "AP": 1
+            }
+          },
+          {
+            "PatchType": "RemoveFromEnd",
+            "Target": {
+              "Type": "Custom",
+              "Mode": "Default",
+              "m_Ability": "!bp_def7164545244af28d52cd38d0502525",
+              "m_FXSettings": "!bp_ceb5513fc2134b7b89922f0579246dec",
+              "OnHitOverrideType": "Add",
+              "m_OnHitActions": null,
+              "AP": 2
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

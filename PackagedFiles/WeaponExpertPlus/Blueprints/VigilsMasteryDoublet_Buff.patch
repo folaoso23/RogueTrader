@@ -1,0 +1,8 @@
+{
+  "Components": [
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AddMechanicsFeature$5359a3ed-4b72-46a2-8f83-6520681a936e"
+    }
+  ]
+}

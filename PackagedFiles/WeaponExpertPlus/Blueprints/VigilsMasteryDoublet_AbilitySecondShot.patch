@@ -1,0 +1,8 @@
+{
+  "Components": [
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AbilityEffectRunAction$328bec33-97f9-44f3-8830-dd44b02d0cb2"
+    }
+  ]
+}
