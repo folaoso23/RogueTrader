@@ -6,38 +6,6 @@
     "m_Overrides": [],
     "Components": [
       {
-        "$type": "18beb8746b848f6448d3ee6969a32467, WarhammerOverrideAbilityApCost",
-        "name": "$WarhammerOverrideAbilityApCost$5625f4ff-f3b2-4358-86e3-0631e5d34c1a",
-        "m_Flags": 0,
-        "PrototypeLink": {
-          "guid": "",
-          "name": ""
-        },
-        "m_Overrides": [],
-        "Restrictions": {
-          "Property": {
-            "Operation": "Sum",
-            "TargetType": "CurrentEntity",
-            "TargetEvaluator": null,
-            "FailSilentlyIfNoTarget": false,
-            "Getters": []
-          }
-        },
-        "m_overrideMode": "Single",
-        "m_newCost": 0,
-        "m_costBonus": 0,
-        "m_costMinimum": 0,
-        "m_Ability": null,
-        "m_AffectedGroup": null,
-        "m_AbilityGroupList": [],
-        "NotSelectedGroup": false,
-        "AffectOnlyMelee": false,
-        "AffectOnlyRanged": false,
-        "AffectOnlyAoE": false,
-        "AffectOnlyBurst": false,
-        "AffectOnlyHeavy": false
-      },
-      {
         "$type": "224c1eb24ed98e942ae15b9e10e62724, WarhammerEndTurn",
         "name": "$WarhammerEndTurn$1056777c-3103-4099-b86e-66f42396e52e",
         "m_Flags": 0,
@@ -54,29 +22,14 @@
         "m_BuffToCaster": null
       },
       {
-        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
-        "name": "$AbilityEffectRunAction$61b202f0-3a25-49c5-b5b2-f8021dd129f3",
+        "$type": "e4a6ac6448a04df1b10ca34e4577a6d4, AbilityCustomBladeDance",
+        "name": "$AbilityCustomBladeDance$55bd518a-cc1f-49d3-8a49-874f5b553e25",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "",
           "name": ""
         },
         "m_Overrides": [],
-        "SavingThrowType": "Unknown",
-        "Actions": {
-          "Actions": []
-        }
-      },
-      {
-        "$type": "529f134a929e46e9ac7434d280348b1f, AbilityMeleeBurst",
-        "name": "$AbilityMeleeBurst$f409e974-ff85-4eef-b763-3c071c766e56",
-        "m_Flags": 0,
-        "PrototypeLink": {
-          "guid": "",
-          "name": ""
-        },
-        "m_Overrides": [],
-        "UseVariableRateOfAttack": true,
         "RateOfAttack": {
           "ValueType": "Simple",
           "Value": 3,
@@ -86,25 +39,11 @@
           "m_CustomProperty": null,
           "PropertyName": "Value1"
         },
-        "IsAoe": false,
-        "m_PatternSettings": {
-          "Pattern": {
-            "m_Type": "Circle",
-            "m_Blueprint": null,
-            "m_Radius": 0,
-            "m_Angle": 0
-          },
-          "Targets": "Enemy",
-          "CastOnSameLevel": false,
-          "m_IgnoreLos": false,
-          "m_UseMeleeLos": false,
-          "m_IgnoreLevelDifference": false,
-          "m_Directional": false,
-          "CalculateAttackFromPatternCentre": false
-        },
         "UseSpecificWeapon": false,
         "UseOnSourceWeapon": false,
-        "UseSecondWeapon": false
+        "UseSecondWeapon": false,
+        "UseSpecificWeaponClassification": false,
+        "Classification": "Sword"
       },
       {
         "$type": "53a93042d14d4823985c1e630eedf10b, FakeAttackType",
@@ -119,6 +58,16 @@
         "CountAsScatter": true,
         "CountAsAoE": false,
         "CountAsSingleShot": false
+      },
+      {
+        "$type": "98b5ee4683164fdb93c73d95591ad900, AbilityCasterIsNearOtherUnits",
+        "name": "$AbilityCasterIsNearOtherUnits$e48f0e22-eb4b-4cbd-830f-0d6bf2043e4d",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": []
       }
     ],
     "Author": "Unknown",
@@ -152,7 +101,7 @@
     "Range": "Weapon",
     "CustomRange": 1,
     "MinRange": 0,
-    "ActionPointCost": 1,
+    "ActionPointCost": 2,
     "AbilityParamsSource": "Weapon",
     "PsychicPower": "Minor",
     "VeilThicknessPointsToAdd": 1,
