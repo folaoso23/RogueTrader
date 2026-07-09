@@ -96,7 +96,7 @@
     "CustomRange": 1,
     "MinRange": 1,
     "ActionPointCost": 2,
-    "AbilityParamsSource": "None",
+    "AbilityParamsSource": "Weapon",
     "PsychicPower": "Minor",
     "VeilThicknessPointsToAdd": 1,
     "ParamsSkill": "SkillAthletics",
