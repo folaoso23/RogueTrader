@@ -82,13 +82,13 @@
             "Text": "Alpha Strike"
         },
         "efbbf011-472f-4df9-a464-130e83f9b80d": {
-            "Text": "The first attack each round will automatically be a critical hit and will not consume movement points.\nIf the target is under the effect of {g|f:197b8a8a12b0442db7ffee1067cf3d97}Expose Weakness{/g} they will receive an additional +<u>({g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT bonus{/g})</u> damage and will suffer the effects of {g|f:264e8fc120fc4cdda336d31ddc0c15f7}dismantling attack{/g} for one round."
+            "Text": "The first attack each round will automatically be a critical hit and will not consume movement points.\nIf the target is under the effect of {g|f:197b8a8a12b0442db7ffee1067cf3d97}Expose Weakness{/g} they will receive an additional +<u>({g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT bonus{/g})</u> base damage,+<u>({g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT bonus{/g}) × 5</u>% damage, and will suffer the effects of {g|f:264e8fc120fc4cdda336d31ddc0c15f7}dismantling attack{/g} for one round."
         },
         "3c836c63-459b-444b-9b7f-64342e5a01db": {
             "Text": "<u>({g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT bonus{/g})</u>"
         },
         "945ac069-a2c8-4a34-9b8f-2e82d52edd6a": {
-            "Text": "The Operative immediately inflicts +1 {g|Encyclopedia:Exploit}exploit{/g} on each enemy in combat, then makes a free attack against a target (can even use a ranged weapon in melee range). This attack always {g|Encyclopedia:HitSequenceGlossary}hits{/g} and for the rest of combat, the Operative will start each turn prepared for an {g|f:0d6fd1192a5646da86594c8419b48201}alpha strike{/g}.\n-<indent=5%>Until the end of combat, the target of this attack suffers a −30% penalty to {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, {g|Encyclopedia:BlockChance}block{/g}, {g|Encyclopedia:DodgeGlossary}dodge{/g}, and {g|Encyclopedia:Parry}parry{/g}.</indent>\n-<indent=5%>Until the end of combat, the Operative's attacks cost +1 {g|Encyclopedia:ActionPoints}AP{/g} more.</indent>"
+            "Text": "The Operative immediately inflicts +1 {g|Encyclopedia:Exploit}exploit{/g} on each enemy in combat, then makes a free attack against a target (can even use a ranged weapon in melee range). This attack always {g|Encyclopedia:HitSequenceGlossary}hits{/g} and for the rest of combat, the Operative will start each turn prepared for an {g|f:0d6fd1192a5646da86594c8419b48201}alpha strike{/g}(including this attack).\n-<indent=5%>Until the end of combat, the target of this attack suffers a −30% penalty to {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, {g|Encyclopedia:BlockChance}block{/g}, {g|Encyclopedia:DodgeGlossary}dodge{/g}, and {g|Encyclopedia:Parry}parry{/g}.</indent>\n-<indent=5%>Until the end of combat, the Operative's attacks cost +1 {g|Encyclopedia:ActionPoints}AP{/g} more.</indent>"
         }
     }
 }

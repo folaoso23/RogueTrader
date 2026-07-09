@@ -231,14 +231,14 @@
           "Enabled": false
         },
         "PercentDamageModifier": {
-          "ValueType": "Simple",
+          "ValueType": "CasterNamedProperty",
           "Value": 0,
           "ValueRank": "Default",
           "ValueShared": "Damage",
           "Property": "None",
           "m_CustomProperty": null,
-          "PropertyName": "Value1",
-          "Enabled": false
+          "PropertyName": "Value2",
+          "Enabled": true
         },
         "AbsorptionPenetration": {
           "ValueType": "Simple",
@@ -332,6 +332,72 @@
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
                 "m_StepLevel": 2,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "ValueType": "CasterProperty",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "PerceptionBonus",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$80c5e1a5-d203-4c2a-a14c-c55dd3d5cb70",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Value2",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$81231767-d4b7-40bf-80e8-197e28634ddf",
+              "Settings": {
+                "Progression": "MultiplyByModifier",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 5,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "ValueType": "CasterProperty",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "IntelligenceBonus",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            },
+            {
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$6dff9250-055c-408f-b215-b6aa9a2104a1",
+              "Settings": {
+                "Progression": "MultiplyByModifier",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 5,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,
