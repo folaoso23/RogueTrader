@@ -1,0 +1,149 @@
+{
+  "AssetId": "e049612fc1844da388d7db5104ba5d5f",
+  "Data": {
+    "$type": "da11db195c86e0d4dae17a2c03a4ba9a, BlueprintAbility",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "e4a6ac6448a04df1b10ca34e4577a6d4, AbilityCustomBladeDance",
+        "name": "$AbilityCustomBladeDance$5e6d4629-3186-44cf-bf81-ea50521fce35",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "RateOfAttack": {
+          "ValueType": "Simple",
+          "Value": 3,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "UseSpecificWeapon": true,
+        "UseOnSourceWeapon": false,
+        "UseSecondWeapon": false,
+        "UseSpecificWeaponClassification": false,
+        "Classification": "None"
+      },
+      {
+        "$type": "224c1eb24ed98e942ae15b9e10e62724, WarhammerEndTurn",
+        "name": "$WarhammerEndTurn$f2b9e691-27db-4b44-90ff-338365af5361",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "clearMPInsteadOfEndingTurn": true,
+        "Condition": {
+          "Operation": "And",
+          "Conditions": []
+        },
+        "m_BuffToCaster": null
+      },
+      {
+        "$type": "53a93042d14d4823985c1e630eedf10b, FakeAttackType",
+        "name": "$FakeAttackType$acafe242-746b-4b2f-9b39-42dad8b51141",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "CountAsMelee": false,
+        "CountAsScatter": true,
+        "CountAsAoE": false,
+        "CountAsSingleShot": false
+      },
+      {
+        "$type": "98b5ee4683164fdb93c73d95591ad900, AbilityCasterIsNearOtherUnits",
+        "name": "$AbilityCasterIsNearOtherUnits$3107a5f7-bb96-4ef9-ac96-6fbe0d55cc57",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": []
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "d6f82ce7-2b11-44df-94dd-cf03e6bba732",
+      "m_OwnerString": "e049612fc1844da388d7db5104ba5d5f",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\Classes\\Reaper\\ReaperAbilities\\ReaperBladeDanceAbility1_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "13dbc27f-f907-428c-87f9-8d310fb83378",
+      "m_OwnerString": "e049612fc1844da388d7db5104ba5d5f",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\Classes\\Reaper\\ReaperAbilities\\ReaperBladeDanceAbility1_m_Description.json",
+      "Shared": null
+    },
+    "m_Icon": {
+      "guid": "470be17a32276504c90338b2c6d409b5",
+      "fileid": 21300000
+    },
+    "m_AllowNonContextActions": false,
+    "Type": "Weapon",
+    "Range": "Personal",
+    "CustomRange": 1,
+    "MinRange": 1,
+    "ActionPointCost": 2,
+    "AbilityParamsSource": "None",
+    "PsychicPower": "Minor",
+    "VeilThicknessPointsToAdd": 1,
+    "ParamsSkill": "SkillAthletics",
+    "CooldownRounds": 0,
+    "CanTargetPoint": false,
+    "CanTargetEnemies": false,
+    "CanTargetFriends": false,
+    "CanTargetSelf": true,
+    "Hidden": false,
+    "HiddenInUI": false,
+    "DefaultSlotIndex": -1,
+    "DisableLog": false,
+    "DisableBestShootingPosition": false,
+    "NeedEquipWeapons": false,
+    "NotOffensive": false,
+    "ShowInDialogue": false,
+    "IsStarshipAbility": false,
+    "EffectOnAlly": "Harmful",
+    "EffectOnEnemy": "Harmful",
+    "m_Parent": null,
+    "Animation": "Fly",
+    "CastInOffHand": false,
+    "UseOnMechadendrite": false,
+    "UsedMechadendrite": "Utility",
+    "m_TargetMapObjects": false,
+    "IsFreeAction": false,
+    "ShouldTurnToTarget": true,
+    "SyncRotationAndAttack": false,
+    "SyncRotationDelay": 0.0,
+    "m_IsStratagem": false,
+    "UsingInThreateningArea": "CanUseWithoutAOO",
+    "UsingInOverwatchArea": "WillCauseAttack",
+    "CombatStateRestriction": "InCombatOnly",
+    "m_AbilityGroups": [
+      "!bp_2324e1b3a57c436d8b0bdd82d316eab2",
+      "!bp_bc8ca877891146cea865ec3de0d554b0"
+    ],
+    "MaterialComponent": {
+      "m_Item": null,
+      "Count": 1
+    },
+    "ResourceAssetIds": [],
+    "m_FXSettings": "!bp_78e57ccc8ad743c0860dec1b112ce716",
+    "m_AbilityTag": "None",
+    "m_CombatHudCommandsOverride": null
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}
