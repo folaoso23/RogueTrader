@@ -179,6 +179,10 @@
     "200bbad1-a4be-4e3f-b364-abdd91c2bdf9": {
       "Offset": 0,
       "Text": "Dual attacks will no longer have an increased AP cost.\nAn additional attack with the second weapon will suffer no penalties or increased cost if the first attack was either an axe's {g|f:a270dbb75ea44128b951b5d18d0b6bed}Sweep{/g} or a hammer or mace's {g|f:bd5f109c46684a09b07fb13743d2a6d7}Harsh Shove{/g} ability."
+    },
+    "f2ff776e-4419-403e-adc9-9f5c1d5a4121": {
+      "Offset": 0,
+      "Text": "Enemies gain no {g|Encyclopedia:MeleeSuperiority}melee superiority{/g} {g|Encyclopedia:Bonus}bonuses{/g} against this character.\nMelee weapons gain access to the {g|f:bd5f109c46684a09b07fb13743d2a6d7}Combo Attack{/g} ability."
     }
   }
 }

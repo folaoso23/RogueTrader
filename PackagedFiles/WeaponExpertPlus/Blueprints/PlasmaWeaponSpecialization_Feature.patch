@@ -69,13 +69,17 @@
           "ValueType": "CasterNamedProperty",
           "Enabled": false
         },
+        "Recoil": {
+          "Value": 10,
+          "Enabled": true
+        },
         "AdditionalHitChance": {
           "ValueType": "CasterNamedProperty",
           "PropertyName": "Value2",
           "Enabled": true
         },
         "RateOfFire": {
-          "Value": 2,
+          "Value": 3,
           "Enabled": true
         }
       }
