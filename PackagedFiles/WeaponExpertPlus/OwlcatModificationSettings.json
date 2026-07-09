@@ -101,6 +101,11 @@
             "Guid": "52fee618a1b3423998aeaad8badb6e35",
             "Filename": "VigilsMasteryDoublet_Buff",
             "PatchType": 2
+        },
+        {
+            "Guid": "f128235d9f4e4ae387aef64a5840f425",
+            "Filename": "CombatMaster_Feature",
+            "PatchType": 2
         }
     ]
 }

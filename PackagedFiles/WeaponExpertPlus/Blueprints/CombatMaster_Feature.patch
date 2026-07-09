@@ -1,0 +1,33 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "b787865cc7284095914908b39df0a903, AddAbilitiesToCurrentWeapon",
+        "name": "$AddAbilitiesToCurrentWeapon$25398832-e3bb-4883-b7c1-4406f0cb6c9d",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_WeaponClassification": "None",
+        "m_WeaponFamily": "None",
+        "m_WeaponHoldingType": "None",
+        "m_WeaponCategory": "Melee",
+        "m_WeaponAbilities": [
+          {
+            "Type": "Custom",
+            "Mode": "Default",
+            "m_Ability": "!bp_04e007a32af6460ab10390633e2869ad",
+            "m_FXSettings": null,
+            "OnHitOverrideType": "None",
+            "m_OnHitActions": null,
+            "AP": 2
+          }
+        ]
+      },
+      "InsertAfterTarget": "$AddMechanicsFeature$c73880f5-94d2-440f-8000-d322a8ad29e8"
+    }
+  ]
+}

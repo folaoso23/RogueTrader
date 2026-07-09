@@ -1,0 +1,205 @@
+{
+  "AssetId": "04e007a32af6460ab10390633e2869ad",
+  "Data": {
+    "$type": "da11db195c86e0d4dae17a2c03a4ba9a, BlueprintAbility",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "18beb8746b848f6448d3ee6969a32467, WarhammerOverrideAbilityApCost",
+        "name": "$WarhammerOverrideAbilityApCost$5625f4ff-f3b2-4358-86e3-0631e5d34c1a",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "m_overrideMode": "Single",
+        "m_newCost": 0,
+        "m_costBonus": 0,
+        "m_costMinimum": 0,
+        "m_Ability": null,
+        "m_AffectedGroup": null,
+        "m_AbilityGroupList": [],
+        "NotSelectedGroup": false,
+        "AffectOnlyMelee": false,
+        "AffectOnlyRanged": false,
+        "AffectOnlyAoE": false,
+        "AffectOnlyBurst": false,
+        "AffectOnlyHeavy": false
+      },
+      {
+        "$type": "224c1eb24ed98e942ae15b9e10e62724, WarhammerEndTurn",
+        "name": "$WarhammerEndTurn$1056777c-3103-4099-b86e-66f42396e52e",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "clearMPInsteadOfEndingTurn": true,
+        "Condition": {
+          "Operation": "And",
+          "Conditions": []
+        },
+        "m_BuffToCaster": null
+      },
+      {
+        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
+        "name": "$AbilityEffectRunAction$61b202f0-3a25-49c5-b5b2-f8021dd129f3",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "SavingThrowType": "Unknown",
+        "Actions": {
+          "Actions": []
+        }
+      },
+      {
+        "$type": "529f134a929e46e9ac7434d280348b1f, AbilityMeleeBurst",
+        "name": "$AbilityMeleeBurst$f409e974-ff85-4eef-b763-3c071c766e56",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "UseVariableRateOfAttack": true,
+        "RateOfAttack": {
+          "ValueType": "Simple",
+          "Value": 3,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "IsAoe": false,
+        "m_PatternSettings": {
+          "Pattern": {
+            "m_Type": "Circle",
+            "m_Blueprint": null,
+            "m_Radius": 0,
+            "m_Angle": 0
+          },
+          "Targets": "Enemy",
+          "CastOnSameLevel": false,
+          "m_IgnoreLos": false,
+          "m_UseMeleeLos": false,
+          "m_IgnoreLevelDifference": false,
+          "m_Directional": false,
+          "CalculateAttackFromPatternCentre": false
+        },
+        "UseSpecificWeapon": false,
+        "UseOnSourceWeapon": false,
+        "UseSecondWeapon": false
+      },
+      {
+        "$type": "53a93042d14d4823985c1e630eedf10b, FakeAttackType",
+        "name": "$FakeAttackType$5a21dd4d-5e19-403a-977c-7688ddede07b",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "CountAsMelee": false,
+        "CountAsScatter": true,
+        "CountAsAoE": false,
+        "CountAsSingleShot": false
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "Melee Attack",
+    "m_DisplayName": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "0a777ad6b9fb7d84aae3ca4d764cd422",
+        "stringkey": "d434becb-aeae-4751-8bf8-155766cb3f9f"
+      }
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "3e1366fa4189d244bbdff7d10605b60c",
+        "stringkey": "9ef3a5de-2237-40db-9f71-666570ed99e4"
+      }
+    },
+    "m_Icon": {
+      "guid": "81a2e656593a8fb4abb520ee1fd20ff4",
+      "fileid": 21300000
+    },
+    "m_AllowNonContextActions": false,
+    "Type": "Weapon",
+    "Range": "Weapon",
+    "CustomRange": 1,
+    "MinRange": 0,
+    "ActionPointCost": 1,
+    "AbilityParamsSource": "Weapon",
+    "PsychicPower": "Minor",
+    "VeilThicknessPointsToAdd": 1,
+    "ParamsSkill": "SkillAthletics",
+    "CooldownRounds": 0,
+    "CanTargetPoint": false,
+    "CanTargetEnemies": true,
+    "CanTargetFriends": true,
+    "CanTargetSelf": false,
+    "Hidden": false,
+    "HiddenInUI": false,
+    "DefaultSlotIndex": -1,
+    "DisableLog": false,
+    "DisableBestShootingPosition": true,
+    "NeedEquipWeapons": false,
+    "NotOffensive": false,
+    "ShowInDialogue": false,
+    "IsStarshipAbility": false,
+    "EffectOnAlly": "Harmful",
+    "EffectOnEnemy": "Harmful",
+    "m_Parent": null,
+    "Animation": "Directional",
+    "CastInOffHand": false,
+    "UseOnMechadendrite": false,
+    "UsedMechadendrite": "Utility",
+    "m_TargetMapObjects": false,
+    "IsFreeAction": false,
+    "ShouldTurnToTarget": true,
+    "SyncRotationAndAttack": false,
+    "SyncRotationDelay": 0.0,
+    "m_IsStratagem": false,
+    "UsingInThreateningArea": "CanUseWithoutAOO",
+    "UsingInOverwatchArea": "WillCauseAttack",
+    "CombatStateRestriction": "NoRestriction",
+    "m_AbilityGroups": [
+      "!bp_1cf206b13141425491c379bc75ef0699"
+    ],
+    "MaterialComponent": {
+      "m_Item": null,
+      "Count": 1
+    },
+    "ResourceAssetIds": [],
+    "m_FXSettings": "!bp_28b46663dab84697867c0f966c662042",
+    "m_AbilityTag": "None",
+    "m_CombatHudCommandsOverride": null
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}
