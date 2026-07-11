@@ -23,8 +23,8 @@
           "m_CustomProperty": null,
           "PropertyName": "Value1"
         },
-        "UseSpecificWeapon": true,
-        "UseOnSourceWeapon": true,
+        "UseSpecificWeapon": false,
+        "UseOnSourceWeapon": false,
         "UseSecondWeapon": false,
         "UseSpecificWeaponClassification": false,
         "Classification": "None"
@@ -68,6 +68,19 @@
           "name": ""
         },
         "m_Overrides": []
+      },
+      {
+        "$type": "3ebaea478cd96e848ae4f464a37ee246, AbilityCasterHasWeaponWithRangeType",
+        "name": "$AbilityCasterHasWeaponWithRangeType$53af48dc-1fbc-458c-8153-fee07090e6c4",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": null,
+          "name": null
+        },
+        "m_Overrides": [],
+        "RangeType": "Melee",
+        "MustHaveBurst": false,
+        "OnlyMainHand": false
       }
     ],
     "Author": "Unknown",

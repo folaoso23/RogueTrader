@@ -11,12 +11,12 @@
         },
         "DamageMin": {
           "ValueType": "CasterNamedProperty",
-          "PropertyName": "Value2"
+          "PropertyName": "Value2",
+          "Enabled": false
         },
         "DamageMax": {
           "ValueType": "CasterNamedProperty",
-          "PropertyName": "Value2",
-          "Enabled": true
+          "PropertyName": "Value2"
         },
         "AdditionalHitChance": {
           "Value": 5,
@@ -355,7 +355,7 @@
               "m_JsonPath": "",
               "Shared": {
                 "assetguid": "e707129e4273f56408c2dba96ec27652",
-                "stringkey": "ea98e700-b9ce-4772-8def-4dd58ab315b6"
+                "stringkey": "d409e07c-1d4b-48dc-8a6f-3af51d831e65"
               }
             },
             "m_DescriptionFact": "!bp_21d6182a02014531a63f28fe5ff34530",
