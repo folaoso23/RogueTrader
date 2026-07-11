@@ -58,6 +58,26 @@
           ]
         }
       }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$20f2a6de-b603-4576-bbd3-15a450cb3183",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$FactRankGetter$8e459748-91f2-4c25-95f6-8e21bd8da9e3",
+              "ElementPatch": {
+                "Settings": {
+                  "Progression": "MultiplyByModifier",
+                  "m_StepLevel": 1
+                }
+              }
+            }
+          ]
+        }
+      }
     }
   ]
 }

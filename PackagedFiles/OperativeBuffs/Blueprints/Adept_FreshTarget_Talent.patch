@@ -34,7 +34,7 @@
                 "m_JsonPath": "",
                 "Shared": {
                   "assetguid": "253f30426a9dee048ad2fe020685da44",
-                  "stringkey": "cb30dab4-5aec-4e46-af25-83f85841adc4"
+                  "stringkey": "0ebe5f89-5a86-4dc3-8153-3b635f8d3bcc"
                 }
               },
               "m_DescriptionFact": "!bp_ed9d1434d0fd41e2a382a2efe0a2018a",
@@ -69,7 +69,7 @@
             "Getters": [
               {
                 "$type": "82e9cd41675f4262b09a9ae2e42a537a, CheckTargetHasBuffFromEntity",
-                "name": "$CheckTargetHasBuffFromEntity$78b4e3e4-632e-40a5-b76d-c1b76b1c300e",
+                "name": "$CheckTargetHasBuffFromEntity$cae0fc1218fa419ab7958630e39a5dd3",
                 "Settings": {
                   "Progression": "AsIs",
                   "m_CustomProgression": [],

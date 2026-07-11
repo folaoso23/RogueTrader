@@ -26,7 +26,7 @@
         },
         "fa174334-2066-4a4f-ba8c-36cbf2e0c536": {
             "Text": "<u>5 × {g|Encyclopedia:WarhammerPerception}PER{/g} bonus</u>"
-        },        
+        },
         "04fcff06-a879-4b2f-b127-333726026b2d": {
             "Text": "<u>50 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus</u>"
         },
@@ -55,7 +55,7 @@
             "Text": "<u>5 + ({g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT bonus{/g})</u>"
         },
         "1973b25f-e5c3-4428-a497-510eea0ccb7f": {
-            "Text": "The Operative gains +25% {g|Encyclopedia:DetailsOfTheCoverGlossary}cover{/g} efficiency (if in cover), +20 {g|Encyclopedia:WarhammerPerception}Perception{/g}, +20 {g|Encyclopedia:WarhammerBallisticSkill}Ballistic Skill{/g}, and a 75% recoil reduction.\nThis effect lasts until the Operative moves. Does not stack."
+            "Text": "The Operative gains +25% {g|Encyclopedia:DetailsOfTheCoverGlossary}cover{/g} efficiency (if in cover), +20 {g|Encyclopedia:WarhammerPerception}Perception{/g}, +20 {g|Encyclopedia:WarhammerBallisticSkill}Ballistic Skill{/g}, and a 75% recoil reduction.\nDeadeye shots will do +({unit_stat|WarhammerBallisticSkill|bonus} × 2) more base damage.\nThis effect lasts until the Operative moves. Does not stack."
         },
         "4670a313-ac58-4c74-a789-b4249ff00ece": {
             "Text": "If the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} has not moved this {g|Encyclopedia:Turn}turn{/g}, they deal +{uip|DamageBonus|9a0e7e64902e491baa29d60469eae188} more damage with {g|Encyclopedia:SingleRangedAttacksGlossary}single-shot{/g} attacks for every 3 cells between them and the target and gain +{unit_stat|WarhammerPerception|bonus} {g|Encyclopedia:WarhammerBallisticSkill} Ballistic Skill{/g}. These bonuses do not stack and last until the Operative moves."
@@ -67,7 +67,7 @@
             "Text": "On their first {g|Encyclopedia:Turn}turn{/g} in combat, the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} randomly distributes the same number of {g|Encyclopedia:Exploit}exploits{/g} as when using {g|f:502b9195c84c42c5b180f3f63ed7955c}Analyse Enemies{/g} among all enemies in a 10-cell radius around the Operative. At the start of each of the Operative's subsequent turns, they distribute half as many exploits (half the base amount) among all enemies in a 3-cell radius around the Operative."
         },
         "e2c9d44f-e79d-4979-888b-21522ab0a7ad": {
-            "Text": "Whenever the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} attacks an enemy that is at 50% or higher {g|Encyclopedia:HitPoints}wounds{/g}, that attack deals +{uip|DamageBonus|ed9d1434d0fd41e2a382a2efe0a2018a}% more {g|Encyclopedia:DamageGlossary}damage{/g} to that enemy with a +{uip|CriticalBonus|ed9d1434d0fd41e2a382a2efe0a2018a}% increased critical chance.\nUpon killing a target who the Operative has marked with {g|f:197b8a8a12b0442db7ffee1067cf3d97}Expose Weakness{/g}, +1 AP is restored and the cooldown for {g|f:197b8a8a12b0442db7ffee1067cf3d97}Expose Weakness{/g} is reset."
+            "Text": "Whenever the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} attacks an enemy that is at 50% or higher {g|Encyclopedia:HitPoints}wounds{/g}, that attack deals +{uip|DamageBonus|ed9d1434d0fd41e2a382a2efe0a2018a}% more {g|Encyclopedia:DamageGlossary}damage{/g} to that enemy with a +{uip|CriticalBonus|ed9d1434d0fd41e2a382a2efe0a2018a}% increased critical chance.\nUpon killing a target who the Operative has marked with {g|f:197b8a8a12b0442db7ffee1067cf3d97}Expose Weakness{/g}, +1 AP is restored and the cooldown for {g|f:197b8a8a12b0442db7ffee1067cf3d97}Expose Weakness{/g} and {g|f:502b9195c84c42c5b180f3f63ed7955c}Analyse Enemies{/g} is reset."
         },
         "f0c8b64a-6a20-40dd-a4e6-b1801e866dba": {
             "Text": "<u>(10 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus)</u>"
@@ -89,6 +89,12 @@
         },
         "945ac069-a2c8-4a34-9b8f-2e82d52edd6a": {
             "Text": "The Operative immediately inflicts +1 {g|Encyclopedia:Exploit}exploit{/g} on each enemy in combat, then makes a free attack against a target (can even use a ranged weapon in melee range). This attack always {g|Encyclopedia:HitSequenceGlossary}hits{/g} and for the rest of combat, the Operative will start each turn prepared for an {g|f:0d6fd1192a5646da86594c8419b48201}alpha strike{/g}(including this attack).\n-<indent=5%>Until the end of combat, the target of this attack suffers a −30% penalty to {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, {g|Encyclopedia:BlockChance}block{/g}, {g|Encyclopedia:DodgeGlossary}dodge{/g}, and {g|Encyclopedia:Parry}parry{/g}.</indent>\n-<indent=5%>Until the end of combat, the Operative's attacks cost +1 {g|Encyclopedia:ActionPoints}AP{/g} more.</indent>"
+        },
+        "4e8016f2-e2f5-4a94-9562-f43623b26a70": {
+            "Text": "Guerilla Tactics"
+        },
+        "a13c06f0-e420-4654-bf76-8ba4f796cca8": {
+            "Text": "While the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} is in {g|Encyclopedia:DetailsOfTheCoverGlossary}partial cover{/g}, their cover efficiency is increased by +15%. This {g|Encyclopedia:Bonus}bonus{/g} is doubled if the Operative has not moved during their {g|Encyclopedia:Turn}turn{/g}.\nAfter attacking the Operative may reposition, gaining +5 MP."
         }
     }
 }

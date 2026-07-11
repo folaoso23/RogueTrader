@@ -131,6 +131,11 @@
             "Guid": "765e3c47c4a649648b315a5e353592ce",
             "Filename": "AdeptDesperateAbility_SecondHand",
             "PatchType": 2
+        },
+        {
+            "Guid": "6bc40f52b5f747d0a4f453ae3fb9ab41",
+            "Filename": "Adept_LowProfile_Talent",
+            "PatchType": 2
         }
     ]
 }

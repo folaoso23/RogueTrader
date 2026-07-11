@@ -47,15 +47,6 @@
               "BuffEndCondition": "CombatEnd",
               "Permanent": true,
               "DurationValue": {
-                "BonusValue": {
-                  "ValueType": "Simple",
-                  "Value": 0,
-                  "ValueRank": "Default",
-                  "ValueShared": "Damage",
-                  "Property": "None",
-                  "m_CustomProperty": null,
-                  "PropertyName": "Value1"
-                },
                 "RoundsValue": {
                   "ValueType": "Simple",
                   "Value": 0,
@@ -131,13 +122,42 @@
       "InsertAfterTarget": "$GlobalDamageTrigger$c730a3a1-114c-479e-84ae-beaa813026cf"
     },
     {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerDamageModifierInitiator$c5c4b81b-4b50-4bac-8595-c762176c66be",
+      "ElementPatch": {
+        "UnmodifiablePercentDamageModifier": {
+          "Enabled": false
+        }
+      }
+    },
+    {
       "PatchType": "Relocate",
       "Target": "$PropertyCalculatorComponent$e4ca339c-cd94-4ad3-b4de-7c98bea89aea",
       "InsertAfterTarget": "$WarhammerDamageModifierInitiator$c5c4b81b-4b50-4bac-8595-c762176c66be"
     },
     {
-      "PatchType": "RemoveFromEnd",
-      "Target": "$PropertyCalculatorComponent$33ef8b54-cb8a-44bf-939f-d5538b8e469a"
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$e4ca339c-cd94-4ad3-b4de-7c98bea89aea",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$SimplePropertyGetter$1dd1cea0665855418322480e6a319340",
+              "ElementPatch": {
+                "Settings": {
+                  "Progression": "MultiplyByModifier"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$33ef8b54-cb8a-44bf-939f-d5538b8e469a",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$e4ca339c-cd94-4ad3-b4de-7c98bea89aea"
     },
     {
       "PatchType": "RemoveFromEnd",

@@ -1,0 +1,62 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "961a1f33fbdad5c4ca08247f49b98c47, WarhammerAfterAttackRollTrigger",
+        "name": "$WarhammerAfterAttackRollTrigger$61ff9c24-00be-469b-ac4d-4bf5f594aa86",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "d1933e412cc64482ae7990aaacdf44a8, WarhammerContextActionRestoreActionPoints",
+              "name": "$WarhammerContextActionRestoreActionPoints$91f49527-fa32-4d3a-9bd9-63d098323726",
+              "ActionPoints": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "MovePoints": {
+                "ValueType": "Simple",
+                "Value": 5,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionPointsToMax": false,
+              "MovePointsToMax": false,
+              "IgnoreMovePointsMaximum": false,
+              "IgnoreActionPointsMaximum": false
+            }
+          ]
+        },
+        "triggerAfterAttack": true,
+        "onlyMeleeAttack": false,
+        "ActionsOnTarget": false,
+        "OnlyHit": false,
+        "TriggerOncePerAbilityCast": false
+      },
+      "InsertAfterTarget": "$TurnBasedModeEventsTrigger$6232292e-1064-4552-a3fd-5c3926e900e3"
+    }
+  ]
+}
