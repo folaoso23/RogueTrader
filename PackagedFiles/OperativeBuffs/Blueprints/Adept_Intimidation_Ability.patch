@@ -1,0 +1,63 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$AbilityEffectRunAction$6270ee5b-ff56-4bbc-8d7c-180c62ca319b",
+      "ElementPatch": {
+        "Actions": {
+          "Actions": [
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "$type": "bfe787e51845449dbd98425f134a555b, ContextActionAddBonusAbilityUsage",
+                "name": "$ContextActionAddBonusAbilityUsage$6755f8077fa749c79788f65bd9a2704d",
+                "m_Restriction": "!bp_8a921d9992534101873845b859caaa65",
+                "m_Count": {
+                  "Operation": "Sum",
+                  "TargetType": "CurrentEntity",
+                  "TargetEvaluator": null,
+                  "FailSilentlyIfNoTarget": false,
+                  "Getters": []
+                },
+                "m_CostBonus": {
+                  "Operation": "Sum",
+                  "TargetType": "CurrentEntity",
+                  "TargetEvaluator": null,
+                  "FailSilentlyIfNoTarget": false,
+                  "Getters": [
+                    {
+                      "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+                      "name": "$ContextValueGetter$018abb14dce645ba906e2bfd16f17a60",
+                      "Settings": {
+                        "Progression": "AsIs",
+                        "m_CustomProgression": [],
+                        "m_StartLevel": 0,
+                        "m_StepLevel": 0,
+                        "Negate": true,
+                        "Limit": "None",
+                        "Min": 0,
+                        "Max": 0
+                      },
+                      "Value": {
+                        "ValueType": "Simple",
+                        "Value": 1,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null,
+                        "PropertyName": "Value1"
+                      }
+                    }
+                  ]
+                },
+                "m_ToTarget": false,
+                "m_IgnoreMinimalCost": true
+              },
+              "InsertAfterTarget": "$Conditional$db3b93a0793644be82478f507ba1cffa"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

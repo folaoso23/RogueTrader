@@ -19,7 +19,7 @@
             "Text": "Whenever the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} triggers an {g|Encyclopedia:Exploit}exploit{/g} on an enemy, the Operative gains +2 damage, +2% {g|Encyclopedia:ArmourPenetration}armour penetration{/g}, and +5 {g|Encyclopedia:WarhammerIntelligence}Intelligence{/g} until the end of combat. Only applies to the first strike or projectile in a {g|Encyclopedia:BurstAttacksGlossary}burst{/g} attack. Stacks."
         },
         "a6b9621a-5d74-43d9-9b6e-5d3402b6550b": {
-            "Text": "The Operative removes all {g|Encyclopedia:Exploit}exploits{/g} from the target, decreasing the target's {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:Parry}parry{/g}, and {g|Encyclopedia:WarhammerArmourGlossary}armour{/g} by −<u>(20 + exploits removed × {uip|multipliyer|fbdba5fe2a264c25bada29aecd64049a})</u>% until the start of the Operative's next turn.\nIf this ability reduces the target's armour to 0, the Operative removes only half of the exploits from the target.\nThe target will suffer an increased {uip|criticalbonus|fbdba5fe2a264c25bada29aecd64049a}% critical chance from attackers, and the first single target attack each turn against this target by the Operative will not count towards the attack limit.\nIf the target is not affected by any {g|Encyclopedia:Exploit}exploits{/g}, the Operative will do an additional +{uip|exposedamagebonus|fbdba5fe2a264c25bada29aecd64049a}%. damage to exposed targets."
+            "Text": "The Operative removes all {g|Encyclopedia:Exploit}exploits{/g} from the target, decreasing the target's {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:Parry}parry{/g}, and {g|Encyclopedia:WarhammerArmourGlossary}armour{/g} by −<u>(20 + exploits removed × {uip|multipliyer|fbdba5fe2a264c25bada29aecd64049a})</u>% until the start of the Operative's next turn.\nIf this ability reduces the target's armour to 0, the Operative removes only half of the exploits from the target.\nThe target will suffer an increased {uip|criticalbonus|fbdba5fe2a264c25bada29aecd64049a}% critical chance from attackers, and the first single target attack each turn against this target by the Operative will not count towards the attack limit.\nIf the target is not affected by any {g|Encyclopedia:Exploit}exploits{/g}, the Operative will do an additional +{uip|exposedamagebonus|fbdba5fe2a264c25bada29aecd64049a}% damage to exposed targets."
         },
         "30ed5ec8-7e19-4620-a3b0-8fc5a94fa537": {
             "Text": "<u>{g|Encyclopedia:WarhammerPerception}PER{/g} bonus / 2</u>"
@@ -55,7 +55,7 @@
             "Text": "<u>5 + ({g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT bonus{/g})</u>"
         },
         "1973b25f-e5c3-4428-a497-510eea0ccb7f": {
-            "Text": "The Operative gains +25% {g|Encyclopedia:DetailsOfTheCoverGlossary}cover{/g} efficiency (if in cover), +20 {g|Encyclopedia:WarhammerPerception}Perception{/g}, +20 {g|Encyclopedia:WarhammerBallisticSkill}Ballistic Skill{/g}, and a 75% recoil reduction.\nDeadeye shots will do +({unit_stat|WarhammerBallisticSkill|bonus} × 2) more base damage.\nThis effect lasts until the Operative moves. Does not stack."
+            "Text": "The Operative gains +25% {g|Encyclopedia:DetailsOfTheCoverGlossary}cover{/g} efficiency (if in cover), +20 {g|Encyclopedia:WarhammerPerception}Perception{/g}, +20 {g|Encyclopedia:WarhammerBallisticSkill}Ballistic Skill{/g}, and a 75% recoil reduction.\nDeadeye shots will do additional base damage equal to the <u>current weapon's maximum damage.</u>\nThis effect lasts until the Operative moves. Does not stack."
         },
         "4670a313-ac58-4c74-a789-b4249ff00ece": {
             "Text": "If the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} has not moved this {g|Encyclopedia:Turn}turn{/g}, they deal +{uip|DamageBonus|9a0e7e64902e491baa29d60469eae188} more damage with {g|Encyclopedia:SingleRangedAttacksGlossary}single-shot{/g} attacks for every 3 cells between them and the target and gain +{unit_stat|WarhammerPerception|bonus} {g|Encyclopedia:WarhammerBallisticSkill} Ballistic Skill{/g}. These bonuses do not stack and last until the Operative moves."
@@ -76,25 +76,37 @@
             "Text": "<u>(3 + {g|Encyclopedia:WarhammerIntelligence}INT{/g} bonus)</u>"
         },
         "c6540399-6208-4040-b0e3-b5b83d91ba1d": {
-            "Text": "The Operative immediately inflicts +1 {g|Encyclopedia:Exploit}exploit{/g} on each enemy in combat, then makes a free attack against a target (can even use a ranged weapon in melee range). This attack always {g|Encyclopedia:HitSequenceGlossary}hits{/g}.\nUntil the end of combat, the target of this attack suffers a −30% penalty to {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, {g|Encyclopedia:BlockChance}block{/g}, {g|Encyclopedia:DodgeGlossary}dodge{/g}, and {g|Encyclopedia:Parry}parry{/g}.\nFor the rest of combat, the Operative will start each turn prepared for an {g|f:0d6fd1192a5646da86594c8419b48201}alpha strike{/g}."
+            "Text": "The Operative immediately inflicts +1 {g|Encyclopedia:Exploit}exploit{/g} on each enemy in combat, then makes a free attack against a target (can even use a ranged weapon in melee range). This attack always {g|Encyclopedia:HitSequenceGlossary}hits{/g}.\nUntil the end of combat, the target of this attack suffers a −30% penalty to {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, {g|Encyclopedia:BlockChance}block{/g}, {g|Encyclopedia:DodgeGlossary}dodge{/g}, and {g|Encyclopedia:Parry}parry{/g}.\nFor the rest of combat, the Operative will start each turn (including this attack) prepared for an {g|f:0d6fd1192a5646da86594c8419b48201}alpha strike{/g}."
         },
         "4062b857-ced4-4728-9eed-0574cacbe313": {
             "Text": "Alpha Strike"
         },
         "efbbf011-472f-4df9-a464-130e83f9b80d": {
-            "Text": "The first attack each round will automatically be a critical hit and will not consume movement points.\nIf the target is under the effect of {g|f:197b8a8a12b0442db7ffee1067cf3d97}Expose Weakness{/g} they will receive an additional +<u>({g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT bonus{/g})</u> base damage,+<u>({g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT bonus{/g}) × 5</u>% damage, and will suffer the effects of {g|f:264e8fc120fc4cdda336d31ddc0c15f7}dismantling attack{/g} for one round."
+            "Text": "The first attack each turn will automatically be a critical hit and will not consume movement points.\nIf the target is under the effect of {g|f:197b8a8a12b0442db7ffee1067cf3d97}Expose Weakness{/g} they will receive an additional +<u>({g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT bonus{/g})</u> base damage,+<u>({g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT bonus{/g}) × 5</u>% damage, and will suffer the effects of {g|f:264e8fc120fc4cdda336d31ddc0c15f7}dismantling attack{/g} for one round."
         },
         "3c836c63-459b-444b-9b7f-64342e5a01db": {
             "Text": "<u>({g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT bonus{/g})</u>"
         },
         "945ac069-a2c8-4a34-9b8f-2e82d52edd6a": {
-            "Text": "The Operative immediately inflicts +1 {g|Encyclopedia:Exploit}exploit{/g} on each enemy in combat, then makes a free attack against a target (can even use a ranged weapon in melee range). This attack always {g|Encyclopedia:HitSequenceGlossary}hits{/g} and for the rest of combat, the Operative will start each turn prepared for an {g|f:0d6fd1192a5646da86594c8419b48201}alpha strike{/g}(including this attack).\n-<indent=5%>Until the end of combat, the target of this attack suffers a −30% penalty to {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, {g|Encyclopedia:BlockChance}block{/g}, {g|Encyclopedia:DodgeGlossary}dodge{/g}, and {g|Encyclopedia:Parry}parry{/g}.</indent>\n-<indent=5%>Until the end of combat, the Operative's attacks cost +1 {g|Encyclopedia:ActionPoints}AP{/g} more.</indent>"
+            "Text": "The Operative immediately inflicts +1 {g|Encyclopedia:Exploit}exploit{/g} on each enemy in combat, then makes a free attack against a target (can even use a ranged weapon in melee range). This attack always {g|Encyclopedia:HitSequenceGlossary}hits{/g} and for the rest of combat, the Operative will start each turn (including this attack) prepared for an {g|f:0d6fd1192a5646da86594c8419b48201}alpha strike{/g}(including this attack).\n-<indent=5%>Until the end of combat, the target of this attack suffers a −30% penalty to {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, {g|Encyclopedia:BlockChance}block{/g}, {g|Encyclopedia:DodgeGlossary}dodge{/g}, and {g|Encyclopedia:Parry}parry{/g}.</indent>\n-<indent=5%>Until the end of combat, the Operative's attacks cost +1 {g|Encyclopedia:ActionPoints}AP{/g} more.</indent>"
         },
         "4e8016f2-e2f5-4a94-9562-f43623b26a70": {
             "Text": "Guerilla Tactics"
         },
         "a13c06f0-e420-4654-bf76-8ba4f796cca8": {
-            "Text": "While the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} is in {g|Encyclopedia:DetailsOfTheCoverGlossary}partial cover{/g}, their cover efficiency is increased by +15%. This {g|Encyclopedia:Bonus}bonus{/g} is doubled if the Operative has not moved during their {g|Encyclopedia:Turn}turn{/g}.\nAfter attacking the Operative may reposition, gaining +5 MP."
+            "Text": "While the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} is in {g|Encyclopedia:DetailsOfTheCoverGlossary}partial cover{/g}, their cover efficiency is increased by +15%. This {g|Encyclopedia:Bonus}bonus{/g} is doubled if the Operative has not moved during their {g|Encyclopedia:Turn}turn{/g}.\nAfter attacking the Operative may reposition if they critically strike, gaining +4 MP."
+        },
+        "383d7b81-e9c5-44a4-a6a3-e165655791a4":{
+            "Text": "Intimidation"
+        },
+        "a351eae1-f80a-42cf-bb2a-4a3ff55cb8df":{
+            "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g}'s next non-{g|Encyclopedia:AreaOfEffect}area attack{/g} inflicts the intimidated effect on the first target {g|Encyclopedia:HitSequenceGlossary}hit{/g} by the attack and all enemies in a 5-cell radius around that target.\nThe {g|Encyclopedia:DamageGlossary}damage{/g} dealt by intimidated enemies is reduced by −{uip|DamagePenalty|aedb4d2a2fd049db9c3f61b6737043a4}% until the Operative's next {g|Encyclopedia:Turn}turn{/g}. This {g|Encyclopedia:NegativeEffectTypesGlossary}negative effect{/g} is doubled for enemies with less than {uip|MinimumArmour|aedb4d2a2fd049db9c3f61b6737043a4}% {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}.\nIf using a melee attack, this attack will cost -1 AP. On a critical hit, the Operative will do additional base damage equal to the <u>current weapon's minimum damage</u> and they will knock the target prone if they fail a {g|Encyclopedia:WarhammerToughness}Toughness{/g} check."
+        },
+        "c96bec93-4772-412f-a3f8-f3dd87fcbdb0":{
+            "Text":"<u>(15 + {g|Encyclopedia:WarhammerPerception}PER{/g} bonus / 2)</u>"
+        },
+        "5a3e6aac-67ad-4076-9d7f-0878ef6564cc":{
+            "Text": "The {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} removes −1 {g|Encyclopedia:Exploit}exploit{/g} from each enemy in a 5-cell radius around a point within 10 cells from the Operative. If there is only one enemy in the area, the Operative removes all exploit stacks from that enemy.\nAll allies gain +<u>(2 × exploits removed)</u>% {g|Encyclopedia:WarhammerArmourGlossary}armour{/g} until the end of combat. If 4 or more exploits are removed, the Operative deals +<u>(2 × exploits removed)</u>% more {g|Encyclopedia:DamageGlossary}damage{/g} until the end of combat."
         }
     }
 }

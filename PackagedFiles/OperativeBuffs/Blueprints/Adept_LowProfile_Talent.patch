@@ -3,8 +3,8 @@
     {
       "PatchType": "Insert",
       "NewElement": {
-        "$type": "961a1f33fbdad5c4ca08247f49b98c47, WarhammerAfterAttackRollTrigger",
-        "name": "$WarhammerAfterAttackRollTrigger$61ff9c24-00be-469b-ac4d-4bf5f594aa86",
+        "$type": "67bd9d5235e74484bb1d673b885ab430, WarhammerWeaponHitTriggerInitiator",
+        "name": "$WarhammerWeaponHitTriggerInitiator$2917edc5-19d1-4b79-a4bb-ab5735764100",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "",
@@ -20,11 +20,11 @@
             "Getters": []
           }
         },
-        "Actions": {
+        "ActionOnSelfHit": {
           "Actions": [
             {
               "$type": "d1933e412cc64482ae7990aaacdf44a8, WarhammerContextActionRestoreActionPoints",
-              "name": "$WarhammerContextActionRestoreActionPoints$91f49527-fa32-4d3a-9bd9-63d098323726",
+              "name": "$WarhammerContextActionRestoreActionPoints$9bebb6d0-f0d5-49fd-afb6-4211ca009c34",
               "ActionPoints": {
                 "ValueType": "Simple",
                 "Value": 0,
@@ -36,7 +36,7 @@
               },
               "MovePoints": {
                 "ValueType": "Simple",
-                "Value": 5,
+                "Value": 4,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
@@ -50,11 +50,17 @@
             }
           ]
         },
-        "triggerAfterAttack": true,
-        "onlyMeleeAttack": false,
-        "ActionsOnTarget": false,
-        "OnlyHit": false,
-        "TriggerOncePerAbilityCast": false
+        "ActionOnSelfMiss": {
+          "Actions": []
+        },
+        "ActionsOnTargetHit": {
+          "Actions": []
+        },
+        "ActionsOnTargetMiss": {
+          "Actions": []
+        },
+        "OnlyRighteousFury": true,
+        "OnlyMelee": false
       },
       "InsertAfterTarget": "$TurnBasedModeEventsTrigger$6232292e-1064-4552-a3fd-5c3926e900e3"
     }

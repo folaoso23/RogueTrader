@@ -136,6 +136,31 @@
             "Guid": "6bc40f52b5f747d0a4f453ae3fb9ab41",
             "Filename": "Adept_LowProfile_Talent",
             "PatchType": 2
+        },
+        {
+            "Guid": "aedb4d2a2fd049db9c3f61b6737043a4",
+            "Filename": "Adept_Intimidation_Ability",
+            "PatchType": 2
+        },
+        {
+            "Guid": "29705adaeab6492287580277329b90db",
+            "Filename": "Adept_Intimidation_Buff",
+            "PatchType": 2
+        },
+        {
+            "Guid": "225946959e564d1591c85cefecb3bc05",
+            "Filename": "Adept_Intimidation_EnemyEffectBuff",
+            "PatchType": 2
+        },
+        {
+            "Guid": "321e03c3509a4003b1dcca53d6639c47",
+            "Filename": "Adept_Intimidation_EnemyDoubledEffectBuff",
+            "PatchType": 2
+        },
+        {
+            "Guid": "8058270c43d64816808fb861731b7905",
+            "Filename": "Adept_TacticalKnowledge_ArmourBuff",
+            "PatchType": 2
         }
     ]
 }

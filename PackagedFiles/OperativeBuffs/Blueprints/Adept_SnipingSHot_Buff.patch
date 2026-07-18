@@ -354,7 +354,8 @@
         },
         "ModifierDescriptor": "None",
         "ModifyEvenDirectDamage": false,
-        "ModifyEvenDamageOverTime": false
+        "ModifyEvenDamageOverTime": false,
+        "IgnoreDifficultyMinimumDamage": false
       },
       "InsertAfterTarget": "$WarhammerWeaponStatsModifierInitiator$abba4d1a-aeb5-490a-aa1b-e06832c30ea9"
     },
@@ -378,27 +379,19 @@
           "FailSilentlyIfNoTarget": false,
           "Getters": [
             {
-              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
-              "name": "$ContextValueGetter$d849dd7a55d847e4b9776d4e2691c1ca",
+              "$type": "90e37f9c2bb670b4bb0adf1e9eadccde, CurrentWeaponBlueprintDamageGetter",
+              "name": "$CurrentWeaponBlueprintDamageGetter$204c3cbe82f748afbdba2da3f44e0690",
               "Settings": {
-                "Progression": "MultiplyByModifier",
+                "Progression": "AsIs",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 2,
+                "m_StepLevel": 0,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,
                 "Max": 0
               },
-              "Value": {
-                "ValueType": "CasterProperty",
-                "Value": 20,
-                "ValueRank": "Default",
-                "ValueShared": "Damage",
-                "Property": "BallisticSkillBonus",
-                "m_CustomProperty": null,
-                "PropertyName": "Value1"
-              }
+              "Type": "Max"
             }
           ]
         }

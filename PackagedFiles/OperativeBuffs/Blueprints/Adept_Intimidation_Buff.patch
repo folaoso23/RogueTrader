@@ -1,0 +1,516 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$77dbf889-87e5-4841-aff3-b9e1462dd452",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityLifecycleTriggerCaster$c034852e-f925-455c-ab59-59c16ab2adf5",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$77dbf889-87e5-4841-aff3-b9e1462dd452"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$d63a13c6-2bc6-4fbd-a0aa-86b2bc1323dd",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Value1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
+              "name": "$SimplePropertyGetter$d750b403-f9af-492e-ae2e-618f21a838e8",
+              "Settings": {
+                "Progression": "MultiplyByModifier",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 1,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Property": "IntelligenceBonus"
+            },
+            {
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$b3fe3ca4-2706-478b-984e-6a37b6bfaa82",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "ValueType": "Simple",
+                "Value": 4,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            },
+            {
+              "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
+              "name": "$PropertyCalculatorGetter$dc194826-f3bc-4657-8ee7-b0fdc97219d2",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "Operation": "Mul",
+                "TargetType": "CurrentEntity",
+                "TargetEvaluator": null,
+                "FailSilentlyIfNoTarget": false,
+                "Getters": [
+                  {
+                    "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                    "name": "$FactRankGetter$0a7ad0b8-9e2c-4179-9efc-c693be0e18d3",
+                    "Settings": {
+                      "Progression": "AsIs",
+                      "m_CustomProgression": [],
+                      "m_StartLevel": 0,
+                      "m_StepLevel": 0,
+                      "Negate": false,
+                      "Limit": "None",
+                      "Min": 0,
+                      "Max": 0
+                    },
+                    "m_Fact": "!bp_014b6572e19946ae8bc74fc8cbe0f92b",
+                    "CheckTarget": "CurrentEntity",
+                    "Aggregation": "Max",
+                    "BuffWithCasterFromTargetType": false,
+                    "BuffCaster": "CurrentEntity"
+                  },
+                  {
+                    "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
+                    "name": "$PropertyCalculatorGetter$7d30a190-6b35-4c75-94ca-c0a1760a7d62",
+                    "Settings": {
+                      "Progression": "AsIs",
+                      "m_CustomProgression": [],
+                      "m_StartLevel": 0,
+                      "m_StepLevel": 0,
+                      "Negate": false,
+                      "Limit": "None",
+                      "Min": 0,
+                      "Max": 0
+                    },
+                    "Value": {
+                      "Operation": "GE",
+                      "TargetType": "CurrentTarget",
+                      "TargetEvaluator": null,
+                      "FailSilentlyIfNoTarget": false,
+                      "Getters": [
+                        {
+                          "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
+                          "name": "$FactRankGetter$a1bcd1a2-89a8-4711-bcae-5156a255b7d9",
+                          "Settings": {
+                            "Progression": "AsIs",
+                            "m_CustomProgression": [],
+                            "m_StartLevel": 0,
+                            "m_StepLevel": 0,
+                            "Negate": false,
+                            "Limit": "None",
+                            "Min": 0,
+                            "Max": 0
+                          },
+                          "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+                          "CheckTarget": "CurrentEntity",
+                          "Aggregation": "Max",
+                          "BuffWithCasterFromTargetType": false,
+                          "BuffCaster": "CurrentEntity"
+                        },
+                        {
+                          "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+                          "name": "$ContextValueGetter$75eb9318-4a46-473d-8077-c804e9765c1f",
+                          "Settings": {
+                            "Progression": "AsIs",
+                            "m_CustomProgression": [],
+                            "m_StartLevel": 0,
+                            "m_StepLevel": 0,
+                            "Negate": false,
+                            "Limit": "None",
+                            "Min": 0,
+                            "Max": 0
+                          },
+                          "Value": {
+                            "ValueType": "Simple",
+                            "Value": 2,
+                            "ValueRank": "Default",
+                            "ValueShared": "Damage",
+                            "Property": "None",
+                            "m_CustomProperty": null,
+                            "PropertyName": "Value1"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "$type": "fd03f97ef3d1416d9a95f874454886d9, SimplePropertyGetter",
+                    "name": "$SimplePropertyGetter$957b3a40-4de9-4881-a947-6288c809a7b1",
+                    "Settings": {
+                      "Progression": "Div2",
+                      "m_CustomProgression": [],
+                      "m_StartLevel": 0,
+                      "m_StepLevel": 0,
+                      "Negate": false,
+                      "Limit": "None",
+                      "Min": 0,
+                      "Max": 0
+                    },
+                    "Property": "IntelligenceBonus"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$AbilityLifecycleTriggerCaster$c034852e-f925-455c-ab59-59c16ab2adf5"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "67bd9d5235e74484bb1d673b885ab430, WarhammerWeaponHitTriggerInitiator",
+        "name": "$WarhammerWeaponHitTriggerInitiator$4a4189e1-86b7-43db-920e-510675ed7f3e",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": true,
+            "Getters": []
+          }
+        },
+        "ActionOnSelfHit": {
+          "Actions": []
+        },
+        "ActionOnSelfMiss": {
+          "Actions": []
+        },
+        "ActionsOnTargetHit": {
+          "Actions": [
+            {
+              "$type": "5e2f2046f3bd6984c8833bf019c8e8ad, ContextActionSavingThrow",
+              "name": "$ContextActionSavingThrow$a0042e70-2d92-46b6-86c5-d186be4114d4",
+              "Type": "Fortitude",
+              "FromBuff": false,
+              "m_ConditionalDCIncrease": [],
+              "HasCustomDC": true,
+              "CustomDC": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "Actions": {
+                "Actions": [
+                  {
+                    "$type": "d61949c589ee885458c9439b2aa202b6, ContextActionConditionalSaved",
+                    "name": "$ContextActionConditionalSaved$c9fe3a22-ffa5-4d68-b8e7-05df9ce1f7dd",
+                    "Succeed": {
+                      "Actions": []
+                    },
+                    "Failed": {
+                      "Actions": [
+                        {
+                          "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                          "name": "$ContextActionApplyBuff$12a745a5-10ac-418b-ba6c-326cdefa8e57",
+                          "m_Buff": "!bp_8de915da52f24d9bb925d13fb2c8cf98",
+                          "BuffEndCondition": "CombatEnd",
+                          "Permanent": false,
+                          "DurationValue": {
+                            "RoundsValue": {
+                              "ValueType": "Simple",
+                              "Value": 1,
+                              "ValueRank": "Default",
+                              "ValueShared": "Damage",
+                              "Property": "None",
+                              "m_CustomProperty": null,
+                              "PropertyName": "Value1"
+                            }
+                          },
+                          "ToCaster": false,
+                          "AsChild": false,
+                          "SameDuration": false,
+                          "Ranks": {
+                            "ValueType": "Simple",
+                            "Value": 1,
+                            "ValueRank": "Default",
+                            "ValueShared": "Damage",
+                            "Property": "None",
+                            "m_CustomProperty": null,
+                            "PropertyName": "Value1"
+                          },
+                          "ActionsOnApply": {
+                            "Actions": []
+                          },
+                          "ActionsOnImmune": {
+                            "Actions": []
+                          },
+                          "AddFactSource": false
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "ActionsOnTargetMiss": {
+          "Actions": []
+        },
+        "OnlyRighteousFury": true,
+        "OnlyMelee": true
+      },
+      "InsertAfterTarget": "$PropertyCalculatorComponent$d63a13c6-2bc6-4fbd-a0aa-86b2bc1323dd"
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerWeaponHitTrigger$5187adc4-0a5d-4908-a05f-c8e33528dfa9",
+      "ElementPatch": {
+        "Restrictions": {
+          "Property": {
+            "Getters": [
+              {
+                "PatchType": "Prepend",
+                "NewElement": {
+                  "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
+                  "name": "$PropertyCalculatorGetter$e1af0b3b-8c35-4d3a-97ad-157a9b66ae02",
+                  "Settings": {
+                    "Progression": "AsIs",
+                    "m_CustomProgression": [],
+                    "m_StartLevel": 0,
+                    "m_StepLevel": 0,
+                    "Negate": false,
+                    "Limit": "None",
+                    "Min": 0,
+                    "Max": 0
+                  },
+                  "Value": {
+                    "Operation": "BoolAnd",
+                    "TargetType": "CurrentEntity",
+                    "TargetEvaluator": null,
+                    "FailSilentlyIfNoTarget": false,
+                    "Getters": [
+                      {
+                        "$type": "76fa6ff8c9162f9489df4de07a55750c, CheckAbilityAttackTypeGetter",
+                        "name": "$CheckAbilityAttackTypeGetter$ce1aead1-3a4a-4951-b807-5139abfab4e5",
+                        "Settings": {
+                          "Progression": "AsIs",
+                          "m_CustomProgression": [],
+                          "m_StartLevel": 0,
+                          "m_StepLevel": 0,
+                          "Negate": false,
+                          "Limit": "None",
+                          "Min": 0,
+                          "Max": 0
+                        },
+                        "Type": "SingleShot"
+                      },
+                      {
+                        "$type": "53ddc60b996d4bd2aa81e66b49d5f97d, CheckAbilityWeaponRangeTypeGetter",
+                        "name": "$CheckAbilityWeaponRangeTypeGetter$5f70d8ffe93a401ba889a10d77c35f1b",
+                        "Settings": {
+                          "Progression": "AsIs",
+                          "m_CustomProgression": [],
+                          "m_StartLevel": 0,
+                          "m_StepLevel": 0,
+                          "Negate": false,
+                          "Limit": "None",
+                          "Min": 0,
+                          "Max": 0
+                        },
+                        "m_RangeType": "Ranged"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "PatchType": "Relocate",
+                "Target": "$PropertyCalculatorGetter$dc8944bed07948e6a3ca0ff7f7f8185f",
+                "InsertAfterTarget": "$PropertyCalculatorGetter$e1af0b3b-8c35-4d3a-97ad-157a9b66ae02"
+              },
+              {
+                "PatchType": "PatchElement",
+                "Target": "$PropertyCalculatorGetter$dc8944bed07948e6a3ca0ff7f7f8185f",
+                "ElementPatch": {
+                  "Value": {
+                    "TargetEvaluator": null,
+                    "Getters": [
+                      {
+                        "PatchType": "PatchElement",
+                        "Target": "$CheckAbilityAttackTypeGetter$d416feb3-9046-4d67-97ba-58d3a060a4d7",
+                        "ElementPatch": {
+                          "Type": "SingleShot"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "PatchType": "RemoveFromEnd",
+                "Target": "$CheckAbilityAttackTypeGetter$055ab963-08d3-4b95-9d04-d45ca2deb6a6"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "efafb8ff343e4071a216fe8fcb17e023, WarhammerCriticalDamageModifierInitiator",
+        "name": "$WarhammerCriticalDamageModifierInitiator$1f02f4d2-dfc4-447a-8cb6-47dcda6baa52",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "53ddc60b996d4bd2aa81e66b49d5f97d, CheckAbilityWeaponRangeTypeGetter",
+                "name": "$CheckAbilityWeaponRangeTypeGetter$0f41ab9c136f49eba252eb34bfcd1a93",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_RangeType": "Melee"
+              }
+            ]
+          }
+        },
+        "PercentCriticalDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "BonusCriticalDamageModifier": {
+          "ValueType": "CasterNamedProperty",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value2",
+          "Enabled": true
+        },
+        "BonusCriticalDamageMultipliers": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "purePercentCriticalDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "ModifierDescriptor": "None"
+      },
+      "InsertAfterTarget": "$AbilityApplyEffectTriggerInitiator$2179bca8-b0ee-49ab-88c3-f18e537c6c1b"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$3e11e6fd-fd32-4834-ab2f-323068030310",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Value2",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "90e37f9c2bb670b4bb0adf1e9eadccde, CurrentWeaponBlueprintDamageGetter",
+              "name": "$CurrentWeaponBlueprintDamageGetter$4407ea90d23d4850b8d2857e5975c89d",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Type": "Min"
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$WarhammerCriticalDamageModifierInitiator$1f02f4d2-dfc4-447a-8cb6-47dcda6baa52"
+    }
+  ]
+}
