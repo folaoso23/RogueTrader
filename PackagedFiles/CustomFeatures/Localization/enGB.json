@@ -1,0 +1,10 @@
+{
+    "strings": {
+        "9ffaa024-82a6-41d6-a12d-d59e18fd72be": {
+            "Text": "Relentless Assault"
+        },
+        "2b595206-5eb6-4af9-a9c1-4cecfe9ac9f2": {
+            "Text": "After a critical hit, this unit will be able to make a free attack this turn at no cost. Only triggers once per turn."
+        }
+    }
+}
