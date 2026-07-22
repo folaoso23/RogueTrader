@@ -23,8 +23,8 @@
           "m_CustomProperty": null,
           "PropertyName": "Value1"
         },
-        "UseSpecificWeapon": false,
-        "UseOnSourceWeapon": false,
+        "UseSpecificWeapon": true,
+        "UseOnSourceWeapon": true,
         "UseSecondWeapon": false,
         "UseSpecificWeaponClassification": false,
         "Classification": "None"
@@ -74,8 +74,8 @@
         "name": "$AbilityCasterHasWeaponWithRangeType$53af48dc-1fbc-458c-8153-fee07090e6c4",
         "m_Flags": 0,
         "PrototypeLink": {
-          "guid": null,
-          "name": null
+          "guid": "",
+          "name": ""
         },
         "m_Overrides": [],
         "RangeType": "Melee",

@@ -427,10 +427,7 @@
               "m_OwnerString": "",
               "m_OwnerPropertyPath": "",
               "m_JsonPath": "",
-              "Shared": {
-                "assetguid": "823414759e695e447a1335f3e4efad1b",
-                "stringkey": "9cddfe5a-46d5-476b-85c7-ed07f72ec8de"
-              }
+              "Shared": null
             },
             "m_DescriptionFact": "!bp_fdc990cb73114e4d8a7575813936cec9",
             "m_LinkProperty": true,
@@ -446,29 +443,23 @@
     {
       "PatchType": "Insert",
       "NewElement": {
-        "$type": "b787865cc7284095914908b39df0a903, AddAbilitiesToCurrentWeapon",
-        "name": "$AddAbilitiesToCurrentWeapon$a3b7d802-560b-4283-b0aa-ba0c2e625118",
+        "$type": "d79ad4ed064aa4f43ace0e9c238fb9b9, AddFacts",
+        "name": "$AddFacts$c747e836-a5dc-423c-9613-0b61284af889",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "",
           "name": ""
         },
         "m_Overrides": [],
-        "m_WeaponClassification": "None",
-        "m_WeaponFamily": "Plasma",
-        "m_WeaponHoldingType": "None",
-        "m_WeaponCategory": "None",
-        "m_WeaponAbilities": [
-          {
-            "Type": "Custom",
-            "Mode": "Default",
-            "m_Ability": "!bp_1cdd00b349324e7f958a8cb1dfcde2fe",
-            "m_FXSettings": "!bp_51e7df2a624140d89549e0cb9f54aa7f",
-            "OnHitOverrideType": "None",
-            "m_OnHitActions": null,
-            "AP": 2
-          }
-        ]
+        "m_Facts": [
+          "!bp_d58aacf3d1ad42d083a7e3c3669f0ab1",
+          "!bp_d51f0f2c78a84377bc34803a1324f537"
+        ],
+        "Dummy": null,
+        "DoNotRestoreMissingFacts": false,
+        "HasDifficultyRequirements": false,
+        "InvertDifficultyRequirements": false,
+        "MinDifficulty": "Story"
       },
       "InsertAfterTarget": "$UIPropertiesComponent$9fdaf7fb-8b0b-41ca-ab7a-8b3652f919f3"
     }

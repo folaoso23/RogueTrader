@@ -182,7 +182,8 @@
         },
         "ModifierDescriptor": "None",
         "ModifyEvenDirectDamage": false,
-        "ModifyEvenDamageOverTime": false
+        "ModifyEvenDamageOverTime": false,
+        "IgnoreDifficultyMinimumDamage": false
       },
       "InsertAfterTarget": "$WarhammerOverrideAbilityApCost$2b2ecee5-5596-426d-880c-6d4d63728ac0"
     },
@@ -307,7 +308,8 @@
         },
         "ModifierDescriptor": "None",
         "ModifyEvenDirectDamage": false,
-        "ModifyEvenDamageOverTime": false
+        "ModifyEvenDamageOverTime": false,
+        "IgnoreDifficultyMinimumDamage": false
       },
       "InsertAfterTarget": "$WarhammerDamageModifierInitiator$80a84b4f-8b4c-417a-8529-e4dd4896610d"
     },
@@ -894,7 +896,8 @@
         },
         "ModifierDescriptor": "None",
         "ModifyEvenDirectDamage": false,
-        "ModifyEvenDamageOverTime": false
+        "ModifyEvenDamageOverTime": false,
+        "IgnoreDifficultyMinimumDamage": false
       },
       "InsertAfterTarget": "$WarhammerRighteousFuryBonus$e0c4c72b-39e2-4aee-a73c-61e444cd9573"
     },
@@ -1191,7 +1194,7 @@
       "NewElement": {
         "$type": "cf4a4d014c2610548a3f9213c3de882e, WarhammerDamageModifierInitiator",
         "name": "$WarhammerDamageModifierInitiator$b128f1f1-a1e2-4bd2-8b00-f1ba348035ea",
-        "m_Flags": 0,
+        "m_Flags": "Disabled",
         "PrototypeLink": {
           "guid": "",
           "name": ""
@@ -1232,7 +1235,7 @@
           "Property": "None",
           "m_CustomProperty": null,
           "PropertyName": "Value1",
-          "Enabled": true
+          "Enabled": false
         },
         "MaximumDamage": {
           "ValueType": "CasterNamedProperty",
@@ -1242,7 +1245,7 @@
           "Property": "None",
           "m_CustomProperty": null,
           "PropertyName": "Value1",
-          "Enabled": true
+          "Enabled": false
         },
         "PenetrationMod": {
           "ValueType": "Simple",
@@ -1306,7 +1309,8 @@
         },
         "ModifierDescriptor": "None",
         "ModifyEvenDirectDamage": false,
-        "ModifyEvenDamageOverTime": false
+        "ModifyEvenDamageOverTime": false,
+        "IgnoreDifficultyMinimumDamage": false
       },
       "InsertAfterTarget": "$PropertyCalculatorComponent$2f80f70b-8e59-43fd-ba33-659a82aa4935"
     },
@@ -1336,10 +1340,7 @@
               "m_OwnerString": "",
               "m_OwnerPropertyPath": "",
               "m_JsonPath": "",
-              "Shared": {
-                "assetguid": "590cfc1cf3fc7c244aff82b8184094bf",
-                "stringkey": "19f3bb06-95bd-4e5d-9168-c64ace968129"
-              }
+              "Shared": null
             },
             "m_DescriptionFact": "!bp_2558102cf3d24a52ae8be0f0e898dec1",
             "m_LinkProperty": true,
@@ -1362,10 +1363,7 @@
               "m_OwnerString": "",
               "m_OwnerPropertyPath": "",
               "m_JsonPath": "",
-              "Shared": {
-                "assetguid": "1c17801b43f35434496ffe2fdc38601d",
-                "stringkey": "d2063584-1fd6-4b00-8fb6-9d206661cacb"
-              }
+              "Shared": null
             },
             "m_DescriptionFact": "!bp_2558102cf3d24a52ae8be0f0e898dec1",
             "m_LinkProperty": true,
@@ -1388,10 +1386,7 @@
               "m_OwnerString": "",
               "m_OwnerPropertyPath": "",
               "m_JsonPath": "",
-              "Shared": {
-                "assetguid": "9847835d43085774cbae0a704a296b80",
-                "stringkey": "75187d26-31ee-46ff-96cf-207330d7fff6"
-              }
+              "Shared": null
             },
             "m_DescriptionFact": "!bp_2558102cf3d24a52ae8be0f0e898dec1",
             "m_LinkProperty": true,
@@ -1414,10 +1409,7 @@
               "m_OwnerString": "",
               "m_OwnerPropertyPath": "",
               "m_JsonPath": "",
-              "Shared": {
-                "assetguid": "b6f094211d55cbe45947ce747251371b",
-                "stringkey": "4e887c31-4646-470c-b4c3-313172d93263"
-              }
+              "Shared": null
             },
             "m_DescriptionFact": "!bp_2558102cf3d24a52ae8be0f0e898dec1",
             "m_LinkProperty": true,

@@ -1,0 +1,94 @@
+{
+  "AssetId": "d51f0f2c78a84377bc34803a1324f537",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "b787865cc7284095914908b39df0a903, AddAbilitiesToCurrentWeapon",
+        "name": "$AddAbilitiesToCurrentWeapon$19f5cc00-d3ba-4dfc-be8f-2948ef13911d",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_WeaponClassification": "None",
+        "m_WeaponFamily": "Plasma",
+        "m_WeaponHoldingType": "TwoHanded",
+        "m_WeaponCategory": "None",
+        "m_WeaponAbilities": [
+          {
+            "Type": "Burst",
+            "Mode": "Default",
+            "m_Ability": "!bp_1cdd00b349324e7f958a8cb1dfcde2fe",
+            "m_FXSettings": "!bp_c4955f13ac1f4f37bc9f59b792e94366",
+            "OnHitOverrideType": "None",
+            "m_OnHitActions": null,
+            "AP": 2
+          }
+        ]
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "d4f8586ca1b50cf448ca883c9ac98392",
+        "stringkey": "56a25f1e-c7c4-491c-8e2c-80f81452e44e"
+      }
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "0f1c8140f76257749b66ca6b7da0da42",
+        "stringkey": "cabcbd5c-e59f-4e49-a001-4b6d54ea2e63"
+      }
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": [
+        {
+          "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+          "name": "$PrerequisiteFact$4b34b4a0b3f641739d7358fecf74484b",
+          "Not": false,
+          "m_Fact": "!bp_dddb6710ce25490e98608a2c07fbfc51",
+          "MinRank": 1
+        }
+      ]
+    },
+    "FeatureTypes": [
+      "Offense"
+    ],
+    "TalentIconInfo": {
+      "AllGroups": "EquipmentUsage, Damage",
+      "MainGroup": "EquipmentUsage"
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}
