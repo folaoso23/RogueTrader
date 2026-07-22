@@ -1,0 +1,25 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$de88110c-037a-415e-a16e-a9556b76fabe",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$FactRankGetter$ef5fae45-da15-46cc-a755-39cef8cf378f",
+              "ElementPatch": {
+                "Settings": {
+                  "m_StepLevel": 5
+                },
+                "CheckTarget": "CurrentEntity",
+                "BuffCaster": "CurrentEntity"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

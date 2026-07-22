@@ -228,13 +228,13 @@
               "m_ConditionalDCIncrease": [],
               "HasCustomDC": true,
               "CustomDC": {
-                "ValueType": "Simple",
+                "ValueType": "CasterNamedProperty",
                 "Value": 0,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
                 "m_CustomProperty": null,
-                "PropertyName": "Value1"
+                "PropertyName": "Dice1"
               },
               "Actions": {
                 "Actions": [
@@ -505,12 +505,59 @@
                 "Min": 0,
                 "Max": 0
               },
-              "Type": "Min"
+              "Type": "Max"
             }
           ]
         }
       },
       "InsertAfterTarget": "$WarhammerCriticalDamageModifierInitiator$1f02f4d2-dfc4-447a-8cb6-47dcda6baa52"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$26c5b4fe-56bb-45d1-b3a2-fcf337a4c056",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Dice1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$6c1f497ba9f248298119ad8678c5da1a",
+              "Settings": {
+                "Progression": "MultiplyByModifier",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 3,
+                "Negate": true,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "ValueType": "CasterProperty",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "WeaponSkillBonus",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$PropertyCalculatorComponent$3e11e6fd-fd32-4834-ab2f-323068030310"
     }
   ]
 }

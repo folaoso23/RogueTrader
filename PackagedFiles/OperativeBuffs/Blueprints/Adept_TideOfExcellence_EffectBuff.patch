@@ -33,9 +33,10 @@
                 "Max": 0
               },
               "m_Fact": "!bp_349c91e2137a4a18a386d930bea58747",
+              "CheckTarget": "CurrentEntity",
               "Aggregation": "Max",
               "BuffWithCasterFromTargetType": false,
-              "Target": "CurrentEntity"
+              "BuffCaster": "CurrentEntity"
             }
           ]
         }
@@ -65,7 +66,7 @@
         "m_Overrides": [],
         "Descriptor": "None",
         "Stat": "WarhammerIntelligence",
-        "Value": 5
+        "Value": 4
       },
       "InsertAfterTarget": "$WarhammerDamageModifierInitiator$f51fe2be-9076-43be-9305-c299aace55fe"
     },

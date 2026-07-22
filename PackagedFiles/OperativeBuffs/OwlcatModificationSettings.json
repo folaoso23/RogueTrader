@@ -161,6 +161,11 @@
             "Guid": "8058270c43d64816808fb861731b7905",
             "Filename": "Adept_TacticalKnowledge_ArmourBuff",
             "PatchType": 2
+        },
+        {
+            "Guid": "a4eea154b9af4e5b9ec1ae291a844875",
+            "Filename": "Adept_TacticalKnowledge_DamageBuff",
+            "PatchType": 2
         }
     ]
 }
