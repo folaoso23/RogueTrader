@@ -1,0 +1,562 @@
+{
+  "AssetId": "94bcc20d9d5648959e49b5e74f9551ba",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "f08844ce14d498a45a9fc64582489a2a, AddContextStatBonus",
+        "name": "$AddContextStatBonus$2c46115e-12bb-4439-b2b7-8e8e68f8c0ca",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "Descriptor": "None",
+        "Stat": "WarhammerWillpower",
+        "Multiplier": 1,
+        "Value": {
+          "ValueType": "Simple",
+          "Value": 5,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "IsPercentModifier": false,
+        "m_ActionsOnAdd": {
+          "Actions": []
+        }
+      },
+      {
+        "$type": "f08844ce14d498a45a9fc64582489a2a, AddContextStatBonus",
+        "name": "$AddContextStatBonus$c9e7f20e-755b-4d99-a6ef-1c2c82360d41",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "Descriptor": "None",
+        "Stat": "WarhammerToughness",
+        "Multiplier": 1,
+        "Value": {
+          "ValueType": "CasterNamedProperty",
+          "Value": 10,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "IsPercentModifier": false,
+        "m_ActionsOnAdd": {
+          "Actions": []
+        }
+      },
+      {
+        "$type": "f08844ce14d498a45a9fc64582489a2a, AddContextStatBonus",
+        "name": "$AddContextStatBonus$5f064beb-68cb-4a6b-87b4-299115ea2da7",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "Descriptor": "None",
+        "Stat": "WarhammerAgility",
+        "Multiplier": 1,
+        "Value": {
+          "ValueType": "CasterNamedProperty",
+          "Value": -10,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "SkillPersuasion",
+          "m_CustomProperty": null,
+          "PropertyName": "Value2"
+        },
+        "IsPercentModifier": false,
+        "m_ActionsOnAdd": {
+          "Actions": []
+        }
+      },
+      {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$12412c81-d1b1-44dd-bff7-101fc7164e1d",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Value1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Mul",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$676d3d9c-1ffc-42da-a741-90b6de9c75bf",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "ValueType": "Simple",
+                "Value": 5,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "WillpowerBonus",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            },
+            {
+              "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
+              "name": "$PropertyCalculatorGetter$e60219cf-bff6-4aa4-b89c-39b514178189",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "Operation": "Sub",
+                "TargetType": "CurrentEntity",
+                "TargetEvaluator": null,
+                "FailSilentlyIfNoTarget": false,
+                "Getters": [
+                  {
+                    "$type": "fb77900c7ec1461dadb27600db6e67cb, FactListGetter",
+                    "name": "$FactListGetter$4b66c2ca-a598-4fbc-a271-82468fa75775",
+                    "Settings": {
+                      "Progression": "AsIs",
+                      "m_CustomProgression": [],
+                      "m_StartLevel": 0,
+                      "m_StepLevel": 0,
+                      "Negate": false,
+                      "Limit": "None",
+                      "Min": 0,
+                      "Max": 0
+                    },
+                    "m_Facts": [
+                      "!bp_fb7efcba2dcc427da2324d4066daf2d5",
+                      "!bp_3e429e5fe7bb4dc7895a9e3ad9b804a8",
+                      "!bp_9eeb3cc7064e407ba025c8adf2b4d5e9",
+                      "!bp_cbcf86f7262b4445958da0e2541b8c64",
+                      "!bp_63c9dd53e5344e4bab52d8f15787f89a"
+                    ],
+                    "OnlyFromCaster": true,
+                    "Caster": "CurrentEntity",
+                    "MultiplyByRanks": false
+                  },
+                  {
+                    "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+                    "name": "$ContextValueGetter$a0106a89-c8a4-4016-84db-76ed5b517a17",
+                    "Settings": {
+                      "Progression": "AsIs",
+                      "m_CustomProgression": [],
+                      "m_StartLevel": 0,
+                      "m_StepLevel": 0,
+                      "Negate": false,
+                      "Limit": "None",
+                      "Min": 0,
+                      "Max": 0
+                    },
+                    "Value": {
+                      "ValueType": "Simple",
+                      "Value": 2,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": null,
+                      "PropertyName": "Value1"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$9682b1b7-e2ac-4e01-806f-1fabaea25b46",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Value2",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sub",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$47f708be-bfaf-4ea3-94b2-223fd7753d8e",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "WillpowerBonus",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            },
+            {
+              "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
+              "name": "$PropertyCalculatorGetter$5aad832e884948d38e33d646fa8c3a2f",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "Operation": "Sum",
+                "TargetType": "CurrentEntity",
+                "TargetEvaluator": null,
+                "FailSilentlyIfNoTarget": false,
+                "Getters": [
+                  {
+                    "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
+                    "name": "$PropertyCalculatorGetter$9ede7517-62d0-4f2d-a48b-3166ad8702d8",
+                    "Settings": {
+                      "Progression": "AsIs",
+                      "m_CustomProgression": [],
+                      "m_StartLevel": 0,
+                      "m_StepLevel": 0,
+                      "Negate": false,
+                      "Limit": "None",
+                      "Min": 0,
+                      "Max": 0
+                    },
+                    "Value": {
+                      "Operation": "Sub",
+                      "TargetType": "CurrentEntity",
+                      "TargetEvaluator": null,
+                      "FailSilentlyIfNoTarget": false,
+                      "Getters": [
+                        {
+                          "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+                          "name": "$ContextValueGetter$62f06b6b-7a42-4c2e-9b74-73b971703296",
+                          "Settings": {
+                            "Progression": "AsIs",
+                            "m_CustomProgression": [],
+                            "m_StartLevel": 0,
+                            "m_StepLevel": 0,
+                            "Negate": false,
+                            "Limit": "None",
+                            "Min": 0,
+                            "Max": 0
+                          },
+                          "Value": {
+                            "ValueType": "CasterNamedProperty",
+                            "Value": -1,
+                            "ValueRank": "Default",
+                            "ValueShared": "Damage",
+                            "Property": "WillpowerBonus",
+                            "m_CustomProperty": null,
+                            "PropertyName": "Value1"
+                          }
+                        },
+                        {
+                          "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+                          "name": "$ContextValueGetter$59110fe6-ea4b-487f-87e6-d26160e18016",
+                          "Settings": {
+                            "Progression": "AsIs",
+                            "m_CustomProgression": [],
+                            "m_StartLevel": 0,
+                            "m_StepLevel": 0,
+                            "Negate": false,
+                            "Limit": "None",
+                            "Min": 0,
+                            "Max": 0
+                          },
+                          "Value": {
+                            "ValueType": "Simple",
+                            "Value": 5,
+                            "ValueRank": "Default",
+                            "ValueShared": "Damage",
+                            "Property": "WillpowerBonus",
+                            "m_CustomProperty": null,
+                            "PropertyName": "Value1"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+                    "name": "$ContextValueGetter$05ee0594-7515-49e7-b0fb-4c5c659e79e8",
+                    "Settings": {
+                      "Progression": "AsIs",
+                      "m_CustomProgression": [],
+                      "m_StartLevel": 0,
+                      "m_StepLevel": 0,
+                      "Negate": false,
+                      "Limit": "None",
+                      "Min": 0,
+                      "Max": 0
+                    },
+                    "Value": {
+                      "ValueType": "Simple",
+                      "Value": 1,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "WillpowerBonus",
+                      "m_CustomProperty": null,
+                      "PropertyName": "Value1"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "$type": "95e248f24866439681c312b1bff0693c, UIPropertiesComponent",
+        "name": "$UIPropertiesComponent$17c6e01d-90be-43ed-bca5-848bf90ddeaa",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Properties": [
+          {
+            "NameType": "Range",
+            "m_Name": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": null
+            },
+            "Description": {
+              "m_Key": "8d5f933b-f09d-4f7b-8bf8-8dd4dfcbcbf2",
+              "m_OwnerString": "94bcc20d9d5648959e49b5e74f9551ba",
+              "m_OwnerPropertyPath": "Properties.Array.data[0].Description",
+              "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\ConvictionTalents\\Heretical\\Nurgle\\NurgleFollower01_Talent_Properties.Array.data[0].Description.json",
+              "Shared": null
+            },
+            "m_DescriptionFact": "!bp_94bcc20d9d5648959e49b5e74f9551ba",
+            "m_LinkProperty": true,
+            "m_PropertyName": "Value1",
+            "m_PropertySource": "!bp_94bcc20d9d5648959e49b5e74f9551ba",
+            "m_LinkKey": "Buff",
+            "Main": false
+          },
+          {
+            "NameType": "Range",
+            "m_Name": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": null
+            },
+            "Description": {
+              "m_Key": "eb5e559f-0538-4a34-92a6-b2965b4fcbba",
+              "m_OwnerString": "94bcc20d9d5648959e49b5e74f9551ba",
+              "m_OwnerPropertyPath": "Properties.Array.data[1].Description",
+              "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\ConvictionTalents\\Heretical\\Nurgle\\NurgleFollower01_Talent_Properties.Array.data[1].Description.json",
+              "Shared": null
+            },
+            "m_DescriptionFact": "!bp_94bcc20d9d5648959e49b5e74f9551ba",
+            "m_LinkProperty": true,
+            "m_PropertyName": "Value2",
+            "m_PropertySource": "!bp_94bcc20d9d5648959e49b5e74f9551ba",
+            "m_LinkKey": "Debuff",
+            "Main": false
+          }
+        ]
+      },
+      {
+        "$type": "4cc225b5566d5c34583ecba62d752412, RecalculateOnFactsChange",
+        "name": "$RecalculateOnFactsChange$78f2fffc-4e43-4d50-8340-6babd274984b",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_CheckedFacts": [
+          "!bp_fb7efcba2dcc427da2324d4066daf2d5",
+          "!bp_3e429e5fe7bb4dc7895a9e3ad9b804a8",
+          "!bp_9eeb3cc7064e407ba025c8adf2b4d5e9",
+          "!bp_cbcf86f7262b4445958da0e2541b8c64",
+          "!bp_63c9dd53e5344e4bab52d8f15787f89a"
+        ]
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "40febaea-3b35-4110-a061-55e02add7bcd",
+      "m_OwnerString": "94bcc20d9d5648959e49b5e74f9551ba",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\ConvictionTalents\\Heretical\\Nurgle\\NurgleFollower01_Talent_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "765342ad-5cd8-424d-950c-8784c873a3e0",
+      "m_OwnerString": "94bcc20d9d5648959e49b5e74f9551ba",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\ConvictionTalents\\Heretical\\Nurgle\\NurgleFollower01_Talent_m_Description.json",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": [
+        {
+          "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+          "name": "$PrerequisiteFact$489fb9ad2390418b926d6467aba34531",
+          "Not": false,
+          "m_Fact": "!bp_9eeb3cc7064e407ba025c8adf2b4d5e9",
+          "MinRank": 0
+        },
+        {
+          "$type": "b9efad78f1e00e746b00c18088382c93, PrerequisiteLevel",
+          "name": "$PrerequisiteLevel$78909332ba544f0eae8c86515660829e",
+          "Not": false,
+          "Level": 20
+        },
+        {
+          "$type": "3acf9db791c042a4b9588426022193a8, PrerequisiteStat",
+          "name": "$PrerequisiteStat$a3002e3e2e374e3ab01577d4ca8d9c6f",
+          "Not": false,
+          "Stat": "WarhammerToughness",
+          "MinValue": 60
+        },
+        {
+          "$type": "3ebda9716ea24139a3a4d3f7c49dc90d, PrerequisiteComposite",
+          "name": "$PrerequisiteComposite$2b6e4dba-7884-481c-a232-3c256ca6fd66",
+          "Not": true,
+          "Prerequisites": {
+            "Composition": "And",
+            "List": [
+              {
+                "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+                "name": "$PrerequisiteFact$300ea428-5cde-4674-b064-8ce65edde7b4",
+                "Not": false,
+                "m_Fact": "!bp_0f8720e04a7343bdad0d00f0ce635021",
+                "MinRank": 0
+              },
+              {
+                "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+                "name": "$PrerequisiteFact$aa9060cb-9ed9-4e7f-9d40-d27db1c3f6ac",
+                "Not": false,
+                "m_Fact": "!bp_6262f2af2f8848aeb87785be2bf5d8ef",
+                "MinRank": 0
+              },
+              {
+                "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+                "name": "$PrerequisiteFact$3c3c914f-1b03-4886-a076-80701fccf745",
+                "Not": false,
+                "m_Fact": "!bp_b2dff51420614bd4815964c5b7983e24",
+                "MinRank": 0
+              },
+              {
+                "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+                "name": "$PrerequisiteFact$3631237d-acbe-4c60-9d46-369e86e69ea0",
+                "Not": false,
+                "m_Fact": "!bp_78598e83e4f64838bd6f2bc9f174d2b8",
+                "MinRank": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "FeatureTypes": [
+      "Universal"
+    ],
+    "TalentIconInfo": {
+      "AllGroups": "CharacteristicBonus, Buff",
+      "MainGroup": "CharacteristicBonus"
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

@@ -1,0 +1,46 @@
+{
+    "BundlesLayout": {
+        "m_Guids": [],
+        "m_Bundles": []
+    },
+    "BundleDependencies": {
+        "m_List": [
+            {
+                "Key": "TalentsOfHouseVonValancius_BlueprintDirectReferences",
+                "Value": []
+            }
+        ]
+    },
+    "BlueprintPatches": [
+        {
+            "Guid": "f7cb6da6f8424aacb7414aa35cb06824",
+            "Filename": "BaseCharacterFeatures",
+            "PatchType": 2
+        },
+        {
+            "Guid": "395a77ff6fd344f5b8b4a0cc0def06dc",
+            "Filename": "UnsanctionedPsyker",
+            "PatchType": 2
+        },
+        {
+            "Guid": "1518d1434ed646039215da3fdda6b096",
+            "Filename": "SanctionedPsyker_Occupation",
+            "PatchType": 2
+        },
+        {
+            "Guid": "9eeb3cc7064e407ba025c8adf2b4d5e9",
+            "Filename": "CorruptionSoulMark_3",
+            "PatchType": 2
+        },
+        {
+            "Guid": "9a84763298324cb1a7d276c4a5c05f56",
+            "Filename": "FaithSoulMark_3",
+            "PatchType": 2
+        },
+        {
+            "Guid": "952635f937a44c4f8f472cb9ab719d8c",
+            "Filename": "HopeSoulMark_3",
+            "PatchType": 2
+        }
+    ]
+}

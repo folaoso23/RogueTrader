@@ -1,0 +1,512 @@
+{
+  "strings": {
+    "b4becc20-c44e-4731-880d-8a6c99d3283e": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "6945c804-a4b2-4c10-8c7b-80d3b44b9b85": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "525f8b17-07b0-4aa5-b421-43902a7785ee": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "b6d8e1da-d657-4575-bdcb-76fd9ab2229e": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "6b4b0344-befd-423e-a32e-984eabc3899d": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "dfa6c11f-22cf-4229-8665-a503abdceee9": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "60a1096b-c664-493c-8b4d-bf187da13966": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "91807a17-0a95-43aa-9663-c0386434b7b8": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "defc3440-6091-4e78-8a50-223910b6f0a7": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "53cb3ba8-b0f2-42d3-9459-8d53f8e728b7": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "880551a7-8e32-4712-8042-e59a072575fd": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "a3257531-4647-4e53-94fa-679efdfba988": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "dc82f88c-0ed4-4c62-84df-5acf80f611e5": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "7da15c3c-fda7-471b-9463-77ae231cc090": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "09dcf044-2364-4e38-85b9-b13a9ec86e0d": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "4ae1f478-24d9-457c-8fb6-af47ae3c8e06": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "9bb72668-d8c8-42bb-afa1-e021df97eb04": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "71c05439-7ddb-41a2-aa1b-a4cdc9301c64": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "a0c18971-0027-4704-a6e0-c710faee0a67": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "d9384d4d-a8ac-4712-a3eb-d768c6f7a88d": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "42fd4b13-65c3-4625-af4a-e3d1cd79d4fb": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "b79cd6bf-6465-485f-aac8-df12a896f917": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "48506f13-200f-4015-8849-25b139a43895": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "6ea6e983-a4f9-4fdf-8937-96b29c2c6ffd": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "58c838f5-fd8e-48cc-a534-69db545a2de2": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "8df31c46-d610-4f0b-952b-967ebb911687": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "f62332a0-e067-4c30-a238-04e6c8921c58": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "7aa57d6b-8d67-4e62-9f05-58238fb6ca8e": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "43ce172b-04ec-4fe5-add1-ca52a081d435": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "95b0221a-2e70-41af-b29c-ea27958afc79": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "a72b1998-997c-4363-a7b9-1dd1ad92056a": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "ee4b3be2-c8bb-46de-8906-7787fe6bc0bb": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "e706b8ea-c0f2-40ae-b958-cbe21ea61b27": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "0dd53bf3-221d-48b0-aa13-3d2e24ae3375": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "0e41b343-3672-4c8a-9277-9e1c751ebabe": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "1d4ca421-e219-4582-ba53-f1d91f4ce9f3": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "0da29856-88a6-4008-915e-b7216ff8ef7a": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "5e796de7-5ea1-449d-a332-587ad0e3c6b7": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "3cc2b92b-ae73-45bd-a0ff-a31394a2241d": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "4d4103b9-d051-4e35-b0d8-0b16836abaca": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "69aed4a3-9169-4d6a-afa4-b4cf2f54a9e2": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "a74524a7-14b3-4a7d-872f-0690baeb045b": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "e8ba3858-ba08-4a2c-bfee-9fe0eae9adda": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "f373e34a-c555-4219-83c0-08fcc11a01b7": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "69370109-3fc4-4f5d-a332-e237af25810c": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "3bd7b119-0f97-4203-bbae-d8340d97b701": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "e4cc8de8-e334-4556-b333-038b1b824c6a": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "fedc110d-9822-4348-8928-f1a9d6081652": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "fa23a663-c00f-4592-ae6f-24ba871e9cee": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "757fdeac-d6e5-43a1-a7cf-fcb25eb8328e": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "909572bc-4a4c-4a3d-b59a-a8c4dd94ecb0": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "cce792a3-d9cd-487d-8baf-e47cc2773838": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "e93db3a4-6483-45c7-81e3-afa1b50b0fae": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "48c9152f-c900-4c36-abcf-e77da48c03f0": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "fdd07cf0-d0a8-4f7a-a2fa-a5d740fb1e9b": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "22d35862-df83-440b-bb39-2df716e37631": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "024910f9-6918-40cd-8a1e-0577dfea27f8": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "6c1b78d1-c307-4fbd-bd3f-78db3b8847d1": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "c0b81bbe-f9f8-495f-9337-21826b99723b": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "17041694-3b4f-425b-bb75-9e5375243687": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "2ed4fd2f-2317-4987-9240-11110558503b": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "2e0b9ba1-2221-45f2-8bee-2a351456b1d4": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "03d27266-f7a1-4445-9233-0e2dae9ac499": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "b88ada5e-3746-4b35-b67b-ab3261c703ea": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "0dc64811-78c9-4564-8b97-0374ab94d084": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "9c40d093-fb8e-491e-8408-4a10cf6dac67": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "79b0c8d1-a201-4800-8c5a-2a32791b6a4c": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "415af6a7-cb1e-46d5-b6a6-dbb71517cc21": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "b85caebb-90e4-48d6-8a16-51e23a9ef72f": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "6956e318-d6a0-40b2-8af9-8f3f9edb3a5b": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "9b312f31-fedf-496e-ac4d-d3bc0f6fad68": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "f52ad423-97b1-4c73-acc4-58d041376e75": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "4f4af6d6-67a1-4bc4-bcab-22b15bfcfefb": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "234d5c8b-58e5-489b-8229-8bba4d26c34f": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "6349dc57-acf7-4daf-b86d-bcdf649d55f2": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "748f3a13-8158-4e0e-8159-38f133e803da": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "f02837a3-038b-4a19-990a-87bdac6a9f8b": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "67b863ad-0c6f-4108-bec1-6889b64c38d4": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "cb13f42b-5c72-4724-bec6-46d45eb29ab0": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "8fff6983-e0fd-4e31-9961-0809c25d6b1a": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "9cfed787-6ded-4667-a765-2b97f334d79f": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "8d5f933b-f09d-4f7b-8bf8-8dd4dfcbcbf2": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "eb5e559f-0538-4a34-92a6-b2965b4fcbba": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "40febaea-3b35-4110-a061-55e02add7bcd": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "765342ad-5cd8-424d-950c-8784c873a3e0": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "f13e4b44-d3f0-44c2-8555-b42704f3aaac": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "267408ec-a76e-4a91-a1c0-d9e7b138afb5": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "bdf3815a-0c1b-4c03-be21-81a0a9c72015": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "15d81b8e-2e4e-4915-8add-ea666f49d7f4": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "6a94447f-4dcb-48e6-9aeb-ea79b59b5f55": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "71bb56e6-2bba-4a65-9511-16c0207633a6": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "008179bc-a792-407b-9d5a-870111575227": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "8e739fab-48c1-49a0-9772-ceba8ab75678": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "d486b334-794b-48d0-8472-5ec82c18be69": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "62d59785-4696-4fa3-9c59-59a08e57534f": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "9eed5db6-78e5-4a28-aaab-58adb267986d": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "dba67037-3e11-4792-ab20-149b535e57eb": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "945c0d01-c7a9-4bd3-a39f-04efcdaf9fff": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "e471387a-fbe9-4ab0-b5bf-ea97d286236c": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "e5ca396b-7bff-4e03-8b4c-111b86ef70d7": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "45c769c9-8e59-42a6-9bb9-68e3f916510d": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "a7dce97c-520c-4e3e-aecf-89a4b7d8705c": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "48efaa7b-65d1-4e80-864a-52aa1bf59f8f": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "d4ec8ab5-3bf4-43e1-a5b4-9a98cd13d832": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "835ed8d0-09d0-4fb9-b38b-237f7c674821": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "4b07b25d-ca0a-43f6-9176-a7eba80baa81": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "0370e46e-3c15-443a-88c6-e0528eb5577f": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "9350caeb-8ac7-4e1f-88e2-0e97dbda15db": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "c0ade2ef-c289-4a8c-aa31-c844673bfe9c": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "c2dabd89-4e2c-4999-ab21-dfcefebe854f": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "3eb469a8-2baf-4258-bb97-7836e6bf8750": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "e5697907-6f43-4fbe-87ea-8707cc41070c": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "4a1c5aa8-627b-4c91-bc13-f17420fb7f80": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "959119d8-1a8d-411c-91c6-cce67dd95ba8": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "b0358928-cf44-4e56-a7ce-572b4701cd45": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "77ca11c0-8aa1-48f4-857a-96a52cb9359d": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "9f83cf14-8215-4162-92c8-d65eddf9ad23": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "d1c49b98-700e-41bb-a93f-804c6563109e": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "5249ff3d-a0cf-415e-995f-58fdac12a253": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "4b653e15-2229-4178-81bb-63cd7ad782b1": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "e6e59aeb-4ec0-41af-b34a-daac3430f467": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "b055e1bc-3389-45b0-ad48-c189cdd14761": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "53e8eac7-bd27-4b10-8b06-fd389e46cc6f": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "ad95998c-d9ba-4832-9745-5059784bac51": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "cc3d429c-1634-4787-a5b8-787fe0397160": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "8e0ebd48-a162-488e-87c9-33398e54ddf9": {
+      "Offset": 0,
+      "Text": ""
+    },
+    "4b0746f6-6a68-4677-99bc-f842b5f7041f": {
+      "Offset": 0,
+      "Text": ""
+    }
+  }
+}

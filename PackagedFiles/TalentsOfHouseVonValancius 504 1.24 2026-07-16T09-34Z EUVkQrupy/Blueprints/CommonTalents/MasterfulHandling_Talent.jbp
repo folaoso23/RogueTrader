@@ -1,0 +1,154 @@
+{
+  "AssetId": "67cdb93be33e41bb8e6249a99a574d15",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "95e248f24866439681c312b1bff0693c, UIPropertiesComponent",
+        "name": "$UIPropertiesComponent$be8eb30c-2a1f-4341-b452-651aaa202c18",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Properties": [
+          {
+            "NameType": "Damage",
+            "m_Name": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": null
+            },
+            "Description": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": null
+            },
+            "m_DescriptionFact": null,
+            "m_LinkProperty": false,
+            "m_PropertyName": "Value1",
+            "m_PropertySource": null,
+            "m_LinkKey": "",
+            "Main": false
+          }
+        ]
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "a0c18971-0027-4704-a6e0-c710faee0a67",
+      "m_OwnerString": "67cdb93be33e41bb8e6249a99a574d15",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\CommonTalents\\MasterfulHandling_Talent_m_DisplayName_1.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "d9384d4d-a8ac-4712-a3eb-d768c6f7a88d",
+      "m_OwnerString": "67cdb93be33e41bb8e6249a99a574d15",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\CommonTalents\\MasterfulHandling_Talent_m_Description_1.json",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": [
+        {
+          "$type": "3ebda9716ea24139a3a4d3f7c49dc90d, PrerequisiteComposite",
+          "name": "$PrerequisiteComposite$732833e908c7488cb116113efc5ae5a1",
+          "Not": false,
+          "Prerequisites": {
+            "Composition": "Or",
+            "List": [
+              {
+                "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+                "name": "$PrerequisiteFact$39b53097742c462184faa99b47f9c139",
+                "Not": false,
+                "m_Fact": "!bp_6506de12c9c14e7e82d3e6eb27466757",
+                "MinRank": 0
+              },
+              {
+                "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+                "name": "$PrerequisiteFact$82f14fc0706742e382e66cb138d7d629",
+                "Not": false,
+                "m_Fact": "!bp_97c5ed689bab49b4add7d92d9155119c",
+                "MinRank": 0
+              }
+            ]
+          }
+        },
+        {
+          "$type": "3ebda9716ea24139a3a4d3f7c49dc90d, PrerequisiteComposite",
+          "name": "$PrerequisiteComposite$442a9f34-5614-4859-9f60-041348edcfe1",
+          "Not": false,
+          "Prerequisites": {
+            "Composition": "Or",
+            "List": [
+              {
+                "$type": "3acf9db791c042a4b9588426022193a8, PrerequisiteStat",
+                "name": "$PrerequisiteStat$2596f3a8-56a6-422d-8465-5d412cd9ccb9",
+                "Not": false,
+                "Stat": "WarhammerStrength",
+                "MinValue": 60
+              },
+              {
+                "$type": "3ebda9716ea24139a3a4d3f7c49dc90d, PrerequisiteComposite",
+                "name": "$PrerequisiteComposite$13300a15-edac-4f06-bc3a-e4d88228486d",
+                "Not": false,
+                "Prerequisites": {
+                  "Composition": "And",
+                  "List": [
+                    {
+                      "$type": "3acf9db791c042a4b9588426022193a8, PrerequisiteStat",
+                      "name": "$PrerequisiteStat$bfdb56ad-4b9d-4673-a9a3-362881aabc73",
+                      "Not": false,
+                      "Stat": "WarhammerStrength",
+                      "MinValue": 45
+                    },
+                    {
+                      "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+                      "name": "$PrerequisiteFact$d82f23d9-62bc-443c-808d-83c282649bf8",
+                      "Not": false,
+                      "m_Fact": "!bp_26376b596c474d67849613617ced7b04",
+                      "MinRank": 0
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "FeatureTypes": [],
+    "TalentIconInfo": {
+      "AllGroups": "EquipmentUsage",
+      "MainGroup": "EquipmentUsage"
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

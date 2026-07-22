@@ -1,0 +1,90 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$AddFeaturesToLevelUp$3b21705e-fee7-443c-8ba7-10e83084e4ea",
+      "ElementPatch": {
+        "m_Features": [
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_64181a30db4348979eeac6039fe59383",
+            "InsertAfterTarget": "!bp_f92bf6d353374502953387488d2ba3e2"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_8d7ac6e51b9a446bbed965da9e74e6e1",
+            "InsertAfterTarget": "!bp_64181a30db4348979eeac6039fe59383"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_79b128d9f8364e56899de64be4fc3d54",
+            "InsertAfterTarget": "!bp_8d7ac6e51b9a446bbed965da9e74e6e1"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_737844fc39c345fcb912b325158ef31f",
+            "InsertAfterTarget": "!bp_79b128d9f8364e56899de64be4fc3d54"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_1ab77d396507484e9009d2fc5e15b344",
+            "InsertAfterTarget": "!bp_737844fc39c345fcb912b325158ef31f"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_d56d5ab1da0e474eb18ae842611c7549",
+            "InsertAfterTarget": "!bp_1ab77d396507484e9009d2fc5e15b344"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_ae071bb5e39d4dcabf786f5a8134ac1e",
+            "InsertAfterTarget": "!bp_d56d5ab1da0e474eb18ae842611c7549"
+          }
+        ]
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$AddFeaturesToLevelUp$129b1b16-fc4f-4fe8-9230-6dc85340912e",
+      "ElementPatch": {
+        "m_Features": [
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_64181a30db4348979eeac6039fe59383",
+            "InsertAfterTarget": "!bp_f92bf6d353374502953387488d2ba3e2"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_8d7ac6e51b9a446bbed965da9e74e6e1",
+            "InsertAfterTarget": "!bp_64181a30db4348979eeac6039fe59383"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_79b128d9f8364e56899de64be4fc3d54",
+            "InsertAfterTarget": "!bp_8d7ac6e51b9a446bbed965da9e74e6e1"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_737844fc39c345fcb912b325158ef31f",
+            "InsertAfterTarget": "!bp_79b128d9f8364e56899de64be4fc3d54"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_1ab77d396507484e9009d2fc5e15b344",
+            "InsertAfterTarget": "!bp_737844fc39c345fcb912b325158ef31f"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_d56d5ab1da0e474eb18ae842611c7549",
+            "InsertAfterTarget": "!bp_1ab77d396507484e9009d2fc5e15b344"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_ae071bb5e39d4dcabf786f5a8134ac1e",
+            "InsertAfterTarget": "!bp_d56d5ab1da0e474eb18ae842611c7549"
+          }
+        ]
+      }
+    }
+  ]
+}

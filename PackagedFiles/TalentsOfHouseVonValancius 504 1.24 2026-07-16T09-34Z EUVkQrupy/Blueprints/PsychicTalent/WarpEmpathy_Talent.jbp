@@ -1,0 +1,155 @@
+{
+  "AssetId": "ae071bb5e39d4dcabf786f5a8134ac1e",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "547decea8a90414eb6dedb6ac9053ec9, ReplaceBaseStatValue",
+        "name": "$ReplaceBaseStatValue$22418ad4-0d18-4167-be56-f2e282cca439",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_RestrictionCalculator": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "m_OriginalStat": "SkillCoercion",
+        "m_NewAttribute": "WarhammerWillpower",
+        "m_OnlyIfHigher": true,
+        "m_PreviousAttributeToCompare": "WarhammerFellowship"
+      },
+      {
+        "$type": "547decea8a90414eb6dedb6ac9053ec9, ReplaceBaseStatValue",
+        "name": "$ReplaceBaseStatValue$73a867dc-fcfa-4f45-8d32-6e23ce689526",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_RestrictionCalculator": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "m_OriginalStat": "SkillPersuasion",
+        "m_NewAttribute": "WarhammerWillpower",
+        "m_OnlyIfHigher": true,
+        "m_PreviousAttributeToCompare": "WarhammerFellowship"
+      },
+      {
+        "$type": "547decea8a90414eb6dedb6ac9053ec9, ReplaceBaseStatValue",
+        "name": "$ReplaceBaseStatValue$794ee674-f83e-4276-9927-2ff25463adf9",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_RestrictionCalculator": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "m_OriginalStat": "SkillCommerce",
+        "m_NewAttribute": "WarhammerWillpower",
+        "m_OnlyIfHigher": true,
+        "m_PreviousAttributeToCompare": "WarhammerFellowship"
+      },
+      {
+        "$type": "547decea8a90414eb6dedb6ac9053ec9, ReplaceBaseStatValue",
+        "name": "$ReplaceBaseStatValue$a7c99bcf-c5e9-484e-8bd4-1b016b2dd463",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_RestrictionCalculator": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "m_OriginalStat": "SkillLogic",
+        "m_NewAttribute": "WarhammerWillpower",
+        "m_OnlyIfHigher": true,
+        "m_PreviousAttributeToCompare": "WarhammerIntelligence"
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "e93db3a4-6483-45c7-81e3-afa1b50b0fae",
+      "m_OwnerString": "ae071bb5e39d4dcabf786f5a8134ac1e",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\PsychicTalent\\WarpEmpathy_Talent_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "48c9152f-c900-4c36-abcf-e77da48c03f0",
+      "m_OwnerString": "ae071bb5e39d4dcabf786f5a8134ac1e",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\PsychicTalent\\WarpEmpathy_Talent_m_Description.json",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": [
+        {
+          "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+          "name": "$PrerequisiteFact$b56b5b1a55b9458c8276c5243e9080c1",
+          "Not": false,
+          "m_Fact": "!bp_222a60a6bf4c442289378b037c186fde",
+          "MinRank": 0
+        }
+      ]
+    },
+    "FeatureTypes": [
+      "Warp"
+    ],
+    "TalentIconInfo": {
+      "AllGroups": "SkillCheck, Psy",
+      "MainGroup": "Psy"
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

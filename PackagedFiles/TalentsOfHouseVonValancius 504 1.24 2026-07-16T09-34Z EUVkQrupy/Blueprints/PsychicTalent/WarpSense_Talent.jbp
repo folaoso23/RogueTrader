@@ -1,0 +1,105 @@
+{
+  "AssetId": "8d7ac6e51b9a446bbed965da9e74e6e1",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "547decea8a90414eb6dedb6ac9053ec9, ReplaceBaseStatValue",
+        "name": "$ReplaceBaseStatValue$22418ad4-0d18-4167-be56-f2e282cca439",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_RestrictionCalculator": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "m_OriginalStat": "SkillAwareness",
+        "m_NewAttribute": "WarhammerWillpower",
+        "m_OnlyIfHigher": true,
+        "m_PreviousAttributeToCompare": "WarhammerPerception"
+      },
+      {
+        "$type": "a4fd87c241554f3f8e5e1a10af29b5e2, InitiativeBonus",
+        "name": "$InitiativeBonus$ed29c16f-eb69-453d-951a-c84f6c008ab1",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Value": {
+          "ValueType": "CasterProperty",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "WillpowerBonus",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        }
+      }
+    ],
+    "Author": "EugeneIvanov",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "024910f9-6918-40cd-8a1e-0577dfea27f8",
+      "m_OwnerString": "8d7ac6e51b9a446bbed965da9e74e6e1",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\PsychicTalent\\WarpSense_Talent_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "6c1b78d1-c307-4fbd-bd3f-78db3b8847d1",
+      "m_OwnerString": "8d7ac6e51b9a446bbed965da9e74e6e1",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\PsychicTalent\\WarpSense_Talent_m_Description.json",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": [
+        {
+          "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+          "name": "$PrerequisiteFact$989243249bde43e4b47a750b9ac0341d",
+          "Not": false,
+          "m_Fact": "!bp_3d0bf78f300a4c618d0f8f2f8f38d429",
+          "MinRank": 0
+        }
+      ]
+    },
+    "FeatureTypes": [
+      "Warp"
+    ],
+    "TalentIconInfo": {
+      "AllGroups": "SkillCheck, Buff, Psy",
+      "MainGroup": "Psy"
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "AssetId": "ddfeb0d345624c9f94779530e1d8afac",
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "4d4103b9-d051-4e35-b0d8-0b16836abaca",
+      "m_OwnerString": "ddfeb0d345624c9f94779530e1d8afac",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\PsychicTalent\\PsychicEcho_CastBuff_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "69aed4a3-9169-4d6a-afa4-b4cf2f54a9e2",
+      "m_OwnerString": "ddfeb0d345624c9f94779530e1d8afac",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\PsychicTalent\\PsychicEcho_CastBuff_m_Description.json",
+      "Shared": null
+    },
+    "m_Icon": {
+      "guid": "ef7756521f6469e4f8c99b31ab656e87",
+      "fileid": 21300000
+    },
+    "m_AllowNonContextActions": false,
+    "m_Flags": 0,
+    "m_SoundTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "m_MuffledTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "Stacking": "Replace",
+    "ProlongWhenRankAdded": false,
+    "PriorityProperty": "Value1",
+    "Initiative": "ByCaster",
+    "Ranks": 5,
+    "FxOnStart": {
+      "AssetId": ""
+    },
+    "FxOnRemove": {
+      "AssetId": ""
+    },
+    "m_FXSettings": null,
+    "ResourceAssetIds": [],
+    "PlayOnlyFirstHitSound": false,
+    "m_priorityInUI": 0,
+    "m_AbilityGroups": [],
+    "m_Cyclical": false,
+    "NeedCollapseStack": false,
+    "IsImportantBuff": true
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

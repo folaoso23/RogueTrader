@@ -1,0 +1,81 @@
+{
+  "AssetId": "737844fc39c345fcb912b325158ef31f",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "d79ad4ed064aa4f43ace0e9c238fb9b9, AddFacts",
+        "name": "$AddFacts$9f397a55-1be9-4ff6-85c8-ec64c971819c",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_9ff4b2c9883d41b2aa608a33d67567b8"
+        ],
+        "Dummy": null,
+        "DoNotRestoreMissingFacts": false,
+        "HasDifficultyRequirements": false,
+        "InvertDifficultyRequirements": false,
+        "MinDifficulty": "Story"
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "909572bc-4a4c-4a3d-b59a-a8c4dd94ecb0",
+      "m_OwnerString": "737844fc39c345fcb912b325158ef31f",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\PsychicTalent\\SoulFurnace_Talent_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "cce792a3-d9cd-487d-8baf-e47cc2773838",
+      "m_OwnerString": "737844fc39c345fcb912b325158ef31f",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\PsychicTalent\\SoulFurnace_Talent_m_Description.json",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": [
+        {
+          "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+          "name": "$PrerequisiteFact$989243249bde43e4b47a750b9ac0341d",
+          "Not": false,
+          "m_Fact": "!bp_d6a82ff97f524294b8323ce50c100a48",
+          "MinRank": 0
+        }
+      ]
+    },
+    "FeatureTypes": [
+      "Warp"
+    ],
+    "TalentIconInfo": {
+      "AllGroups": "Buff, Psy",
+      "MainGroup": "Psy"
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

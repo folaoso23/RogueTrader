@@ -1,0 +1,216 @@
+{
+  "AssetId": "f58d796b751e419eb37728151c2523b6",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "fbdf123fc48f4c8c9070075459002f01, TwoWeaponFightingNoPenalties",
+        "name": "$TwoWeaponFightingNoPenalties$b247f5f2-bcf1-4f12-bc87-811f0079e9b0",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_KeepAttackPenalty": true,
+        "m_Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        }
+      },
+      {
+        "$type": "67bd9d5235e74484bb1d673b885ab430, WarhammerWeaponHitTriggerInitiator",
+        "name": "$WarhammerWeaponHitTriggerInitiator$54d32a3d-2c37-411e-b526-678c3f3ea4e0",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "BoolAnd",
+            "TargetType": "ContextCaster",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "5237528c9da345589cf37a160a7d527a, CheckAbilityWeaponIsInPrimarySlot",
+                "name": "$CheckAbilityWeaponIsInPrimarySlot$7c1437f5-2998-49c1-8882-15ceb6fd84e1",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_IsSecondarySlot": false
+              },
+              {
+                "$type": "1fba00d37a144f4ba28c3b38e2a72339, UnitUniversalCooldownGetter",
+                "name": "$UnitUniversalCooldownGetter$908962e4e59d435abb7c37eb7e6d63c2",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Identifier": "CritHit"
+              }
+            ]
+          }
+        },
+        "ActionOnSelfHit": {
+          "Actions": []
+        },
+        "ActionOnSelfMiss": {
+          "Actions": []
+        },
+        "ActionsOnTargetHit": {
+          "Actions": [
+            {
+              "$type": "c635b9ab19e16be419c637e0474dc6a9, ContextActionAttackWithFirstWeaponAbility",
+              "name": "$ContextActionAttackWithFirstWeaponAbility$888d5930-21ef-4f77-acc2-9ce498946163",
+              "TargetIsPriorityTarget": false,
+              "m_PriorityTargetBuff": null,
+              "useSecondWeapon": true,
+              "OwnerIsAttacker": true,
+              "SaveMPAfterUsingWeaponAbility": false,
+              "ContextCasterIsTarget": false
+            },
+            {
+              "$type": "223357ca3ef34b9fb5550082da299024, StartUnitUniversalCooldown",
+              "name": "$StartUnitUniversalCooldown$03ede3b35b124766988b78f8baf4f3fd",
+              "Identifier": "CritHit",
+              "ChargesPerRound": 2,
+              "CooldownInRounds": 1,
+              "UntilEndOfCombat": false
+            }
+          ]
+        },
+        "ActionsOnTargetMiss": {
+          "Actions": [
+            {
+              "$type": "c635b9ab19e16be419c637e0474dc6a9, ContextActionAttackWithFirstWeaponAbility",
+              "name": "$ContextActionAttackWithFirstWeaponAbility$0a00245a-c51d-4613-b04c-54abe83d84d9",
+              "TargetIsPriorityTarget": false,
+              "m_PriorityTargetBuff": null,
+              "useSecondWeapon": true,
+              "OwnerIsAttacker": true,
+              "SaveMPAfterUsingWeaponAbility": false,
+              "ContextCasterIsTarget": false
+            },
+            {
+              "$type": "223357ca3ef34b9fb5550082da299024, StartUnitUniversalCooldown",
+              "name": "$StartUnitUniversalCooldown$d63c73ef4b3c42d8bad7fd2fc6d3563d",
+              "Identifier": "CritHit",
+              "ChargesPerRound": 2,
+              "CooldownInRounds": 1,
+              "UntilEndOfCombat": false
+            }
+          ]
+        },
+        "OnlyRighteousFury": true,
+        "OnlyMelee": false
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "42fd4b13-65c3-4625-af4a-e3d1cd79d4fb",
+      "m_OwnerString": "f58d796b751e419eb37728151c2523b6",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\CommonTalents\\PerfectCoordination_Talent_m_DisplayName_1.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "b79cd6bf-6465-485f-aac8-df12a896f917",
+      "m_OwnerString": "f58d796b751e419eb37728151c2523b6",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\CommonTalents\\PerfectCoordination_Talent_m_Description_1.json",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": [
+        {
+          "$type": "3acf9db791c042a4b9588426022193a8, PrerequisiteStat",
+          "name": "$PrerequisiteStat$78814148285b401ea2495ebeb5acf5df",
+          "Not": false,
+          "Stat": "WarhammerAgility",
+          "MinValue": 65
+        },
+        {
+          "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+          "name": "$PrerequisiteFact$6a02424e69974437851864f17e07d29b",
+          "Not": false,
+          "m_Fact": "!bp_1b26e486d9974b9ca26d055413fb3e01",
+          "MinRank": 0
+        },
+        {
+          "$type": "3ebda9716ea24139a3a4d3f7c49dc90d, PrerequisiteComposite",
+          "name": "$PrerequisiteComposite$c9c33058a9c6428eb01b01953bcf1c20",
+          "Not": false,
+          "Prerequisites": {
+            "Composition": "Or",
+            "List": [
+              {
+                "$type": "3acf9db791c042a4b9588426022193a8, PrerequisiteStat",
+                "name": "$PrerequisiteStat$88f3bfde6d66402fa81e75de521604c6",
+                "Not": false,
+                "Stat": "WarhammerWeaponSkill",
+                "MinValue": 60
+              },
+              {
+                "$type": "3acf9db791c042a4b9588426022193a8, PrerequisiteStat",
+                "name": "$PrerequisiteStat$b030e173587c4b4c9aea7a406b440339",
+                "Not": false,
+                "Stat": "WarhammerBallisticSkill",
+                "MinValue": 60
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "FeatureTypes": [
+      "Offense"
+    ],
+    "TalentIconInfo": {
+      "AllGroups": "EquipmentUsage, Damage, AP",
+      "MainGroup": "EquipmentUsage"
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

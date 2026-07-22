@@ -1,0 +1,140 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$AddFeaturesToLevelUp$c6e8f498-aa0d-41c4-a1cf-1930b95167ec",
+      "ElementPatch": {
+        "m_Features": [
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_4da7affeff914ba4a1c393896f12daec",
+            "InsertAfterTarget": "!bp_d2744ed45d3e43abb909a9f741a6818a"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_f58d796b751e419eb37728151c2523b6",
+            "InsertAfterTarget": "!bp_4da7affeff914ba4a1c393896f12daec"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_94d9b788539f498b9004eb6615b77077",
+            "InsertAfterTarget": "!bp_f58d796b751e419eb37728151c2523b6"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_a57961a4d85a4230a01c392bca554381",
+            "InsertAfterTarget": "!bp_94d9b788539f498b9004eb6615b77077"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_e190fb38468c47458c154126232a8a23",
+            "InsertAfterTarget": "!bp_a57961a4d85a4230a01c392bca554381"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_6ee08a09d5c243eabdde5d979ab17b5c",
+            "InsertAfterTarget": "!bp_e190fb38468c47458c154126232a8a23"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_4925c70abc664c3299b505e0edd29c93",
+            "InsertAfterTarget": "!bp_6ee08a09d5c243eabdde5d979ab17b5c"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_c1c8f3cf36e14af1976f31b20c212e96",
+            "InsertAfterTarget": "!bp_4925c70abc664c3299b505e0edd29c93"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_269027ef6855430b814e2773816121d0",
+            "InsertAfterTarget": "!bp_c1c8f3cf36e14af1976f31b20c212e96"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_6506de12c9c14e7e82d3e6eb27466757",
+            "InsertAfterTarget": "!bp_269027ef6855430b814e2773816121d0"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_97c5ed689bab49b4add7d92d9155119c",
+            "InsertAfterTarget": "!bp_6506de12c9c14e7e82d3e6eb27466757"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_67cdb93be33e41bb8e6249a99a574d15",
+            "InsertAfterTarget": "!bp_97c5ed689bab49b4add7d92d9155119c"
+          }
+        ]
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$AddFeaturesToLevelUp$b2f83b1b-b028-4c2a-a99c-c46f1d80f831",
+      "ElementPatch": {
+        "m_Features": [
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_4da7affeff914ba4a1c393896f12daec",
+            "InsertAfterTarget": "!bp_d2744ed45d3e43abb909a9f741a6818a"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_f58d796b751e419eb37728151c2523b6",
+            "InsertAfterTarget": "!bp_4da7affeff914ba4a1c393896f12daec"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_94d9b788539f498b9004eb6615b77077",
+            "InsertAfterTarget": "!bp_f58d796b751e419eb37728151c2523b6"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_a57961a4d85a4230a01c392bca554381",
+            "InsertAfterTarget": "!bp_94d9b788539f498b9004eb6615b77077"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_e190fb38468c47458c154126232a8a23",
+            "InsertAfterTarget": "!bp_a57961a4d85a4230a01c392bca554381"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_6ee08a09d5c243eabdde5d979ab17b5c",
+            "InsertAfterTarget": "!bp_e190fb38468c47458c154126232a8a23"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_4925c70abc664c3299b505e0edd29c93",
+            "InsertAfterTarget": "!bp_6ee08a09d5c243eabdde5d979ab17b5c"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_c1c8f3cf36e14af1976f31b20c212e96",
+            "InsertAfterTarget": "!bp_4925c70abc664c3299b505e0edd29c93"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_269027ef6855430b814e2773816121d0",
+            "InsertAfterTarget": "!bp_c1c8f3cf36e14af1976f31b20c212e96"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_6506de12c9c14e7e82d3e6eb27466757",
+            "InsertAfterTarget": "!bp_269027ef6855430b814e2773816121d0"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_97c5ed689bab49b4add7d92d9155119c",
+            "InsertAfterTarget": "!bp_6506de12c9c14e7e82d3e6eb27466757"
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": "!bp_67cdb93be33e41bb8e6249a99a574d15",
+            "InsertAfterTarget": "!bp_97c5ed689bab49b4add7d92d9155119c"
+          }
+        ]
+      }
+    }
+  ]
+}

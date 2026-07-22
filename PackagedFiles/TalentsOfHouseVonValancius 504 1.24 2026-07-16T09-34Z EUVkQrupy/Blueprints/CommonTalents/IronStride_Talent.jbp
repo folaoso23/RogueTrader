@@ -1,0 +1,100 @@
+{
+  "AssetId": "4da7affeff914ba4a1c393896f12daec",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [],
+    "Author": "EugeneIvanov",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "9bb72668-d8c8-42bb-afa1-e021df97eb04",
+      "m_OwnerString": "4da7affeff914ba4a1c393896f12daec",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\CommonTalents\\IronStride_Talent_m_DisplayName_1.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "71c05439-7ddb-41a2-aa1b-a4cdc9301c64",
+      "m_OwnerString": "4da7affeff914ba4a1c393896f12daec",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\CommonTalents\\IronStride_Talent_m_Description_1.json",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": [
+        {
+          "$type": "3acf9db791c042a4b9588426022193a8, PrerequisiteStat",
+          "name": "$PrerequisiteStat$Strength",
+          "Not": false,
+          "Stat": "WarhammerStrength",
+          "MinValue": 60
+        },
+        {
+          "$type": "3acf9db791c042a4b9588426022193a8, PrerequisiteStat",
+          "name": "$PrerequisiteStat$Agility",
+          "Not": false,
+          "Stat": "WarhammerAgility",
+          "MinValue": 50
+        },
+        {
+          "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+          "name": "$PrerequisiteFact$80164b3f5cd94d6fa0fd56d567cef482",
+          "Not": false,
+          "m_Fact": "!bp_684c766dc9c24fcf856dc1d6f01d9290",
+          "MinRank": 0
+        },
+        {
+          "$type": "3ebda9716ea24139a3a4d3f7c49dc90d, PrerequisiteComposite",
+          "name": "$PrerequisiteComposite$85028c362b144e35a6ccc61e7dbead53",
+          "Not": false,
+          "Prerequisites": {
+            "Composition": "Or",
+            "List": [
+              {
+                "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+                "name": "$PrerequisiteFact$762bb715ca7447f0b20a826f42963f08",
+                "Not": false,
+                "m_Fact": "!bp_cffa0455647e48cb8163c9071c1cb430",
+                "MinRank": 0
+              },
+              {
+                "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+                "name": "$PrerequisiteFact$153fa23e01f5432ab740a0f77646cbab",
+                "Not": false,
+                "m_Fact": "!bp_67b3e8fed7c84b49a144efc2b1260e52",
+                "MinRank": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "FeatureTypes": [
+      "Defense"
+    ],
+    "TalentIconInfo": {
+      "AllGroups": "Dodge, Armour",
+      "MainGroup": "Armour"
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "AssetId": "43594b9a8448408e808f34add31bd52b",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "0cdbc172cfe945e3818c0d49fbd7d65f, TurnBasedModeEventsTrigger",
+        "name": "$TurnBasedModeEventsTrigger$2e3e98c2-2466-4add-b93e-8a8328edcf54",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "TriggerIfNotInCombat": false,
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "CombatStartActions": {
+          "Actions": [
+            {
+              "$type": "fe04f935f78d4ba4c805faf9a4be38a3, RandomAction",
+              "name": "$RandomAction$26b9853ffa7d482a8d98d3099b5a8912",
+              "Actions": [
+                {
+                  "Weight": 10,
+                  "Conditions": {
+                    "Operation": "And",
+                    "Conditions": []
+                  },
+                  "Action": {
+                    "Actions": [
+                      {
+                        "$type": "0c996f778c13abb408bdd05f7f6fe317, AttachBuff",
+                        "name": "$AttachBuff$bed0d73224344844a2e56c656f9f7a51",
+                        "m_Buff": "!bp_80a4d08a6e45400896e6ab5758db809d",
+                        "Target": {
+                          "$type": "56703b87cc0c36347937d201cc076a6d, CasterUnit",
+                          "name": "$CasterUnit$5fbcceb84bdb4866b01bc8cb8d42ad58"
+                        },
+                        "Duration": null,
+                        "UseEndCondition": true,
+                        "EndCondition": "CombatEnd",
+                        "AddFactSource": false,
+                        "SourceNameOverride": {
+                          "m_Key": "",
+                          "m_OwnerString": "",
+                          "m_OwnerPropertyPath": "",
+                          "m_JsonPath": "",
+                          "Shared": null
+                        },
+                        "UIGroupOverride": "Auto"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "Weight": 10,
+                  "Conditions": {
+                    "Operation": "And",
+                    "Conditions": []
+                  },
+                  "Action": {
+                    "Actions": [
+                      {
+                        "$type": "0c996f778c13abb408bdd05f7f6fe317, AttachBuff",
+                        "name": "$AttachBuff$05497a2e4a9542d78aae898b1d89bc98",
+                        "m_Buff": "!bp_d61eb3a717cc4d13a3ff06da6a08922b",
+                        "Target": {
+                          "$type": "56703b87cc0c36347937d201cc076a6d, CasterUnit",
+                          "name": "$CasterUnit$3757534f6c934df08889051ac23bf3cd"
+                        },
+                        "Duration": null,
+                        "UseEndCondition": true,
+                        "EndCondition": "CombatEnd",
+                        "AddFactSource": false,
+                        "SourceNameOverride": {
+                          "m_Key": "",
+                          "m_OwnerString": "",
+                          "m_OwnerPropertyPath": "",
+                          "m_JsonPath": "",
+                          "Shared": null
+                        },
+                        "UIGroupOverride": "Auto"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "Weight": 10,
+                  "Conditions": {
+                    "Operation": "And",
+                    "Conditions": []
+                  },
+                  "Action": {
+                    "Actions": [
+                      {
+                        "$type": "0c996f778c13abb408bdd05f7f6fe317, AttachBuff",
+                        "name": "$AttachBuff$af42200b7dc24d3ca5c4ea8e3c2da078",
+                        "m_Buff": "!bp_a15f749ea95d48f2b6bef1d2f5bb9d64",
+                        "Target": {
+                          "$type": "56703b87cc0c36347937d201cc076a6d, CasterUnit",
+                          "name": "$CasterUnit$9c01b20a6b8747ecb75fb11583134754"
+                        },
+                        "Duration": null,
+                        "UseEndCondition": true,
+                        "EndCondition": "CombatEnd",
+                        "AddFactSource": false,
+                        "SourceNameOverride": {
+                          "m_Key": "",
+                          "m_OwnerString": "",
+                          "m_OwnerPropertyPath": "",
+                          "m_JsonPath": "",
+                          "Shared": null
+                        },
+                        "UIGroupOverride": "Auto"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "Weight": 10,
+                  "Conditions": {
+                    "Operation": "And",
+                    "Conditions": []
+                  },
+                  "Action": {
+                    "Actions": [
+                      {
+                        "$type": "0c996f778c13abb408bdd05f7f6fe317, AttachBuff",
+                        "name": "$AttachBuff$c5c4d101355c47d4876bb9020dc40eec",
+                        "m_Buff": "!bp_202a9d0aba4e4d31b5f9f4e99bb40098",
+                        "Target": {
+                          "$type": "56703b87cc0c36347937d201cc076a6d, CasterUnit",
+                          "name": "$CasterUnit$4b03917977e842babe91a02f9144122d"
+                        },
+                        "Duration": null,
+                        "UseEndCondition": true,
+                        "EndCondition": "CombatEnd",
+                        "AddFactSource": false,
+                        "SourceNameOverride": {
+                          "m_Key": "",
+                          "m_OwnerString": "",
+                          "m_OwnerPropertyPath": "",
+                          "m_JsonPath": "",
+                          "Shared": null
+                        },
+                        "UIGroupOverride": "Auto"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "CombatEndActions": {
+          "Actions": []
+        },
+        "RoundStartActions": {
+          "Actions": []
+        },
+        "RoundEndActions": {
+          "Actions": []
+        },
+        "AnyUnitTurns": false,
+        "OnlyEnemyTurns": false,
+        "ActionsOnTheTurnOwner": false,
+        "UnitTurnStartActions": {
+          "Actions": []
+        },
+        "UnitTurnEndActions": {
+          "Actions": []
+        },
+        "UnitInterruptTurnStartActions": {
+          "Actions": []
+        },
+        "UnitInterruptTurnEndActions": {
+          "Actions": []
+        },
+        "DoNotApplyOnInterrupts": false
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "8e0ebd48-a162-488e-87c9-33398e54ddf9",
+      "m_OwnerString": "43594b9a8448408e808f34add31bd52b",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\ConvictionTalents\\Heretical\\Undivided\\UndividedFollower02a_Talent_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "4b0746f6-6a68-4677-99bc-f842b5f7041f",
+      "m_OwnerString": "43594b9a8448408e808f34add31bd52b",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\ConvictionTalents\\Heretical\\Undivided\\UndividedFollower02a_Talent_m_Description.json",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": [
+        {
+          "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+          "name": "$PrerequisiteFact$ec28717a-3ddd-406c-90d9-16f5ddd31226",
+          "Not": false,
+          "m_Fact": "!bp_cbcf86f7262b4445958da0e2541b8c64",
+          "MinRank": 0
+        },
+        {
+          "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+          "name": "$PrerequisiteFact$b3496421-6c01-49eb-8ad2-dcd00dbe2e1d",
+          "Not": false,
+          "m_Fact": "!bp_78598e83e4f64838bd6f2bc9f174d2b8",
+          "MinRank": 0
+        }
+      ]
+    },
+    "FeatureTypes": [
+      "Universal"
+    ],
+    "TalentIconInfo": {
+      "AllGroups": "Buff",
+      "MainGroup": "Buff"
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

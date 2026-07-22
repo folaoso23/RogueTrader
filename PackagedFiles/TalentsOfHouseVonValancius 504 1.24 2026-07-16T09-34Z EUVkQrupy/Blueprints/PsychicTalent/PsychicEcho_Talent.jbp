@@ -1,0 +1,203 @@
+{
+  "AssetId": "d56d5ab1da0e474eb18ae842611c7549",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "9cb8cadd214341dbbc558d4097cdf57c, AbilityRuleTriggerInitiator",
+        "name": "$AbilityRuleTriggerInitiator$889c49cd-48b1-4d23-b935-7c81c929765e",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "Action": {
+          "Actions": [
+            {
+              "$type": "52d8973f2e470e14c97b74209680491a, Conditional",
+              "name": "$Conditional$d4203de2e2d448c5a5c83d67ab460298",
+              "Comment": "",
+              "ConditionsChecker": {
+                "Operation": "And",
+                "Conditions": [
+                  {
+                    "$type": "8509fb4e9245fa04ea730c4b5c6ffa98, ContextConditionCasterBuffRank",
+                    "name": "$ContextConditionCasterBuffRank$66b6b3b85cdf453aa4e1b61ad76bce83",
+                    "Not": false,
+                    "Buff": "!bp_7a170bc629d9471abbf5a6e56adeec86",
+                    "RankValue": {
+                      "ValueType": "Simple",
+                      "Value": 4,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": null,
+                      "PropertyName": "Value1"
+                    }
+                  },
+                  {
+                    "$type": "0cbc5ea4bddfb1543be0d2e54a3eacd0, HasBuff",
+                    "name": "$HasBuff$c4f6828b-3a01-44b6-9ffe-8c0750ec28b7",
+                    "Not": true,
+                    "Target": {
+                      "$type": "56703b87cc0c36347937d201cc076a6d, CasterUnit",
+                      "name": "$CasterUnit$6258a4bd-dd0e-497e-967d-6c64548c3d2c"
+                    },
+                    "m_Buff": "!bp_ddfeb0d345624c9f94779530e1d8afac"
+                  }
+                ]
+              },
+              "IfTrue": {
+                "Actions": [
+                  {
+                    "$type": "0c996f778c13abb408bdd05f7f6fe317, AttachBuff",
+                    "name": "$AttachBuff$9069f387ac6f406584964f6b9015f6cd",
+                    "m_Buff": "!bp_ddfeb0d345624c9f94779530e1d8afac",
+                    "Target": {
+                      "$type": "56703b87cc0c36347937d201cc076a6d, CasterUnit",
+                      "name": "$CasterUnit$e0534d48895e4f0abf15b869b9a26b6d"
+                    },
+                    "Duration": null,
+                    "UseEndCondition": true,
+                    "EndCondition": "CombatEnd",
+                    "AddFactSource": false,
+                    "SourceNameOverride": {
+                      "m_Key": "",
+                      "m_OwnerString": "",
+                      "m_OwnerPropertyPath": "",
+                      "m_JsonPath": "",
+                      "Shared": null
+                    },
+                    "UIGroupOverride": "Auto"
+                  },
+                  {
+                    "$type": "eefa4c5532569b74d9ae18b954372790, DetachBuff",
+                    "name": "$DetachBuff$9bf615e7d8dd4fa98531c8c0bcfbbb4a",
+                    "m_Buff": "!bp_7a170bc629d9471abbf5a6e56adeec86",
+                    "Target": {
+                      "$type": "56703b87cc0c36347937d201cc076a6d, CasterUnit",
+                      "name": "$CasterUnit$5d2bbfa531f947cf83c826be8fc19aea"
+                    }
+                  }
+                ]
+              },
+              "IfFalse": {
+                "Actions": [
+                  {
+                    "$type": "0c996f778c13abb408bdd05f7f6fe317, AttachBuff",
+                    "name": "$AttachBuff$05debdbc-636a-424b-a4a5-819b253e6306",
+                    "m_Buff": "!bp_7a170bc629d9471abbf5a6e56adeec86",
+                    "Target": {
+                      "$type": "56703b87cc0c36347937d201cc076a6d, CasterUnit",
+                      "name": "$CasterUnit$71c64867-161c-4079-b0ae-b4127064ebe2"
+                    },
+                    "Duration": null,
+                    "UseEndCondition": true,
+                    "EndCondition": "CombatEnd",
+                    "AddFactSource": false,
+                    "SourceNameOverride": {
+                      "m_Key": "",
+                      "m_OwnerString": "",
+                      "m_OwnerPropertyPath": "",
+                      "m_JsonPath": "",
+                      "Shared": null
+                    },
+                    "UIGroupOverride": "Auto"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "ForOneAbility": false,
+        "m_Ability": null,
+        "ForMultipleAbilities": false,
+        "Abilities": [],
+        "ForAbilityGroup": true,
+        "m_AbilityGroup": "!bp_36fdf1bc96884a9e803dcbcc8e447785",
+        "m_OtherAbilityGroupList": [],
+        "ForUltimateAbilities": false,
+        "AssignOwnerAsTarget": false,
+        "AssignContextFromAbility": false
+      },
+      {
+        "$type": "4cc225b5566d5c34583ecba62d752412, RecalculateOnFactsChange",
+        "name": "$RecalculateOnFactsChange$49bed3a9-44a0-4b3e-914e-5306b5633d9b",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_CheckedFacts": [
+          "!bp_7a170bc629d9471abbf5a6e56adeec86"
+        ]
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "f373e34a-c555-4219-83c0-08fcc11a01b7",
+      "m_OwnerString": "d56d5ab1da0e474eb18ae842611c7549",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\PsychicTalent\\PsychicEcho_Talent_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "69370109-3fc4-4f5d-a332-e237af25810c",
+      "m_OwnerString": "d56d5ab1da0e474eb18ae842611c7549",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\PsychicTalent\\PsychicEcho_Talent_m_Description.json",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": [
+        {
+          "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+          "name": "$PrerequisiteFact$591c5cf971854fc78af4af2516522db5",
+          "Not": false,
+          "m_Fact": "!bp_222a60a6bf4c442289378b037c186fde",
+          "MinRank": 0
+        }
+      ]
+    },
+    "FeatureTypes": [
+      "Warp"
+    ],
+    "TalentIconInfo": {
+      "AllGroups": "Psy, Momentum",
+      "MainGroup": "Psy"
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "AssetId": "e1b7d44a784644d89922f264682700b8",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "00cc9fe0a3f84bc1811764509b4282aa, AddFeaturesToLevelUp",
+        "name": "$AddFeaturesToLevelUp$93a2ae91-3a16-4560-9195-e59d8cfcd7b8",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Group": "Talent",
+        "m_Features": [
+          "!bp_b2dff51420614bd4815964c5b7983e24",
+          "!bp_94bcc20d9d5648959e49b5e74f9551ba",
+          "!bp_6262f2af2f8848aeb87785be2bf5d8ef",
+          "!bp_0f8720e04a7343bdad0d00f0ce635021",
+          "!bp_78598e83e4f64838bd6f2bc9f174d2b8",
+          "!bp_4f1eb1feac7546b393e6039391a95ce6",
+          "!bp_e591b0337f7a49a89e6a0c89e8a82245",
+          "!bp_59f4e39adab149f5bc237298b20af53c",
+          "!bp_55c99ba93a4d48ca84b4338b9146bf44",
+          "!bp_43594b9a8448408e808f34add31bd52b"
+        ]
+      },
+      {
+        "$type": "00cc9fe0a3f84bc1811764509b4282aa, AddFeaturesToLevelUp",
+        "name": "$AddFeaturesToLevelUp$d4cd6535-a782-4c80-9363-752b0624c1b0",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Group": "CommonTalent",
+        "m_Features": [
+          "!bp_b2dff51420614bd4815964c5b7983e24",
+          "!bp_94bcc20d9d5648959e49b5e74f9551ba",
+          "!bp_6262f2af2f8848aeb87785be2bf5d8ef",
+          "!bp_0f8720e04a7343bdad0d00f0ce635021",
+          "!bp_78598e83e4f64838bd6f2bc9f174d2b8",
+          "!bp_4f1eb1feac7546b393e6039391a95ce6",
+          "!bp_e591b0337f7a49a89e6a0c89e8a82245",
+          "!bp_59f4e39adab149f5bc237298b20af53c",
+          "!bp_55c99ba93a4d48ca84b4338b9146bf44",
+          "!bp_43594b9a8448408e808f34add31bd52b"
+        ]
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "9c40d093-fb8e-491e-8408-4a10cf6dac67",
+      "m_OwnerString": "e1b7d44a784644d89922f264682700b8",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\ConvictionTalents\\Heretical\\HereticBaseLevelFeature_m_DisplayName.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": []
+    },
+    "FeatureTypes": [],
+    "TalentIconInfo": {
+      "AllGroups": 0,
+      "MainGroup": 0
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "AssetId": "add58aebc7684cd0a37fef8d17aeca89",
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "b1bd63be736e4001b4fd57a2c26cda42, TwoHandedWeaponsInOneHand",
+        "name": "$TwoHandedWeaponsInOneHand$66d1fa67-a2fc-4a9d-aa8a-2b0115e662f3",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_SlotRestriction": "None",
+        "m_SourceAnimationStyles": [
+          "AxeTwoHanded",
+          "TwoHandedHammer",
+          "BrutalTwoHanded",
+          "Staff",
+          "Fencing"
+        ],
+        "m_TargetAnimationStyle": "BrutalTwoHandedInOneHand"
+      },
+      {
+        "$type": "f08844ce14d498a45a9fc64582489a2a, AddContextStatBonus",
+        "name": "$AddContextStatBonus$91282217-f7c7-432c-bdbd-ebc47da09866",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "fff88058705e4cb492796e5aa68a1bed, ShouldGetTwoHandedPenalty",
+                "name": "$ShouldGetTwoHandedPenalty$5b8be063-4ec7-4a2c-956c-9c5d46ce8fd8",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_IsSecondarySlot": false,
+                "m_Melee": true
+              },
+              {
+                "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
+                "name": "$PropertyCalculatorGetter$e06d2ab6-0150-431d-9063-74b16c048e0e",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": true,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Value": {
+                  "Operation": "BoolOr",
+                  "TargetType": "CurrentEntity",
+                  "TargetEvaluator": null,
+                  "FailSilentlyIfNoTarget": false,
+                  "Getters": [
+                    {
+                      "$type": "d04a8b4d1fec4545b9e4d90b81ce2498, HasFactGetter",
+                      "name": "$HasFactGetter$f7b71a4b-5620-4dde-87d9-20171c950569",
+                      "Settings": {
+                        "Progression": "AsIs",
+                        "m_CustomProgression": [],
+                        "m_StartLevel": 0,
+                        "m_StepLevel": 0,
+                        "Negate": false,
+                        "Limit": "None",
+                        "Min": 0,
+                        "Max": 0
+                      },
+                      "m_Fact": "!bp_86576af20dee418a9d21e1058a9ed87f",
+                      "Target": "CurrentEntity"
+                    },
+                    {
+                      "$type": "d04a8b4d1fec4545b9e4d90b81ce2498, HasFactGetter",
+                      "name": "$HasFactGetter$097e9012-8f6c-4bc0-bef7-ceba72b3e7fa",
+                      "Settings": {
+                        "Progression": "AsIs",
+                        "m_CustomProgression": [],
+                        "m_StartLevel": 0,
+                        "m_StepLevel": 0,
+                        "Negate": false,
+                        "Limit": "None",
+                        "Min": 0,
+                        "Max": 0
+                      },
+                      "m_Fact": "!bp_35f31adc778c438793f7d0e0a74a0748",
+                      "Target": "CurrentEntity"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "Descriptor": "None",
+        "Stat": "WarhammerWeaponSkill",
+        "Multiplier": 1,
+        "Value": {
+          "ValueType": "Simple",
+          "Value": -20,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "IsPercentModifier": false,
+        "m_ActionsOnAdd": {
+          "Actions": []
+        }
+      },
+      {
+        "$type": "f08844ce14d498a45a9fc64582489a2a, AddContextStatBonus",
+        "name": "$AddContextStatBonus$6d20a72a-2075-4f6d-8313-1df7aaa2ccb2",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "fff88058705e4cb492796e5aa68a1bed, ShouldGetTwoHandedPenalty",
+                "name": "$ShouldGetTwoHandedPenalty$9b570302-9720-41ab-bb2f-9c34cdedb499",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_IsSecondarySlot": true,
+                "m_Melee": true
+              },
+              {
+                "$type": "88a988badcc84ea8847e21626bee82e5, PropertyCalculatorGetter",
+                "name": "$PropertyCalculatorGetter$f159b721-3683-4bdf-b885-fdf3c628a651",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": true,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Value": {
+                  "Operation": "BoolOr",
+                  "TargetType": "CurrentEntity",
+                  "TargetEvaluator": null,
+                  "FailSilentlyIfNoTarget": false,
+                  "Getters": [
+                    {
+                      "$type": "d04a8b4d1fec4545b9e4d90b81ce2498, HasFactGetter",
+                      "name": "$HasFactGetter$532c3c3d-8003-46aa-982f-527369741a32",
+                      "Settings": {
+                        "Progression": "AsIs",
+                        "m_CustomProgression": [],
+                        "m_StartLevel": 0,
+                        "m_StepLevel": 0,
+                        "Negate": false,
+                        "Limit": "None",
+                        "Min": 0,
+                        "Max": 0
+                      },
+                      "m_Fact": "!bp_c8ec9ba03016401eb1ecfe91688dd67e",
+                      "Target": "CurrentEntity"
+                    },
+                    {
+                      "$type": "d04a8b4d1fec4545b9e4d90b81ce2498, HasFactGetter",
+                      "name": "$HasFactGetter$26edde8d-6f77-4216-b559-c3ab6f3b77ba",
+                      "Settings": {
+                        "Progression": "AsIs",
+                        "m_CustomProgression": [],
+                        "m_StartLevel": 0,
+                        "m_StepLevel": 0,
+                        "Negate": false,
+                        "Limit": "None",
+                        "Min": 0,
+                        "Max": 0
+                      },
+                      "m_Fact": "!bp_fed3bf294e854602b77993da33dda329",
+                      "Target": "CurrentEntity"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "Descriptor": "None",
+        "Stat": "WarhammerWeaponSkill",
+        "Multiplier": 1,
+        "Value": {
+          "ValueType": "Simple",
+          "Value": -20,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "IsPercentModifier": false,
+        "m_ActionsOnAdd": {
+          "Actions": []
+        }
+      },
+      {
+        "$type": "99d65f0e88e14fd0b81ad24d47629fc8, RecalculateOnEquipmentChange",
+        "name": "$RecalculateOnEquipmentChange$a31febff-5965-4f77-b68b-676a7b9c5a45",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": []
+      },
+      {
+        "$type": "4cc225b5566d5c34583ecba62d752412, RecalculateOnFactsChange",
+        "name": "$RecalculateOnFactsChange$68f3f971-426c-4ff5-80db-2fe4a30076a6",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_CheckedFacts": [
+          "!bp_c8ec9ba03016401eb1ecfe91688dd67e",
+          "!bp_fed3bf294e854602b77993da33dda329",
+          "!bp_86576af20dee418a9d21e1058a9ed87f",
+          "!bp_35f31adc778c438793f7d0e0a74a0748"
+        ]
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "7da15c3c-fda7-471b-9463-77ae231cc090",
+      "m_OwnerString": "add58aebc7684cd0a37fef8d17aeca89",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\CommonTalents\\IronGrip_Buff_m_DisplayName_1.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Icon": {
+      "guid": "ac20de43e10ffcf49b6dd5b04ad6d02a",
+      "fileid": 21300000
+    },
+    "m_AllowNonContextActions": false,
+    "m_Flags": 0,
+    "m_SoundTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "m_MuffledTypeSwitch": {
+      "Value": "",
+      "Group": ""
+    },
+    "Stacking": "Replace",
+    "ProlongWhenRankAdded": false,
+    "PriorityProperty": "Value1",
+    "Initiative": "ByCaster",
+    "Ranks": 0,
+    "FxOnStart": {
+      "AssetId": ""
+    },
+    "FxOnRemove": {
+      "AssetId": ""
+    },
+    "m_FXSettings": null,
+    "ResourceAssetIds": [],
+    "PlayOnlyFirstHitSound": false,
+    "m_priorityInUI": 0,
+    "m_AbilityGroups": [],
+    "m_Cyclical": false,
+    "NeedCollapseStack": true,
+    "IsImportantBuff": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

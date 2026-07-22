@@ -1,0 +1,163 @@
+{
+  "AssetId": "21dec3703c9048cfab0823f5216e5732",
+  "Data": {
+    "$type": "da11db195c86e0d4dae17a2c03a4ba9a, BlueprintAbility",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
+        "name": "$AbilityEffectRunAction$6bb82f61-77c1-4498-8f11-81e4c60a2cef",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "SavingThrowType": "Unknown",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "52d8973f2e470e14c97b74209680491a, Conditional",
+              "name": "$Conditional$136e1de2f41f4f2fb51e9d3339f5359b",
+              "Comment": "",
+              "ConditionsChecker": {
+                "Operation": "And",
+                "Conditions": [
+                  {
+                    "$type": "0cbc5ea4bddfb1543be0d2e54a3eacd0, HasBuff",
+                    "name": "$HasBuff$b919b94622fa4dcbbd00bc9875dca393",
+                    "Not": false,
+                    "Target": {
+                      "$type": "56703b87cc0c36347937d201cc076a6d, CasterUnit",
+                      "name": "$CasterUnit$a6a1724b53c942b8ac91bd21bb67a695"
+                    },
+                    "m_Buff": "!bp_0902f229c28b4af79ae0d4ec34d034a9"
+                  }
+                ]
+              },
+              "IfTrue": {
+                "Actions": [
+                  {
+                    "$type": "eefa4c5532569b74d9ae18b954372790, DetachBuff",
+                    "name": "$DetachBuff$4979fdbf29af40bcac864ca97bd04edd",
+                    "m_Buff": "!bp_0902f229c28b4af79ae0d4ec34d034a9",
+                    "Target": {
+                      "$type": "56703b87cc0c36347937d201cc076a6d, CasterUnit",
+                      "name": "$CasterUnit$ec501dc2906749388430c10d4309e284"
+                    }
+                  },
+                  {
+                    "$type": "1894e39f23aa4e6c8fa9b353e302b54f, UnequipIllegalTwoHandedWeapons",
+                    "name": "$WalkingArsenalWeaponFixer$e6e9fc42130445cb928cc349db5ab1f3"
+                  }
+                ]
+              },
+              "IfFalse": {
+                "Actions": [
+                  {
+                    "$type": "0c996f778c13abb408bdd05f7f6fe317, AttachBuff",
+                    "name": "$AttachBuff$32c74e37b1d744e69d75fc213bfb88e0",
+                    "m_Buff": "!bp_0902f229c28b4af79ae0d4ec34d034a9",
+                    "Target": {
+                      "$type": "56703b87cc0c36347937d201cc076a6d, CasterUnit",
+                      "name": "$CasterUnit$5871785dde09424bb1181dc415d7bad9"
+                    },
+                    "Duration": null,
+                    "UseEndCondition": false,
+                    "EndCondition": "RemainAfterCombat",
+                    "AddFactSource": false,
+                    "SourceNameOverride": {
+                      "m_Key": "",
+                      "m_OwnerString": "",
+                      "m_OwnerPropertyPath": "",
+                      "m_JsonPath": "",
+                      "Shared": null
+                    },
+                    "UIGroupOverride": "Auto"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "43ce172b-04ec-4fe5-add1-ca52a081d435",
+      "m_OwnerString": "21dec3703c9048cfab0823f5216e5732",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\CommonTalents\\WalkingArsenal_Ability_m_DisplayName_1.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "95b0221a-2e70-41af-b29c-ea27958afc79",
+      "m_OwnerString": "21dec3703c9048cfab0823f5216e5732",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\CommonTalents\\WalkingArsenal_Ability_m_Description_1.json",
+      "Shared": null
+    },
+    "m_Icon": {
+      "guid": "3b6494da3e45908489095210e4155afa",
+      "fileid": 21300000
+    },
+    "m_AllowNonContextActions": false,
+    "Type": "Spell",
+    "Range": "Personal",
+    "CustomRange": 10,
+    "MinRange": 0,
+    "ActionPointCost": 0,
+    "AbilityParamsSource": 0,
+    "PsychicPower": "Major",
+    "VeilThicknessPointsToAdd": 3,
+    "ParamsSkill": "SkillAthletics",
+    "CooldownRounds": 0,
+    "CanTargetPoint": false,
+    "CanTargetEnemies": false,
+    "CanTargetFriends": false,
+    "CanTargetSelf": true,
+    "Hidden": false,
+    "HiddenInUI": false,
+    "DefaultSlotIndex": -1,
+    "DisableLog": false,
+    "DisableBestShootingPosition": false,
+    "NeedEquipWeapons": false,
+    "NotOffensive": true,
+    "ShowInDialogue": false,
+    "IsStarshipAbility": false,
+    "EffectOnAlly": "None",
+    "EffectOnEnemy": "None",
+    "m_Parent": null,
+    "Animation": "Directional",
+    "CastInOffHand": false,
+    "UseOnMechadendrite": false,
+    "UsedMechadendrite": "Utility",
+    "m_TargetMapObjects": false,
+    "IsFreeAction": true,
+    "ShouldTurnToTarget": false,
+    "SyncRotationAndAttack": false,
+    "SyncRotationDelay": 0.0,
+    "m_IsStratagem": false,
+    "UsingInThreateningArea": "CanUseWithoutAOO",
+    "UsingInOverwatchArea": "WillNotCauseAttack",
+    "CombatStateRestriction": "NoRestriction",
+    "m_AbilityGroups": [
+      "!bp_36fdf1bc96884a9e803dcbcc8e447785",
+      "!bp_ebb0aef8634845069b938c90b9d114aa",
+      "!bp_82838157150f4d86bab8507a78631819"
+    ],
+    "MaterialComponent": {
+      "m_Item": null,
+      "Count": 1
+    },
+    "ResourceAssetIds": [],
+    "m_FXSettings": null,
+    "m_AbilityTag": "None",
+    "m_CombatHudCommandsOverride": null
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

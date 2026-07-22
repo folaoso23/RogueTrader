@@ -1,0 +1,179 @@
+{
+  "AssetId": "a57961a4d85a4230a01c392bca554381",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "fca6137076d25cf4ebcb31fb2c6efe6a, WarhammerDefenseTriggerTarget",
+        "name": "$WarhammerDefenseTriggerTarget$f57f0de0-d5a1-4679-a352-1d968755bf2b",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "BoolAnd",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "145fae42674897643a03d1d165941210, WeaponRangeTypeGetter",
+                "name": "$WeaponRangeTypeGetter$434b1db7b733449a89396e7f02209e1d",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "SecondWeapon": false,
+                "m_RangeType": "Ranged"
+              },
+              {
+                "$type": "1fba00d37a144f4ba28c3b38e2a72339, UnitUniversalCooldownGetter",
+                "name": "$UnitUniversalCooldownGetter$b2ac3bb9367c4e5dadc4fe6b4280cd8f",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Identifier": "ReturnFire"
+              },
+              {
+                "$type": "a88aca1f99c04b5abe76a4f8ff634e37, CheckAbilityIsAoEGetter",
+                "name": "$CheckAbilityIsAoEGetter$b55d7c5a029245cba0e581140d6b1033",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": true,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "IncludeAreaEffects": true,
+                "DoNotIncludeScatter": false
+              }
+            ]
+          }
+        },
+        "ActionOnSelfHit": {
+          "Actions": []
+        },
+        "ActionOnSelfMiss": {
+          "Actions": [
+            {
+              "$type": "c635b9ab19e16be419c637e0474dc6a9, ContextActionAttackWithFirstWeaponAbility",
+              "name": "$ContextActionAttackWithFirstWeaponAbility$484dc3cd-3711-4e2a-a513-992aa271ca1c",
+              "TargetIsPriorityTarget": false,
+              "m_PriorityTargetBuff": null,
+              "useSecondWeapon": false,
+              "OwnerIsAttacker": true,
+              "SaveMPAfterUsingWeaponAbility": true,
+              "ContextCasterIsTarget": false
+            },
+            {
+              "$type": "223357ca3ef34b9fb5550082da299024, StartUnitUniversalCooldown",
+              "name": "$StartUnitUniversalCooldown$c983871c36d443c18315e0554a5e8db8",
+              "Identifier": "ReturnFire",
+              "ChargesPerRound": 1,
+              "CooldownInRounds": 1,
+              "UntilEndOfCombat": false
+            }
+          ]
+        },
+        "ActionsOnTargetHit": {
+          "Actions": []
+        },
+        "ActionsOnTargetMiss": {
+          "Actions": []
+        },
+        "TriggerOnDodge": true,
+        "TriggerOnParry": false,
+        "TriggerOnCover": false,
+        "TriggerOnBlock": false
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "58c838f5-fd8e-48cc-a534-69db545a2de2",
+      "m_OwnerString": "a57961a4d85a4230a01c392bca554381",
+      "m_OwnerPropertyPath": "m_DisplayName",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\CommonTalents\\ReturnFire_Talent_m_DisplayName_1.json",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "8df31c46-d610-4f0b-952b-967ebb911687",
+      "m_OwnerString": "a57961a4d85a4230a01c392bca554381",
+      "m_OwnerPropertyPath": "m_Description",
+      "m_JsonPath": "Strings/Mechanics/Blueprints\\!Custom\\TalentsOfHouseVonValancius\\CommonTalents\\ReturnFire_Talent_m_Description_1.json",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": [
+        {
+          "$type": "3acf9db791c042a4b9588426022193a8, PrerequisiteStat",
+          "name": "$PrerequisiteStat$78814148285b401ea2495ebeb5acf5df",
+          "Not": false,
+          "Stat": "WarhammerBallisticSkill",
+          "MinValue": 50
+        },
+        {
+          "$type": "3acf9db791c042a4b9588426022193a8, PrerequisiteStat",
+          "name": "$PrerequisiteStat$820705b847984017aa73be8c5b3a9e8e",
+          "Not": false,
+          "Stat": "WarhammerPerception",
+          "MinValue": 35
+        },
+        {
+          "$type": "40a1bdb738834fb69a296a2677235b35, PrerequisiteFact",
+          "name": "$PrerequisiteFact$f4c2cf99-45de-43ae-9fa2-50373d523f5d",
+          "Not": false,
+          "m_Fact": "!bp_cffa0455647e48cb8163c9071c1cb430",
+          "MinRank": 0
+        }
+      ]
+    },
+    "FeatureTypes": [
+      "Offense"
+    ],
+    "TalentIconInfo": {
+      "AllGroups": "Dodge, Damage",
+      "MainGroup": "Dodge"
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}
