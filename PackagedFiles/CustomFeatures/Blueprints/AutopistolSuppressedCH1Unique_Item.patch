@@ -1,0 +1,24 @@
+{
+  "AbilityContainer": {
+    "Ability1": {
+      "m_FXSettings": "!bp_04f07f00d30e42e4927536f2cc198778"
+    },
+    "Ability2": {
+      "m_FXSettings": "!bp_04f07f00d30e42e4927536f2cc198778"
+    },
+    "Ability3": {
+      "m_FXSettings": "!bp_04f07f00d30e42e4927536f2cc198778"
+    },
+    "Ability4": {
+      "Type": "SingleShot",
+      "m_Ability": "!bp_2618cdbec44d406fb0beb4ad309b71b8",
+      "m_FXSettings": "!bp_04f07f00d30e42e4927536f2cc198778",
+      "AP": 2
+    }
+  },
+  "WarhammerDamage": 12,
+  "WarhammerMaxDamage": 18,
+  "AdditionalHitChance": 10,
+  "WarhammerRecoil": 5,
+  "WarhammerMaxDistance": 14
+}

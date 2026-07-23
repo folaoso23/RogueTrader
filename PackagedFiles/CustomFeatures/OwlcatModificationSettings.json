@@ -11,5 +11,11 @@
             }
         ]
     },
-    "BlueprintPatches": []
+    "BlueprintPatches": [
+        {
+            "Guid": "cb34168a173b49efbe261847ad8c8ff6",
+            "Filename": "AutopistolSuppressedCH1Unique_Item",
+            "PatchType": 2
+        }
+    ]
 }
