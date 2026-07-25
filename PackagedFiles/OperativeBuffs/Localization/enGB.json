@@ -55,7 +55,7 @@
             "Text": "<u>5 + ({g|Encyclopedia:WarhammerPerception}PER{/g} bonus + {g|Encyclopedia:WarhammerIntelligence}INT bonus{/g})</u>"
         },
         "1973b25f-e5c3-4428-a497-510eea0ccb7f": {
-            "Text": "The Operative gains +25% {g|Encyclopedia:DetailsOfTheCoverGlossary}cover{/g} efficiency (if in cover), +20 {g|Encyclopedia:WarhammerPerception}Perception{/g}, +20 {g|Encyclopedia:WarhammerBallisticSkill}Ballistic Skill{/g}, and a 75% recoil reduction.\nDeadeye shots will do additional base damage equal to the <u>current weapon's minimum damage.</u>\nThis effect lasts until the Operative moves. Does not stack."
+            "Text": "The Operative gains +25% {g|Encyclopedia:DetailsOfTheCoverGlossary}cover{/g} efficiency (if in cover), +20 {g|Encyclopedia:WarhammerPerception}Perception{/g}, +20 {g|Encyclopedia:WarhammerBallisticSkill}Ballistic Skill{/g}, and a 75% recoil reduction.\nDeadeye shots will do additional base damage equal to the <u>current weapon's maximum damage.</u>\nThis effect lasts until the Operative moves. Does not stack."
         },
         "4670a313-ac58-4c74-a789-b4249ff00ece": {
             "Text": "If the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} has not moved this {g|Encyclopedia:Turn}turn{/g}, they deal +{uip|DamageBonus|9a0e7e64902e491baa29d60469eae188} more damage with {g|Encyclopedia:SingleRangedAttacksGlossary}single-shot{/g} attacks for every 3 cells between them and the target and gain +{unit_stat|WarhammerPerception|bonus} {g|Encyclopedia:WarhammerBallisticSkill} Ballistic Skill{/g}. These bonuses do not stack and last until the Operative moves."
