@@ -26,10 +26,7 @@
               "m_OwnerString": "",
               "m_OwnerPropertyPath": "",
               "m_JsonPath": "",
-              "Shared": {
-                "assetguid": "c88b1870da3d57d40b80982b1c2a3718",
-                "stringkey": "0fccf8ad-f505-4048-a42f-521b745aae44"
-              }
+              "Shared": null
             },
             "m_DescriptionFact": "!bp_1d6a3bacdb914699b83d564a1f22bfbc",
             "m_LinkProperty": true,
@@ -166,6 +163,7 @@
           "m_CustomProperty": null,
           "PropertyName": "Value1"
         },
+        "IsPercentModifier": false,
         "m_ActionsOnAdd": {
           "Actions": []
         }
@@ -204,6 +202,7 @@
           "m_CustomProperty": null,
           "PropertyName": "Value1"
         },
+        "IsPercentModifier": false,
         "m_ActionsOnAdd": {
           "Actions": []
         }
@@ -213,32 +212,65 @@
     {
       "PatchType": "Insert",
       "NewElement": {
-        "$type": "dbb7058d31be12446942310a6ab86b83, CombatStateTrigger",
-        "name": "$CombatStateTrigger$c33c613f-2d1d-40fe-aeaa-0d29394bc6d5",
+        "$type": "018ffdf3c815bfa4189c0fc4cf1c9b19, RecalculateOnStatChange",
+        "name": "$RecalculateOnStatChange$688f6fa4-8fbf-4d4d-94bb-b7485c2d6481",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "",
           "name": ""
         },
         "m_Overrides": [],
+        "Stat": "WarhammerPerception",
+        "CheckCaster": false
+      },
+      "InsertAfterTarget": "$AddContextStatBonus$31cf0c9e-6ba1-40bd-af85-2f1d514c90be"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "018ffdf3c815bfa4189c0fc4cf1c9b19, RecalculateOnStatChange",
+        "name": "$RecalculateOnStatChange$79104d3f-3402-4210-9a11-841d64b53ef1",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Stat": "WarhammerIntelligence",
+        "CheckCaster": false
+      },
+      "InsertAfterTarget": "$RecalculateOnStatChange$688f6fa4-8fbf-4d4d-94bb-b7485c2d6481"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "0cdbc172cfe945e3818c0d49fbd7d65f, TurnBasedModeEventsTrigger",
+        "name": "$TurnBasedModeEventsTrigger$07421708-b245-4d92-b835-5f78afcdf1a8",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "TriggerIfNotInCombat": false,
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
         "CombatStartActions": {
           "Actions": [
             {
               "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
-              "name": "$ContextActionApplyBuff$39e7b24c-5cfd-4546-943d-427607789f2d",
+              "name": "$ContextActionApplyBuff$2d7f4cfae1a2452e9bc798112e7a2640",
               "m_Buff": "!bp_59ea17f8f02347f8ae3c038cd62cf63b",
               "BuffEndCondition": "CombatEnd",
               "Permanent": true,
               "DurationValue": {
-                "BonusValue": {
-                  "ValueType": "Simple",
-                  "Value": 0,
-                  "ValueRank": "Default",
-                  "ValueShared": "Damage",
-                  "Property": "None",
-                  "m_CustomProperty": null,
-                  "PropertyName": "Value1"
-                },
                 "RoundsValue": {
                   "ValueType": "Simple",
                   "Value": 0,
@@ -249,7 +281,7 @@
                   "PropertyName": "Value1"
                 }
               },
-              "ToCaster": true,
+              "ToCaster": false,
               "AsChild": true,
               "SameDuration": false,
               "Ranks": {
@@ -274,45 +306,30 @@
         "CombatEndActions": {
           "Actions": []
         },
-        "UnitMustBeConscious": false
-      },
-      "InsertAfterTarget": "$AddContextStatBonus$31cf0c9e-6ba1-40bd-af85-2f1d514c90be"
-    },
-    {
-      "PatchType": "Insert",
-      "NewElement": {
-        "$type": "018ffdf3c815bfa4189c0fc4cf1c9b19, RecalculateOnStatChange",
-        "name": "$RecalculateOnStatChange$688f6fa4-8fbf-4d4d-94bb-b7485c2d6481",
-        "m_Flags": 0,
-        "PrototypeLink": {
-          "guid": "",
-          "name": ""
+        "RoundStartActions": {
+          "Actions": []
         },
-        "m_Overrides": [],
-        "Stat": "WarhammerPerception",
-        "CheckCaster": false
-      },
-      "InsertAfterTarget": "$CombatStateTrigger$c33c613f-2d1d-40fe-aeaa-0d29394bc6d5"
-    },
-    {
-      "PatchType": "Insert",
-      "NewElement": {
-        "$type": "018ffdf3c815bfa4189c0fc4cf1c9b19, RecalculateOnStatChange",
-        "name": "$RecalculateOnStatChange$79104d3f-3402-4210-9a11-841d64b53ef1",
-        "m_Flags": 0,
-        "PrototypeLink": {
-          "guid": "",
-          "name": ""
+        "RoundEndActions": {
+          "Actions": []
         },
-        "m_Overrides": [],
-        "Stat": "WarhammerIntelligence",
-        "CheckCaster": false
+        "AnyUnitTurns": false,
+        "OnlyEnemyTurns": false,
+        "ActionsOnTheTurnOwner": false,
+        "UnitTurnStartActions": {
+          "Actions": []
+        },
+        "UnitTurnEndActions": {
+          "Actions": []
+        },
+        "UnitInterruptTurnStartActions": {
+          "Actions": []
+        },
+        "UnitInterruptTurnEndActions": {
+          "Actions": []
+        },
+        "DoNotApplyOnInterrupts": false
       },
-      "InsertAfterTarget": "$RecalculateOnStatChange$688f6fa4-8fbf-4d4d-94bb-b7485c2d6481"
-    },
-    {
-      "PatchType": "RemoveFromEnd",
-      "Target": "$CombatStateTrigger$c9e0604d-4fb4-49ae-bbff-bd0a4cd28e2b"
+      "InsertAfterTarget": "$CombatStateTrigger$c9e0604d-4fb4-49ae-bbff-bd0a4cd28e2b"
     }
   ]
 }
