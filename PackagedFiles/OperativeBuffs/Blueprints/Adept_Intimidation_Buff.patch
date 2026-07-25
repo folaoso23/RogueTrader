@@ -505,7 +505,7 @@
                 "Min": 0,
                 "Max": 0
               },
-              "Type": "Max"
+              "Type": "Min"
             }
           ]
         }
