@@ -391,7 +391,7 @@
                 "Min": 0,
                 "Max": 0
               },
-              "Type": "Min"
+              "Type": "Max"
             }
           ]
         }
