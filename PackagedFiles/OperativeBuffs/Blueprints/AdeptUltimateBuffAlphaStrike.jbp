@@ -78,7 +78,7 @@
           "m_CustomProperty": null,
           "PropertyName": "Value1"
         },
-        "AutoHit": true,
+        "AutoHit": false,
         "AutoCrit": true,
         "NeverCrit": false,
         "CoverHitAutoResult": "None"
@@ -282,7 +282,8 @@
         },
         "ModifierDescriptor": "None",
         "ModifyEvenDirectDamage": false,
-        "ModifyEvenDamageOverTime": false
+        "ModifyEvenDamageOverTime": false,
+        "IgnoreDifficultyMinimumDamage": false
       },
       {
         "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
@@ -524,20 +525,14 @@
       "m_OwnerString": "",
       "m_OwnerPropertyPath": "",
       "m_JsonPath": "",
-      "Shared": {
-        "assetguid": "3a07d2f83b7d1234482510341e2c5e4c",
-        "stringkey": "4062b857-ced4-4728-9eed-0574cacbe313"
-      }
+      "Shared": null
     },
     "m_Description": {
       "m_Key": "",
       "m_OwnerString": "",
       "m_OwnerPropertyPath": "",
       "m_JsonPath": "",
-      "Shared": {
-        "assetguid": "37c2c90da5ef88442819213e47d5afc9",
-        "stringkey": "efbbf011-472f-4df9-a464-130e83f9b80d"
-      }
+      "Shared": null
     },
     "m_Icon": {
       "guid": "2ca63188db3839d45aa1368eb4a97e04",

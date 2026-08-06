@@ -382,10 +382,10 @@
               "$type": "90e37f9c2bb670b4bb0adf1e9eadccde, CurrentWeaponBlueprintDamageGetter",
               "name": "$CurrentWeaponBlueprintDamageGetter$204c3cbe82f748afbdba2da3f44e0690",
               "Settings": {
-                "Progression": "AsIs",
+                "Progression": "DivStep",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 0,
+                "m_StepLevel": 2,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,

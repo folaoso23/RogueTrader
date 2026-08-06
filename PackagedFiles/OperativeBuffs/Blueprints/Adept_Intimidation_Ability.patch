@@ -17,7 +17,31 @@
                   "TargetType": "CurrentEntity",
                   "TargetEvaluator": null,
                   "FailSilentlyIfNoTarget": false,
-                  "Getters": []
+                  "Getters": [
+                    {
+                      "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+                      "name": "$ContextValueGetter$4962cc7c49a845f6b53756afefb509bf",
+                      "Settings": {
+                        "Progression": "AsIs",
+                        "m_CustomProgression": [],
+                        "m_StartLevel": 0,
+                        "m_StepLevel": 0,
+                        "Negate": false,
+                        "Limit": "None",
+                        "Min": 0,
+                        "Max": 0
+                      },
+                      "Value": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null,
+                        "PropertyName": "Value1"
+                      }
+                    }
+                  ]
                 },
                 "m_CostBonus": {
                   "Operation": "Sum",
