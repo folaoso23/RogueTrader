@@ -17,7 +17,23 @@
             "TargetType": "CurrentEntity",
             "TargetEvaluator": null,
             "FailSilentlyIfNoTarget": false,
-            "Getters": []
+            "Getters": [
+              {
+                "$type": "76fa6ff8c9162f9489df4de07a55750c, CheckAbilityAttackTypeGetter",
+                "name": "$CheckAbilityAttackTypeGetter$b14fb3e1416d43289cc99a4c5231d54b",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Type": "SingleShot"
+              }
+            ]
           }
         },
         "ActionOnSelfHit": {
@@ -36,7 +52,7 @@
               },
               "MovePoints": {
                 "ValueType": "Simple",
-                "Value": 4,
+                "Value": 3,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
