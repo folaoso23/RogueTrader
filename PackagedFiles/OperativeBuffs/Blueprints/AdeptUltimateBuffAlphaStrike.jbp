@@ -525,14 +525,20 @@
       "m_OwnerString": "",
       "m_OwnerPropertyPath": "",
       "m_JsonPath": "",
-      "Shared": null
+      "Shared": {
+        "assetguid": "3a07d2f83b7d1234482510341e2c5e4c",
+        "stringkey": "4062b857-ced4-4728-9eed-0574cacbe313"
+      }
     },
     "m_Description": {
       "m_Key": "",
       "m_OwnerString": "",
       "m_OwnerPropertyPath": "",
       "m_JsonPath": "",
-      "Shared": null
+      "Shared": {
+        "assetguid": "37c2c90da5ef88442819213e47d5afc9",
+        "stringkey": "efbbf011-472f-4df9-a464-130e83f9b80d"
+      }
     },
     "m_Icon": {
       "guid": "2ca63188db3839d45aa1368eb4a97e04",
