@@ -21,15 +21,6 @@
               "BuffEndCondition": "CombatEnd",
               "Permanent": true,
               "DurationValue": {
-                "BonusValue": {
-                  "ValueType": "Simple",
-                  "Value": 1,
-                  "ValueRank": "Default",
-                  "ValueShared": "Damage",
-                  "Property": "None",
-                  "m_CustomProperty": null,
-                  "PropertyName": "Value1"
-                },
                 "RoundsValue": {
                   "ValueType": "Simple",
                   "Value": 1,
@@ -144,7 +135,8 @@
               "m_Weapon": null,
               "WriteResultToSharedValue": false,
               "ResultSharedValue": "Damage",
-              "DoNotUseCrModifier": false
+              "DoNotUseCrModifier": false,
+              "DoNotUseCasterModifiers": false
             },
             {
               "$type": "d1933e412cc64482ae7990aaacdf44a8, WarhammerContextActionRestoreActionPoints",
@@ -224,15 +216,6 @@
               "BuffEndCondition": "TurnEndOrCombatEnd",
               "Permanent": false,
               "DurationValue": {
-                "BonusValue": {
-                  "ValueType": "Simple",
-                  "Value": 1,
-                  "ValueRank": "Default",
-                  "ValueShared": "Damage",
-                  "Property": "None",
-                  "m_CustomProperty": null,
-                  "PropertyName": "Value1"
-                },
                 "RoundsValue": {
                   "ValueType": "Simple",
                   "Value": 1,
@@ -308,7 +291,7 @@
                 "Progression": "DivStep",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 10,
+                "m_StepLevel": 5,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,
@@ -344,23 +327,23 @@
           "Getters": [
             {
               "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
-              "name": "$ContextValueGetter$e6951ea897504292bac85f02d44a45b0",
+              "name": "$ContextValueGetter$9926297534684b21aec14cc44b231048",
               "Settings": {
-                "Progression": "BonusValue",
+                "Progression": "AsIs",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 5,
+                "m_StepLevel": 0,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,
                 "Max": 0
               },
               "Value": {
-                "ValueType": "CasterProperty",
-                "Value": 0,
+                "ValueType": "Simple",
+                "Value": 6,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
-                "Property": "WillpowerBonus",
+                "Property": "None",
                 "m_CustomProperty": null,
                 "PropertyName": "Value1"
               }
@@ -443,10 +426,7 @@
               "m_OwnerString": "",
               "m_OwnerPropertyPath": "",
               "m_JsonPath": "",
-              "Shared": {
-                "assetguid": "82eea4a013b6d284b9303d437afd95f9",
-                "stringkey": "64ad1f25-7ee6-4164-a043-a2e2202ea291"
-              }
+              "Shared": null
             },
             "m_DescriptionFact": "!bp_305858b91e6e4d89bff75431fa6030e6",
             "m_LinkProperty": true,
