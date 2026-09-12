@@ -97,7 +97,7 @@
               "SameDuration": false,
               "Ranks": {
                 "ValueType": "Simple",
-                "Value": 1,
+                "Value": 2,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
@@ -175,7 +175,7 @@
               "SameDuration": false,
               "Ranks": {
                 "ValueType": "Simple",
-                "Value": 1,
+                "Value": 2,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
@@ -253,7 +253,7 @@
               "SameDuration": false,
               "Ranks": {
                 "ValueType": "Simple",
-                "Value": 1,
+                "Value": 2,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
@@ -331,7 +331,7 @@
               "SameDuration": false,
               "Ranks": {
                 "ValueType": "Simple",
-                "Value": 1,
+                "Value": 2,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
