@@ -1,0 +1,237 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerDamageTriggerTarget$bd774f7b-a5e6-448f-8dcb-e91066162041",
+      "ElementPatch": {
+        "ActionsOnAttacker": {
+          "Actions": [
+            {
+              "PatchType": "Prepend",
+              "NewElement": {
+                "$type": "a5d7b924bf7743f483c173754bdc072a, WarhammerContextActionRemoveGroupCooldown",
+                "name": "$WarhammerContextActionRemoveGroupCooldown$533dbc1d-a5b7-48d5-8d63-a7ac51838cd6",
+                "m_AbilityGroup": "!bp_1cf206b13141425491c379bc75ef0699"
+              }
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "$type": "d1933e412cc64482ae7990aaacdf44a8, WarhammerContextActionRestoreActionPoints",
+                "name": "$WarhammerContextActionRestoreActionPoints$36bef395-a88b-4b8e-9fc0-01ae5ae1c708",
+                "ActionPoints": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "MovePoints": {
+                  "ValueType": "Simple",
+                  "Value": 3,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "ActionPointsToMax": false,
+                "MovePointsToMax": false,
+                "IgnoreMovePointsMaximum": false,
+                "IgnoreActionPointsMaximum": false
+              },
+              "InsertAfterTarget": "$WarhammerContextActionRemoveGroupCooldown$533dbc1d-a5b7-48d5-8d63-a7ac51838cd6"
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                "name": "$ContextActionApplyBuff$b8413b27-b54d-4670-bc56-16a89c0bcb5e",
+                "m_Buff": "!bp_27812417ab8047519e401ed4a58790fd",
+                "BuffEndCondition": "CombatEnd",
+                "Permanent": false,
+                "DurationValue": {
+                  "RoundsValue": {
+                    "ValueType": "Simple",
+                    "Value": 2,
+                    "ValueRank": "Default",
+                    "ValueShared": "Damage",
+                    "Property": "None",
+                    "m_CustomProperty": null,
+                    "PropertyName": "Value1"
+                  }
+                },
+                "ToCaster": false,
+                "AsChild": false,
+                "SameDuration": false,
+                "Ranks": {
+                  "ValueType": "Simple",
+                  "Value": 6,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "ActionsOnApply": {
+                  "Actions": []
+                },
+                "ActionsOnImmune": {
+                  "Actions": []
+                },
+                "AddFactSource": false
+              },
+              "InsertAfterTarget": "$WarhammerContextActionRestoreActionPoints$36bef395-a88b-4b8e-9fc0-01ae5ae1c708"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "0c2563db2e994d42a0c9b78011ab0820, WarhammerCriticalDamageModifierTarget",
+        "name": "$WarhammerCriticalDamageModifierTarget$1bd126a3-cd40-43e7-9c85-fe27b618af78",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "PercentCriticalDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 100,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": true
+        },
+        "BonusCriticalDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "BonusCriticalDamageMultipliers": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "purePercentCriticalDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "ModifierDescriptor": "None"
+      },
+      "InsertAfterTarget": "$WarhammerDamageTriggerTarget$bd774f7b-a5e6-448f-8dcb-e91066162041"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "66be5599926e57d45a7a016495d269c4, WarhammerWeaponHitTriggerTarget",
+        "name": "$WarhammerWeaponHitTriggerTarget$8706b83f-e3cc-4eda-bda7-305815686869",
+        "m_Flags": "Disabled",
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "RuleTarget",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "ActionOnSelfHit": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "$ContextActionApplyBuff$3a92b2c7-3eda-4b17-9a6d-cfefb3fe52ed",
+              "m_Buff": "!bp_27812417ab8047519e401ed4a58790fd",
+              "BuffEndCondition": "CombatEnd",
+              "Permanent": false,
+              "DurationValue": {
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 2,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "ToCaster": false,
+              "AsChild": false,
+              "SameDuration": false,
+              "Ranks": {
+                "ValueType": "Simple",
+                "Value": 1,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionsOnApply": {
+                "Actions": []
+              },
+              "ActionsOnImmune": {
+                "Actions": []
+              },
+              "AddFactSource": false
+            }
+          ]
+        },
+        "ActionOnSelfMiss": {
+          "Actions": []
+        },
+        "ActionsOnTargetHit": {
+          "Actions": []
+        },
+        "ActionsOnTargetMiss": {
+          "Actions": []
+        },
+        "OnlyCritical": true,
+        "OnlyFromSpotWeaknessSide": false,
+        "m_SpotWeaknessBuff": null,
+        "SpecificRangeType": false,
+        "WeaponRangeType": "Melee",
+        "OnlyFromContextCaster": false
+      },
+      "InsertAfterTarget": "$WarhammerCriticalDamageModifierTarget$1bd126a3-cd40-43e7-9c85-fe27b618af78"
+    }
+  ],
+  "m_FXSettings": "!bp_47c8b63f0a494c82854e0617c4e4344e"
+}

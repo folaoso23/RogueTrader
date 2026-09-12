@@ -1,0 +1,54 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$AbilityCustomMoveToTarget$51954536-1ba8-47be-a36e-75db77c5d00e",
+      "ElementPatch": {
+        "m_ActionsAfterMoved": {
+          "Actions": [
+            {
+              "PatchType": "Prepend",
+              "NewElement": {
+                "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                "name": "$ContextActionApplyBuff$82b39c3b-2071-42df-b99f-7ac168d2cde1",
+                "m_Buff": "!bp_27812417ab8047519e401ed4a58790fd",
+                "BuffEndCondition": "CombatEnd",
+                "Permanent": false,
+                "DurationValue": {
+                  "RoundsValue": {
+                    "ValueType": "Simple",
+                    "Value": 2,
+                    "ValueRank": "Default",
+                    "ValueShared": "Damage",
+                    "Property": "None",
+                    "m_CustomProperty": null,
+                    "PropertyName": "Value1"
+                  }
+                },
+                "ToCaster": true,
+                "AsChild": false,
+                "SameDuration": false,
+                "Ranks": {
+                  "ValueType": "Simple",
+                  "Value": 3,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "ActionsOnApply": {
+                  "Actions": []
+                },
+                "ActionsOnImmune": {
+                  "Actions": []
+                },
+                "AddFactSource": false
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

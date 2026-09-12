@@ -1,0 +1,148 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$RunActionOnTargetsInAreaEffect$7868de2e-cf33-4ed9-aa65-220687ec557c",
+      "ElementPatch": {
+        "ActionsOnCaster": {
+          "Actions": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$ContextActionOnAllUnitsInCombat$c939431d-f448-4a62-a784-acc42c03718f",
+              "ElementPatch": {
+                "WithoutPets": false,
+                "IncludeUntargetable": false,
+                "StatFilter": "None",
+                "Stat": "Unknown"
+              }
+            },
+            {
+              "PatchType": "PatchElement",
+              "Target": "$ContextActionDestroyAreaEffect$c7ef0637-06d1-4e1b-97a5-33d061154544",
+              "ElementPatch": {
+                "m_DestroyAreaEffectOnlyFromCaster": false,
+                "m_DestroyAreaEffectOnlyUnderCaster": false
+              }
+            },
+            {
+              "PatchType": "PatchElement",
+              "Target": "$ContextActionDestroyAreaEffect$2f161cfe-e899-40ac-926c-436a4b65048d",
+              "ElementPatch": {
+                "m_DestroyAreaEffectOnlyFromCaster": false,
+                "m_DestroyAreaEffectOnlyUnderCaster": false
+              }
+            },
+            {
+              "PatchType": "PatchElement",
+              "Target": "$Conditional$9740cf57-4665-4e5f-82e4-a01fc8ab5460",
+              "ElementPatch": {
+                "ConditionsChecker": {
+                  "Conditions": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$ContextConditionProperty$85af1093-c3f3-4701-afc6-a316021c30c0",
+                      "ElementPatch": {
+                        "Property": {
+                          "TargetEvaluator": null
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "PatchType": "PatchElement",
+              "Target": "$Conditional$236677d5-bfd2-4f68-a72f-004c5b2a65f3",
+              "ElementPatch": {
+                "ConditionsChecker": {
+                  "Conditions": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$ContextConditionProperty$c1b9c226-8c81-40ed-aad8-e017219986f2",
+                      "ElementPatch": {
+                        "Property": {
+                          "TargetEvaluator": null
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "PatchType": "PatchElement",
+              "Target": "$Conditional$816d5ccd-8842-4b42-a1af-0db10f9d9a33",
+              "ElementPatch": {
+                "ConditionsChecker": {
+                  "Conditions": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$ContextConditionProperty$7a67056f-0b53-40fb-9e4a-2c39b0d406b9",
+                      "ElementPatch": {
+                        "Property": {
+                          "TargetEvaluator": null
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$AbilityExecuteActionOnCast$82d882eb-e121-4c3a-87a7-f398cc48b3d8",
+      "ElementPatch": {
+        "Actions": {
+          "Actions": [
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                "name": "$ContextActionApplyBuff$5b13396e-c9e5-45d7-9664-3500cb889564",
+                "m_Buff": "!bp_27812417ab8047519e401ed4a58790fd",
+                "BuffEndCondition": "CombatEnd",
+                "Permanent": false,
+                "DurationValue": {
+                  "RoundsValue": {
+                    "ValueType": "Simple",
+                    "Value": 2,
+                    "ValueRank": "Default",
+                    "ValueShared": "Damage",
+                    "Property": "None",
+                    "m_CustomProperty": null,
+                    "PropertyName": "Value1"
+                  }
+                },
+                "ToCaster": true,
+                "AsChild": false,
+                "SameDuration": false,
+                "Ranks": {
+                  "ValueType": "Simple",
+                  "Value": 5,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "ActionsOnApply": {
+                  "Actions": []
+                },
+                "ActionsOnImmune": {
+                  "Actions": []
+                },
+                "AddFactSource": false
+              },
+              "InsertAfterTarget": "$Conditional$c4ccaff2030c403ab2014c2d2fb84fcd"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

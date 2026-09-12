@@ -1,0 +1,104 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$6a27a1e5-fda5-4d56-814a-cb565722ab45",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$PropertyCalculatorGetter$dcc999d3c66047e2ba9a7c1c2c03d8da",
+              "ElementPatch": {
+                "Value": {
+                  "TargetEvaluator": null,
+                  "Getters": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$FactRankGetter$4ddc328e-6add-475c-b08c-6c00391a1465",
+                      "ElementPatch": {
+                        "CheckTarget": "CurrentEntity",
+                        "BuffCaster": "CurrentEntity"
+                      }
+                    },
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$PropertyCalculatorGetter$91cc5a27-3991-4aa3-8d68-6c9b63fce9c6",
+                      "ElementPatch": {
+                        "Value": {
+                          "TargetEvaluator": null
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "PatchType": "PatchElement",
+              "Target": "$FactRankGetter$b9bfd4aa832243559980caf43c864dd3",
+              "ElementPatch": {
+                "Settings": {
+                  "m_StepLevel": 5,
+                  "Min": 2
+                },
+                "CheckTarget": "CurrentEntity",
+                "BuffCaster": "CurrentEntity"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$4ae826d3-5740-4e62-bad9-325fac8e49d7",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$PropertyCalculatorGetter$fe957e9b5aa746b985bb115f634fdaf7",
+              "ElementPatch": {
+                "Value": {
+                  "TargetEvaluator": null,
+                  "Getters": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$FactRankGetter$00623afa-9d72-4504-8b81-b5106c91a0bc",
+                      "ElementPatch": {
+                        "CheckTarget": "CurrentEntity",
+                        "BuffCaster": "CurrentEntity"
+                      }
+                    },
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$PropertyCalculatorGetter$9add2601-1780-4cea-bceb-873b5e2491f4",
+                      "ElementPatch": {
+                        "Value": {
+                          "TargetEvaluator": null
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "PatchType": "PatchElement",
+              "Target": "$FactRankGetter$a4884b29-844a-44aa-b3b5-eee722c7b769",
+              "ElementPatch": {
+                "Settings": {
+                  "m_StepLevel": 5,
+                  "Min": 2
+                },
+                "CheckTarget": "CurrentEntity",
+                "BuffCaster": "CurrentEntity"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

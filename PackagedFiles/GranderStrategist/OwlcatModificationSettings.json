@@ -1,0 +1,81 @@
+{
+    "BundlesLayout": {
+        "m_Guids": [],
+        "m_Bundles": []
+    },
+    "BundleDependencies": {
+        "m_List": [
+            {
+                "Key": "GranderStrategist_BlueprintDirectReferences",
+                "Value": []
+            }
+        ]
+    },
+    "BlueprintPatches": [
+        {
+            "Guid": "b0a5913f267249368a5ddeac26a7fea5",
+            "Filename": "Overwhelming_Stratagem_Buff",
+            "PatchType": 2
+        },
+        {
+            "Guid": "793b7fc6d080437e92fbf401fa7f4250",
+            "Filename": "Killzone_Stratagem_Buff",
+            "PatchType": 2
+        },
+        {
+            "Guid": "b6fa6a9130a64255933ca0144f28dd03",
+            "Filename": "CombatLocus_Stratagem_Ability",
+            "PatchType": 2
+        },
+        {
+            "Guid": "c9281643604d4600922002e30701ff85",
+            "Filename": "Strategist_Keystone_Backline_AllyBuff_CombatLocus",
+            "PatchType": 2
+        },
+        {
+            "Guid": "0dae6d7d43a143d5b240181fa5193056",
+            "Filename": "Strategist_Keystone_Frontline_AllyBuff_CombatLocus",
+            "PatchType": 2
+        },
+        {
+            "Guid": "d2e7fab199194a198c2b58b1c0cd6b53",
+            "Filename": "Strategist_Keystone_Frontline_EnemyBuff_CombatLocus",
+            "PatchType": 2
+        },
+        {
+            "Guid": "28e1139efe844460a72a289724614e55",
+            "Filename": "Strategist_Keystone_Rear_AllyBuff_CombatLocus",
+            "PatchType": 2
+        },
+        {
+            "Guid": "c5f5efbdfd38456d8dc52ba090f2bddb",
+            "Filename": "Stronghold_Stratagem_Buff",
+            "PatchType": 2
+        },
+        {
+            "Guid": "7005fbf810a64264893cd18fc0187b39",
+            "Filename": "Blitz_Stratagem_Ability",
+            "PatchType": 2
+        },
+        {
+            "Guid": "0cf6c0f1266a4ccda4556d6eaa7ea15f",
+            "Filename": "Trenchline_Stratagem_Buff",
+            "PatchType": 2
+        },
+        {
+            "Guid": "ad8649a2411c4b15871a8b83e19e6976",
+            "Filename": "Blitz_Stratagem_Move_Ability_Back",
+            "PatchType": 2
+        },
+        {
+            "Guid": "7c3bcf1379b449039a03893da8cb714f",
+            "Filename": "Blitz_Stratagem_Move_Ability_Front",
+            "PatchType": 2
+        },
+        {
+            "Guid": "d77fd9e9d55a44b1bec04f7ce88aab7b",
+            "Filename": "Blitz_Stratagem_Move_Ability_Rear",
+            "PatchType": 2
+        }
+    ]
+}
