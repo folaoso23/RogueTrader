@@ -126,23 +126,27 @@
           "FailSilentlyIfNoTarget": false,
           "Getters": [
             {
-              "$type": "af573f5008f24a98b3444959084f87f5, FactRankGetter",
-              "name": "$FactRankGetter$835d824a-6a4b-4556-a0c7-f7a709d29025",
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$469519d58ae743c6b880a22b7dea0d07",
               "Settings": {
-                "Progression": "MultiplyByModifier",
+                "Progression": "AsIs",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 2,
+                "m_StepLevel": 3,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,
                 "Max": 0
               },
-              "m_Fact": "!bp_27812417ab8047519e401ed4a58790fd",
-              "CheckTarget": "CurrentEntity",
-              "Aggregation": "Max",
-              "BuffWithCasterFromTargetType": true,
-              "BuffCaster": "CurrentEntity"
+              "Value": {
+                "ValueType": "TargetBuffRank",
+                "Value": 3,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
             }
           ]
         }
@@ -169,7 +173,7 @@
         "Stat": "WarhammerBallisticSkill",
         "Multiplier": 1,
         "Value": {
-          "ValueType": "CasterBuffRank",
+          "ValueType": "TargetBuffRank",
           "Value": 1,
           "ValueRank": "Default",
           "ValueShared": "Damage",
@@ -204,7 +208,7 @@
         "Stat": "WarhammerWeaponSkill",
         "Multiplier": 1,
         "Value": {
-          "ValueType": "CasterBuffRank",
+          "ValueType": "TargetBuffRank",
           "Value": 1,
           "ValueRank": "Default",
           "ValueShared": "Damage",
@@ -239,7 +243,7 @@
         "Stat": "WarhammerStrength",
         "Multiplier": 1,
         "Value": {
-          "ValueType": "CasterBuffRank",
+          "ValueType": "TargetBuffRank",
           "Value": 1,
           "ValueRank": "Default",
           "ValueShared": "Damage",
@@ -274,7 +278,7 @@
         "Stat": "WarhammerToughness",
         "Multiplier": 1,
         "Value": {
-          "ValueType": "CasterBuffRank",
+          "ValueType": "TargetBuffRank",
           "Value": 1,
           "ValueRank": "Default",
           "ValueShared": "Damage",
@@ -309,7 +313,7 @@
         "Stat": "WarhammerAgility",
         "Multiplier": 1,
         "Value": {
-          "ValueType": "CasterBuffRank",
+          "ValueType": "TargetBuffRank",
           "Value": 1,
           "ValueRank": "Default",
           "ValueShared": "Damage",
@@ -344,7 +348,7 @@
         "Stat": "WarhammerIntelligence",
         "Multiplier": 1,
         "Value": {
-          "ValueType": "CasterBuffRank",
+          "ValueType": "TargetBuffRank",
           "Value": 1,
           "ValueRank": "Default",
           "ValueShared": "Damage",
@@ -379,7 +383,7 @@
         "Stat": "WarhammerPerception",
         "Multiplier": 1,
         "Value": {
-          "ValueType": "CasterBuffRank",
+          "ValueType": "TargetBuffRank",
           "Value": 1,
           "ValueRank": "Default",
           "ValueShared": "Damage",
@@ -414,7 +418,7 @@
         "Stat": "WarhammerWillpower",
         "Multiplier": 1,
         "Value": {
-          "ValueType": "CasterBuffRank",
+          "ValueType": "TargetBuffRank",
           "Value": 1,
           "ValueRank": "Default",
           "ValueShared": "Damage",
@@ -449,7 +453,7 @@
         "Stat": "WarhammerFellowship",
         "Multiplier": 1,
         "Value": {
-          "ValueType": "CasterBuffRank",
+          "ValueType": "TargetBuffRank",
           "Value": 1,
           "ValueRank": "Default",
           "ValueShared": "Damage",
@@ -483,7 +487,7 @@
       }
     },
     "m_Icon": {
-      "guid": "515a35885349bdc4eafa67c8ae49a80f",
+      "guid": "c8f2a95669e88934a9813f78f550c42f",
       "fileid": 21300000
     },
     "m_AllowNonContextActions": false,
