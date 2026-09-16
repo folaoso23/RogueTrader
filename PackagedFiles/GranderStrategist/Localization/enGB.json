@@ -18,11 +18,11 @@
     },
     "73652c02-a15b-4589-baa2-7b50f55106e7": {
       "Offset": 0,
-      "Text": "The {g|Encyclopedia:CareerStrategistGlossary}Grand Strategist{/g} chooses one of the {g|f:e4e45f74936c4740b7bc03013f6991ba}Combat Tactics{/g} areas. For 1 round, all allies in that area gain +{uip|CoverBonus|0e89f6eda1ae4960aeebfed0737289a3}% {g|Encyclopedia:DetailsOfTheCoverGlossary}cover efficiency{/g} and re-roll all failed {g|Encyclopedia:Characteristic}characteristic{/g} {g|Encyclopedia:Test}tests{/g}. Additionally, cover in the area does not suffer any damage. Each unit in the area will recover +(1 + Level/10) wounds at the start and end of their turns.\n<b>{g|f:27812417ab8047519e401ed4a58790fd}Strategic Focus{/g}</b>:\n-<indent=5%>+1: After a failed enemy attack (miss, dodge, etc)\n-<indent=5%>+2: after using a non-attacking ability.</indent>"
+      "Text": "The {g|Encyclopedia:CareerStrategistGlossary}Grand Strategist{/g} chooses one of the {g|f:e4e45f74936c4740b7bc03013f6991ba}Combat Tactics{/g} areas. For 1 round, all allies in that area gain +{uip|CoverBonus|0e89f6eda1ae4960aeebfed0737289a3}% {g|Encyclopedia:DetailsOfTheCoverGlossary}cover efficiency{/g} and re-roll all failed {g|Encyclopedia:Characteristic}characteristic{/g} {g|Encyclopedia:Test}tests{/g}. Additionally, cover in the area does not suffer any damage. Each unit in the area will recover +(1 + Level/10) wounds at the start and end of their turns.\n<b>{g|f:27812417ab8047519e401ed4a58790fd}Strategic Focus{/g}</b>:\n-<indent=5%>+1: At the start and end of turns (if inside of the zone).</indent>\n-<indent=5%>+2: After using a non-attacking ability.</indent>"
     },
     "62b80a48-78ea-4116-8b1c-8c45b8534730": {
       "Offset": 0,
-      "Text": "The Grand Strategist chooses one of the {g|f:e4e45f74936c4740b7bc03013f6991ba}Combat Tactics{/g} areas. For 1 round, allies in that area gain +{uip|BonusArmour|111f6e8111ae4d30a9d5d6d06027281d}% {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, cannot be overpenetrated, gain immunity to the {g|Encyclopedia:ProneEffect}prone{/g} effect, and gain +{uip|BonusDeflection|111f6e8111ae4d30a9d5d6d06027281d} {g|Encyclopedia:Deflection}deflection{/g} against area attacks. Additionally, they do not suffer {g|Encyclopedia:Injury}injuries{/g} for receiving damage. At the start and end of each turn they will gain +(10 + {uip|BonusArmour|111f6e8111ae4d30a9d5d6d06027281d}) temporary wounds.\n<b>{g|f:27812417ab8047519e401ed4a58790fd}Strategic Focus{/g}</b> stacks:\n-<indent=5%>+1: After being attacked by an enemy\n-<indent=5%>+2: At the start and end of turn (if inside of the zone).</indent>"
+      "Text": "The Grand Strategist chooses one of the {g|f:e4e45f74936c4740b7bc03013f6991ba}Combat Tactics{/g} areas. For 1 round, allies in that area gain +{uip|BonusArmour|111f6e8111ae4d30a9d5d6d06027281d}% {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}, cannot be overpenetrated, gain immunity to the {g|Encyclopedia:ProneEffect}prone{/g} effect, and gain +{uip|BonusDeflection|111f6e8111ae4d30a9d5d6d06027281d} {g|Encyclopedia:Deflection}deflection{/g} against area attacks. Additionally, they do not suffer {g|Encyclopedia:Injury}injuries{/g} for receiving damage. At the start and end of each turn they will gain +(10 + {uip|BonusArmour|111f6e8111ae4d30a9d5d6d06027281d}) temporary wounds.\n<b>{g|f:27812417ab8047519e401ed4a58790fd}Strategic Focus{/g}</b> stacks:\n-<indent=5%>+1: After being attacked by an enemy, regardless if they hit or miss.\n-<indent=5%>+2: At the start and end of turn (if inside of the zone).</indent>"
     },
     "0c3d44f8-a342-4683-a7c0-b46cc99aefaf": {
       "Offset": 0,
@@ -30,11 +30,15 @@
     },
     "4c202309-6c31-4e52-ab02-6e3dff6543f4": {
       "Offset": 0,
-      "Text": "The Grand Strategist chooses one of the {g|f:e4e45f74936c4740b7bc03013f6991ba}Combat Tactics{/g} areas. For 1 round, all attacks by allies in that area do +50% more damage and inflict the {g|f:27c28c48cd154096afcace5ac4ec66b6}overwhelmed{/g} effect on any enemy that fails a Willpower {g|Encyclopedia:ResistanceTest}resistance test{/g} and the {g|f:866cb491aeda45869e40a9165447a7cc}staggered{/g} effect to any enemy that fails a Toughness {g|Encyclopedia:ResistanceTest}resistance test{/g} for 1 round.\n<b>{g|f:27812417ab8047519e401ed4a58790fd}Strategic Focus{/g} stacks</b>:\n-<indent=5%>+1: Landing a hit.</indent>\n-<indent=5%>+2: Launching an attack.</indent>"
+      "Text": "The Grand Strategist chooses one of the {g|f:e4e45f74936c4740b7bc03013f6991ba}Combat Tactics{/g} areas. For 1 round, all attacks by allies in that area do +50% more damage and inflict the {g|f:27c28c48cd154096afcace5ac4ec66b6}overwhelmed{/g} effect on any enemy that fails a Willpower {g|Encyclopedia:ResistanceTest}resistance test{/g} and the {g|f:866cb491aeda45869e40a9165447a7cc}staggered{/g} effect to any enemy that fails a Toughness {g|Encyclopedia:ResistanceTest}resistance test{/g} for 1 round.\n<b>{g|f:27812417ab8047519e401ed4a58790fd}Strategic Focus{/g} stacks</b>:\n-<indent=5%>+1: After landing a hit.</indent>\n-<indent=5%>+2: After using an attacking ability.</indent>"
     },
     "131c5c41-6b16-4b79-96ff-ace28919e281": {
       "Offset": 0,
-      "Text": "This unit has executed on one or more of the {g|Encyclopedia:CareerStrategistGlossary}Grand Strategist's{/g} stratagems. Gain +1 to all characteristics and +3% damage per stack."
+      "Text": "This unit has executed on one or more of the {g|Encyclopedia:CareerStrategistGlossary}Grand Strategist's{/g} stratagems. Gain +1 to all characteristics and +2% damage per stack."
+    },
+    "9d18b557-fb33-42c3-8599-65a75cc9fcbb": {
+      "Offset": 0,
+      "Text": "{g|Encyclopedia:WarhammerWillpower}Willpower{/g} and {g|Encyclopedia:WarhammerToughness}Toughness{/g} {g|Encyclopedia:ResistanceTest}resistance tests{/g} forced by {g|f:807137df735b46858a3e562b49bb89b1}Overwhelming Stratagem{/g} are made with a −{uip|ResistancePenalty|2758369cb14a43cdb72df3e7d1aad9cb} {g|Encyclopedia:Penalty}penalty{/g}."
     }
   }
 }
