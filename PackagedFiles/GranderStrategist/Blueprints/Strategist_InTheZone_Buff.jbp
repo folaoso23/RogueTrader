@@ -140,7 +140,7 @@
               },
               "Value": {
                 "ValueType": "TargetBuffRank",
-                "Value": 3,
+                "Value": 2,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
@@ -486,10 +486,7 @@
         "stringkey": "131c5c41-6b16-4b79-96ff-ace28919e281"
       }
     },
-    "m_Icon": {
-      "guid": "c8f2a95669e88934a9813f78f550c42f",
-      "fileid": 21300000
-    },
+    "m_Icon": null,
     "m_AllowNonContextActions": false,
     "m_Flags": "NeedsNoVisual",
     "m_SoundTypeSwitch": {
@@ -501,7 +498,7 @@
       "Group": ""
     },
     "Stacking": "Rank",
-    "ProlongWhenRankAdded": false,
+    "ProlongWhenRankAdded": true,
     "PriorityProperty": "Value1",
     "Initiative": "ByCaster",
     "Ranks": 50,
