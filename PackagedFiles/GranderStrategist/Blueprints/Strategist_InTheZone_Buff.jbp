@@ -504,7 +504,7 @@
     "ProlongWhenRankAdded": true,
     "PriorityProperty": "Value1",
     "Initiative": "ByCaster",
-    "Ranks": 50,
+    "Ranks": 100,
     "FxOnStart": {
       "AssetId": ""
     },
