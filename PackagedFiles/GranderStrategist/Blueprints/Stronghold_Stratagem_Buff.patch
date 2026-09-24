@@ -468,6 +468,97 @@
         "OnlyFromContextCaster": false
       },
       "InsertAfterTarget": "$TurnBasedModeEventsTrigger$e0fb8a3f-944e-4fe4-9860-2c223cdc6ce8"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "67bd9d5235e74484bb1d673b885ab430, WarhammerWeaponHitTriggerInitiator",
+        "name": "$WarhammerWeaponHitTriggerInitiator$f7f6b043-dfa7-4e52-9553-945a428ec7e2",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "BoolAnd",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "53ddc60b996d4bd2aa81e66b49d5f97d, CheckAbilityWeaponRangeTypeGetter",
+                "name": "$CheckAbilityWeaponRangeTypeGetter$d872ecd5f71844f18b860ac762705cce",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_RangeType": "Melee"
+              }
+            ]
+          }
+        },
+        "ActionOnSelfHit": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "$ContextActionApplyBuff$84794a38-18c8-40d1-b1dc-f4829c44b4a7",
+              "m_Buff": "!bp_27812417ab8047519e401ed4a58790fd",
+              "BuffEndCondition": "CombatEnd",
+              "Permanent": false,
+              "DurationValue": {
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 2,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "ToCaster": false,
+              "AsChild": false,
+              "SameDuration": false,
+              "Ranks": {
+                "ValueType": "Simple",
+                "Value": 1,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionsOnApply": {
+                "Actions": []
+              },
+              "ActionsOnImmune": {
+                "Actions": []
+              },
+              "AddFactSource": false
+            }
+          ]
+        },
+        "ActionOnSelfMiss": {
+          "Actions": []
+        },
+        "ActionsOnTargetHit": {
+          "Actions": []
+        },
+        "ActionsOnTargetMiss": {
+          "Actions": []
+        },
+        "OnlyRighteousFury": false,
+        "OnlyMelee": false
+      },
+      "InsertAfterTarget": "$WarhammerWeaponHitTriggerTarget$3c7ab619-9c70-42a6-9c64-4fef1106e6a4"
     }
   ]
 }

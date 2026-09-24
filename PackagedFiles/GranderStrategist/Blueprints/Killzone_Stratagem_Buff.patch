@@ -68,7 +68,7 @@
                 "SameDuration": false,
                 "Ranks": {
                   "ValueType": "Simple",
-                  "Value": 6,
+                  "Value": 7,
                   "ValueRank": "Default",
                   "ValueShared": "Damage",
                   "Property": "None",
