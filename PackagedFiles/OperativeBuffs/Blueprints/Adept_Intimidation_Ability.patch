@@ -7,80 +7,93 @@
         "Actions": {
           "Actions": [
             {
+              "PatchType": "PatchElement",
+              "Target": "$ContextActionApplyBuff$b98c78098137467496d3f9d9239e009a",
+              "ElementPatch": {
+                "Permanent": false
+              }
+            },
+            {
               "PatchType": "Insert",
               "NewElement": {
-                "$type": "bfe787e51845449dbd98425f134a555b, ContextActionAddBonusAbilityUsage",
-                "name": "$ContextActionAddBonusAbilityUsage$6755f8077fa749c79788f65bd9a2704d",
-                "m_Restriction": "!bp_8a921d9992534101873845b859caaa65",
-                "m_Count": {
-                  "Operation": "Sum",
-                  "TargetType": "CurrentEntity",
-                  "TargetEvaluator": null,
-                  "FailSilentlyIfNoTarget": false,
-                  "Getters": [
-                    {
-                      "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
-                      "name": "$ContextValueGetter$4962cc7c49a845f6b53756afefb509bf",
-                      "Settings": {
-                        "Progression": "AsIs",
-                        "m_CustomProgression": [],
-                        "m_StartLevel": 0,
-                        "m_StepLevel": 0,
-                        "Negate": false,
-                        "Limit": "None",
-                        "Min": 0,
-                        "Max": 0
-                      },
-                      "Value": {
-                        "ValueType": "Simple",
-                        "Value": 0,
-                        "ValueRank": "Default",
-                        "ValueShared": "Damage",
-                        "Property": "None",
-                        "m_CustomProperty": null,
-                        "PropertyName": "Value1"
-                      }
-                    }
-                  ]
+                "$type": "d1933e412cc64482ae7990aaacdf44a8, WarhammerContextActionRestoreActionPoints",
+                "name": "$WarhammerContextActionRestoreActionPoints$b905509c81ef46489603c6b66ef2394b",
+                "ActionPoints": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
                 },
-                "m_CostBonus": {
-                  "Operation": "Sum",
-                  "TargetType": "CurrentEntity",
-                  "TargetEvaluator": null,
-                  "FailSilentlyIfNoTarget": false,
-                  "Getters": [
-                    {
-                      "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
-                      "name": "$ContextValueGetter$018abb14dce645ba906e2bfd16f17a60",
-                      "Settings": {
-                        "Progression": "AsIs",
-                        "m_CustomProgression": [],
-                        "m_StartLevel": 0,
-                        "m_StepLevel": 0,
-                        "Negate": true,
-                        "Limit": "None",
-                        "Min": 0,
-                        "Max": 0
-                      },
-                      "Value": {
-                        "ValueType": "Simple",
-                        "Value": 1,
-                        "ValueRank": "Default",
-                        "ValueShared": "Damage",
-                        "Property": "None",
-                        "m_CustomProperty": null,
-                        "PropertyName": "Value1"
-                      }
-                    }
-                  ]
+                "MovePoints": {
+                  "ValueType": "Simple",
+                  "Value": 6,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
                 },
-                "m_ToTarget": false,
-                "m_IgnoreMinimalCost": true
+                "ActionPointsToMax": false,
+                "MovePointsToMax": false,
+                "IgnoreMovePointsMaximum": true,
+                "IgnoreActionPointsMaximum": false
               },
               "InsertAfterTarget": "$Conditional$db3b93a0793644be82478f507ba1cffa"
             }
           ]
         }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$UIPropertiesComponent$df196e70-4d31-457f-b98b-b4060913f7bf",
+      "ElementPatch": {
+        "Properties": [
+          {
+            "PatchType": "PatchElement",
+            "Target": "StatBonus1",
+            "ElementPatch": {
+              "Main": false
+            }
+          },
+          {
+            "PatchType": "PatchElement",
+            "Target": "Bonus1",
+            "ElementPatch": {
+              "Main": false
+            }
+          },
+          {
+            "PatchType": "Insert",
+            "NewElement": {
+              "NameType": "Damage",
+              "m_Name": {
+                "m_Key": "",
+                "m_OwnerString": "",
+                "m_OwnerPropertyPath": "",
+                "m_JsonPath": "",
+                "Shared": null
+              },
+              "Description": {
+                "m_Key": "882abe92-76c5-4397-9011-141d967bfa05",
+                "m_OwnerString": "192ece83528842149c9cc38142d73ccb",
+                "m_OwnerPropertyPath": "Properties.Array.data[2].Description",
+                "m_JsonPath": "Strings/Mechanics/Blueprints\\Classes\\Adept\\AdeptAbilities\\Adept_Intimidation_Ability1_Properties.Array.data[2].Description.json",
+                "Shared": null
+              },
+              "m_DescriptionFact": "!bp_aedb4d2a2fd049db9c3f61b6737043a4",
+              "m_LinkProperty": true,
+              "m_PropertyName": "Value2",
+              "m_PropertySource": "!bp_29705adaeab6492287580277329b90db",
+              "m_LinkKey": "TraumaBuff",
+              "Main": false
+            },
+            "InsertAfterTarget": "Bonus1"
+          }
+        ]
       }
     }
   ]
