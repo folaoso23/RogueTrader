@@ -49,6 +49,73 @@
           ]
         }
       }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "6ebdb034bf2f486b932f9342e175ec6d, AbilityLifecycleTriggerCaster",
+        "name": "$AbilityLifecycleTriggerCaster$02db063c-a0ac-4da5-bcd0-2f6e9ead2d59",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Condition": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": []
+        },
+        "StartActions": {
+          "Actions": []
+        },
+        "EndActions": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "$ContextActionApplyBuff$2c0f88aa-4f5d-4ea0-b597-2c7162d9bf65",
+              "m_Buff": "!bp_27812417ab8047519e401ed4a58790fd",
+              "BuffEndCondition": "CombatEnd",
+              "Permanent": false,
+              "DurationValue": {
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 2,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "ToCaster": false,
+              "AsChild": false,
+              "SameDuration": false,
+              "Ranks": {
+                "ValueType": "Simple",
+                "Value": 2,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionsOnApply": {
+                "Actions": []
+              },
+              "ActionsOnImmune": {
+                "Actions": []
+              },
+              "AddFactSource": false
+            }
+          ]
+        },
+        "m_Facts": [],
+        "m_FactsToCheckOnOwner": []
+      },
+      "InsertAfterTarget": "$WarhammerArmorBonus$bf838cdf-6a4d-456a-8198-c19c5aa58671"
     }
   ]
 }

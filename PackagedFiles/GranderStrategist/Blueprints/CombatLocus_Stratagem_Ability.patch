@@ -123,7 +123,7 @@
                 "SameDuration": false,
                 "Ranks": {
                   "ValueType": "Simple",
-                  "Value": 5,
+                  "Value": 3,
                   "ValueRank": "Default",
                   "ValueShared": "Damage",
                   "Property": "None",

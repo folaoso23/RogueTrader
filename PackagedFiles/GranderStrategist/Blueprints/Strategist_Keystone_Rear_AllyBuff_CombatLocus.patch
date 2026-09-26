@@ -99,6 +99,73 @@
           ]
         }
       }
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "6ebdb034bf2f486b932f9342e175ec6d, AbilityLifecycleTriggerCaster",
+        "name": "$AbilityLifecycleTriggerCaster$b180ad54-c96f-409a-ae17-49a8688cfcef",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Condition": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": []
+        },
+        "StartActions": {
+          "Actions": []
+        },
+        "EndActions": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "$ContextActionApplyBuff$b3a571c8-87e4-4d68-bf76-dadfd6c3ca19",
+              "m_Buff": "!bp_27812417ab8047519e401ed4a58790fd",
+              "BuffEndCondition": "CombatEnd",
+              "Permanent": false,
+              "DurationValue": {
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 2,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "ToCaster": false,
+              "AsChild": false,
+              "SameDuration": false,
+              "Ranks": {
+                "ValueType": "Simple",
+                "Value": 2,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionsOnApply": {
+                "Actions": []
+              },
+              "ActionsOnImmune": {
+                "Actions": []
+              },
+              "AddFactSource": false
+            }
+          ]
+        },
+        "m_Facts": [],
+        "m_FactsToCheckOnOwner": []
+      },
+      "InsertAfterTarget": "$WarhammerHitChanceModifierInitiator$af26fa58-a325-4e3c-aa79-5a3374a01f57"
     }
   ]
 }
