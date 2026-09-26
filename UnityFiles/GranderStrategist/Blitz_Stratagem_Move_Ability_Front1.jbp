@@ -1,0 +1,214 @@
+{
+  "AssetId": "a2ae52ff828a40fba85b878d6cd8ce90",
+  "Data": {
+    "$type": "da11db195c86e0d4dae17a2c03a4ba9a, BlueprintAbility",
+    "PrototypeLink": "7c3bcf1379b449039a03893da8cb714f",
+    "m_Overrides": [
+      "Components.Array.data[1].m_ActionsAfterMoved.Actions.Array.data[0].ToCaster",
+      "Components.Array.data[1].m_ActionsAfterMoved.Actions.Array.data[0].Ranks",
+      "Components.Array.data[1].m_ActionsAfterMoved.Actions.Array.data[0].AsChild"
+    ],
+    "Components": [
+      {
+        "$type": "245c8bbfd839454cb3e6df4b1c12932e, WarhammerAbilityTargetInAreaEffect",
+        "name": "$WarhammerAbilityTargetInAreaEffect$9aa7df91-81fb-4181-aa28-bafa148bb108",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "7c3bcf1379b449039a03893da8cb714f",
+          "name": "$WarhammerAbilityTargetInAreaEffect$9aa7df91-81fb-4181-aa28-bafa148bb108"
+        },
+        "m_Overrides": [],
+        "m_AreaEffect": "!bp_62f3de388720472a810c47b815aba537",
+        "AnyStrategistZone": false
+      },
+      {
+        "$type": "e627a85beb904bf2bd6608ecdbcbadbc, AbilityCustomMoveToTarget",
+        "name": "$AbilityCustomMoveToTarget$51954536-1ba8-47be-a36e-75db77c5d00e",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "7c3bcf1379b449039a03893da8cb714f",
+          "name": "$AbilityCustomMoveToTarget$51954536-1ba8-47be-a36e-75db77c5d00e"
+        },
+        "m_Overrides": [
+          "m_ActionsAfterMoved.Actions"
+        ],
+        "m_OverrideMaxSpeed": false,
+        "m_MaxSpeedOverride": 10.0,
+        "m_ActionsOnTargetAfterMoved": {
+          "Actions": []
+        },
+        "m_ActionsAfterMoved": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "$ContextActionApplyBuff$22d0a7c2-4417-4135-a759-1a3860ab91bb",
+              "m_Buff": "!bp_27812417ab8047519e401ed4a58790fd",
+              "BuffEndCondition": "CombatEnd",
+              "Permanent": false,
+              "DurationValue": {
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 2,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "ToCaster": true,
+              "AsChild": false,
+              "SameDuration": false,
+              "Ranks": {
+                "ValueType": "Simple",
+                "Value": 3,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionsOnApply": {
+                "Actions": []
+              },
+              "ActionsOnImmune": {
+                "Actions": []
+              },
+              "AddFactSource": false
+            }
+          ]
+        },
+        "DisableAttacksOfOpportunity": true,
+        "DisableOnlyIfHasFact": false,
+        "m_PassThroughAllUnits": false,
+        "m_CasterMustStandInTarget": true,
+        "m_CasterMustStandNearTarget": false,
+        "IgnoreObstacles": false,
+        "AllowNotStraightMovement": true,
+        "m_CheckedFact": null
+      },
+      {
+        "$type": "62914d9ab9fe4dada246891867955ddd, WarhammerOverrideDefaultAbilityRange",
+        "name": "$WarhammerOverrideDefaultAbilityRange$f77a8f70-2752-4b58-acc5-be8626fe4f20",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "7c3bcf1379b449039a03893da8cb714f",
+          "name": "$WarhammerOverrideDefaultAbilityRange$f77a8f70-2752-4b58-acc5-be8626fe4f20"
+        },
+        "m_Overrides": [],
+        "m_Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": []
+          }
+        },
+        "m_Range": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "c10cf729af04472a900528c00b86b0fd, BlueprintPropertyGetter",
+              "name": "$BlueprintPropertyGetter$89b9214b81f7445598ed217b14a8b38b",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "m_Property": "!bp_2734ceff1eb7439e9fd034dd66d0a66f"
+            }
+          ]
+        }
+      }
+    ],
+    "Author": "LeonidTolochenko",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "d731a3d9bceb2c04fa9b02cc29387e9d",
+        "stringkey": "388f8ddf-fb50-4eeb-9011-b3bf89802b13"
+      }
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "c3b5d2a649e135141b731937feb508cc",
+        "stringkey": "0c3d44f8-a342-4683-a7c0-b46cc99aefaf"
+      }
+    },
+    "m_Icon": {
+      "guid": "a35fdee57cfd04b4290e6340b80db861",
+      "fileid": 21300000
+    },
+    "m_AllowNonContextActions": false,
+    "Type": "Spell",
+    "Range": "Custom",
+    "CustomRange": 4,
+    "MinRange": 0,
+    "ActionPointCost": 0,
+    "AbilityParamsSource": "None",
+    "PsychicPower": "Minor",
+    "VeilThicknessPointsToAdd": 1,
+    "ParamsSkill": "SkillAthletics",
+    "CooldownRounds": 1,
+    "CanTargetPoint": true,
+    "CanTargetEnemies": false,
+    "CanTargetFriends": false,
+    "CanTargetSelf": false,
+    "Hidden": false,
+    "HiddenInUI": false,
+    "DefaultSlotIndex": -1,
+    "DisableLog": false,
+    "DisableBestShootingPosition": false,
+    "NeedEquipWeapons": false,
+    "NotOffensive": false,
+    "ShowInDialogue": false,
+    "IsStarshipAbility": false,
+    "EffectOnAlly": "None",
+    "EffectOnEnemy": "None",
+    "m_Parent": null,
+    "Animation": "None",
+    "CastInOffHand": false,
+    "UseOnMechadendrite": false,
+    "UsedMechadendrite": "Utility",
+    "m_TargetMapObjects": false,
+    "IsFreeAction": false,
+    "ShouldTurnToTarget": true,
+    "SyncRotationAndAttack": false,
+    "SyncRotationDelay": 0.0,
+    "m_IsStratagem": false,
+    "UsingInThreateningArea": "CanUseWithoutAOO",
+    "UsingInOverwatchArea": "WillNotCauseAttack",
+    "CombatStateRestriction": "InCombatOnly",
+    "m_AbilityGroups": [
+      "!bp_9bf3add8150f48d0a08125cf82857c75"
+    ],
+    "MaterialComponent": {
+      "m_Item": null,
+      "Count": 1
+    },
+    "ResourceAssetIds": [],
+    "m_FXSettings": null,
+    "m_AbilityTag": "None",
+    "m_CombatHudCommandsOverride": null
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}
