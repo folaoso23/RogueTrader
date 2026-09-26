@@ -138,7 +138,7 @@
     },
     "a351eae1-f80a-42cf-bb2a-4a3ff55cb8df": {
       "Offset": 0,
-      "Text": "For one round, attacks do not use movement points. All non-{g|Encyclopedia:AreaOfEffect}area attacks{/g} within 3-tiles inflict the intimidated effect on the targets {g|Encyclopedia:HitSequenceGlossary}hit{/g} and all enemies in a 5-cell radius around that target.\nThe {g|Encyclopedia:DamageGlossary}damage{/g} dealt by intimidated enemies is reduced by −{uip|DamagePenalty|aedb4d2a2fd049db9c3f61b6737043a4}% until the Operative's next {g|Encyclopedia:Turn}turn{/g}. This {g|Encyclopedia:NegativeEffectTypesGlossary}negative effect{/g} is doubled for enemies with less than {uip|MinimumArmour|aedb4d2a2fd049db9c3f61b6737043a4}% {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}.\nIf the target is within 3-tiles of the Operative, their attack will do additional base damage equal to half of the <u>current weapon's maximum damage</u> and will inflict a random trauma upon failing a {g|Encyclopedia:WarhammerAgility}Agility{/g} check with a -{uip|TraumaBuff|aedb4d2a2fd049db9c3f61b6737043a4} penalty.\nThe Operative will also gain +6 MP upon activating this ability."
+      "Text": "The Operative gains the following bonuses for one round against targets within 3-tiles:\nAll non-{g|Encyclopedia:AreaOfEffect}area attacks{/g} inflict the intimidated effect on the targets {g|Encyclopedia:HitSequenceGlossary}hit{/g} and all enemies in a 5-cell radius around that target.\nThe {g|Encyclopedia:DamageGlossary}damage{/g} dealt by intimidated enemies is reduced by −{uip|DamagePenalty|aedb4d2a2fd049db9c3f61b6737043a4}% until the Operative's next {g|Encyclopedia:Turn}turn{/g}. This {g|Encyclopedia:NegativeEffectTypesGlossary}negative effect{/g} is doubled for enemies with less than {uip|MinimumArmour|aedb4d2a2fd049db9c3f61b6737043a4}% {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}.\nThese attacks will do additional base damage equal to half of the <u>current weapon's maximum damage</u> and will inflict a random trauma on hit targets if they fail an {g|Encyclopedia:WarhammerToughness}Toughness{/g} check with a -{uip|TraumaBuff|aedb4d2a2fd049db9c3f61b6737043a4} penalty, lasting for one round.\nDodge chance is increased by 20%.\nThe Operative will also gain +6 MP upon activating this ability and attacks do not use movement points."
     },
     "c96bec93-4772-412f-a3f8-f3dd87fcbdb0": {
       "Offset": 0,
@@ -158,7 +158,19 @@
     },
     "dc7adb44-57ee-46a5-8db9-f4a69ac7aa51": {
       "Offset": 0,
-      "Text": "If {g|f:aedb4d2a2fd049db9c3f61b6737043a4}Close Quarters Combat{/g} kills the target, the {g|Encyclopedia:DamageGlossary}damage{/g} of all other enemies in the area of {g|f:aedb4d2a2fd049db9c3f61b6737043a4}Intimidation{/g} is reduced by an additional −{uip|DamagePenalty|dde11f867df84e61a67c2a444fe87a68}%."
+      "Text": "If {g|f:aedb4d2a2fd049db9c3f61b6737043a4}Close Quarters Combat{/g} kills the target, the {g|Encyclopedia:DamageGlossary}damage{/g} of all other enemies in the area of {g|f:aedb4d2a2fd049db9c3f61b6737043a4}Close Quarters Combat{/g} is reduced by an additional −{uip|DamagePenalty|dde11f867df84e61a67c2a444fe87a68}%."
+    },
+    "9df3622d-223e-4582-a69f-b8d15bc75740": {
+      "Offset": 0,
+      "Text": "When the wearer uses {g|f:aedb4d2a2fd049db9c3f61b6737043a4}Close Quarters Combat{/g}, the targets inflicted with intimidated also gain the {g|Encyclopedia:StaggeredEffect}staggered{/g} effect for 1 {g|Encyclopedia:Round}round{/g}."
+    },
+    "40179fc7-7a9e-4230-beaf-6ae06e62f15a": {
+      "Offset": 0,
+      "Text": "Intimidated"
+    },
+    "fd6b5a5d-f9da-4f4a-baa3-3d2ff1c2fc77": {
+      "Offset": 0,
+      "Text": "Damage is reduced."
     }
   }
 }

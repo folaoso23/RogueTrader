@@ -848,7 +848,7 @@
             {
               "$type": "5e2f2046f3bd6984c8833bf019c8e8ad, ContextActionSavingThrow",
               "name": "$ContextActionSavingThrow$90491ad2-7085-40ba-be2a-44f0a68419f7",
-              "Type": "Reflex",
+              "Type": "Fortitude",
               "FromBuff": false,
               "m_ConditionalDCIncrease": [
                 {
@@ -1289,6 +1289,92 @@
         }
       },
       "InsertAfterTarget": "$WarhammerWeaponHitTriggerInitiator$53e876c9-a443-47b1-942f-0bb52cee70f1"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "919aa5bc2ad3469e8b637c3f73e98dea, WarhammerDodgeChanceModifierDefender",
+        "name": "$WarhammerDodgeChanceModifierDefender$11a7697c-95d9-468b-9707-29fabf87a893",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "LE",
+            "TargetType": "RuleInitiator",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "8cc2fc2a697041af82344696abdf3c4d, DistanceGetter",
+                "name": "$DistanceGetter$4ccdf345-0abc-4c2e-abd4-2f1736962763",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Target": "RuleTarget"
+              },
+              {
+                "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+                "name": "$ContextValueGetter$343cf063-c83d-47cd-bfee-fa37ab7c7a46",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Value": {
+                  "ValueType": "Simple",
+                  "Value": 3,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              }
+            ]
+          }
+        },
+        "Properties": "DodgeChance",
+        "DodgeChance": {
+          "ValueType": "Simple",
+          "Value": 20,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "PercentDodgeModifier": false,
+        "PercentMultiplierModifier": false,
+        "SetMinimumDodgeChance": false,
+        "MinimumDodgeChance": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "AutoDodge": false,
+        "NeverDodge": false
+      },
+      "InsertAfterTarget": "$PropertyCalculatorComponent$960f35f0-a372-43d2-b13d-8cbffb3d7d65"
     },
     {
       "PatchType": "RemoveFromEnd",
