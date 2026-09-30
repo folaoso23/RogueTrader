@@ -19,5 +19,17 @@
         }
       }
     }
-  ]
+  ],
+  "m_DisplayName": {
+    "Shared": {
+      "assetguid": "2aa3011223dc02c4687b68ebae86abd7",
+      "stringkey": "40179fc7-7a9e-4230-beaf-6ae06e62f15a"
+    }
+  },
+  "m_Description": {
+    "Shared": {
+      "assetguid": "32fd5615e2bc8e247a1075e625e78213",
+      "stringkey": "fd6b5a5d-f9da-4f4a-baa3-3d2ff1c2fc77"
+    }
+  }
 }

@@ -908,7 +908,7 @@
                                     "DurationValue": {
                                       "RoundsValue": {
                                         "ValueType": "Simple",
-                                        "Value": 1,
+                                        "Value": 2,
                                         "ValueRank": "Default",
                                         "ValueShared": "Damage",
                                         "Property": "None",
@@ -956,7 +956,7 @@
                                     "DurationValue": {
                                       "RoundsValue": {
                                         "ValueType": "Simple",
-                                        "Value": 1,
+                                        "Value": 2,
                                         "ValueRank": "Default",
                                         "ValueShared": "Damage",
                                         "Property": "None",
@@ -1004,7 +1004,7 @@
                                     "DurationValue": {
                                       "RoundsValue": {
                                         "ValueType": "Simple",
-                                        "Value": 1,
+                                        "Value": 2,
                                         "ValueRank": "Default",
                                         "ValueShared": "Damage",
                                         "Property": "None",
@@ -1052,7 +1052,7 @@
                                     "DurationValue": {
                                       "RoundsValue": {
                                         "ValueType": "Simple",
-                                        "Value": 1,
+                                        "Value": 2,
                                         "ValueRank": "Default",
                                         "ValueShared": "Damage",
                                         "Property": "None",
@@ -1100,7 +1100,7 @@
                                     "DurationValue": {
                                       "RoundsValue": {
                                         "ValueType": "Simple",
-                                        "Value": 1,
+                                        "Value": 2,
                                         "ValueRank": "Default",
                                         "ValueShared": "Damage",
                                         "Property": "None",
@@ -1148,7 +1148,7 @@
                                     "DurationValue": {
                                       "RoundsValue": {
                                         "ValueType": "Simple",
-                                        "Value": 1,
+                                        "Value": 2,
                                         "ValueRank": "Default",
                                         "ValueShared": "Damage",
                                         "Property": "None",
