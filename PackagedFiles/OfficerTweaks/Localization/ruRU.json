@@ -1,0 +1,20 @@
+{
+  "strings": {
+    "df3de774-45a9-4b7e-bb2a-7d2b0fa10958": {
+      "Offset": 0,
+      "Text": "<u>Временное здоровье</u>"
+    },
+    "91dde4ec-72f2-403e-865f-9d4da99ba97e": {
+      "Offset": 0,
+      "Text": "<u>(2 × бонус {g|Encyclopedia:WarhammerWillpower}ВОЛ{/g} {g|Encyclopedia:CareerLeaderGlossary}офицера{/g})</u>"
+    },
+    "4844f1fe-5dd4-4bb6-bfa2-3886afe70c29": {
+      "Offset": 0,
+      "Text": "<u>(бонус {g|Encyclopedia:WarhammerFellowship}ОБЩ{/g} {g|Encyclopedia:CareerLeaderGlossary}офицера{/g} / 2)</u>"
+    },
+    "d1dac210-a077-41ec-a7b1-4a60a90634a4": {
+      "Offset": 0,
+      "Text": "<u>(30 + 3 × бонус {g|Encyclopedia:WarhammerFellowship}ОБЩ{/g})</u>"
+    }
+  }
+}

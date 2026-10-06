@@ -1,0 +1,12 @@
+{
+  "Components": [
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$WarhammerWeaponHitTriggerInitiator$be3afd3b-f8be-4d66-beb4-37ac5060c0ac"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$WarhammerDamageTriggerInitiator$2bccacd6-ef62-4589-9501-bb0eeda93ac6"
+    }
+  ]
+}

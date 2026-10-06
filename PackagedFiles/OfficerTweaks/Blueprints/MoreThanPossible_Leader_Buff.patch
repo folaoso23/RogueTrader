@@ -1,0 +1,8 @@
+{
+  "Components": [
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AbilityLifecycleTriggerCaster$c820ab68-de5c-4a45-b06a-65c280bdc426"
+    }
+  ]
+}

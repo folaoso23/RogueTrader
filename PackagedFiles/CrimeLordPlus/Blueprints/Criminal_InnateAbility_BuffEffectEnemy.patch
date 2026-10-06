@@ -1,0 +1,53 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$c504e890-1327-4db5-8d2e-cb5d9289b810",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$SimplePropertyGetter$c7b2a266bd434ba4900ddf1658cd8b7c",
+              "ElementPatch": {
+                "Settings": {
+                  "m_StepLevel": 15
+                },
+                "Property": "PerceptionBonus"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$edfc58f1-9b6f-443f-9947-d5c6dbc72cbd",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$SimplePropertyGetter$1672f663-7696-44c1-95c4-e87efe4ad704",
+              "ElementPatch": {
+                "Settings": {
+                  "m_StepLevel": 15
+                },
+                "Property": "PerceptionBonus"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerDodgeChanceModifierAttacker$00374ec1-654b-4ff2-9d1d-8ef3ab624fd8",
+      "ElementPatch": {
+        "DodgeChance": {
+          "PropertyName": "Value2"
+        }
+      }
+    }
+  ]
+}

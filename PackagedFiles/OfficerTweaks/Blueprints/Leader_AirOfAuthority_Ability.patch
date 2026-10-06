@@ -1,0 +1,190 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$WarhammerOverrideDefaultAbilityRange$7701b136-2c9e-4aef-9dd6-2bd56600a118",
+      "InsertAfterTarget": "$AbilityUnrestrictedRangeForTarget$a941a927-4411-4a24-923b-1831dbda2501"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$54e0ca29-e284-4083-9803-22b4d86d7c58",
+      "InsertAfterTarget": "$WarhammerOverrideDefaultAbilityRange$7701b136-2c9e-4aef-9dd6-2bd56600a118"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "f9bf4ae9ccd847689d5cdf2e86bc51ca, PropertyCalculatorComponent",
+        "name": "$PropertyCalculatorComponent$777ee27b-1537-44a3-b2a8-faeee2c9b35e",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Name": "Value1",
+        "SaveToContext": "No",
+        "Value": {
+          "Operation": "Sum",
+          "TargetType": "ContextCaster",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": [
+            {
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$a151ef1409cc428a8b125d6659c5c053",
+              "Settings": {
+                "Progression": "AsIs",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 0,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "ValueType": "Simple",
+                "Value": 2,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            },
+            {
+              "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+              "name": "$ContextValueGetter$72c56be0064a4ce3a11702be56a84000",
+              "Settings": {
+                "Progression": "MultiplyByModifier",
+                "m_CustomProgression": [],
+                "m_StartLevel": 0,
+                "m_StepLevel": 1,
+                "Negate": false,
+                "Limit": "None",
+                "Min": 0,
+                "Max": 0
+              },
+              "Value": {
+                "ValueType": "CasterProperty",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "Resolve",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              }
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$PropertyCalculatorComponent$54e0ca29-e284-4083-9803-22b4d86d7c58"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityRedirect$526c2078-b569-419e-903a-fc1ce137825c",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$777ee27b-1537-44a3-b2a8-faeee2c9b35e"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "471113ce4758b9b4d8a3162276d8d570, AbilityTargetHasFact",
+        "name": "$AbilityTargetHasFact$ff78dac9-c16e-4a0b-a2ef-c31fdcd87f43",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_TypeOfFactChecking": "Or",
+        "m_CheckedFacts": [
+          "!bp_d36653bcf9b643f68c5dac1fc76fab4a"
+        ],
+        "Inverted": true,
+        "FromThisCaster": false
+      },
+      "InsertAfterTarget": "$AbilityRedirect$526c2078-b569-419e-903a-fc1ce137825c"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "95e248f24866439681c312b1bff0693c, UIPropertiesComponent",
+        "name": "$UIPropertiesComponent$d261b93b-030b-4180-aa01-d88276835e9a",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Properties": [
+          {
+            "NameType": "Damage",
+            "m_Name": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": null
+            },
+            "Description": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": {
+                "assetguid": "cdd0070ed2960774e98e50941dabb0a7",
+                "stringkey": "e71a976f-c9d7-4804-bb04-a66b06356dff"
+              }
+            },
+            "m_DescriptionFact": "!bp_32c0e0539f8548b08780089f8006f54a",
+            "m_LinkProperty": true,
+            "m_PropertyName": "Value1",
+            "m_PropertySource": "!bp_d36653bcf9b643f68c5dac1fc76fab4a",
+            "m_LinkKey": "ResolveBonus",
+            "Main": false
+          },
+          {
+            "NameType": "Damage",
+            "m_Name": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": null
+            },
+            "Description": {
+              "m_Key": "",
+              "m_OwnerString": "",
+              "m_OwnerPropertyPath": "",
+              "m_JsonPath": "",
+              "Shared": {
+                "assetguid": "ffa4c67bd6f42414e92a09f50d97506a",
+                "stringkey": "766a09cd-6db5-44b3-a1ce-7ed58ea84a6e"
+              }
+            },
+            "m_DescriptionFact": "!bp_32c0e0539f8548b08780089f8006f54a",
+            "m_LinkProperty": true,
+            "m_PropertyName": "Value2",
+            "m_PropertySource": "!bp_d36653bcf9b643f68c5dac1fc76fab4a",
+            "m_LinkKey": "DamageBonus",
+            "Main": false
+          }
+        ]
+      },
+      "InsertAfterTarget": "$AbilityTargetHasFact$ff78dac9-c16e-4a0b-a2ef-c31fdcd87f43"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AbilityTargetHasFact$e97ee0f5-1cd7-4322-be07-90c0996fa55d"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$PropertyCalculatorComponent$c2ac6ee9-51df-48fc-858f-1c0729b8ad42"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$UIPropertiesComponent$3dc0b8a6-38d3-46a9-b57b-0c98459b08ab"
+    }
+  ],
+  "CanTargetSelf": true
+}

@@ -1,0 +1,20 @@
+{
+  "strings": {
+    "df3de774-45a9-4b7e-bb2a-7d2b0fa10958": {
+      "Offset": 0,
+      "Text": "<u>临时生命值</u>"
+    },
+    "91dde4ec-72f2-403e-865f-9d4da99ba97e": {
+      "Offset": 0,
+      "Text": "<u>（2×{g|Encyclopedia:CareerLeaderGlossary}军官{/g}的{g|Encyclopedia:WarhammerWillpower}意志{/g}加值）</u>"
+    },
+    "4844f1fe-5dd4-4bb6-bfa2-3886afe70c29": {
+      "Offset": 0,
+      "Text": "<u>（{g|Encyclopedia:CareerLeaderGlossary}军官{/g}的{g|Encyclopedia:WarhammerFellowship}社交{/g}加值/2）</u>"
+    },
+    "d1dac210-a077-41ec-a7b1-4a60a90634a4": {
+      "Offset": 0,
+      "Text": "<u>（30 + 3 ×{g|Encyclopedia:WarhammerFellowship}社交{/g}加值）</u>"
+    }
+  }
+}

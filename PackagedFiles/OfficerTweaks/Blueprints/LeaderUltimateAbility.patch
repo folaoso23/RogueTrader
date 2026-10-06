@@ -1,0 +1,310 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityMomentumLogic$0b466404-24f3-4a19-83fb-1071fdb89b1d",
+      "InsertAfterTarget": null
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilitySpecialMomentumAction$6ef34bc1-9912-49bf-9776-35bfb7c92a9c",
+      "InsertAfterTarget": "$AbilityMomentumLogic$0b466404-24f3-4a19-83fb-1071fdb89b1d"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityTargetHasNoFactUnless$5fb7d3ef-5681-469e-8f97-1f152a79ce96",
+      "InsertAfterTarget": "$AbilitySpecialMomentumAction$6ef34bc1-9912-49bf-9776-35bfb7c92a9c"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityTargetCanAct$5bd4a523-861f-4aaa-8be6-6936d1cce485",
+      "InsertAfterTarget": "$AbilityTargetHasNoFactUnless$5fb7d3ef-5681-469e-8f97-1f152a79ce96"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$29ec9b8a-38c9-4711-bd10-5cd5c2c4d5f5",
+      "InsertAfterTarget": "$AbilityTargetCanAct$5bd4a523-861f-4aaa-8be6-6936d1cce485"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$d52f407f-934a-45dc-93dc-2d15082bbaa0",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$29ec9b8a-38c9-4711-bd10-5cd5c2c4d5f5"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$52ff0a58-051d-4097-89e8-9d733cd41660",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$d52f407f-934a-45dc-93dc-2d15082bbaa0"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$AbilityCanTargetOnlyPetUnits$bb8c83ac-a695-41df-86e7-f11d7e0e614d",
+      "InsertAfterTarget": "$PropertyCalculatorComponent$52ff0a58-051d-4097-89e8-9d733cd41660"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
+        "name": "$AbilityEffectRunAction$a0cc7811-271e-4d16-b2c1-67d8879a87f9",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "SavingThrowType": "Unknown",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "$ContextActionApplyBuff$e26ce798-813a-4413-be37-15acc60a1823",
+              "m_Buff": "!bp_1cd606cf1f484b5796def1bfa7343702",
+              "BuffEndCondition": "CombatEnd",
+              "Permanent": true,
+              "DurationValue": {
+                "BonusValue": {
+                  "ValueType": "Simple",
+                  "Value": 1,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                },
+                "RoundsValue": {
+                  "ValueType": "Simple",
+                  "Value": 1,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              },
+              "ToCaster": false,
+              "AsChild": false,
+              "SameDuration": false,
+              "Ranks": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionsOnApply": {
+                "Actions": []
+              },
+              "ActionsOnImmune": {
+                "Actions": []
+              },
+              "AddFactSource": false
+            },
+            {
+              "$type": "5f950c181b3157a4486fcd36b702b702, ContextActionOnContextCaster",
+              "name": "$ContextActionOnContextCaster$a4767ef5-14a3-4e8b-aaa6-504a3d8536d9",
+              "Actions": {
+                "Actions": [
+                  {
+                    "$type": "52d8973f2e470e14c97b74209680491a, Conditional",
+                    "name": "$Conditional$4b1cd418-aa78-4b81-bf78-b375d2a1376e",
+                    "Comment": "",
+                    "ConditionsChecker": {
+                      "Operation": "And",
+                      "Conditions": [
+                        {
+                          "$type": "f310985bf2724df4a97b165f74b806e8, HasFact",
+                          "name": "$HasFact$ba395d1f-90e9-451d-a322-d2914f6031d9",
+                          "Not": false,
+                          "Unit": {
+                            "$type": "56703b87cc0c36347937d201cc076a6d, CasterUnit",
+                            "name": "$CasterUnit$4d86a5ba-a093-493b-9bc5-2ac1e36c2792"
+                          },
+                          "m_Fact": "!bp_ce2dcb23e46c4ab4ad80f0172aa524e8"
+                        }
+                      ]
+                    },
+                    "IfTrue": {
+                      "Actions": [
+                        {
+                          "$type": "d1933e412cc64482ae7990aaacdf44a8, WarhammerContextActionRestoreActionPoints",
+                          "name": "$WarhammerContextActionRestoreActionPoints$687f2ae9-bf75-4980-94d6-e584419e338a",
+                          "ActionPoints": {
+                            "ValueType": "Simple",
+                            "Value": 0,
+                            "ValueRank": "Default",
+                            "ValueShared": "Damage",
+                            "Property": "None",
+                            "m_CustomProperty": null,
+                            "PropertyName": "Value1"
+                          },
+                          "MovePoints": {
+                            "ValueType": "CasterNamedProperty",
+                            "Value": 0,
+                            "ValueRank": "Default",
+                            "ValueShared": "Damage",
+                            "Property": "None",
+                            "m_CustomProperty": null,
+                            "PropertyName": "Value1"
+                          },
+                          "ActionPointsToMax": false,
+                          "MovePointsToMax": false,
+                          "IgnoreMovePointsMaximum": true,
+                          "IgnoreActionPointsMaximum": false
+                        }
+                      ]
+                    },
+                    "IfFalse": {
+                      "Actions": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "$type": "52d8973f2e470e14c97b74209680491a, Conditional",
+              "name": "$Conditional$22fd03c602d046b6a7eaaf9c521aa1d0",
+              "Comment": "",
+              "ConditionsChecker": {
+                "Operation": "And",
+                "Conditions": [
+                  {
+                    "$type": "1bb7cd34a36c43bca61048eb36ae8d4b, ContextConditionTargetIsYourself",
+                    "name": "$ContextConditionTargetIsYourself$83dc4fbf0b444a6da12417f4a59d09d6",
+                    "Not": true
+                  }
+                ]
+              },
+              "IfTrue": {
+                "Actions": [
+                  {
+                    "$type": "32ab11539189db84aa3d249b00be4d32, ContextActionStartAdditionalTurn",
+                    "name": "$ContextActionStartAdditionalTurn$eb642291b8ee476094f30c31c89fe11d",
+                    "m_AllowOnCurrentTurnUnit": false,
+                    "GrantedMP": {
+                      "ValueType": "CasterNamedProperty",
+                      "Value": 0,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": null,
+                      "PropertyName": "StatBonus1"
+                    },
+                    "GrantedAP": {
+                      "ValueType": "CasterNamedProperty",
+                      "Value": 0,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": null,
+                      "PropertyName": "StatBonus2"
+                    },
+                    "AsInterruption": false,
+                    "AbilityRestrictionForInterrupt": {
+                      "Property": {
+                        "Operation": "Sum",
+                        "TargetType": "CurrentEntity",
+                        "TargetEvaluator": null,
+                        "FailSilentlyIfNoTarget": false,
+                        "Getters": []
+                      }
+                    },
+                    "InterruptionWithoutUIUpdates": false,
+                    "LetCurrentUnitFinishAction": false,
+                    "ForbidChainInterruption": false
+                  }
+                ]
+              },
+              "IfFalse": {
+                "Actions": [
+                  {
+                    "$type": "d1933e412cc64482ae7990aaacdf44a8, WarhammerContextActionRestoreActionPoints",
+                    "name": "$WarhammerContextActionRestoreActionPoints$be5aadfc39464ed28fa609a37394b4b8",
+                    "ActionPoints": {
+                      "ValueType": "Simple",
+                      "Value": 0,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": null,
+                      "PropertyName": "Value1"
+                    },
+                    "MovePoints": {
+                      "ValueType": "Simple",
+                      "Value": 0,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": null,
+                      "PropertyName": "Value1"
+                    },
+                    "ActionPointsToMax": true,
+                    "MovePointsToMax": true,
+                    "IgnoreMovePointsMaximum": false,
+                    "IgnoreActionPointsMaximum": false
+                  },
+                  {
+                    "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                    "name": "$ContextActionApplyBuff$7d92dbaee06a429eb166b80f1da7874c",
+                    "m_Buff": "!bp_73ec4fb0471042d3bc0b604ba5354dc4",
+                    "BuffEndCondition": "CombatEnd",
+                    "Permanent": true,
+                    "DurationValue": {
+                      "BonusValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null,
+                        "PropertyName": "Value1"
+                      },
+                      "RoundsValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null,
+                        "PropertyName": "Value1"
+                      }
+                    },
+                    "ToCaster": false,
+                    "AsChild": false,
+                    "SameDuration": false,
+                    "Ranks": {
+                      "ValueType": "Simple",
+                      "Value": 0,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": null,
+                      "PropertyName": "Value1"
+                    },
+                    "ActionsOnApply": {
+                      "Actions": []
+                    },
+                    "ActionsOnImmune": {
+                      "Actions": []
+                    },
+                    "AddFactSource": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "InsertAfterTarget": "$AbilityCanTargetOnlyPetUnits$bb8c83ac-a695-41df-86e7-f11d7e0e614d"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AbilityTargetNotSelf$344f98c8-0149-49b1-8438-de8df6982c30"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AbilityEffectRunAction$0721d792-cbf2-44d7-a9f1-b626fd341edf"
+    }
+  ],
+  "CanTargetSelf": true
+}

@@ -1,0 +1,40 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$551af887-7399-49cf-9279-6db877af3239",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$SimplePropertyGetter$1bef3375624942a4aab440693d1cf4d9",
+              "ElementPatch": {
+                "Settings": {
+                  "m_StepLevel": 15
+                }
+              }
+            },
+            {
+              "PatchType": "PatchElement",
+              "Target": "$PropertyCalculatorGetter$7500197c540d4d9fbbd2a5f08c897b7c",
+              "ElementPatch": {
+                "Value": {
+                  "Getters": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$SimplePropertyGetter$d95f72b7a3b0496eab6ca4ef070f52b5",
+                      "ElementPatch": {
+                        "Property": "PerceptionBonus"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

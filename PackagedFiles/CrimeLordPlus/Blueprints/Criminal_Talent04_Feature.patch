@@ -1,0 +1,64 @@
+{
+  "Components": [
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "735b0f7df0d179c4485cd3c8e30ca6db, RerollD100",
+        "name": "$RerollD100$0052a49f-693c-4f4a-adb8-8701edce12a0",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Chance": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": []
+        },
+        "m_CanBeGreaterThanBaseChance": false,
+        "m_ShouldStopAfterSuccessfulReroll": false,
+        "m_RerollSuccess": "0",
+        "m_RerollFail": "Skill, Attribute",
+        "m_RerollOnlyAgainstSourceOwner": false,
+        "m_RerollConcreteAttribute": false,
+        "m_RerollConcreteSkill": false,
+        "m_AllowRerollMultipleTimes": false,
+        "m_RerollCount": {
+          "Operation": "Sum",
+          "TargetType": "CurrentEntity",
+          "TargetEvaluator": null,
+          "FailSilentlyIfNoTarget": false,
+          "Getters": []
+        },
+        "SkillType": "Athletics",
+        "AttributeType": "BallisticSkill",
+        "ModifyBaseChance": true,
+        "RemoveSelfAfterReroll": false,
+        "ActionsOnReroll": {
+          "Actions": []
+        }
+      },
+      "InsertAfterTarget": "$TurnBasedModeEventsTrigger$b4f55124-c3f4-4357-ab66-6e57effba660"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "a2844c135c0324e439072bd3cc2f9260, AddStatBonus",
+        "name": "$AddStatBonus$560042d7-4bdb-4938-aa90-caf9c82fb73d",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Descriptor": "None",
+        "Stat": "SkillAwareness",
+        "Value": 20
+      },
+      "InsertAfterTarget": "$RerollD100$0052a49f-693c-4f4a-adb8-8701edce12a0"
+    }
+  ]
+}

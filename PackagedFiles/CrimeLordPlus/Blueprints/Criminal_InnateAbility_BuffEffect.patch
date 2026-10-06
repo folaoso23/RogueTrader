@@ -1,0 +1,44 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$8852632b-d62e-41e4-b5cb-c155889cfdef",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$SimplePropertyGetter$7343ecf5def1464c8b85ca94d4728e51",
+              "ElementPatch": {
+                "Settings": {
+                  "m_StepLevel": 15
+                }
+              }
+            },
+            {
+              "PatchType": "PatchElement",
+              "Target": "$PropertyCalculatorGetter$80b0bdc2c7bc4f9a9141776a39fc77e3",
+              "ElementPatch": {
+                "Value": {
+                  "Getters": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$SimplePropertyGetter$979ac9c47e77460d9e27d0d0fb5d15ff",
+                      "ElementPatch": {
+                        "Settings": {
+                          "Progression": "DivStep",
+                          "m_StepLevel": 3
+                        },
+                        "Property": "SkillAwareness"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
