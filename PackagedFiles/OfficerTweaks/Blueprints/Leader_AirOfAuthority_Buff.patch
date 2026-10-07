@@ -34,7 +34,7 @@
               },
               "Value": {
                 "ValueType": "Simple",
-                "Value": 5,
+                "Value": 2,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
@@ -262,7 +262,7 @@
                 "Progression": "DivStep",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 3,
+                "m_StepLevel": 4,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,

@@ -34,7 +34,7 @@
     },
     "766a09cd-6db5-44b3-a1ce-7ed58ea84a6e": {
       "Offset": 0,
-      "Text": "<u>15 + ({g|Encyclopedia:WarhammerWillpower}Willpower{/g} / 3)</u>"
+      "Text": "<u>15 + ({g|Encyclopedia:WarhammerWillpower}Willpower{/g} / 4)</u>"
     },
     "77e86ef4-93c4-439b-b9f4-b93b5b96befc": {
       "Offset": 0,
@@ -70,7 +70,7 @@
     },
     "e71a976f-c9d7-4804-bb04-a66b06356dff": {
       "Offset": 0,
-      "Text": "<u>(5 + {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s {g|Encyclopedia:Resolve}resolve{/g})</u>"
+      "Text": "<u>(2 + {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s {g|Encyclopedia:Resolve}resolve{/g})</u>"
     },
     "445fe3e6-606c-48e1-b549-c8ef42937c3e": {
       "Offset": 0,
