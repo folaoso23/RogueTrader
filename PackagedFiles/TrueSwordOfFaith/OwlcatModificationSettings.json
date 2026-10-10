@@ -13,11 +13,6 @@
     },
     "BlueprintPatches": [
         {
-            "Guid": "20d5376f942f454daf37f2b81a81e7b1",
-            "Filename": "SancticSwordOfFaithAbility",
-            "PatchType": 2
-        },
-        {
             "Guid": "73e83b5b49c4461cb32324498c23474d",
             "Filename": "SancticSwordOfFaithWeapon",
             "PatchType": 2
