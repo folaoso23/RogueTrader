@@ -1,0 +1,130 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$AbilityEffectRunAction$2dcfc30b-8cf2-48b0-9f26-fa46e3f29b7f",
+      "ElementPatch": {
+        "Actions": {
+          "Actions": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$Conditional$148062e653db49359339b097f188664f",
+              "ElementPatch": {
+                "IfFalse": {
+                  "Actions": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$ContextActionDealDamage$8b9d19e3-3eda-46ba-ac92-d6077383d810",
+                      "ElementPatch": {
+                        "DoNotUseCasterModifiers": false
+                      }
+                    },
+                    {
+                      "PatchType": "Insert",
+                      "NewElement": {
+                        "$type": "d5debd59683c7064fa9393bd52c9a624, ContextActionPush",
+                        "name": "$ContextActionPush$88f93c9764ac486f9d53f8339e7cbdd0",
+                        "Cells": {
+                          "ValueType": "Simple",
+                          "Value": 8,
+                          "ValueRank": "Default",
+                          "ValueShared": "Damage",
+                          "Property": "None",
+                          "m_CustomProperty": null,
+                          "PropertyName": "Value1"
+                        },
+                        "ProvokeAttackOfOpportunity": false,
+                        "m_UseFactOwnerAsCaster": false,
+                        "m_PushBack": true,
+                        "m_PushPerpendicular": false
+                      },
+                      "InsertAfterTarget": "$ContextActionDealDamage$8b9d19e3-3eda-46ba-ac92-d6077383d810"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$e1b00ddc-72bc-4c37-8d3b-5cdbbb85ab73",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$PropertyCalculatorGetter$10451304-2688-4aef-8ef5-03876ef71016",
+              "ElementPatch": {
+                "Value": {
+                  "Getters": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$SimplePropertyGetter$a2f3b353-6e57-461c-a166-ec286c1fe527",
+                      "ElementPatch": {
+                        "Settings": {
+                          "m_StepLevel": 2
+                        }
+                      }
+                    },
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$PsyRatingGetter$3a5c00d1-085e-4af9-b7f5-c99f81eac907",
+                      "ElementPatch": {
+                        "Settings": {
+                          "Progression": "MultiplyByModifier",
+                          "m_StepLevel": 2
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$PropertyCalculatorComponent$69c7b357-57f1-4ff4-91b3-aae83b182fd2",
+      "ElementPatch": {
+        "Value": {
+          "Getters": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$PropertyCalculatorGetter$3e59d985-a805-425e-b77c-5e3896d78ee1",
+              "ElementPatch": {
+                "Value": {
+                  "Getters": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$SimplePropertyGetter$16ba18cd-a01c-400a-884d-2c2d4c442c7b",
+                      "ElementPatch": {
+                        "Settings": {
+                          "m_StepLevel": 2
+                        }
+                      }
+                    },
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$PsyRatingGetter$ea0fc327-bf58-47f2-aed3-d75aa5720ac5",
+                      "ElementPatch": {
+                        "Settings": {
+                          "Progression": "MultiplyByModifier",
+                          "m_StepLevel": 2
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

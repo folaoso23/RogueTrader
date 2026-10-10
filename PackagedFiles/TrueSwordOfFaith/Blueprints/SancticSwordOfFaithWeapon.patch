@@ -1,0 +1,31 @@
+{
+  "m_Icon": {
+    "guid": "12146d32457ccc347b4af2e3850274aa",
+    "fileid": 21300000
+  },
+  "m_VisualParameters": {
+    "m_WeaponAnimationStyle": "BrutalTwoHanded",
+    "m_WeaponModel": {
+      "guid": "3b52c52a6504d69428dd6eeb7d7b644f",
+      "fileid": 2303428077302067451
+    }
+  },
+  "m_HoldingType": "TwoHanded",
+  "WarhammerDamage": 30,
+  "WarhammerMaxDamage": 40,
+  "WarhammerPenetration": 100,
+  "m_Enchantments": [
+    {
+      "PatchType": "Prepend",
+      "NewElement": "!bp_be03a9726a8a4b6991c0e76eba1301d7"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "!bp_2cfe91320d564296b9957fb054a3a921"
+    }
+  ],
+  "m_DamageType": {
+    "Type": "Energy"
+  },
+  "m_DamageStatBonusFactor": "Two"
+}

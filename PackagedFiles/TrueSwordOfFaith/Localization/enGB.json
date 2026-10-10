@@ -1,0 +1,28 @@
+{
+   "strings": {
+      "73600e3d-aed5-4bed-97bf-fe50b1f3f659": {
+         "Text": "This {g|Encyclopedia:PsykerPowersGlossary}psychic power{/g} costs 50 {g|Encyclopedia:MomentumWithDetailsGlossary}momentum{/g} and can only be used when momentum is 175 or higher.\nUntil the end of combat, the weapon in the psyker's hand is replaced by a sword made of sheer will.\n-<indent=5%>This sword has a single-target attack and an {g|Encyclopedia:AreaOfEffect}area attack{/g} (like a two-handed sword) and can be used to release a cone of fire or a line of fire (like a flamer).</indent>\n-<indent=5%>The damage of this sword gains the same bonuses as {g|f:4b401c668e0d46a7a09dba9d5480cdaa}Purge Soul{/g}.</indent>\n-<indent=5%>If the psyker was using a force weapon, all the bonuses from that force weapon remain. For the purposes of {g|Encyclopedia:Talent}talents{/g} and other bonuses, the <b>Sword of Faith</b> counts as a force weapon.</indent>\n-<indent=5%>This power can be used again, increasing the damage of the sword by +{uip|Resolve|20d5376f942f454daf37f2b81a81e7b1}.</indent>"
+      },
+      "00efac33-66fe-4b86-a117-8212f1b68956": {
+         "Text": "Gains the same {g|Encyclopedia:DamageGlossary}damage{/g} bonues as the {g|f:4b401c668e0d46a7a09dba9d5480cdaa}Purge Soul{/g} {g|Encyclopedia:PsykerPowersGlossary}psychic power{/g} to every enemy in front of the psyker."
+      },
+      "0e0f4bf1-942e-4245-9a8a-b017828cc883": {
+         "Text": "A single-target {g|Encyclopedia:MeleeAttacksGlossary}melee{/g} strike that gains the same {g|Encyclopedia:DamageGlossary}damage{/g} bonuses as the {g|f:4b401c668e0d46a7a09dba9d5480cdaa}Purge Soul{/g} {g|Encyclopedia:PsykerPowersGlossary}psychic power{/g}."
+      },
+      "ba986531-0c72-4f0e-ad32-dbb29d486ac7": {
+         "Text": "Gains the same {g|Encyclopedia:DamageGlossary}damage{/g} bonuses as the {g|f:4b401c668e0d46a7a09dba9d5480cdaa}Purge Soul{/g} {g|Encyclopedia:PsykerPowersGlossary}psychic power{/g} to every enemy in a cone."
+      },
+      "176c063f-ae3e-49d9-8866-eb9111201706": {
+         "Text": "Gains the same {g|Encyclopedia:DamageGlossary}damage{/g} bonuses as the {g|f:4b401c668e0d46a7a09dba9d5480cdaa}Purge Soul{/g} {g|Encyclopedia:PsykerPowersGlossary}psychic power{/g} to every enemy in a line."
+      },
+      "59db9403-c985-42e0-ba01-99bf3141886d": {
+         "Text": "<u>(1 + (psyker's {g|Encyclopedia:PsyRating}psy rating{/g} × 2) × {g|Encyclopedia:Resolve}resolve{/g} / 2)</u>"
+      },
+      "35d37eed-47ee-43de-817c-db9582407e29": {
+         "Text": "<u>(4 + (psyker's {g|Encyclopedia:PsyRating}psy rating{/g} × 2) × {g|Encyclopedia:Resolve}resolve{/g} / 2)</u>"
+      },
+      "6c626611-568f-4cc6-990a-93f9481e25cf": {
+         "Text": "Deals (from {uip|MinDamage|4b401c668e0d46a7a09dba9d5480cdaa} to {uip|MaxDamage|4b401c668e0d46a7a09dba9d5480cdaa}) {g|Encyclopedia:DirectDamage}direct damage{/g} and pushes targets up to 8 tiles away.\nThis {g|Encyclopedia:DamageGlossary}damage{/g} is increased by +50% against xenos, by +100% against Chaos worshippers or Drukhari, by +150% against daemons, and by +50% if the enemy has already damaged the psyker or any of the psyker's allies this combat. These damage {g|Encyclopedia:Bonus}bonuses{/g} also affect any damage bonuses from other sources.\n! This power does not affect targets that lack souls."
+      }
+   }
+}

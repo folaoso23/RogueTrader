@@ -1,0 +1,30 @@
+{
+  "Value": {
+    "Getters": [
+      {
+        "PatchType": "PatchElement",
+        "Target": "$PropertyCalculatorGetter$021dd7ad92d94edf9535dc288c4a35c9",
+        "ElementPatch": {
+          "Settings": {
+            "m_StepLevel": 2
+          },
+          "Value": {
+            "TargetEvaluator": null,
+            "Getters": [
+              {
+                "PatchType": "PatchElement",
+                "Target": "$PsyRatingGetter$6c40e98d854940c8bc39cecf5c68d3e3",
+                "ElementPatch": {
+                  "Settings": {
+                    "Progression": "MultiplyByModifier",
+                    "m_StepLevel": 2
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

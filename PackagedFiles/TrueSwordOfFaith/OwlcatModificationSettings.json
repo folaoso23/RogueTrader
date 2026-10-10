@@ -1,0 +1,46 @@
+{
+    "BundlesLayout": {
+        "m_Guids": [],
+        "m_Bundles": []
+    },
+    "BundleDependencies": {
+        "m_List": [
+            {
+                "Key": "TrueSwordOfFaith_BlueprintDirectReferences",
+                "Value": []
+            }
+        ]
+    },
+    "BlueprintPatches": [
+        {
+            "Guid": "20d5376f942f454daf37f2b81a81e7b1",
+            "Filename": "SancticSwordOfFaithAbility",
+            "PatchType": 2
+        },
+        {
+            "Guid": "73e83b5b49c4461cb32324498c23474d",
+            "Filename": "SancticSwordOfFaithWeapon",
+            "PatchType": 2
+        },
+        {
+            "Guid": "4b401c668e0d46a7a09dba9d5480cdaa",
+            "Filename": "SancticPurgeSoulAbility",
+            "PatchType": 2
+        },
+        {
+            "Guid": "2d2b83d861704614a63fbd580a1a48ec",
+            "Filename": "SancticPurgeSoulMaximumDamageProperty",
+            "PatchType": 2
+        },
+        {
+            "Guid": "61962a6fd09b44998fd3379407d1ea9a",
+            "Filename": "SancticPurgeSoulMinimumDamageProperty",
+            "PatchType": 2
+        },
+        {
+            "Guid": "55760c1b64f0480e9b4045d65a08a128",
+            "Filename": "SancticSwordOfFaithMeleeAttack",
+            "PatchType": 2
+        }
+    ]
+}

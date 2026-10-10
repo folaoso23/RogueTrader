@@ -1,0 +1,15 @@
+{
+    "UniqueName": "TrueSwordOfFaith",
+    "Version": "1.0.0",
+    "DisplayName": "True Sword Of Faith",
+    "Description": "Makes sword of aith two-handed and makes it do warp damage",
+    "Author": "OG_Stix",
+    "Repository": "",
+    "HomePage": "",
+    "Dependencies": [
+        {
+            "Name": "DPWeaponAssetPack",
+            "Version": "1.1.0"
+        }
+    ]
+}

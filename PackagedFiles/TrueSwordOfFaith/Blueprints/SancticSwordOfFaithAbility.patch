@@ -1,0 +1,37 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$AbilityEffectRunAction$2dcfc30b-8cf2-48b0-9f26-fa46e3f29b7f",
+      "ElementPatch": {
+        "Actions": {
+          "Actions": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$WarhammerContextActionAddMomentum$418548a0d6ad4c688d6d726fe6a1f759",
+              "ElementPatch": {
+                "Value": {
+                  "Value": 0
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$UIPropertiesComponent$23148b17-c014-4ed5-98d9-e86858aaa563",
+      "InsertAfterTarget": "$AbilityEffectRunAction$2dcfc30b-8cf2-48b0-9f26-fa46e3f29b7f"
+    },
+    {
+      "PatchType": "Relocate",
+      "Target": "$PropertyCalculatorComponent$a4fd19fe-8ea4-4901-b843-f05c4aca872b",
+      "InsertAfterTarget": "$UIPropertiesComponent$23148b17-c014-4ed5-98d9-e86858aaa563"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AbilityMinimumMomentum$976c4aaa-5ad0-4b42-8072-f57b2b31a198"
+    }
+  ]
+}
