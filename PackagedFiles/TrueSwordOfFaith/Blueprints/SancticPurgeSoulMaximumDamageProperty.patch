@@ -17,7 +17,7 @@
                 "ElementPatch": {
                   "Settings": {
                     "Progression": "MultiplyByModifier",
-                    "m_StepLevel": 2
+                    "m_StepLevel": 3
                   }
                 }
               }

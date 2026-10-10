@@ -11,19 +11,9 @@
     }
   },
   "m_HoldingType": "TwoHanded",
-  "WarhammerDamage": 30,
-  "WarhammerMaxDamage": 40,
+  "WarhammerDamage": 32,
+  "WarhammerMaxDamage": 48,
   "WarhammerPenetration": 100,
-  "m_Enchantments": [
-    {
-      "PatchType": "Prepend",
-      "NewElement": "!bp_be03a9726a8a4b6991c0e76eba1301d7"
-    },
-    {
-      "PatchType": "RemoveFromEnd",
-      "Target": "!bp_2cfe91320d564296b9957fb054a3a921"
-    }
-  ],
   "m_DamageType": {
     "Type": "Energy"
   },

@@ -16,10 +16,10 @@
          "Text": "Gains the same {g|Encyclopedia:DamageGlossary}damage{/g} bonuses as the {g|f:4b401c668e0d46a7a09dba9d5480cdaa}Purge Soul{/g} {g|Encyclopedia:PsykerPowersGlossary}psychic power{/g} to every enemy in a line."
       },
       "59db9403-c985-42e0-ba01-99bf3141886d": {
-         "Text": "<u>(1 + (psyker's {g|Encyclopedia:PsyRating}psy rating{/g} × 2) × {g|Encyclopedia:Resolve}resolve{/g} / 2)</u>"
+         "Text": "<u>(1 + (psyker's {g|Encyclopedia:PsyRating}psy rating{/g} × 3) × {g|Encyclopedia:Resolve}resolve{/g} / 2)</u>"
       },
       "35d37eed-47ee-43de-817c-db9582407e29": {
-         "Text": "<u>(4 + (psyker's {g|Encyclopedia:PsyRating}psy rating{/g} × 2) × {g|Encyclopedia:Resolve}resolve{/g} / 2)</u>"
+         "Text": "<u>(4 + (psyker's {g|Encyclopedia:PsyRating}psy rating{/g} × 3) × {g|Encyclopedia:Resolve}resolve{/g} / 2)</u>"
       },
       "6c626611-568f-4cc6-990a-93f9481e25cf": {
          "Text": "Deals (from {uip|MinDamage|4b401c668e0d46a7a09dba9d5480cdaa} to {uip|MaxDamage|4b401c668e0d46a7a09dba9d5480cdaa}) {g|Encyclopedia:DirectDamage}direct damage{/g} and pushes targets up to 8 tiles away.\nThis {g|Encyclopedia:DamageGlossary}damage{/g} is increased by +50% against xenos, by +100% against Chaos worshippers or Drukhari, by +150% against daemons, and by +50% if the enemy has already damaged the psyker or any of the psyker's allies this combat. These damage {g|Encyclopedia:Bonus}bonuses{/g} also affect any damage bonuses from other sources.\n! This power does not affect targets that lack souls."
