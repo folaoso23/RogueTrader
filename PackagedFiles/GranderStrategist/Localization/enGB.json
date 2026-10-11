@@ -14,7 +14,7 @@
     },
     "5a607afb-c716-4e07-9195-70c7793a893e": {
       "Offset": 0,
-      "Text": "The Grand Strategist chooses one of the {g|f:e4e45f74936c4740b7bc03013f6991ba}Combat Tactics{/g} areas. For 1 round, all enemies in that area suffer +100% critical damage and are forced to re-roll successful {g|Encyclopedia:DodgeGlossary}dodge{/g} and {g|Encyclopedia:Parry}parry{/g} {g|Encyclopedia:Test}tests{/g} against all attacks. Any enemies that suffer damage and are left with less than {uip|MinimumWounds|ab86bcee2036424c90dd12c2ad3fab39} {g|Encyclopedia:HitPoints}wounds{/g} immediately die. If an enemy is killed, another attack can be made this turn by the attacker and they will gain +4 MP.\n<b>{g|f:27812417ab8047519e401ed4a58790fd}Strategic Rhythm{/g}</b> stacks:\n-<indent=5%>+7: Per kill.</indent>"
+      "Text": "The Grand Strategist chooses one of the {g|f:e4e45f74936c4740b7bc03013f6991ba}Combat Tactics{/g} areas. For 1 round, all enemies in that area suffer +100% critical damage and are forced to re-roll successful {g|Encyclopedia:DodgeGlossary}dodge{/g} and {g|Encyclopedia:Parry}parry{/g} {g|Encyclopedia:Test}tests{/g} against all attacks. Any enemies that suffer damage and are left with less than {uip|MinimumWounds|ab86bcee2036424c90dd12c2ad3fab39} {g|Encyclopedia:HitPoints}wounds{/g} immediately die. If an enemy is killed, another attack can be made this turn by the attacker and they will gain +3 MP.\n<b>{g|f:27812417ab8047519e401ed4a58790fd}Strategic Rhythm{/g}</b> stacks:\n-<indent=5%>+7: Per kill.</indent>"
     },
     "73652c02-a15b-4589-baa2-7b50f55106e7": {
       "Offset": 0,
