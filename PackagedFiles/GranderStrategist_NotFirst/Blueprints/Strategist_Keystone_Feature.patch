@@ -1,0 +1,13 @@
+{
+  "Components": [
+    {
+      "PatchType": "Relocate",
+      "Target": "$StrategistKeystoneRearAbilityFlipPattern$9f922f8b-df08-42fe-b4fc-4c264466fd08",
+      "InsertAfterTarget": "$AddFacts$92675525-ae3d-4f7a-94c4-3660d932fc61"
+    },
+    {
+      "PatchType": "RemoveFromEnd",
+      "Target": "$AddMechanicsFeature$64f62148-f743-43f5-97b7-18f6ef7e8097"
+    }
+  ]
+}

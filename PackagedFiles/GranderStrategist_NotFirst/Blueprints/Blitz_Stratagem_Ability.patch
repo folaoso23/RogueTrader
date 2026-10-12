@@ -1,0 +1,131 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$RunActionOnTargetsInAreaEffect$b5097c97-344f-4bc3-93e5-0731a0ff31cf",
+      "ElementPatch": {
+        "ActionsOnCaster": {
+          "Actions": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$Conditional$3e223f0b-51f2-411b-88c3-ab3300c76238",
+              "ElementPatch": {
+                "IfTrue": {
+                  "Actions": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$ContextActionOnAllUnitsInCombat$6a443446-1fef-47ae-948a-ebbc7a55d3b2",
+                      "ElementPatch": {
+                        "StatFilter": "None",
+                        "Stat": "Unknown"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "PatchType": "PatchElement",
+              "Target": "$Conditional$0097cf9c-d080-4476-bbe2-29702e34d9a2",
+              "ElementPatch": {
+                "IfTrue": {
+                  "Actions": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$ContextActionOnAllUnitsInCombat$273eda66-6fcd-4c43-86a5-ebba20b9c0bc",
+                      "ElementPatch": {
+                        "StatFilter": "None",
+                        "Stat": "Unknown"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "PatchType": "PatchElement",
+              "Target": "$Conditional$e44ad7c5-1862-456c-b8c3-4c4b558cf584",
+              "ElementPatch": {
+                "IfTrue": {
+                  "Actions": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$ContextActionOnAllUnitsInCombat$cbeed438-2f73-4ff0-9f7d-aeeabce3a8bd",
+                      "ElementPatch": {
+                        "StatFilter": "None",
+                        "Stat": "Unknown"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "PatchType": "Insert",
+              "NewElement": {
+                "$type": "7b1d3a11c0f4426a8584738997ebc207, ContextActionOnAllUnitsInCombat",
+                "name": "$ContextActionOnAllUnitsInCombat$3fd2a0a9-ebb9-4367-8feb-88dd64f96f30",
+                "OnlyEnemies": false,
+                "OnlyAllies": true,
+                "Actions": {
+                  "Actions": [
+                    {
+                      "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                      "name": "$ContextActionApplyBuff$59d693b4-3ea3-4168-bf70-23f2423a52ae",
+                      "m_Buff": "!bp_716566e2029c48848ddc8a9a296e0985",
+                      "BuffEndCondition": "CombatEnd",
+                      "Permanent": false,
+                      "DurationValue": {
+                        "RoundsValue": {
+                          "ValueType": "Simple",
+                          "Value": 1,
+                          "ValueRank": "Default",
+                          "ValueShared": "Damage",
+                          "Property": "None",
+                          "m_CustomProperty": null,
+                          "PropertyName": "Value1"
+                        }
+                      },
+                      "ToCaster": false,
+                      "AsChild": false,
+                      "SameDuration": false,
+                      "Ranks": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null,
+                        "PropertyName": "Value1"
+                      },
+                      "ActionsOnApply": {
+                        "Actions": []
+                      },
+                      "ActionsOnImmune": {
+                        "Actions": []
+                      },
+                      "AddFactSource": false
+                    }
+                  ]
+                },
+                "OnlyParty": false,
+                "WithoutPets": false,
+                "m_FilterNoFacts": [],
+                "m_FilterHaveAnyFact": [],
+                "ActionsOnRandomTarget": false,
+                "NotCaster": false,
+                "OnlyVisible": false,
+                "OnlyNotVisible": false,
+                "IncludeDead": false,
+                "IncludeUntargetable": false,
+                "StatFilter": "None",
+                "Stat": "Unknown"
+              },
+              "InsertAfterTarget": "$Conditional$e44ad7c5-1862-456c-b8c3-4c4b558cf584"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
