@@ -22,7 +22,7 @@
               "Shared": null
             },
             "Description": {
-              "m_Key": "",
+              "m_Key": "0fccf8ad-f505-4048-a42f-521b745aae44",
               "m_OwnerString": "",
               "m_OwnerPropertyPath": "",
               "m_JsonPath": "",
@@ -61,10 +61,10 @@
               "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
               "name": "$ContextValueGetter$9bed5c30-44f6-4220-8bed-35121cac25be",
               "Settings": {
-                "Progression": "MultiplyByModifier",
+                "Progression": "DivStep",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 1,
+                "m_StepLevel": 2,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,
@@ -84,10 +84,10 @@
               "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
               "name": "$ContextValueGetter$cc8cbfc4-35b1-4e90-b42f-468e969c3924",
               "Settings": {
-                "Progression": "MultiplyByModifier",
+                "Progression": "DivStep",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 1,
+                "m_StepLevel": 2,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,

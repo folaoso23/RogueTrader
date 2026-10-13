@@ -318,10 +318,10 @@
               "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
               "name": "$ContextValueGetter$1bdf2c9a99ee4b1985cbfb775d62f3e6",
               "Settings": {
-                "Progression": "AsIs",
+                "Progression": "DivStep",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 0,
+                "m_StepLevel": 2,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,
@@ -364,6 +364,87 @@
         }
       },
       "InsertAfterTarget": "$WarhammerCriticalDamageModifierInitiator$f2daf9b1-fcd4-4364-873b-a3c7531d35b0"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "4154c6f5c7b64b23a2102278fc83645b, WarhammerAbilityRestriction",
+        "name": "$WarhammerAbilityRestriction$7c7e8d79-2e77-47a0-897f-6df971d87043",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "76fa6ff8c9162f9489df4de07a55750c, CheckAbilityAttackTypeGetter",
+                "name": "$CheckAbilityAttackTypeGetter$5090290e3d9441e98fb799c691396999",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Type": "Scatter"
+              },
+              {
+                "$type": "76fa6ff8c9162f9489df4de07a55750c, CheckAbilityAttackTypeGetter",
+                "name": "$CheckAbilityAttackTypeGetter$66513c85d0f74974aa03831e08d08449",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Type": "Pattern"
+              }
+            ]
+          }
+        },
+        "m_AbilityRestrictions": {
+          "Property": {
+            "Operation": "And",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "6a45c42d96204b7d930bd97fa922b35d, CheckAbilityGroupGetter",
+                "name": "$CheckAbilityGroupGetter$09e8d2b3192246e7a1589fcf6836de26",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Groups": [
+                  "!bp_1cf206b13141425491c379bc75ef0699"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "InsertAfterTarget": "$PropertyCalculatorComponent$dcc8e937-c03d-4458-a143-3c54e232a315"
     }
   ],
   "m_Flags": 0
