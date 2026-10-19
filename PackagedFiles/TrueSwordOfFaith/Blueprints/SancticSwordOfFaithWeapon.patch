@@ -11,8 +11,8 @@
     }
   },
   "m_HoldingType": "TwoHanded",
-  "WarhammerDamage": 18,
-  "WarhammerMaxDamage": 24,
+  "WarhammerDamage": 12,
+  "WarhammerMaxDamage": 18,
   "WarhammerPenetration": 100,
   "m_Enchantments": [
     {
