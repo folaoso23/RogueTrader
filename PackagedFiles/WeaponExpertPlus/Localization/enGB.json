@@ -10,11 +10,11 @@
     },
     "c06a7a72-385c-477d-aad6-7a7a84e6c1d0": {
       "Offset": 0,
-      "Text": "Melta weapon attacks gain the following bonuses:\n<b>Damage Bonus(%)</b>: +{uip|damagebonus|4fa4dbc023474337990840e305d06fa4}.\n<b>Single-shot AP Cost</b>: -1 AP (minimum 1).\nCritical hits do additional base damage equal to the current weapon's minimum damage bonus.\nn<b>Weapon Range Bonus</b>: +6 Maximum Distance."
+      "Text": "Melta weapon attacks gain the following bonuses:\n<b>Damage Bonus(%)</b>: +{uip|damagebonus|4fa4dbc023474337990840e305d06fa4}.\n<b>Single-shot AP Cost</b>: -1 AP (minimum 1).\nCritical hits do additional base damage equal to the current weapon's maximum damage bonus.\n<b>Weapon Range Bonus</b>: +6 Maximum Distance."
     },
     "a8019355-a528-4070-9333-d9eea18cf09f": {
       "Offset": 0,
-      "Text": "<u>25 + ({g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 3) + (Tech Use / 6)</u>"
+      "Text": "<u>25 + ({g|Encyclopedia:WarhammerBallisticSkill}BS{/g} bonus × 4) + (Tech Use / 6)</u>"
     },
     "cabcbd5c-e59f-4e49-a001-4b6d54ea2e63": {
       "Offset": 0,
