@@ -16,6 +16,10 @@
         },
         "DamageMax": {
           "ValueType": "CasterNamedProperty"
+        },
+        "MaxDistance": {
+          "Value": 6,
+          "Enabled": true
         }
       }
     },
@@ -367,10 +371,7 @@
               "m_OwnerString": "",
               "m_OwnerPropertyPath": "",
               "m_JsonPath": "",
-              "Shared": {
-                "assetguid": "537bae6c31d336c41a73add0cef551ca",
-                "stringkey": "a8019355-a528-4070-9333-d9eea18cf09f"
-              }
+              "Shared": null
             },
             "m_DescriptionFact": "!bp_4fa4dbc023474337990840e305d06fa4",
             "m_LinkProperty": true,

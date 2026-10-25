@@ -10,7 +10,7 @@
     },
     "c06a7a72-385c-477d-aad6-7a7a84e6c1d0": {
       "Offset": 0,
-      "Text": "Melta weapon attacks gain the following bonuses:\n<b>Damage Bonus(%)</b>: +{uip|damagebonus|4fa4dbc023474337990840e305d06fa4}.\n<b>Single-shot AP Cost</b>: -1 AP (minimum 1).\nCritical hits do additional base damage equal to the current weapon's minimum damage bonus."
+      "Text": "Melta weapon attacks gain the following bonuses:\n<b>Damage Bonus(%)</b>: +{uip|damagebonus|4fa4dbc023474337990840e305d06fa4}.\n<b>Single-shot AP Cost</b>: -1 AP (minimum 1).\nCritical hits do additional base damage equal to the current weapon's minimum damage bonus.\nn<b>Weapon Range Bonus</b>: +6 Maximum Distance."
     },
     "a8019355-a528-4070-9333-d9eea18cf09f": {
       "Offset": 0,
@@ -182,7 +182,7 @@
     },
     "f2ff776e-4419-403e-adc9-9f5c1d5a4121": {
       "Offset": 0,
-      "Text": "Enemies gain no {g|Encyclopedia:MeleeSuperiority}melee superiority{/g} {g|Encyclopedia:Bonus}bonuses{/g} against this character.\nMelee weapons gain access to the {g|f:bd5f109c46684a09b07fb13743d2a6d7}Combo Attack{/g} ability."
+      "Text": "Enemies gain no {g|Encyclopedia:MeleeSuperiority}melee superiority{/g} {g|Encyclopedia:Bonus}bonuses{/g} against this character."
     }
   }
 }
