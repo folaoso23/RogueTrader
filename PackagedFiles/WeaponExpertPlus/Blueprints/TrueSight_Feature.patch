@@ -366,8 +366,7 @@
       "ElementPatch": {
         "PercentCriticalDamageModifier": {
           "ValueType": "CasterNamedProperty",
-          "PropertyName": "Value2",
-          "Enabled": true
+          "PropertyName": "Value2"
         }
       }
     },
