@@ -10,6 +10,14 @@
       "fileid": 2303428077302067451
     }
   },
+  "AbilityContainer": {
+    "Ability1": {
+      "m_FXSettings": "!bp_b385904a9da1466abb5f638fa8b8e8b5"
+    },
+    "Ability2": {
+      "m_FXSettings": "!bp_b385904a9da1466abb5f638fa8b8e8b5"
+    }
+  },  
   "m_HoldingType": "TwoHanded",
   "WarhammerDamage": 12,
   "WarhammerMaxDamage": 18,

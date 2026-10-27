@@ -1,0 +1,1315 @@
+
+> <ide_selection>The user selected the lines 15 to 19 from
+  c:\Users\folao\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue
+  Trader\Modifications\TrueSwordOfFaith\OwlcatModificationSettings.json:
+          {
+              "Guid": "20d5376f942f454daf37f2b81a81e7b1",
+              "Filename": "SancticSwordOfFaithAbility",
+              "PatchType": 2
+          },
+
+  This may or may not be related to the current task.</ide_selection>
+
+> I want to include an option in this mod to allow the higlighted lines to be
+  enabled or disabled. The mods under "C:\Users\folao\AppData\LocalLow\Owlcat
+  Games\Warhammer 40000 Rogue Trader\UnityModManager" have options that appear
+  on the screen after pressing "Ctrl+F10" while the game is running. Is there a
+  way to do something similar for this mod?
+
+● I'll look at the mod's structure first.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+● Some of your other Owlcat-format mods have settings files. Let me see how they
+  do it.
+
+  Ran 3 shell commands (ctrl+o to expand)
+
+● Yes, you can. One of your installed mods already does exactly this.
+
+  How Armoury of the Expanse does it
+
+  Armoury of the Expanse is the same kind of mod as yours (an Owlcat
+  "Modifications" mod with Blueprints/ and OwlcatModificationSettings.json). It
+  also ships a small C# DLL in Assemblies/. Inside that DLL I found:
+  - OwlcatModificationEnterPointAttribute: the entry point the game calls when
+    it loads the mod.
+  - UnityModManager, ModEntry, GUILayout, Toggle, MyOnGuiMethod: these draw its
+    options in the Ctrl+F10 window.
+  - ApplyPatchesFromSettings: it chooses which blueprint patches to apply based
+    on the saved settings (ArmouryOTE_settings.json holds toggles like
+    loreInaccurateLascannon).
+
+  Your mod would follow the same pattern:
+  1. Add a DLL to TrueSwordOfFaith/Assemblies/ with an
+     [OwlcatModificationEnterPoint] method. It hooks an OnGUI function into the
+     mod manager, which gives you a Ctrl+F10 panel with a checkbox such as
+     "Apply Sword of Faith ability changes (no momentum gain, no minimum
+     momentum requirement)".
+  2. Save the checkbox state to a small settings file, like
+     TrueSwordOfFaith_settings.json next to the other mods' settings files.
+  3. Skip the patch when the box is off. At startup the DLL reads the setting
+     and removes the SancticSwordOfFaithAbility entry from the mod's patch list
+     before blueprints load. The other five patches stay unconditional.
+
+  Limitations
+  - It won't switch live. The game applies blueprint patches when it loads
+    blueprints, so changing the checkbox would take effect after restarting the
+    game. Toggling it mid-session would need a lot more code.
+  - You need build tools. Your machine has the .NET runtime but no .NET SDK, so
+    it can't compile C#. I'd need to install the .NET SDK (free, about 200 MB,
+    via winget install Microsoft.DotNet.SDK.8) or you'd need Visual Studio. The
+    project would reference the game's own DLLs from the Steam install folder,
+    which is present.
+  - I'd need to check the game's code first. I'd confirm how it reads
+    BlueprintPatches at load time before relying on removing the entry. If that
+    doesn't work, the fallback is a small Harmony patch that skips that one
+    GUID, which is what Armoury of the Expanse appears to do.
+
+  Do you want me to go ahead? If so, should I install the .NET SDK, or would you
+  rather install it yourself?
+
+> Yes, go ahead. I've already installed the .NET SDK.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● SDK 10 is installed. Next I'll decompile the game's mod loader to see how it
+  applies blueprint patches and exposes Ctrl+F10 settings.
+
+  Read 1 file, ran 2 shell commands (ctrl+o to expand)
+
+● The entry point executes right after OwlcatModificationSettings.json loads, so
+  I can hook the patch there. Next I'll check how the patch dictionary is built
+  and how the GUI callback is displayed.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+● The game only supports PatchType 0 (Replace) and 1 (Edit), so type 2 with
+  .patch files must be handled by another mod, likely MicroPatches. I'll check
+  the logs to confirm.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● MicroPatches handles PatchType: 2. I'll see where it stores those entries so
+  the DLL removes the right one.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Not that one. I'll find the class that handles the JSON patch type and the
+  OnAfterDeserialize transpiler.
+
+  Read 1 file, ran 1 shell command (ctrl+o to expand)
+
+● Since MicroPatches builds its own private type-2 patch list before the mod DLL
+  runs, editing the settings list won't help—instead I'll use a Harmony postfix
+  after its hook to discard the patched result for that GUID. Next, I'll check
+  how Armoury of the Expanse hooks into the Ctrl+F10 window.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Setting OnDrawGUI is all it takes to appear in Ctrl+F10. Next I'll check what
+  framework other mods target, then write the project.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+● The Harmony ID is "MicroPatches". Writing the project now.
+
+● Write(TrueSwordOfFaith.csproj)
+  ⎿  Wrote 34 lines to TrueSwordOfFaith.csproj
+       1 <Project Sdk="Microsoft.NET.Sdk">
+       2
+       3   <PropertyGroup>
+       5     <LangVersion>latest</LangVersion>
+       6     <AssemblyName>TrueSwordOfFaith</AssemblyName>
+       7     <RootNamespace>TrueSwordOfFaith</RootNamespace>
+       8     <GenerateDocumentationFile>false</GenerateDocumentationFile>
+         orkToOutputPath>
+      10     <!-- Override on the command line if the game lives elsewher
+         e: dotnet build -p:GamePath="D:\Games\..." -->
+     … +37 lines (ctrl+o to expand)
+
+● Write(Main.cs)
+  ⎿  Wrote 69 lines to Main.cs
+       1 using System;
+       2 using HarmonyLib;
+       3 using Kingmaker.Modding;
+       4 using UnityEngine;
+       5
+       6 namespace TrueSwordOfFaith;
+       7
+       8 [Serializable]
+       9 public class Settings
+      10 {
+     … +70 lines (ctrl+o to expand)
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● I've added a Ctrl+F10 option that switches the SancticSwordOfFaithAbility
+  patch on or off. It builds without errors, but I haven't tested it in the
+  game.
+
+  What I added
+  - Source/Main.cs: the mod's code. It adds a checkbox, "Patch Sword of Faith
+    ability", to the Ctrl+F10 window, and saves the setting as soon as you click
+    it. The saved file is Modifications\TrueSwordOfFaith_Data.json, which the
+    game creates on first save. The checkbox is on by default, so the mod
+    behaves as it does now until you turn it off.
+  - Source/TrueSwordOfFaith.csproj: the build project. It uses the game's own
+    files from your Steam install folder and copies the result into Assemblies\.
+  - Assemblies/TrueSwordOfFaith.dll: the built file the game loads.
+
+  The other five patches are untouched and always apply.
+  OwlcatModificationSettings.json is unchanged.
+
+  How it works
+
+  The game itself only understands patch types 0 and 1. Your PatchType: 2 .patch
+  files are applied by MicroPatches, which keeps its own list of them. So
+  removing the entry from the settings file at startup wouldn't stop it.
+  Instead, the DLL runs a small hook after MicroPatches has patched a blueprint.
+  When the checkbox is off, it throws away the patched version of that one
+  ability, and the game uses the original.
+
+  To test
+  1. Start the game, press Ctrl+F10, find True Sword Of Faith and untick the
+     box.
+  2. Restart the game and load a save. A change only takes effect after a
+     restart, because the game loads each blueprint once per session.
+  3. Check Modifications\TrueSwordOfFaith_Log.txt. It should say "Sword of Faith
+     ability patch enabled: False" and later "...skipping it".
+  4. In game, the ability should have its original momentum behaviour again.
+
+  Things to know
+  - Rebuilding: after editing the code, run dotnet build -c Release in the
+    Source folder. It copies the new DLL into Assemblies automatically.
+  - Sharing the mod: when you zip it for others, leave out Source\bin and
+    Source\obj (or the whole Source folder). The game ignores them, but they're
+    clutter.
+  - MicroPatches: the mod already needs MicroPatches to apply type-2 patches,
+    but your manifest only lists DPWeaponAssetPack as a dependency. You may want
+    to add MicroPatches there, the way Armoury of the Expanse does.
+
+> <ide_opened_file>The user opened the file
+  c:\Users\folao\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue
+  Trader\Modifications\TrueSwordOfFaith\Source\Main.cs in the IDE. This may or
+  may not be related to the current task.</ide_opened_file>
+
+> Thanks. There's another mod that works similarly,
+  "C:\Users\folao\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue
+  Trader\Modifications\Psykers of The Expanse 218 1.1.1a 2026-08-31T19-36Z
+  KgdXMzLqI">
+
+  I tested the mod but no menu popped up when I tested it. And let me add some
+  more context; both Armoury of the expanse and the mod I just shared don't
+  actually use "Crtl + F10"; instead, you can go into the game and under the
+  "DLC & Mod" settings, there is a menu. The mod will show in that menu and if
+  there are confiurable settings, you will see a gear (looks like a cog) next
+  to the mod. I clicked that but nothing came up. Help me figure this out.
+
+● API Error: Can't reach the API server — check your internet or DNS
+  (ENOTFOUND)
+
+> <ide_opened_file>The user opened the file
+  c:\Users\folao\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue
+  Trader\Modifications\TrueSwordOfFaith\Source\Main.cs in the IDE. This may or
+  may not be related to the current task.</ide_opened_file>
+
+> Thanks. There's another mod that works similarly,
+  "C:\Users\folao\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue
+  Trader\Modifications\Psykers of The Expanse 218 1.1.1a 2026-08-31T19-36Z
+  KgdXMzLqI">
+
+  I tested the mod but no menu popped up when I tested it. And let me add some
+  more context; both Armoury of the expanse and the mod I just shared don't
+  actually use "Crtl + F10"; instead, you can go into the game and under the
+  "DLC & Mod" settings, there is a menu. The mod will show in that menu and if
+  there are confiurable settings, you will see a gear (looks like a cog) next
+  to the mod. I clicked that but nothing came up. Help me figure this out.
+
+● The cog appears, so the game sees the settings callback, but nothing draws
+  when you click it. I'll check the logs for an error first.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● The DLL loaded fine and logged no errors. Next I'll check Player.log for
+  errors around clicking the cog, and see how Psykers of the Expanse sets up its
+  settings.
+  Ran 1 shell command (ctrl+o to expand)
+
+● Both reference mods also set OnShowGUI and OnHideGUI, which mine doesn't. I'll
+  find the game code behind the cog to see whether that matters.
+
+  Ran 6 shell commands (ctrl+o to expand)
+
+● I've traced the cog to the game's OwlcatModificationsWindow class and I'm now
+  reading how it draws a mod's settings.
+
+  Read 1 file (ctrl+o to expand)
+
+● Found the bug: the game only opens a mod's settings panel if OnShowGUI is set,
+  but I only had OnDrawGUI defined. I'll confirm this in the log and add the
+  missing handler.
+
+  Searched for 1 pattern (ctrl+o to expand)
+
+● Confirmed: "Mod TrueSwordOfFaith has no OnShowGui". Adding the show/hide
+  callbacks and rebuilding.
+
+● Update(Main.cs)
+  ⎿  Added 3 lines
+      25          Mod = mod;
+      26          // Stored in Modifications\TrueSwordOfFaith_Data.json
+      27          Settings = mod.LoadData<Settings>();
+      28 +        // The DLC & Mods cog refuses to open the window unless
+         + OnShowGUI is set.                                             
+      29 +        mod.OnShowGUI = () => { };                             
+      30 +        mod.OnHideGUI = () => mod.SaveData(Settings);          
+      31          mod.OnDrawGUI = OnGUI;
+      32          new Harmony(mod.Manifest.UniqueName).PatchAll();
+      33          mod.Logger.Log($"Sword of Faith ability patch enabled: 
+          {Settings.PatchSwordOfFaithAbility}");
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● I found and fixed the problem: clicking the cog should now open the settings
+  window with the checkbox. The fix is rebuilt and copied into Assemblies, but I
+  haven't seen it work in the game yet.
+
+  What was wrong
+
+  The game's log showed this each time you clicked the cog:
+  Mods][Message]: Trying to show Mod settings window for TrueSwordOfFaith
+  Mods][Error]: Mod TrueSwordOfFaith has no OnShowGui
+  The game uses two separate checks:
+  - Showing the cog only needs a settings-drawing function (OnDrawGUI), which my
+    first version had.
+  - Opening the window also needs a separate "show" callback (OnShowGUI), which
+    my version didn't set. Without it the game logs that error and does nothing.
+
+  Armoury of the Expanse and Psykers of the Expanse both set the show callback,
+  which is why their cogs work.
+
+  The fix
+
+  In Source/Main.cs the mod now sets:
+  - OnShowGUI: an empty callback, just so the game agrees to open the window.
+  - OnHideGUI: saves the settings when the window closes, in addition to saving
+    on every click.
+
+  To test
+
+  Restart the game, go to DLC & Mods, and click the cog next to True Sword Of
+  Faith. You should see the "Patch Sword of Faith ability" checkbox and a note
+  that changes need a restart. If nothing opens, check the log for "Mod
+  TrueSwordOfFaith has no OnShowGui"; if that line still appears, the game is
+  loading the old DLL.
+
+> <ide_selection>The user selected the lines 14 to 14 from
+  c:\Users\folao\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue Trader\Mod
+  ifications\TrueSwordOfFaith\Blueprints\SancticSwordOfFaithAbility.patch:
+                    "Value": 50
+
+  This may or may not be related to the current task.</ide_selection>
+
+> The UI is showing now, but the setting still doesn't seem to be working. I
+  have another approach I wanted to take so it's fine; I've highlited a value
+  that I want to be configurable in the mod settings. The max value, which is
+  currently the default, should be 50. The lowest possible value should be
+  zero.
+
+  Let's use this configuration instead of the original one. If possible, make
+  it so that the game does not have to be restarted for this change to take
+  effect.
+
+● I'll look at the current patch file and the game class behind that value.
+
+  Ran 4 shell commands (ctrl+o to expand)
+
+● Since momentum is just a field read directly from the ability's blueprint each
+  run, I can modify it live. I'll swap the toggle for a 0–50 slider that
+  applies instantly.
+
+● Write(Main.cs)
+  ⎿  Added 60 lines, removed 19 lines
+       1  using System;
+       2 +using System.Linq;                                             
+       3  using HarmonyLib;
+       4 +using Kingmaker.Blueprints;                                    
+       5  using Kingmaker.Modding;
+       6 +using Kingmaker.UnitLogic.Abilities.Components;                
+       7 +using Kingmaker.UnitLogic.Mechanics.Actions;                   
+       8  using UnityEngine;
+       9  
+      10  namespace TrueSwordOfFaith;
+     ...
+      12  [Serializable]
+      13  public class Settings
+      14  {
+      11 -    public bool PatchSwordOfFaithAbility = true;               
+      15 +    public int MomentumGain = Main.MaxMomentumGain;            
+      16  }
+      17  
+      18  public static class Main
+      19  {
+      20 +    internal const int MaxMomentumGain = 50;                   
+      21 +                                                               
+      22      // SancticSwordOfFaithAbility, see OwlcatModificationSettin
+          gs.json
+      23      internal const string SwordOfFaithAbilityGuid = "20d5376f94
+          2f454daf37f2b81a81e7b1";
+      24  
+      25 +    // WarhammerContextActionAddMomentum element inside the abi
+         +lity's AbilityEffectRunAction                                  
+      26 +    private const string AddMomentumActionId = "418548a0d6ad4c6
+         +88d6d726fe6a1f759";                                            
+      27 +                                                               
+      28      internal static OwlcatModification Mod;
+      29      internal static Settings Settings;
+      30  
+     ...
+       34          Mod = mod;
+       35          // Stored in Modifications\TrueSwordOfFaith_Data.json
+       36          Settings = mod.LoadData<Settings>();
+       37 +        Settings.MomentumGain = Mathf.Clamp(Settings.MomentumG
+          +ain, 0, MaxMomentumGain);                                     
+       38          // The DLC & Mods cog refuses to open the window unles
+           s OnShowGUI is set.
+       39          mod.OnShowGUI = () => { };
+       40          mod.OnHideGUI = () => mod.SaveData(Settings);
+       41          mod.OnDrawGUI = OnGUI;
+       42          new Harmony(mod.Manifest.UniqueName).PatchAll();
+       33 -        mod.Logger.Log($"Sword of Faith ability patch enabled:
+          - {Settings.PatchSwordOfFaithAbility}");                       
+       43 +        mod.Logger.Log($"Sword of Faith momentum gain: {Settin
+          +gs.MomentumGain}");                                           
+       44      }
+       45  
+       46      private static void OnGUI()
+       47      {
+       38 -        bool value = GUILayout.Toggle(                        
+       39 -            Settings.PatchSwordOfFaithAbility,                
+       40 -            " Patch Sword of Faith ability (no momentum gain, 
+          -no minimum momentum requirement)");                           
+       41 -        if (value != Settings.PatchSwordOfFaithAbility)       
+       48 +        using (new GUILayout.HorizontalScope())               
+       49          {
+       43 -            Settings.PatchSwordOfFaithAbility = value;        
+       44 -            Mod.SaveData(Settings);                           
+       50 +            GUILayout.Label("Sword of Faith momentum gain:", G
+          +UILayout.Width(220f));                                        
+       51 +            int value = Mathf.RoundToInt(GUILayout.HorizontalS
+          +lider(Settings.MomentumGain, 0f, MaxMomentumGain, GUILayout.Wi
+          +dth(300f)));                                                  
+       52 +            GUILayout.Label(value.ToString(), GUILayout.Width(
+          +40f));                                                        
+       53 +            if (value != Settings.MomentumGain)               
+       54 +            {                                                 
+       55 +                Settings.MomentumGain = value;                
+       56 +                ApplyToLoadedBlueprint();                     
+       57 +            }                                                 
+       58          }
+       46 -        GUILayout.Label("Restart the game for changes to take 
+          -effect.");                                                    
+       59 +        GUILayout.Label($"Momentum gained when using Sword of 
+          +Faith (0 - {MaxMomentumGain}). Takes effect immediately.");   
+       60      }
+       61 +                                                              
+       62 +    private static void ApplyToLoadedBlueprint()              
+       63 +    {                                                         
+       64 +        try                                                   
+       65 +        {                                                     
+       66 +            ApplyMomentumGain(ResourcesLibrary.TryGetBlueprint
+          +(SwordOfFaithAbilityGuid));                                   
+       67 +        }                                                     
+       68 +        catch (Exception ex)                                  
+       69 +        {                                                     
+       70 +            Mod.Logger.Exception(ex);                         
+       71 +        }                                                     
+       72 +    }                                                         
+       73 +                                                              
+       74 +    internal static void ApplyMomentumGain(SimpleBlueprint blu
+          +eprint)                                                       
+       75 +    {                                                         
+       76 +        if (blueprint is not BlueprintScriptableObject bp)    
+       77 +        {                                                     
+       78 +            return;                                           
+       79 +        }                                                     
+       80 +                                                              
+       81 +        var action = bp.ComponentsArray                       
+       82 +            .OfType<AbilityEffectRunAction>()                 
+       83 +            .SelectMany(c => c.Actions?.Actions ?? new Kingmak
+          +er.ElementsSystem.GameAction[0])                              
+       84 +            .OfType<WarhammerContextActionAddMomentum>()      
+       85 +            .FirstOrDefault(a => a.name?.Contains(AddMomentumA
+          +ctionId) ?? false);                                           
+       86 +        if (action?.Value == null)                            
+       87 +        {                                                     
+       88 +            Mod.Logger.Error("Could not find the Sword of Fait
+          +h momentum action to update");                                
+       89 +            return;                                           
+       90 +        }                                                     
+       91 +                                                              
+       92 +        action.Value.Value = Settings.MomentumGain;           
+       93 +    }                                                         
+       94  }
+       95  
+       50 -// MicroPatches applies PatchType 2 (.patch) files in its own 
+          -postfix on GetResourceReplacement.                            
+       51 -// Running after it and discarding the result skips the patch 
+          -for this one blueprint.                                       
+       96 +// Blueprints are loaded lazily, so set the value whenever the
+          + game (re)loads this one.                                     
+       97 +// Runs after MicroPatches has applied SancticSwordOfFaithAbil
+          +ity.patch.                                                    
+       98  [HarmonyPatch(typeof(OwlcatModification), nameof(OwlcatModific
+           ation.GetResourceReplacement))]
+       53 -internal static class SkipSwordOfFaithAbilityPatch            
+       99 +internal static class ApplyMomentumGainOnLoad                 
+      100  {
+      101      [HarmonyPriority(Priority.Last)]
+      102      [HarmonyAfter("MicroPatches")]
+       57 -    private static void Postfix(OwlcatModification __instance,
+          - string guid, ref object __result)                            
+      103 +    private static void Postfix(OwlcatModification __instance,
+          + object resource, string guid, object __result)               
+      104      {
+      105          if (__instance != Main.Mod
+       60 -            || Main.Settings.PatchSwordOfFaithAbility         
+      106              || !string.Equals(guid, Main.SwordOfFaithAbilityGu
+           id, StringComparison.OrdinalIgnoreCase))
+      107          {
+      108              return;
+      109          }
+      110  
+       66 -        if (__result != null)                                 
+       67 -        {                                                     
+       68 -            Main.Mod.Logger.Log("Sword of Faith ability patch 
+          -disabled in settings, skipping it");                          
+       69 -        }                                                     
+       70 -        __result = null;                                      
+      111 +        Main.ApplyMomentumGain((__result ?? resource) as Simpl
+          +eBlueprint);                                                  
+      112      }
+      113  }
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● I replaced the on/off toggle with a slider for the Sword of Faith momentum
+  gain, from 0 to 50, defaulting to 50. It builds without errors and the DLL is
+  in Assemblies, but I haven't tested it in the game.
+
+  What changed in Source/Main.cs
+  - Slider: the cog window now shows "Sword of Faith momentum gain" with a 0–50
+    slider and the current number next to it. The value is saved when you close
+    the window, in Modifications\TrueSwordOfFaith_Data.json.
+  - No restart needed: the game reads the momentum amount from the ability's
+    blueprint each time the ability is used. Moving the slider writes the new
+    number straight into that loaded blueprint, so the next cast uses it.
+  - At startup: when the game first loads the ability, the mod sets your saved
+    value right after your .patch file is applied. The 50 in
+    SancticSwordOfFaithAbility.patch
+    (Blueprints/SancticSwordOfFaithAbility.patch) still applies, but the slider
+    value always overrides it.
+  - Old toggle removed: the earlier "skip this patch" approach is gone. All six
+    patches now always apply.
+
+  To test
+  1. Restart the game once so it loads the new DLL.
+  2. Load a save, open the cog in DLC & Mods, and drag the slider to something
+     noticeable like 0 or 10.
+  3. Close the window and use Sword of Faith. The momentum gained should match
+     the slider.
+
+  Things to know
+  - Tooltip text: if the ability's tooltip shows the momentum amount, it may
+    keep showing the old number until the tooltip refreshes. The actual gain
+    still changes right away.
+  - If nothing changes: check TrueSwordOfFaith_Log.txt for "Could not find the
+    Sword of Faith momentum action to update". That would mean the action isn't
+    where the patch file says it is, and I'd need to search deeper in the
+    blueprint.
+
+> <ide_selection>The user selected the lines 14 to 14 from
+  c:\Users\folao\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue Trader\Mod
+  ifications\TrueSwordOfFaith\Blueprints\SancticSwordOfFaithAbility.patch:
+                    "Value": -50
+
+  This may or may not be related to the current task.</ide_selection>
+
+> Works great, thanks. I made a minor mistake though; the values should range
+  from -50 to 0. Please make the adjustment.
+
+● Update(Main.cs)
+  ⎿  Added 1 line, removed 1 line
+      12  [Serializable]
+      13  public class Settings
+      14  {
+      15 -    public int MomentumGain = Main.MaxMomentumGain;            
+      15 +    public int MomentumGain = Main.MinMomentumGain;            
+      16  }
+      17  
+      18  public static class Main
+
+● Update(Main.cs)
+  ⎿  Added 2 lines, removed 1 line
+      17  
+      18  public static class Main
+      19  {
+      20 -    internal const int MaxMomentumGain = 50;                   
+      20 +    internal const int MinMomentumGain = -50;                  
+      21 +    internal const int MaxMomentumGain = 0;                    
+      22  
+      23      // SancticSwordOfFaithAbility, see OwlcatModificationSettin
+          gs.json
+      24      internal const string SwordOfFaithAbilityGuid = "20d5376f94
+          2f454daf37f2b81a81e7b1";
+
+● Update(Main.cs)
+  ⎿  Added 1 line, removed 1 line
+      35          Mod = mod;
+      36          // Stored in Modifications\TrueSwordOfFaith_Data.json
+      37          Settings = mod.LoadData<Settings>();
+      38 -        Settings.MomentumGain = Mathf.Clamp(Settings.MomentumGa
+         -in, 0, MaxMomentumGain);                                       
+      38 +        Settings.MomentumGain = Mathf.Clamp(Settings.MomentumGa
+         +in, MinMomentumGain, MaxMomentumGain);                         
+      39          // The DLC & Mods cog refuses to open the window unless
+           OnShowGUI is set.
+      40          mod.OnShowGUI = () => { };
+      41          mod.OnHideGUI = () => mod.SaveData(Settings);
+
+● Update(Main.cs)
+  ⎿  Added 1 line, removed 1 line
+      49          using (new GUILayout.HorizontalScope())
+      50          {
+      51              GUILayout.Label("Sword of Faith momentum gain:", GU
+          ILayout.Width(220f));
+      52 -            int value = Mathf.RoundToInt(GUILayout.HorizontalSl
+         -ider(Settings.MomentumGain, 0f, MaxMomentumGain, GUILayout.Widt
+         -h(300f)));                                                     
+      52 +            int value = Mathf.RoundToInt(GUILayout.HorizontalSl
+         +ider(Settings.MomentumGain, MinMomentumGain, MaxMomentumGain,GU
+         +ILayout.Width(300f)));                                         
+      53              GUILayout.Label(value.ToString(), GUILayout.Width(4
+          0f));
+      54              if (value != Settings.MomentumGain)
+      55              {
+
+● Update(Main.cs)
+  ⎿  Added 1 line, removed 1 line
+      57                  ApplyToLoadedBlueprint();
+      58              }
+      59          }
+      60 -        GUILayout.Label($"Momentum gained when using Sword of F
+         -aith (0 - {MaxMomentumGain}). Takes effect immediately.");     
+      60 +        GUILayout.Label($"Momentum gained when using Sword of F
+         +aith ({MinMomentumGain} to {MaxMomentumGain}). Takes effect imm
+         +ediately.");                                                   
+      61      }
+      62  
+      63      private static void ApplyToLoadedBlueprint()
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● The slider now runs from -50 to 0, defaulting to -50 to match your patch file.
+  It's rebuilt and the new DLL is in Assemblies; restart the game once to load
+  it.
+
+  Your saved setting is still 5 from testing the old range, so on first load it
+  will be pulled up to 0, the nearest allowed value. Either drag the slider to
+  the value you want, or delete Modifications\TrueSwordOfFaith_Data.json to
+  start from -50.
+
+> <ide_selection>The user selected the lines 36 to 36 from
+  c:\Users\folao\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue Trader\Mod
+  ifications\TrueSwordOfFaith\Blueprints\SancticSwordOfFaithAbility.patch:
+          "MinimumMomentum": 175
+
+  This may or may not be related to the current task.</ide_selection>
+
+> Awesome, it works. I'd like to do something similar for the line currently
+  highlighted. The range of values should be from 0 to 175.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● MinimumMomentum is a plain number checked live by the game, so it's also
+  safely adjustable. I'll add a second slider from 0 to 175, defaulting to 175
+  to match the patch.
+
+● Write(Main.cs)  ⎿  Added 56 lines, removed 19 lines
+       2  using System.Linq;
+       3  using HarmonyLib;
+       4  using Kingmaker.Blueprints;
+       5 +using Kingmaker.ElementsSystem;                                
+       6  using Kingmaker.Modding;
+       7  using Kingmaker.UnitLogic.Abilities.Components;
+       8 +using Kingmaker.UnitLogic.Abilities.Components.CasterCheckers; 
+       9  using Kingmaker.UnitLogic.Mechanics.Actions;
+      10  using UnityEngine;
+      11  
+     ...
+      15  public class Settings
+      16  {
+      17      public int MomentumGain = Main.MinMomentumGain;
+      18 +    public int MinimumMomentum = Main.MaxMinimumMomentum;      
+      19  }
+      20  
+      21  public static class Main
+      22  {
+      23      internal const int MinMomentumGain = -50;
+      24      internal const int MaxMomentumGain = 0;
+      25 +    internal const int MinMinimumMomentum = 0;                 
+      26 +    internal const int MaxMinimumMomentum = 175;               
+      27  
+      28      // SancticSwordOfFaithAbility, see OwlcatModificationSettin
+          gs.json
+      29      internal const string SwordOfFaithAbilityGuid = "20d5376f94
+          2f454daf37f2b81a81e7b1";
+      30  
+      26 -    // WarhammerContextActionAddMomentum element inside the abi
+         -lity's AbilityEffectRunAction                                  
+      31 +    // Element ids from SancticSwordOfFaithAbility.patch       
+      32      private const string AddMomentumActionId = "418548a0d6ad4c6
+          88d6d726fe6a1f759";
+      33 +    private const string MinimumMomentumComponentId = "976c4aaa
+         +-5ad0-4b42-8072-f57b2b31a198";                                 
+      34  
+      35      internal static OwlcatModification Mod;
+      36      internal static Settings Settings;
+     ...
+      42          // Stored in Modifications\TrueSwordOfFaith_Data.json
+      43          Settings = mod.LoadData<Settings>();
+      44          Settings.MomentumGain = Mathf.Clamp(Settings.MomentumGa
+          in, MinMomentumGain, MaxMomentumGain);
+      45 +        Settings.MinimumMomentum = Mathf.Clamp(Settings.Minimum
+         +Momentum, MinMinimumMomentum, MaxMinimumMomentum);             
+      46          // The DLC & Mods cog refuses to open the window unless
+           OnShowGUI is set.
+      47          mod.OnShowGUI = () => { };
+      48          mod.OnHideGUI = () => mod.SaveData(Settings);
+      49          mod.OnDrawGUI = OnGUI;
+      50          new Harmony(mod.Manifest.UniqueName).PatchAll();
+      44 -        mod.Logger.Log($"Sword of Faith momentum gain: {Setting
+         -s.MomentumGain}");                                             
+      51 +        mod.Logger.Log($"Sword of Faith momentum gain: {Setting
+         +s.MomentumGain}, minimum momentum: {Settings.MinimumMomentum}")
+         +;                                                              
+      52      }
+      53  
+      54      private static void OnGUI()
+      55      {
+      56 +        bool changed = false;                                  
+      57 +        changed |= IntSlider("Momentum gain:", ref Settings.Mom
+         +entumGain, MinMomentumGain, MaxMomentumGain);                  
+      58 +        GUILayout.Label($"Momentum gained when using Sword of F
+         +aith ({MinMomentumGain} to {MaxMomentumGain}).");              
+      59 +        GUILayout.Space(10f);                                  
+      60 +        changed |= IntSlider("Minimum momentum:", ref Settings.
+         +MinimumMomentum, MinMinimumMomentum, MaxMinimumMomentum);      
+      61 +        GUILayout.Label($"Momentum required to use Sword of Fai
+         +th ({MinMinimumMomentum} to {MaxMinimumMomentum}).");          
+      62 +        GUILayout.Space(10f);                                  
+      63 +        GUILayout.Label("Changes take effect immediately.");   
+      64 +                                                               
+      65 +        if (changed)                                           
+      66 +        {                                                      
+      67 +            ApplyToLoadedBlueprint();                          
+      68 +        }                                                      
+      69 +    }                                                          
+      70 +                                                               
+      71 +    private static bool IntSlider(string label, ref int value, 
+         +int min, int max)                                              
+      72 +    {                                                          
+      73          using (new GUILayout.HorizontalScope())
+      74          {
+      51 -            GUILayout.Label("Sword of Faith momentum gain:", GU
+         -ILayout.Width(220f));                                          
+      52 -            int value = Mathf.RoundToInt(GUILayout.HorizontalSl
+         -ider(Settings.MomentumGain, MinMomentumGain, MaxMomentumGain,GU
+         -ILayout.Width(300f)));                                         
+      53 -            GUILayout.Label(value.ToString(), GUILayout.Width(4
+         -0f));                                                          
+      54 -            if (value != Settings.MomentumGain)                
+      75 +            GUILayout.Label(label, GUILayout.Width(220f));     
+      76 +            int newValue = Mathf.RoundToInt(GUILayout.Horizonta
+         +lSlider(value, min, max, GUILayout.Width(300f)));              
+      77 +            GUILayout.Label(newValue.ToString(), GUILayout.Widt
+         +h(40f));                                                       
+      78 +            if (newValue == value)                             
+      79              {
+      56 -                Settings.MomentumGain = value;                 
+      57 -                ApplyToLoadedBlueprint();                      
+      80 +                return false;                                  
+      81              }
+      82 +            value = newValue;                                  
+      83 +            return true;                                       
+      84          }
+      60 -        GUILayout.Label($"Momentum gained when using Sword of F
+         -aith ({MinMomentumGain} to {MaxMomentumGain}). Takes effect imm
+         -ediately.");                                                   
+      85      }
+      86  
+      87      private static void ApplyToLoadedBlueprint()
+      88      {
+      89          try
+      90          {
+      67 -            ApplyMomentumGain(ResourcesLibrary.TryGetBlueprint(
+         -SwordOfFaithAbilityGuid));                                     
+      91 +            ApplySettings(ResourcesLibrary.TryGetBlueprint(Swor
+         +dOfFaithAbilityGuid));                                         
+      92          }
+      93          catch (Exception ex)
+      94          {
+     ...
+       96          }
+       97      }
+       98  
+       75 -    internal static void ApplyMomentumGain(SimpleBlueprint blu
+          -eprint)                                                       
+       99 +    internal static void ApplySettings(SimpleBlueprint bluepri
+          +nt)                                                           
+      100      {
+      101          if (blueprint is not BlueprintScriptableObject bp)
+      102          {
+      103              return;
+      104          }
+      105  
+       82 -        var action = bp.ComponentsArray                       
+      106 +        var addMomentum = bp.ComponentsArray                  
+      107              .OfType<AbilityEffectRunAction>()
+       84 -            .SelectMany(c => c.Actions?.Actions ?? new Kingmak
+          -er.ElementsSystem.GameAction[0])                              
+      108 +            .SelectMany(c => c.Actions?.Actions ?? new GameAct
+          +ion[0])                                                       
+      109              .OfType<WarhammerContextActionAddMomentum>()
+      110              .FirstOrDefault(a => a.name?.Contains(AddMomentumA
+           ctionId) ?? false);
+       87 -        if (action?.Value == null)                            
+      111 +        if (addMomentum?.Value != null)                       
+      112          {
+      113 +            addMomentum.Value.Value = Settings.MomentumGain;  
+      114 +        }                                                     
+      115 +        else                                                  
+      116 +        {                                                     
+      117              Mod.Logger.Error("Could not find the Sword of Fait
+           h momentum action to update");
+       90 -            return;                                           
+      118          }
+      119  
+       93 -        action.Value.Value = Settings.MomentumGain;           
+      120 +        var minimumMomentum = bp.ComponentsArray              
+      121 +            .OfType<AbilityMinimumMomentum>()                 
+      122 +            .FirstOrDefault(c => c.name?.Contains(MinimumMomen
+          +tumComponentId) ?? false);                                    
+      123 +        if (minimumMomentum != null)                          
+      124 +        {                                                     
+      125 +            minimumMomentum.MinimumMomentum = Settings.Minimum
+          +Momentum;                                                     
+      126 +        }                                                     
+      127 +        else                                                  
+      128 +        {                                                     
+      129 +            Mod.Logger.Error("Could not find the Sword of Fait
+          +h minimum momentum component to update");                     
+      130 +        }                                                     
+      131      }
+      132  }
+      133  
+       97 -// Blueprints are loaded lazily, so set the value whenever the
+          - game (re)loads this one.                                     
+      134 +// Blueprints are loaded lazily, so apply the settings wheneve
+          +r the game (re)loads this one.                                
+      135  // Runs after MicroPatches has applied SancticSwordOfFaithAbil
+           ity.patch.
+      136  [HarmonyPatch(typeof(OwlcatModification), nameof(OwlcatModific
+           ation.GetResourceReplacement))]
+      100 -internal static class ApplyMomentumGainOnLoad                 
+      137 +internal static class ApplySettingsOnLoad                     
+      138  {
+      139      [HarmonyPriority(Priority.Last)]
+      140      [HarmonyAfter("MicroPatches")]
+     ...
+      146              return;
+      147          }
+      148  
+      112 -        Main.ApplyMomentumGain((__result ?? resource) as Simpl
+          -eBlueprint);                                                  
+      149 +        Main.ApplySettings((__result ?? resource) as SimpleBlu
+          +eprint);                                                      
+      150      }
+      151  }
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● I added a second slider, "Minimum momentum", that runs from 0 to 175 and
+  defaults to 175 to match your patch file. It builds without errors and the new
+  DLL is in Assemblies; restart the game once to load it.
+
+  Like the first slider, this one takes effect immediately with no restart. The
+  game checks the required momentum every time it decides whether Sword of Faith
+  can be used, and the slider changes that number directly.
+
+  Your saved settings file has no entry for this yet, so it will start at 175.
+  Your momentum gain setting carries over unchanged.
+
+  If the new slider doesn't seem to do anything, check TrueSwordOfFaith_Log.txt
+  for "Could not find the Sword of Faith minimum momentum component to update".
+
+> <ide_selection>The user selected the lines 22 to 23 from
+  c:\Users\folao\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue Trader\Mod
+  ifications\TrueSwordOfFaith\Blueprints\SancticSwordOfFaithWeapon.patch:
+    "WarhammerDamage": 12,
+    "WarhammerMaxDamage": 18,
+
+  This may or may not be related to the current task.</ide_selection>
+
+> You are that dude Claude! Works great. I have one more request, I've
+  highlighted a couple of other lines that I'd like to also add to the mod
+  configuration.
+
+  "WarhammerDamage" and "WarhammerMaxDamage" should be 12 and 18 by default,
+  respectively. I want to be able to adjust these values up to 100 with the
+  minimum being 1. However, "WarhammerMaxDamage" should never be less than
+  "WarhammerDamage"; I suppose the adjustable scale should work so that if a
+  user attempts to make "WarhammerDamage" higher, "WarhammerMaxDamage" will
+  automatically increase to match the newer value.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Both are plain fields on the weapon blueprint. Before promising live updates,
+  I'll check whether the game reads them from the blueprint each time or copies
+  them onto the item when it's created.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+● I'll add two sliders for min/max damage that update live and ensure max stays
+  at or above min.
+
+● Update(Main.cs)
+  ⎿  Added 2 lines
+      16  {
+      17      public int MomentumGain = Main.MinMomentumGain;
+      18      public int MinimumMomentum = Main.MaxMinimumMomentum;
+      19 +    public int WeaponDamage = 12;                              
+      20 +    public int WeaponMaxDamage = 18;                           
+      21  }
+      22  
+      23  public static class Main
+
+● Update(Main.cs)
+  ⎿  Added 4 lines, removed 1 line
+      26      internal const int MaxMomentumGain = 0;
+      27      internal const int MinMinimumMomentum = 0;
+      28      internal const int MaxMinimumMomentum = 175;
+      29 +    internal const int MinWeaponDamage = 1;                    
+      30 +    internal const int MaxWeaponDamage = 100;                  
+      31  
+      30 -    // SancticSwordOfFaithAbility, see OwlcatModificationSettin
+         -gs.json                                                        
+      32 +    // SancticSwordOfFaithAbility and SancticSwordOfFaithWeapon
+         +, see OwlcatModificationSettings.json                          
+      33      internal const string SwordOfFaithAbilityGuid = "20d5376f94
+          2f454daf37f2b81a81e7b1";
+      34 +    internal const string SwordOfFaithWeaponGuid = "73e83b5b49c
+         +4461cb32324498c23474d";                                        
+      35  
+      36      // Element ids from SancticSwordOfFaithAbility.patch
+      37      private const string AddMomentumActionId = "418548a0d6ad4c6
+          88d6d726fe6a1f759";
+
+● Update(Main.cs)
+  ⎿  Added 2 lines
+      48          Settings = mod.LoadData<Settings>();
+      49          Settings.MomentumGain = Mathf.Clamp(Settings.MomentumGa
+          in, MinMomentumGain, MaxMomentumGain);
+      50          Settings.MinimumMomentum = Mathf.Clamp(Settings.Minimum
+          Momentum, MinMinimumMomentum, MaxMinimumMomentum);
+      51 +        Settings.WeaponDamage = Mathf.Clamp(Settings.WeaponDama
+         +ge, MinWeaponDamage, MaxWeaponDamage);                         
+      52 +        Settings.WeaponMaxDamage = Mathf.Clamp(Settings.WeaponM
+         +axDamage, Settings.WeaponDamage, MaxWeaponDamage);             
+      53          // The DLC & Mods cog refuses to open the window unless
+           OnShowGUI is set.
+      54          mod.OnShowGUI = () => { };
+      55          mod.OnHideGUI = () => mod.SaveData(Settings);
+
+● Update(Main.cs)
+  ⎿  Added 23 lines, removed 6 lines
+      55          mod.OnHideGUI = () => mod.SaveData(Settings);
+      56          mod.OnDrawGUI = OnGUI;
+      57          new Harmony(mod.Manifest.UniqueName).PatchAll();
+      58 -        mod.Logger.Log($"Sword of Faith momentum gain: {Setting
+         -s.MomentumGain}, minimum momentum: {Settings.MinimumMomentum}")
+         -;                                                              
+      58 +        mod.Logger.Log($"Sword of Faith momentum gain: {Setting
+         +s.MomentumGain}, minimum momentum: {Settings.MinimumMomentum}, 
+         +" +                                                            
+      59 +            $"damage: {Settings.WeaponDamage}-{Settings.WeaponM
+         +axDamage}");                                                   
+      60      }
+      61  
+      62      private static void OnGUI()
+      63      {
+      63 -        bool changed = false;                                  
+      64 -        changed |= IntSlider("Momentum gain:", ref Settings.Mom
+         -entumGain, MinMomentumGain, MaxMomentumGain);                  
+      64 +        bool abilityChanged = false;                           
+      65 +        abilityChanged |= IntSlider("Momentum gain:", ref Setti
+         +ngs.MomentumGain, MinMomentumGain, MaxMomentumGain);           
+      66          GUILayout.Label($"Momentum gained when using Sword of F
+          aith ({MinMomentumGain} to {MaxMomentumGain}).");
+      67          GUILayout.Space(10f);
+      67 -        changed |= IntSlider("Minimum momentum:", ref Settings.
+         -MinimumMomentum, MinMinimumMomentum, MaxMinimumMomentum);      
+      68 +        abilityChanged |= IntSlider("Minimum momentum:", ref Se
+         +ttings.MinimumMomentum, MinMinimumMomentum, MaxMinimumMomentum)
+         +;                                                              
+      69          GUILayout.Label($"Momentum required to use Sword of Fai
+          th ({MinMinimumMomentum} to {MaxMinimumMomentum}).");
+      70          GUILayout.Space(10f);
+      71 +                                                               
+      72 +        bool weaponChanged = false;                            
+      73 +        if (IntSlider("Weapon min damage:", ref Settings.Weapon
+         +Damage, MinWeaponDamage, MaxWeaponDamage))                     
+      74 +        {                                                      
+      75 +            // Raising min damage drags max damage up with it. 
+      76 +            Settings.WeaponMaxDamage = Mathf.Max(Settings.Weapo
+         +nMaxDamage, Settings.WeaponDamage);                            
+      77 +            weaponChanged = true;                              
+      78 +        }                                                      
+      79 +        // Max damage can't be dragged below min damage.       
+      80 +        weaponChanged |= IntSlider("Weapon max damage:", ref Se
+         +ttings.WeaponMaxDamage, MinWeaponDamage, MaxWeaponDamage, Setti
+         +ngs.WeaponDamage);                                             
+      81 +        GUILayout.Label($"Sword of Faith weapon damage ({MinWea
+         +ponDamage} to {MaxWeaponDamage}). Max damage is never lower tha
+         +n min damage.");                                               
+      82 +        GUILayout.Space(10f);                                  
+      83          GUILayout.Label("Changes take effect immediately.");
+      84  
+      72 -        if (changed)                                           
+      85 +        if (abilityChanged)                                    
+      86          {
+      74 -            ApplyToLoadedBlueprint();                          
+      87 +            ApplyToLoadedBlueprint(SwordOfFaithAbilityGuid);   
+      88          }
+      89 +        if (weaponChanged)                                     
+      90 +        {                                                      
+      91 +            ApplyToLoadedBlueprint(SwordOfFaithWeaponGuid);    
+      92 +        }                                                      
+      93      }
+      94  
+      95      private static bool IntSlider(string label, ref int value, 
+          int min, int max)
+
+● Update(Main.cs)
+  ⎿  Added 3 lines, removed 1 line
+       92          }
+       93      }
+       94  
+       95 -    private static bool IntSlider(string label, ref int value,
+          - int min, int max)                                            
+       95 +    // floor lets a slider keep the full min..max scale while 
+          +refusing values below it.                                     
+       96 +    private static bool IntSlider(string label, ref int value,
+          + int min, int max, int floor = int.MinValue)                  
+       97      {
+       98          using (new GUILayout.HorizontalScope())
+       99          {
+      100              GUILayout.Label(label, GUILayout.Width(220f));
+      101              int newValue = Mathf.RoundToInt(GUILayout.Horizont
+           alSlider(value, min, max, GUILayout.Width(300f)));
+      102 +            newValue = Mathf.Max(newValue, floor);            
+      103              GUILayout.Label(newValue.ToString(), GUILayout.Wid
+           th(40f));
+      104              if (newValue == value)
+      105              {
+
+● Update(Main.cs)
+  ⎿  Added 33 lines, removed 3 lines
+      110          }
+      111      }
+      112  
+      113 -    private static void ApplyToLoadedBlueprint()              
+      113 +    private static void ApplyToLoadedBlueprint(string guid)   
+      114      {
+      115          try
+      116          {
+      117 -            ApplySettings(ResourcesLibrary.TryGetBlueprint(Swo
+          -rdOfFaithAbilityGuid));                                       
+      117 +            ApplySettings(guid, ResourcesLibrary.TryGetBluepri
+          +nt(guid));                                                    
+      118          }
+      119          catch (Exception ex)
+      120          {
+     ...
+      122          }
+      123      }
+      124  
+      125 -    internal static void ApplySettings(SimpleBlueprint bluepri
+          -nt)                                                           
+      125 +    internal static bool IsConfiguredBlueprint(string guid)   
+      126      {
+      127 +        return string.Equals(guid, SwordOfFaithAbilityGuid, St
+          +ringComparison.OrdinalIgnoreCase)                             
+      128 +            || string.Equals(guid, SwordOfFaithWeaponGuid, Str
+          +ingComparison.OrdinalIgnoreCase);                             
+      129 +    }                                                         
+      130 +                                                              
+      131 +    internal static void ApplySettings(string guid, SimpleBlue
+          +print blueprint)                                              
+      132 +    {                                                         
+      133 +        if (string.Equals(guid, SwordOfFaithWeaponGuid, String
+          +Comparison.OrdinalIgnoreCase))                                
+      134 +        {                                                     
+      135 +            ApplyWeaponSettings(blueprint);                   
+      136 +        }                                                     
+      137 +        else if (string.Equals(guid, SwordOfFaithAbilityGuid, 
+          +StringComparison.OrdinalIgnoreCase))                          
+      138 +        {                                                     
+      139 +            ApplyAbilitySettings(blueprint);                  
+      140 +        }                                                     
+      141 +    }                                                         
+      142 +                                                              
+      143 +    private static void ApplyWeaponSettings(SimpleBlueprint bl
+          +ueprint)                                                      
+      144 +    {                                                         
+      145 +        if (blueprint is not BlueprintItemWeapon weapon)      
+      146 +        {                                                     
+      147 +            Mod.Logger.Error("Could not find the Sword of Fait
+          +h weapon to update");                                         
+      148 +            return;                                           
+      149 +        }                                                     
+      150 +                                                              
+      151 +        weapon.WarhammerDamage = Settings.WeaponDamage;       
+      152 +        weapon.WarhammerMaxDamage = Settings.WeaponMaxDamage; 
+      153 +    }                                                         
+      154 +                                                              
+      155 +    private static void ApplyAbilitySettings(SimpleBlueprint b
+          +lueprint)                                                     
+      156 +    {                                                         
+      157          if (blueprint is not BlueprintScriptableObject bp)
+      158          {
+      159              return;
+
+● Update(Main.cs)
+  ⎿  Added 2 lines, removed 2 lines
+      187      }
+      188  }
+      189  
+      190 -// Blueprints are loaded lazily, so apply the settings wheneve
+          -r the game (re)loads this one.                                
+      191 -// Runs after MicroPatches has applied SancticSwordOfFaithAbil
+          -ity.patch.                                                    
+      190 +// Blueprints are loaded lazily, so apply the settings wheneve
+          +r the game (re)loads one of ours.                             
+      191 +// Runs after MicroPatches has applied the .patch files.      
+      192  [HarmonyPatch(typeof(OwlcatModification), nameof(OwlcatModific
+           ation.GetResourceReplacement))]
+      193  internal static class ApplySettingsOnLoad
+      194  {
+
+● Update(Main.cs)
+  ⎿  Added 2 lines, removed 3 lines
+      196      [HarmonyAfter("MicroPatches")]
+      197      private static void Postfix(OwlcatModification __instance,
+            object resource, string guid, object __result)
+      198      {
+      199 -        if (__instance != Main.Mod                            
+      200 -            || !string.Equals(guid, Main.SwordOfFaithAbilityGu
+          -id, StringComparison.OrdinalIgnoreCase))                      
+      199 +        if (__instance != Main.Mod || !Main.IsConfiguredBluepr
+          +int(guid))                                                    
+      200          {
+      201              return;
+      202          }
+      203  
+      205 -        Main.ApplySettings((__result ?? resource) as SimpleBlu
+          -eprint);                                                      
+      204 +        Main.ApplySettings(guid, (__result ?? resource) as Sim
+          +pleBlueprint);                                                
+      205      }
+      206  }
+
+● Update(Main.cs)
+  ⎿  Added 1 line
+      2  using System.Linq;
+      3  using HarmonyLib;
+      4  using Kingmaker.Blueprints;
+      5 +using Kingmaker.Blueprints.Items.Weapons;                       
+      6  using Kingmaker.ElementsSystem;
+      7  using Kingmaker.Modding;
+      8  using Kingmaker.UnitLogic.Abilities.Components;
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● I added "Weapon min damage" and "Weapon max damage" sliders, each from 1 to
+  100, defaulting to 12 and 18. They build without errors and the new DLL is in
+  Assemblies; restart the game once to load it.
+
+  These take effect immediately too, because the game reads both values from the
+  weapon each time it calculates damage or shows a tooltip.
+
+  How the two sliders keep max damage at or above min damage:
+  - Raising min damage above max damage pushes max damage up with it, as you
+    described.
+  - Dragging max damage below min damage stops it at the min damage value. Min
+    damage doesn't get pushed down. If you'd rather it pushed min damage down
+    instead, I can switch that.
+  - Saved values are corrected the same way on load, so a hand-edited settings
+    file can't break the rule.
+
+  The momentum sliders are unchanged.
+
+> <ide_selection>The user selected the lines 67 to 67 from
+  c:\Users\folao\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue
+  Trader\Modifications\TrueSwordOfFaith\Source\Main.cs:
+  gained
+
+  This may or may not be related to the current task.</ide_selection>
+
+> Yes, please make the addtion that the min damage gets pushed down if the max
+  damage scales below the min damage number.
+
+  Another minor change - can you reverse the slider direction for the momentum
+  "gained" on usage of the Sword of Faith ability? In other words, dragging it
+  from left to right should go from 0 to -50. Also, please update the text from
+  momentum "gained" to momentum "used".
+
+  Read 1 file (ctrl+o to expand)
+
+● Update(Main.cs)
+  ⎿  Added 3 lines, removed 2 lines
+      63      private static void OnGUI()
+      64      {
+      65          bool abilityChanged = false;
+      66 -        abilityChanged |= IntSlider("Momentum gain:", ref Setti
+         -ngs.MomentumGain, MinMomentumGain, MaxMomentumGain);           
+      67 -        GUILayout.Label($"Momentum gained when using Sword of F
+         -aith ({MinMomentumGain} to {MaxMomentumGain}).");              
+      66 +        // Reversed so dragging right uses more momentum.      
+      67 +        abilityChanged |= IntSlider("Momentum used:", ref Setti
+         +ngs.MomentumGain, MaxMomentumGain, MinMomentumGain);           
+      68 +        GUILayout.Label($"Momentum used when using Sword of Fai
+         +th ({MaxMomentumGain} to {MinMomentumGain}).");                
+      69          GUILayout.Space(10f);
+      70          abilityChanged |= IntSlider("Minimum momentum:", ref Se
+          ttings.MinimumMomentum, MinMinimumMomentum, MaxMinimumMomentum)
+          ;
+      71          GUILayout.Label($"Momentum required to use Sword of Fai
+          th ({MinMinimumMomentum} to {MaxMinimumMomentum}).");
+
+● Update(Main.cs)
+  ⎿  Added 6 lines, removed 2 lines
+      78              Settings.WeaponMaxDamage = Mathf.Max(Settings.Weapo
+          nMaxDamage, Settings.WeaponDamage);
+      79              weaponChanged = true;
+      80          }
+      81 -        // Max damage can't be dragged below min damage.       
+      82 -        weaponChanged |= IntSlider("Weapon max damage:", ref Se
+         -ttings.WeaponMaxDamage, MinWeaponDamage, MaxWeaponDamage, Setti
+         -ngs.WeaponDamage);                                             
+      81 +        if (IntSlider("Weapon max damage:", ref Settings.Weapon
+         +MaxDamage, MinWeaponDamage, MaxWeaponDamage))                  
+      82 +        {                                                      
+      83 +            // Lowering max damage drags min damage down with i
+         +t.                                                             
+      84 +            Settings.WeaponDamage = Mathf.Min(Settings.WeaponDa
+         +mage, Settings.WeaponMaxDamage);                               
+      85 +            weaponChanged = true;                              
+      86 +        }                                                      
+      87          GUILayout.Label($"Sword of Faith weapon damage ({MinWea
+          ponDamage} to {MaxWeaponDamage}). Max damage is never lower tha
+          n min damage.");
+      88          GUILayout.Space(10f);
+      89          GUILayout.Label("Changes take effect immediately.");
+
+● Update(Main.cs)
+  ⎿  Added 13 lines, removed 4 lines
+       98          }
+       99      }
+      100  
+      101 -    // floor lets a slider keep the full min..max scale while 
+          -refusing values below it.                                     
+      102 -    private static bool IntSlider(string label, ref int value,
+          - int min, int max, int floor = int.MinValue)                  
+      101 +    // left may be greater than right for a reversed slider.  
+      102 +    private static bool IntSlider(string label, ref int value,
+          + int left, int right)                                         
+      103      {
+      104          using (new GUILayout.HorizontalScope())
+      105          {
+      106              GUILayout.Label(label, GUILayout.Width(220f));
+      107 -            int newValue = Mathf.RoundToInt(GUILayout.Horizont
+          -alSlider(value, min, max, GUILayout.Width(300f)));            
+      108 -            newValue = Mathf.Max(newValue, floor);            
+      107 +            int newValue;                                     
+      108 +            if (left <= right)                                
+      109 +            {                                                 
+      110 +                newValue = Mathf.RoundToInt(GUILayout.Horizont
+          +alSlider(value, left, right, GUILayout.Width(300f)));         
+      111 +            }                                                 
+      112 +            else                                              
+      113 +            {                                                 
+      114 +                // Slide over the mirrored value so the left e
+          +nd maps to left and the right end to right.                   
+      115 +                int position = Mathf.RoundToInt(GUILayout.Hori
+          +zontalSlider(left + right - value, right, left, GUILayout.Widt
+          +h(300f)));                                                    
+      116 +                newValue = left + right - position;           
+      117 +            }                                                 
+      118              GUILayout.Label(newValue.ToString(), GUILayout.Wid
+           th(40f));
+      119              if (newValue == value)
+      120              {
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● I made all three changes. It builds without errors and the new DLL is in
+  Assemblies; restart the game once to load it.
+
+  - Damage sliders: dragging max damage below min damage now pushes min damage
+    down with it. Raising min damage still pushes max damage up, so the two can
+    never cross from either side.
+  - Momentum slider direction: it's reversed, so dragging left to right goes
+    from 0 to -50.
+  - Wording: the slider label is now "Momentum used:" and the description below
+    it reads "Momentum used when using Sword of Faith (0 to -50)."
+
+  The number beside the momentum slider still shows the value the game uses, so
+  it reads -50 at the right end. The saved setting is unchanged, so your current
+  value carries over.
+> How can I keep this session saved somewhere in case I want to review it
+  later?
+
+  Listed 1 directory (ctrl+o to expand)
+
+● This session is already saved. Claude Code records every session
+  automatically, and this one is at:
+
+  C:\Users\folao\.claude\projects\c--Users-folao-AppData-LocalLow-Owlcat-Games-W
+  arhammer-40000-Rogue-Trader-Modifications-TrueSwordOfFaith\4adf6e20-f421-4ca8-
+  b9da-eed0fcf692fa.jsonl
+
+  To reopen it
+  - In VS Code: open the past-sessions list in the Claude Code panel and pick
+    this one. Sessions are grouped by project folder, so open the
+    TrueSwordOfFaith folder first.
+  - From a terminal in the mod folder: claude --resume lists past sessions to
+    choose from, and claude --continue reopens the most recent one.
+
+  To keep a readable copy
+
+  Type /export in the chat. It saves the conversation as a plain text file, or
+  copies it to your clipboard. The .jsonl file above is raw data and hard to
+  read directly.
+
+  Two things to know
+  - Old sessions get deleted: Claude Code clears sessions after about 30 days by
+    default. If you want this one longer, export it, or raise cleanupPeriodDays
+    in your Claude Code settings.
+  - The decompiled game code is temporary: the files I decompiled to work this
+    out are in a temp folder that won't stick around. What matters is the mod's
+    Source folder, which stays with the mod.
+
+  I could also write a short Source/README.md covering how the settings work and
+  the cog's OnShowGUI requirement, so it's documented next to the code.

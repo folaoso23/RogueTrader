@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "07kiGkF/DhE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\folao\\AppData\\LocalLow\\Owlcat Games\\Warhammer 40000 Rogue Trader\\Modifications\\TrueSwordOfFaith\\Source\\TrueSwordOfFaith.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\folao\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\folao\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net481\\1.0.3\\microsoft.netframework.referenceassemblies.net481.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

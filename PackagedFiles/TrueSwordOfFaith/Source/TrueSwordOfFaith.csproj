@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net481</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>TrueSwordOfFaith</AssemblyName>
+    <RootNamespace>TrueSwordOfFaith</RootNamespace>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <!-- Override on the command line if the game lives elsewhere: dotnet build -p:GamePath="D:\Games\..." -->
+    <GamePath Condition="'$(GamePath)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Warhammer 40,000 Rogue Trader</GamePath>
+    <Managed>$(GamePath)\WH40KRT_Data\Managed</Managed>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony" HintPath="$(Managed)\0Harmony.dll" Private="false" />
+    <Reference Include="Code" HintPath="$(Managed)\Code.dll" Private="false" />
+    <Reference Include="RogueTrader.GameCore" HintPath="$(Managed)\RogueTrader.GameCore.dll" Private="false" />
+    <Reference Include="Owlcat.Runtime.Core" HintPath="$(Managed)\Owlcat.Runtime.Core.dll" Private="false" />
+    <Reference Include="UnityEngine" HintPath="$(Managed)\UnityEngine.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(Managed)\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine.IMGUIModule" HintPath="$(Managed)\UnityEngine.IMGUIModule.dll" Private="false" />
+  </ItemGroup>
+
+  <!-- Drop the built DLL into the mod's Assemblies folder, where the game loads it from. -->
+  <Target Name="CopyToMod" AfterTargets="Build">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(MSBuildProjectDirectory)\..\Assemblies" />
+  </Target>
+
+</Project>

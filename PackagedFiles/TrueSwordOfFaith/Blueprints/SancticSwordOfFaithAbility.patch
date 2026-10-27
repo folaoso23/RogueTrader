@@ -11,7 +11,7 @@
               "Target": "$WarhammerContextActionAddMomentum$418548a0d6ad4c688d6d726fe6a1f759",
               "ElementPatch": {
                 "Value": {
-                  "Value": 0
+                  "Value": -50
                 }
               }
             }
@@ -30,8 +30,11 @@
       "InsertAfterTarget": "$UIPropertiesComponent$23148b17-c014-4ed5-98d9-e86858aaa563"
     },
     {
-      "PatchType": "RemoveFromEnd",
-      "Target": "$AbilityMinimumMomentum$976c4aaa-5ad0-4b42-8072-f57b2b31a198"
+      "PatchType": "PatchElement",
+      "Target": "$AbilityMinimumMomentum$976c4aaa-5ad0-4b42-8072-f57b2b31a198",
+      "ElementPatch": {
+        "MinimumMomentum": 175
+      }
     }
   ]
 }
