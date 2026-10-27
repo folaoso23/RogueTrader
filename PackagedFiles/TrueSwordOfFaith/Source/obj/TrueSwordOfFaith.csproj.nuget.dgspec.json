@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\folao\\AppData\\LocalLow\\Owlcat Games\\Warhammer 40000 Rogue Trader\\Modifications\\TrueSwordOfFaith\\Source\\TrueSwordOfFaith.csproj": {}
+    "C:\\Users\\folao\\Git\\RogueTrader\\PackagedFiles\\TrueSwordOfFaith\\Source\\TrueSwordOfFaith.csproj": {}
   },
   "projects": {
-    "C:\\Users\\folao\\AppData\\LocalLow\\Owlcat Games\\Warhammer 40000 Rogue Trader\\Modifications\\TrueSwordOfFaith\\Source\\TrueSwordOfFaith.csproj": {
+    "C:\\Users\\folao\\Git\\RogueTrader\\PackagedFiles\\TrueSwordOfFaith\\Source\\TrueSwordOfFaith.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\folao\\AppData\\LocalLow\\Owlcat Games\\Warhammer 40000 Rogue Trader\\Modifications\\TrueSwordOfFaith\\Source\\TrueSwordOfFaith.csproj",
+        "projectUniqueName": "C:\\Users\\folao\\Git\\RogueTrader\\PackagedFiles\\TrueSwordOfFaith\\Source\\TrueSwordOfFaith.csproj",
         "projectName": "TrueSwordOfFaith",
-        "projectPath": "C:\\Users\\folao\\AppData\\LocalLow\\Owlcat Games\\Warhammer 40000 Rogue Trader\\Modifications\\TrueSwordOfFaith\\Source\\TrueSwordOfFaith.csproj",
+        "projectPath": "C:\\Users\\folao\\Git\\RogueTrader\\PackagedFiles\\TrueSwordOfFaith\\Source\\TrueSwordOfFaith.csproj",
         "packagesPath": "C:\\Users\\folao\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\folao\\AppData\\LocalLow\\Owlcat Games\\Warhammer 40000 Rogue Trader\\Modifications\\TrueSwordOfFaith\\Source\\obj\\",
+        "outputPath": "C:\\Users\\folao\\Git\\RogueTrader\\PackagedFiles\\TrueSwordOfFaith\\Source\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\folao\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrueSwordOfFaith")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4981fd08fe15e66614516412d4c96b8aa3884b56")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrueSwordOfFaith")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrueSwordOfFaith")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

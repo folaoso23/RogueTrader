@@ -40,6 +40,7 @@ public static class Main
 
     internal static OwlcatModification Mod;
     internal static Settings Settings;
+    private static bool settingsDirty;
 
     [OwlcatModificationEnterPoint]
     public static void Load(OwlcatModification mod)
@@ -53,8 +54,11 @@ public static class Main
         Settings.WeaponMaxDamage = Mathf.Clamp(Settings.WeaponMaxDamage, Settings.WeaponDamage, MaxWeaponDamage);
         // The DLC & Mods cog refuses to open the window unless OnShowGUI is set.
         mod.OnShowGUI = () => { };
-        mod.OnHideGUI = () => mod.SaveData(Settings);
+        // OnHideGUI doesn't fire on every way out of the menu, so OnGUI also saves after each change
+        // and quitting saves anything still pending.
+        mod.OnHideGUI = SaveSettings;
         mod.OnDrawGUI = OnGUI;
+        Application.quitting += SaveSettings;
         new Harmony(mod.Manifest.UniqueName).PatchAll();
         mod.Logger.Log($"Sword of Faith momentum gain: {Settings.MomentumGain}, minimum momentum: {Settings.MinimumMomentum}, " +
             $"damage: {Settings.WeaponDamage}-{Settings.WeaponMaxDamage}");
@@ -95,6 +99,26 @@ public static class Main
         if (weaponChanged)
         {
             ApplyToLoadedBlueprint(SwordOfFaithWeaponGuid);
+        }
+
+        settingsDirty |= abilityChanged || weaponChanged;
+        // Wait until the slider is released so dragging doesn't write the file every frame.
+        if (settingsDirty && GUIUtility.hotControl == 0)
+        {
+            SaveSettings();
+        }
+    }
+
+    private static void SaveSettings()
+    {
+        try
+        {
+            Mod.SaveData(Settings);
+            settingsDirty = false;
+        }
+        catch (Exception ex)
+        {
+            Mod.Logger.Exception(ex);
         }
     }
 
@@ -207,15 +231,17 @@ public static class Main
 [HarmonyPatch(typeof(OwlcatModification), nameof(OwlcatModification.GetResourceReplacement))]
 internal static class ApplySettingsOnLoad
 {
+    // Must be a pass-through postfix (returns __result): Harmony runs every void postfix before any
+    // pass-through one, so a void postfix would run before MicroPatches' and have the .patch values
+    // written over it.
     [HarmonyPriority(Priority.Last)]
     [HarmonyAfter("MicroPatches")]
-    private static void Postfix(OwlcatModification __instance, object resource, string guid, object __result)
+    private static object Postfix(object __result, OwlcatModification __instance, object resource, string guid)
     {
-        if (__instance != Main.Mod || !Main.IsConfiguredBlueprint(guid))
+        if (__instance == Main.Mod && Main.IsConfiguredBlueprint(guid))
         {
-            return;
+            Main.ApplySettings(guid, (__result ?? resource) as SimpleBlueprint);
         }
-
-        Main.ApplySettings(guid, (__result ?? resource) as SimpleBlueprint);
+        return __result;
     }
 }

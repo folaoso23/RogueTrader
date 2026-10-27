@@ -7,3 +7,13 @@ C:\Users\folao\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue Trader\Modifi
 C:\Users\folao\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue Trader\Modifications\TrueSwordOfFaith\Source\obj\Release\TrueSwordOfFaith.csproj.CoreCompileInputs.cache
 C:\Users\folao\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue Trader\Modifications\TrueSwordOfFaith\Source\obj\Release\TrueSwordOfFaith.dll
 C:\Users\folao\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue Trader\Modifications\TrueSwordOfFaith\Source\obj\Release\TrueSwordOfFaith.pdb
+C:\Users\folao\Git\RogueTrader\PackagedFiles\TrueSwordOfFaith\Source\bin\Release\TrueSwordOfFaith.dll
+C:\Users\folao\Git\RogueTrader\PackagedFiles\TrueSwordOfFaith\Source\bin\Release\TrueSwordOfFaith.pdb
+C:\Users\folao\Git\RogueTrader\PackagedFiles\TrueSwordOfFaith\Source\obj\Release\TrueSwordOfFaith.csproj.AssemblyReference.cache
+C:\Users\folao\Git\RogueTrader\PackagedFiles\TrueSwordOfFaith\Source\obj\Release\TrueSwordOfFaith.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\folao\Git\RogueTrader\PackagedFiles\TrueSwordOfFaith\Source\obj\Release\TrueSwordOfFaith.AssemblyInfoInputs.cache
+C:\Users\folao\Git\RogueTrader\PackagedFiles\TrueSwordOfFaith\Source\obj\Release\TrueSwordOfFaith.AssemblyInfo.cs
+C:\Users\folao\Git\RogueTrader\PackagedFiles\TrueSwordOfFaith\Source\obj\Release\TrueSwordOfFaith.csproj.CoreCompileInputs.cache
+C:\Users\folao\Git\RogueTrader\PackagedFiles\TrueSwordOfFaith\Source\obj\Release\TrueSwordOfFaith.sourcelink.json
+C:\Users\folao\Git\RogueTrader\PackagedFiles\TrueSwordOfFaith\Source\obj\Release\TrueSwordOfFaith.dll
+C:\Users\folao\Git\RogueTrader\PackagedFiles\TrueSwordOfFaith\Source\obj\Release\TrueSwordOfFaith.pdb

@@ -13,8 +13,9 @@ the mod in **DLC & Mods**. Every change applies immediately, with no game restar
 Max damage can never be lower than min damage. Raising min damage pushes max damage up,
 and lowering max damage pushes min damage down.
 
-Settings are saved to `Modifications\TrueSwordOfFaith_Data.json` when the settings window
-closes. They are clamped to the ranges above on load.
+Settings are saved to `Modifications\TrueSwordOfFaith_Data.json` as soon as a slider is
+released. They are also saved when the settings window closes and when the game quits.
+They are clamped to the ranges above on load.
 
 ## Building
 
@@ -40,12 +41,17 @@ before any blueprints load.
 **Settings window.** The cog appears when `OnDrawGUI` is set. Clicking the cog opens the
 window only if `OnShowGUI` is also set. Without it the game logs
 `Mod TrueSwordOfFaith has no OnShowGui` and nothing opens. That's why `OnShowGUI` is set
-to an empty callback. `OnHideGUI` saves the settings.
+to an empty callback. `OnHideGUI` saves the settings, but it doesn't fire on every way out
+of the menu. So `OnGUI` also saves once a changed slider is released (`GUIUtility.hotControl == 0`),
+and `Application.quitting` saves anything still pending.
 
 **Applying values on load.** The `.patch` files use `PatchType: 2`, which only MicroPatches
 understands. The game itself only knows Replace (0) and Edit (1). MicroPatches applies these
 patches in a Harmony postfix on `OwlcatModification.GetResourceReplacement`. This DLL adds
 its own postfix that runs after MicroPatches (`Priority.Last`, `HarmonyAfter("MicroPatches")`).
+That postfix must return `__result`. Harmony runs all `void` postfixes before any postfix that
+returns a value, and MicroPatches' postfix returns one. A `void` postfix would therefore run
+first, and MicroPatches would write the `.patch` values over the settings.
 That postfix writes the saved settings onto the freshly patched blueprint. The values in the
 `.patch` files are therefore only fallbacks; the settings always win.
 
