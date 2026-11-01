@@ -1,0 +1,20 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$AddContextStatBonus$4116dcbe-1675-4140-902d-f5a6e5bcef1a",
+      "ElementPatch": {
+        "Value": {
+          "Value": 15
+        }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerBonusMovementPoints$fe2477dc-aa1d-4916-bf61-b5c496aff402",
+      "ElementPatch": {
+        "Bonus": 3
+      }
+    }
+  ]
+}

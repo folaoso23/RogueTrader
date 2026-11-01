@@ -1,0 +1,20 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$AbilityLifecycleTriggerCaster$c6e580e0-f31d-443b-a4ff-caddb1722727",
+      "ElementPatch": {
+        "EndActions": {
+          "Actions": [
+            {
+              "PatchType": "RemoveFromEnd",
+              "Target": "$ContextActionRemoveSelf$51436bcf062a47b2a875e5566076ecd7"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "Stacking": "Stack",
+  "Ranks": 3
+}

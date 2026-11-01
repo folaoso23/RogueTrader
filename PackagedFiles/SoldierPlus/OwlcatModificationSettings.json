@@ -1,0 +1,46 @@
+{
+    "BundlesLayout": {
+        "m_Guids": [],
+        "m_Bundles": []
+    },
+    "BundleDependencies": {
+        "m_List": [
+            {
+                "Key": "SoldierPlus_BlueprintDirectReferences",
+                "Value": []
+            }
+        ]
+    },
+    "BlueprintPatches": [
+        {
+            "Guid": "927c143a334f4e61858ae73281893a6d",
+            "Filename": "FiredUp_Soldier_Talent",
+            "PatchType": 2
+        },
+        {
+            "Guid": "bca60f98db3543fa94e8a0c036c188ed",
+            "Filename": "TagTeam_Soldier_AreaEffect",
+            "PatchType": 2
+        },
+        {
+            "Guid": "0622f1c3840e4325912a5e8967a8a821",
+            "Filename": "TasteThePain_EffectBuffDamage",
+            "PatchType": 2
+        },
+        {
+            "Guid": "6268f2eb04fe44d5b1ca79c9f25a8637",
+            "Filename": "Wholeness_Soldier_Talent",
+            "PatchType": 2
+        },
+        {
+            "Guid": "f48a4571cd9342ec83d4b87635f66a99",
+            "Filename": "Wholeness_Buff",
+            "PatchType": 2
+        },
+        {
+            "Guid": "86f53f20266441298da3f74d4a099c71",
+            "Filename": "Soldier_RevelInSlaughter_Buff",
+            "PatchType": 2
+        }
+    ]
+}

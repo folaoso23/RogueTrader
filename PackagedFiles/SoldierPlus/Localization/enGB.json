@@ -1,0 +1,26 @@
+{
+    "strings": {
+        "19ad09af-61ee-49e7-a577-4807e2408a2f": {
+            "Text":  "Whenever the Soldier deals {g|Encyclopedia:DamageGlossary}damage{/g}, their {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical damage{/g} is increased by +2% until the end of combat."
+        },
+        "36577311-c15d-4c83-ab7e-bc3198203928": {
+            "Text": "For each ally within 4 tiles, the Soldier deals +{uip|BonusDamage|09204d361b6d4fb786842e43ac1979db}% more {g|Encyclopedia:DamageGlossary}damage{/g} to enemies."
+        },
+        "34ee0a3d-1ad7-45f8-8326-31a93d1e37f7": 
+        {
+             "Text" : "After the Soldier deals {g|Encyclopedia:DamageGlossary}damage{/g} to 3 different enemies, the Soldier gains +{uip|DamageBonus|88e62a99868842bd9554971820fbd95b}% more damage for the rest of combat. Stacks up to 3 times."
+        },
+        "8b59ee80-4f37-46b3-b94a-a7897c8ccb93":
+        {
+            "Text": "While above 75% {g|Encyclopedia:HitPoints}wounds{/g}, the Soldier has +15 {g|Encyclopedia:WarhammerBallisticSkill}Ballistic Skill{/g} and +3 {g|Encyclopedia:MovementPoints}MP{/g}."
+        },
+        "db719fc0-0900-4bf7-a94a-1ff35eaf2be9":
+        {
+            "Text": "The Soldier immediately removes the winded effect. Until the end of combat, the Soldier gains the following {g|Encyclopedia:Bonus}bonuses{/g}:\n-<indent=5%>+10 {g|Encyclopedia:WarhammerBallisticSkill}Ballistic Skill{/g}.</indent>\n-<indent=5%>+{uip|BonusCritDamage|530b6d2cefef42f180b90c7bdbb99f90}% {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical damage{/g}.</indent>\n-<indent=5%>+{unit_stat|WarhammerAgility|bonus}% critical {g|Encyclopedia:HitSequenceGlossary}hit chance{/g}.</indent>\nThis {g|Encyclopedia:Ability}ability{/g} becomes available after the Soldier kills 3 enemies or uses 3 attacks. The kill and attack counters are shared and the counter is not reset between {g|Encyclopedia:Round}rounds{/g}."
+        },
+        "8feb2b2c-5ed1-439a-8915-21670a0a5830": 
+        {
+            "Text": "{g|f:8638221f9caf46649cefcbd7574804d1}Revel in Slaughter{/g} can be used after 2 kills or attacks instead of 3."
+        }
+    }
+}

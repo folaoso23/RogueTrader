@@ -1,0 +1,64 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerDamageTriggerTarget$755bbbd2-8241-4391-9e58-ebdfed3df7db",
+      "ElementPatch": {
+        "Restrictions": {
+          "Property": {
+            "Getters": [
+              {
+                "PatchType": "PatchElement",
+                "Target": "$ContextValueGetter$fdc1605779c3476dbd7e7a76d727163d",
+                "ElementPatch": {
+                  "Value": {
+                    "Value": 75
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "PatchType": "PatchElement",
+      "Target": "$AddHealTrigger$27cc9343-97b4-4c8e-b6c9-5c578054390d",
+      "ElementPatch": {
+        "Action": {
+          "Actions": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$Conditional$f51a2543eb3f4124a63f9c29a2f0aec6",
+              "ElementPatch": {
+                "ConditionsChecker": {
+                  "Conditions": [
+                    {
+                      "PatchType": "PatchElement",
+                      "Target": "$ContextConditionProperty$9eea2f3865c4432db14a62970d9c28cb",
+                      "ElementPatch": {
+                        "Property": {
+                          "Getters": [
+                            {
+                              "PatchType": "PatchElement",
+                              "Target": "$ContextValueGetter$c112c3a4773243d09564578b06f7b6bd",
+                              "ElementPatch": {
+                                "Value": {
+                                  "Value": 75
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

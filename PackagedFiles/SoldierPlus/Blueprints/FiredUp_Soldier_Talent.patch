@@ -1,0 +1,23 @@
+{
+  "Components": [
+    {
+      "PatchType": "PatchElement",
+      "Target": "$WarhammerDamageTriggerInitiator$b9e339c5-0b1d-4da4-aac8-3bb93fb7e14a",
+      "ElementPatch": {
+        "Actions": {
+          "Actions": [
+            {
+              "PatchType": "PatchElement",
+              "Target": "$ContextActionApplyBuff$38102c0008074801ab5ae6b92d01efa5",
+              "ElementPatch": {
+                "Ranks": {
+                  "Value": 2
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
