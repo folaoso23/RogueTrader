@@ -41,6 +41,11 @@
             "Guid": "86f53f20266441298da3f74d4a099c71",
             "Filename": "Soldier_RevelInSlaughter_Buff",
             "PatchType": 2
+        },
+        {
+            "Guid": "530b6d2cefef42f180b90c7bdbb99f90",
+            "Filename": "Soldier_RevelInSlaughter_Ability",
+            "PatchType": 2
         }
     ]
 }

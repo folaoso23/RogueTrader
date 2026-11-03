@@ -4,7 +4,7 @@
             "Text":  "Whenever the Soldier deals {g|Encyclopedia:DamageGlossary}damage{/g}, their {g|Encyclopedia:CritChancesAndCritDamageGlossary}critical damage{/g} is increased by +2% until the end of combat."
         },
         "36577311-c15d-4c83-ab7e-bc3198203928": {
-            "Text": "For each ally within 4 tiles, the Soldier deals +{uip|BonusDamage|09204d361b6d4fb786842e43ac1979db}% more {g|Encyclopedia:DamageGlossary}damage{/g} to enemies."
+            "Text": "For each ally within 10 tiles, the Soldier deals +{uip|BonusDamage|09204d361b6d4fb786842e43ac1979db}% more {g|Encyclopedia:DamageGlossary}damage{/g} to enemies."
         },
         "34ee0a3d-1ad7-45f8-8326-31a93d1e37f7": 
         {
