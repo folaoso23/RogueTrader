@@ -1,0 +1,13 @@
+{
+  "AbilityContainer": {
+    "Ability1": {
+      "m_FXSettings": "!bp_1bc92b9832fe402caa887d8c5d990cb4"
+    }
+  },
+  "m_Enchantments": [
+    {
+      "PatchType": "Prepend",
+      "NewElement": "!bp_800d7bc0c93b46cea5716353cea78748"
+    }
+  ]
+}

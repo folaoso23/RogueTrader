@@ -1,0 +1,395 @@
+{
+  "AssetId": "979a4f61df7848cfb4b9b553ccd5a91a",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "18beb8746b848f6448d3ee6969a32467, WarhammerOverrideAbilityApCost",
+        "name": "$WarhammerOverrideAbilityApCost$1bd180da-936f-44f2-b2bd-3fb31f6e54bc",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "323b0da7a07e4dc7b3e5311d3c609ff6, CheckAbilityWeaponCategoryGetter",
+                "name": "$CheckAbilityWeaponCategoryGetter$ce362e8592204b809f458b552ee6df56",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Categories": [
+                  "Pistol"
+                ]
+              }
+            ]
+          }
+        },
+        "m_overrideMode": "CostBonus",
+        "m_newCost": 0,
+        "m_costBonus": -1,
+        "m_costMinimum": 1,
+        "m_Ability": null,
+        "m_AffectedGroup": "!bp_1cf206b13141425491c379bc75ef0699",
+        "m_AbilityGroupList": [],
+        "NotSelectedGroup": false,
+        "AffectOnlyMelee": false,
+        "AffectOnlyRanged": false,
+        "AffectOnlyAoE": false,
+        "AffectOnlyBurst": false,
+        "AffectOnlyHeavy": false
+      },
+      {
+        "$type": "efafb8ff343e4071a216fe8fcb17e023, WarhammerCriticalDamageModifierInitiator",
+        "name": "$WarhammerCriticalDamageModifierInitiator$936c2892-89c5-42be-8529-78083ab27403",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "323b0da7a07e4dc7b3e5311d3c609ff6, CheckAbilityWeaponCategoryGetter",
+                "name": "$CheckAbilityWeaponCategoryGetter$1307a94f-0898-4cc3-af1b-8e81a6a4331b",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Categories": [
+                  "Pistol"
+                ]
+              }
+            ]
+          }
+        },
+        "PercentCriticalDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 50,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": true
+        },
+        "BonusCriticalDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "BonusCriticalDamageMultipliers": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "purePercentCriticalDamageModifier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "ModifierDescriptor": "None"
+      },
+      {
+        "$type": "28fa403fa7a94a2f9ea361583e66cdb4, WarhammerWeaponStatsModifierInitiator",
+        "name": "$WarhammerWeaponStatsModifierInitiator$6454ad24-930c-43ad-924e-e62ea37e57cf",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "323b0da7a07e4dc7b3e5311d3c609ff6, CheckAbilityWeaponCategoryGetter",
+                "name": "$CheckAbilityWeaponCategoryGetter$fda75bb9-e53f-4b77-96f6-ab348d9d884c",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Categories": [
+                  "Pistol"
+                ]
+              }
+            ]
+          }
+        },
+        "Descriptor": "None",
+        "Damage": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "DamageMin": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "DamageMax": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false
+        },
+        "Penetration": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "Recoil": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "AdditionalHitChance": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "DodgePenetration": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "MaxDistance": {
+          "ValueType": "Simple",
+          "Value": 4,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": true,
+          "ModifierType": "ValAdd"
+        },
+        "OptimalDistance": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "RateOfFire": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        },
+        "OverpenetrationFactor": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1",
+          "Enabled": false,
+          "ModifierType": "ValAdd"
+        }
+      },
+      {
+        "$type": "67bded0d11ea5094b86798ea2fce7c63, WarhammerRighteousFuryBonus",
+        "name": "$WarhammerRighteousFuryBonus$f64bb238-96ac-490d-9f31-5c0b1ec906ec",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Restrictions": {
+          "Property": {
+            "Operation": "Sum",
+            "TargetType": "CurrentEntity",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "323b0da7a07e4dc7b3e5311d3c609ff6, CheckAbilityWeaponCategoryGetter",
+                "name": "$CheckAbilityWeaponCategoryGetter$0aa6bcf7-d4b7-4789-b8bb-e178c5d08b62",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Categories": [
+                  "Pistol"
+                ]
+              }
+            ]
+          }
+        },
+        "Value": {
+          "ValueType": "Simple",
+          "Value": 15,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
+        },
+        "SpecificRangeType": false,
+        "WeaponRangeType": "Melee",
+        "OnlyFromSpotWeaknessSide": false,
+        "m_SpotWeaknessBuff": null,
+        "DoubleCurrentChance": false
+      }
+    ],
+    "Author": "Unknown",
+    "Comment": "",
+    "m_DisplayName": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "1171e72ae63c1c84cb907dde59e389c4",
+        "stringkey": "69f3c925-a62d-4477-9fde-4b52c2695449"
+      }
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": {
+        "assetguid": "1abdd710db95b09489a6138ae9718ed4",
+        "stringkey": "b10076f7-7d42-4488-af69-8e375a02876e"
+      }
+    },
+    "m_Icon": null,
+    "m_AllowNonContextActions": false,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Ranks": 1,
+    "Prerequisites": {
+      "Composition": "And",
+      "List": []
+    },
+    "FeatureTypes": [],
+    "TalentIconInfo": {
+      "AllGroups": "Damage",
+      "MainGroup": "Damage"
+    },
+    "m_Acronym": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "ShowInDialogue": false,
+    "IsStarshipFeature": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

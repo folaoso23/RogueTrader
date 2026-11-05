@@ -6,26 +6,6 @@
     "m_Overrides": [],
     "Components": [
       {
-        "$type": "05fab0d4998390a4cbf88da0ab1e4123, AddMechanicsFeature",
-        "name": "$AddMechanicsFeature$c73880f5-94d2-440f-8000-d322a8ad29e8",
-        "m_Flags": 0,
-        "PrototypeLink": {
-          "guid": "",
-          "name": ""
-        },
-        "m_Overrides": [],
-        "m_Feature": "IgnoreMeleeOutnumbering",
-        "m_Restrictions": {
-          "Property": {
-            "Operation": "Sum",
-            "TargetType": "CurrentEntity",
-            "TargetEvaluator": null,
-            "FailSilentlyIfNoTarget": false,
-            "Getters": []
-          }
-        }
-      },
-      {
         "$type": "0cdbc172cfe945e3818c0d49fbd7d65f, TurnBasedModeEventsTrigger",
         "name": "$TurnBasedModeEventsTrigger$1f3d8a5c-fa99-4ab8-8625-de53130c43f8",
         "m_Flags": 0,

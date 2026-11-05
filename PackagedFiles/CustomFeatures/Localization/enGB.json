@@ -1,10 +1,25 @@
 {
     "strings": {
         "9ffaa024-82a6-41d6-a12d-d59e18fd72be": {
-            "Text": "Relentless Assault"
+            "Text": "Coup De Grace"
         },
         "2b595206-5eb6-4af9-a9c1-4cecfe9ac9f2": {
             "Text": "After a critical hit, this unit will be able to make a free attack this turn at no cost. Only triggers once per turn."
+        },
+        "69f3c925-a62d-4477-9fde-4b52c2695449": {
+            "Text": "Quick Trigger Finger"
+        },
+        "b10076f7-7d42-4488-af69-8e375a02876e": {
+            "Text": "Pistol attacks are reduced by -1 AP (minimum 1).\nThey also do +50% critical damage, gain +15% critical chance, and +4 max range."
+        },
+        "5703ed01-5f37-4300-b4e4-5e95bba2e4b7": {
+            "Text": "Model Commander"
+        },
+        "49392df1-de01-4338-adb4-96aaa8c73d7d": {
+            "Text": "Fellowship is increased by +{uip|fellowshipbonus|434aa00e16484f42a87da8c7b4b4bbf8}."
+        },
+        "f792bb96-d2c6-486c-9a79-e7cbfa632a82": {
+            "Text":  "(BS Bonus + WS Bonus + TGH Bonus + STR Bonus + AGI Bonus) / 2"
         }
     }
 }
