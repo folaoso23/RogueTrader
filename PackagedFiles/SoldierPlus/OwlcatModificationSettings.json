@@ -46,6 +46,11 @@
             "Guid": "530b6d2cefef42f180b90c7bdbb99f90",
             "Filename": "Soldier_RevelInSlaughter_Ability",
             "PatchType": 2
+        },
+        {
+            "Guid": "1c82d5f20dfb4e8ab89f78a4adad66a5",
+            "Filename": "EnoughBulletsForEveryone_Soldier_Talent",
+            "PatchType": 2
         }
     ]
 }

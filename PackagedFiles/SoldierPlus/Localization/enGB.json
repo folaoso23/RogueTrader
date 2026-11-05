@@ -21,6 +21,10 @@
         "8feb2b2c-5ed1-439a-8915-21670a0a5830": 
         {
             "Text": "{g|f:8638221f9caf46649cefcbd7574804d1}Revel in Slaughter{/g} can be used after 2 kills or attacks instead of 3."
+        },
+        "961f28f9-d598-4fbe-a565-79c8be2f0925":
+        {
+            "Text": "The Soldier's second attack action in a {g|Encyclopedia:Turn}turn{/g} deals +{uip|DamageBonus|1c82d5f20dfb4e8ab89f78a4adad66a5}% more {g|Encyclopedia:DamageGlossary}damage{/g} to enemies that have not suffered damage from the Soldier during this turn.\nFire rate is increased by +1."
         }
     }
 }
