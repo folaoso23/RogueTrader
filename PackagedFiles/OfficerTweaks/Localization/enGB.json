@@ -18,7 +18,7 @@
     },
     "3ba0fbf3-62a3-4882-965d-1378256f29f0": {
       "Offset": 0,
-      "Text": "This {g|Encyclopedia:Ability}ability{/g} can only target the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} or allies who have enemies adjacent to them.\nUntil the start of the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s next turn, all {g|Encyclopedia:MeleeAttacksGlossary}melee attacks{/g} made by the target deal additional damage equal to {uip|BonusDamage|b509a3ee5ab44253b4b859dd5f3dbffb} multiplied by the number of enemies adjacent to the target when this ability is used.\nMelee attacks cost -1 AP (minimum 1).\nThe target also gains +{uip|BonusParryReduction|b509a3ee5ab44253b4b859dd5f3dbffb}% parry reduction and +{uip|BonusPercentDamage|b509a3ee5ab44253b4b859dd5f3dbffb}% bonus damage.\nIf the target is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g}, they can they can make an additional during this turn and will immediately make an {g|Encyclopedia:AttackOfOpportunityFullGlossary}attack of opportunity{/g} against an adjacent enemy, targeting the one with the lowest remaining {g|Encyclopedia:HitPoints}wounds{/g}."
+      "Text": "This {g|Encyclopedia:Ability}ability{/g} can only target the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g} or allies who have enemies adjacent to them.\nUntil the start of the {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s next turn, all {g|Encyclopedia:MeleeAttacksGlossary}melee attacks{/g} made by the target deal additional damage equal to {uip|BonusDamage|b509a3ee5ab44253b4b859dd5f3dbffb} multiplied by the number of enemies adjacent to the target when this ability is used.\nMelee attacks cost -1 AP (minimum 1).\nThe target also gains +{uip|BonusParryReduction|b509a3ee5ab44253b4b859dd5f3dbffb}% parry reduction and +{uip|BonusPercentDamage|b509a3ee5ab44253b4b859dd5f3dbffb}% bonus damage.\nIf the target is under the effect of {g|f:9c78e44bf8ff44a9afff8370c673c9ad}Voice of Command{/g}, they can they can make an additional attack during this turn and will immediately make an {g|Encyclopedia:AttackOfOpportunityFullGlossary}attack of opportunity{/g} against an adjacent enemy, targeting the one with the lowest remaining {g|Encyclopedia:HitPoints}wounds{/g}."
     },
     "be556696-84ed-4725-8a80-93467682339d": {
       "Offset": 0,
@@ -70,7 +70,7 @@
     },
     "e71a976f-c9d7-4804-bb04-a66b06356dff": {
       "Offset": 0,
-      "Text": "<u>(2 + {g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s {g|Encyclopedia:Resolve}resolve{/g})</u>"
+      "Text": "<u>3 + ({g|Encyclopedia:CareerLeaderGlossary}Officer{/g}'s {g|Encyclopedia:Resolve}resolve{/g} / 2)</u>"
     },
     "445fe3e6-606c-48e1-b549-c8ef42937c3e": {
       "Offset": 0,

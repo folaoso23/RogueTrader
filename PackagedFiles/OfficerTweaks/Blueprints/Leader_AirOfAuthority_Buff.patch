@@ -34,7 +34,7 @@
               },
               "Value": {
                 "ValueType": "Simple",
-                "Value": 2,
+                "Value": 3,
                 "ValueRank": "Default",
                 "ValueShared": "Damage",
                 "Property": "None",
@@ -46,10 +46,10 @@
               "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
               "name": "$ContextValueGetter$8c6e17c3-464c-415e-ba99-ed4d8f002a3c",
               "Settings": {
-                "Progression": "MultiplyByModifier",
+                "Progression": "DivStep",
                 "m_CustomProgression": [],
                 "m_StartLevel": 0,
-                "m_StepLevel": 1,
+                "m_StepLevel": 2,
                 "Negate": false,
                 "Limit": "None",
                 "Min": 0,
