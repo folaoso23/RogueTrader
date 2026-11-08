@@ -16,6 +16,11 @@
             "Guid": "c021b67cbf084ccba92c6faafdb44f29",
             "Filename": "DeadShotStubRevolver_Item",
             "PatchType": 2
+        },
+        {
+            "Guid": "001c1a9ce35d48249539010b054cc1eb",
+            "Filename": "HellgunNecron_Item",
+            "PatchType": 2
         }
     ]
 }
