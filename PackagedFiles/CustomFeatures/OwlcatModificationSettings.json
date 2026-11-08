@@ -13,8 +13,8 @@
     },
     "BlueprintPatches": [
         {
-            "Guid": "baee09db5e54485eb8e18569c96e1779",
-            "Filename": "SerratedKnife_Item",
+            "Guid": "c021b67cbf084ccba92c6faafdb44f29",
+            "Filename": "DeadShotStubRevolver_Item",
             "PatchType": 2
         }
     ]

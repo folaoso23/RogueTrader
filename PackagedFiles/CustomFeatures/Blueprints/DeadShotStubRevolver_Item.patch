@@ -1,0 +1,11 @@
+{
+  "AbilityContainer": {
+    "Ability1": {
+      "m_FXSettings": "!bp_04f07f00d30e42e4927536f2cc198778"
+    }
+  },
+  "WarhammerDamage": 12,
+  "WarhammerMaxDamage": 24,
+  "WarhammerPenetration": 25,
+  "WarhammerMaxDistance": 14
+}
