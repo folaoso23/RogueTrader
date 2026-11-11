@@ -59,7 +59,7 @@
                         },
                         "Value": {
                           "ValueType": "Simple",
-                          "Value": 3,
+                          "Value": 5,
                           "ValueRank": "Default",
                           "ValueShared": "Damage",
                           "Property": "None",
@@ -617,7 +617,7 @@
                 },
                 "Value": {
                   "ValueType": "Simple",
-                  "Value": 3,
+                  "Value": 5,
                   "ValueRank": "Default",
                   "ValueShared": "Damage",
                   "Property": "None",
@@ -826,7 +826,7 @@
                 },
                 "Value": {
                   "ValueType": "Simple",
-                  "Value": 3,
+                  "Value": 5,
                   "ValueRank": "Default",
                   "ValueShared": "Damage",
                   "Property": "None",
@@ -1338,7 +1338,7 @@
                 },
                 "Value": {
                   "ValueType": "Simple",
-                  "Value": 3,
+                  "Value": 5,
                   "ValueRank": "Default",
                   "ValueShared": "Damage",
                   "Property": "None",
@@ -1375,6 +1375,114 @@
         "NeverDodge": false
       },
       "InsertAfterTarget": "$PropertyCalculatorComponent$960f35f0-a372-43d2-b13d-8cbffb3d7d65"
+    },
+    {
+      "PatchType": "Insert",
+      "NewElement": {
+        "$type": "6d519a34c3e747bfa7d858a3c9a4b978, WarhammerKillTrigger",
+        "name": "$WarhammerKillTrigger$b4c4f0a1-15af-47e1-a996-d39c0ee81fab",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_Restrictions": {
+          "Property": {
+            "Operation": "LE",
+            "TargetType": "RuleTarget",
+            "TargetEvaluator": null,
+            "FailSilentlyIfNoTarget": false,
+            "Getters": [
+              {
+                "$type": "8cc2fc2a697041af82344696abdf3c4d, DistanceGetter",
+                "name": "$DistanceGetter$ee360492-54a7-4a6d-9798-a81fb2b4c9d7",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Target": "RuleInitiator"
+              },
+              {
+                "$type": "71959818449d4891939b89c19a6d9a91, ContextValueGetter",
+                "name": "$ContextValueGetter$a51ccaa4-8e2d-4ffc-ae09-95b090282022",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "Value": {
+                  "ValueType": "Simple",
+                  "Value": 5,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null,
+                  "PropertyName": "Value1"
+                }
+              }
+            ]
+          }
+        },
+        "ActionsOnKill": {
+          "Actions": [
+            {
+              "$type": "d1933e412cc64482ae7990aaacdf44a8, WarhammerContextActionRestoreActionPoints",
+              "name": "$WarhammerContextActionRestoreActionPoints$0e864742df4a456d9b3bbb028aa4efc2",
+              "ActionPoints": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "MovePoints": {
+                "ValueType": "Simple",
+                "Value": 3,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null,
+                "PropertyName": "Value1"
+              },
+              "ActionPointsToMax": false,
+              "MovePointsToMax": false,
+              "IgnoreMovePointsMaximum": false,
+              "IgnoreActionPointsMaximum": false
+            }
+          ]
+        },
+        "ActionsOnSurvive": {
+          "Actions": []
+        },
+        "ActionsOnTarget": false,
+        "RefundActionPointsOnKill": false,
+        "RefundActionPointsOnSurvive": false,
+        "ResetCooldownOnKill": false,
+        "ResetCooldownOnSurvive": false,
+        "RemoveOnKill": false,
+        "RemoveOnSurvive": false,
+        "OnlyEnemyKill": false,
+        "m_AffectedGroup": null,
+        "m_OtherAffectedGroupList": [],
+        "m_FilterFacts": [],
+        "ContextPropertyName": "Value1",
+        "PropertyToSave": "None"
+      },
+      "InsertAfterTarget": "$WarhammerDodgeChanceModifierDefender$11a7697c-95d9-468b-9707-29fabf87a893"
     },
     {
       "PatchType": "RemoveFromEnd",

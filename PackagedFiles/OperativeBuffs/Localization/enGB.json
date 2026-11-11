@@ -14,7 +14,7 @@
     },
     "50f49e3a-b651-401f-8cc4-9f4e46e48ec2": {
       "Offset": 0,
-      "Text": "<u>35 + ({g|Encyclopedia:WarhammerPerception}Perception{/g}/2)</u>"
+      "Text": "<u>25 + ({g|Encyclopedia:WarhammerPerception}Perception{/g}/2)</u>"
     },
     "c9d22b73-9f30-40ec-8550-00bdbfa2f8c6": {
       "Offset": 0,
@@ -30,7 +30,7 @@
     },
     "a6b9621a-5d74-43d9-9b6e-5d3402b6550b": {
       "Offset": 0,
-      "Text": "The Operative removes all {g|Encyclopedia:Exploit}exploits{/g} from the target, decreasing the target's {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:Parry}parry{/g}, and {g|Encyclopedia:WarhammerArmourGlossary}armour{/g} by −<u>(20 + exploits removed × {uip|multipliyer|fbdba5fe2a264c25bada29aecd64049a})</u>% until the start of the Operative's next turn.\nIf this ability reduces the target's armour to 0, the Operative removes only half of the exploits from the target.\nThe target will suffer an increased {uip|criticalbonus|fbdba5fe2a264c25bada29aecd64049a}% critical chance from attackers, and the first single target attack each turn against this target by the Operative will not count towards the attack limit.\nIf the target is not affected by any {g|Encyclopedia:Exploit}exploits{/g}, the Operative will do an additional +{uip|exposedamagebonus|fbdba5fe2a264c25bada29aecd64049a}% damage to exposed targets."
+      "Text": "The Operative removes all {g|Encyclopedia:Exploit}exploits{/g} from the target, decreasing the target's {g|Encyclopedia:DodgeGlossary}dodge{/g}, {g|Encyclopedia:Parry}parry{/g}, and {g|Encyclopedia:WarhammerArmourGlossary}armour{/g} by −<u>(20 + exploits removed × {uip|multipliyer|fbdba5fe2a264c25bada29aecd64049a})</u>% until the start of the Operative's next turn.\nIf this ability reduces the target's armour to 0, the Operative removes only half of the exploits from the target.\nThe target will suffer an increased {uip|criticalbonus|fbdba5fe2a264c25bada29aecd64049a}% critical chance from attackers, and the first single target attack each turn against this target by the Operative will not count towards the attack limit if they are also under the effect of {g|f:502b9195c84c42c5b180f3f63ed7955c}Analyse Enemies{/g}.\nIf the target is not affected by any {g|Encyclopedia:Exploit}exploits{/g}, the Operative will do an additional +{uip|exposedamagebonus|fbdba5fe2a264c25bada29aecd64049a}% damage to exposed targets."
     },
     "30ed5ec8-7e19-4620-a3b0-8fc5a94fa537": {
       "Offset": 0,
@@ -130,7 +130,7 @@
     },
     "a13c06f0-e420-4654-bf76-8ba4f796cca8": {
       "Offset": 0,
-      "Text": "While the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} is in {g|Encyclopedia:DetailsOfTheCoverGlossary}partial cover{/g}, their cover efficiency is increased by +15%. This {g|Encyclopedia:Bonus}bonus{/g} is doubled if the Operative has not moved during their {g|Encyclopedia:Turn}turn{/g}.\nSingle target attacks will allow the Operative to reposition if they critically strike, gaining +3 MP."
+      "Text": "While the {g|Encyclopedia:CareerAdeptGlossary}Operative{/g} is in {g|Encyclopedia:DetailsOfTheCoverGlossary}partial cover{/g}, their cover efficiency is increased by +15%. This {g|Encyclopedia:Bonus}bonus{/g} is doubled if the Operative has not moved during their {g|Encyclopedia:Turn}turn{/g}.\nMovement points are increased by +3."
     },
     "383d7b81-e9c5-44a4-a6a3-e165655791a4": {
       "Offset": 0,
@@ -138,7 +138,7 @@
     },
     "a351eae1-f80a-42cf-bb2a-4a3ff55cb8df": {
       "Offset": 0,
-      "Text": "The Operative gains the following bonuses for 1 round against targets within 3-tiles:\n-<indent=5%>All non-{g|Encyclopedia:AreaOfEffect}area attacks{/g} inflict the intimidated effect on the targets {g|Encyclopedia:HitSequenceGlossary}hit{/g} and all enemies in a 5-cell radius around that target. The {g|Encyclopedia:DamageGlossary}damage{/g} dealt by intimidated enemies is reduced by −{uip|DamagePenalty|aedb4d2a2fd049db9c3f61b6737043a4}% until the Operative's next {g|Encyclopedia:Turn}turn{/g}. This {g|Encyclopedia:NegativeEffectTypesGlossary}negative effect{/g} is doubled for enemies with less than {uip|MinimumArmour|aedb4d2a2fd049db9c3f61b6737043a4}% {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}.</indent>\n-<indent=5%>These attacks will do additional base damage equal to half of the <u>current weapon's minimum damage</u> and will inflict a random trauma on hit targets if they fail an {g|Encyclopedia:WarhammerToughness}Toughness{/g} check with a -{uip|TraumaBuff|aedb4d2a2fd049db9c3f61b6737043a4} penalty, lasting for 2 rounds.</indent>\n-<indent=5%>Dodge chance is increased by 20%.</indent>\nThe Operative will also gain +6 MP upon activating this ability and will not spend movement points after attacking."
+      "Text": "The Operative gains the following bonuses for 1 round against targets within 5-tiles:\n-<indent=5%>All non-{g|Encyclopedia:AreaOfEffect}area attacks{/g} inflict the intimidated effect on the targets {g|Encyclopedia:HitSequenceGlossary}hit{/g} and all enemies in a 5-cell radius around that target. The {g|Encyclopedia:DamageGlossary}damage{/g} dealt by intimidated enemies is reduced by −{uip|DamagePenalty|aedb4d2a2fd049db9c3f61b6737043a4}% until the Operative's next {g|Encyclopedia:Turn}turn{/g}. This {g|Encyclopedia:NegativeEffectTypesGlossary}negative effect{/g} is doubled for enemies with less than {uip|MinimumArmour|aedb4d2a2fd049db9c3f61b6737043a4}% {g|Encyclopedia:WarhammerArmourGlossary}armour{/g}.</indent>\n-<indent=5%>These attacks will do additional base damage equal to half of the <u>current weapon's minimum damage</u> and will inflict a random trauma on hit targets if they fail an {g|Encyclopedia:WarhammerToughness}Toughness{/g} check with a -{uip|TraumaBuff|aedb4d2a2fd049db9c3f61b6737043a4} penalty, lasting for 2 rounds.</indent>\n-<indent=5%>Dodge chance is increased by 20%.</indent>\n-<indent=5%>+3 MP upon killing a target.</indent>\nThe Operative will also not spend movement points after attacking."
     },
     "c96bec93-4772-412f-a3f8-f3dd87fcbdb0": {
       "Offset": 0,

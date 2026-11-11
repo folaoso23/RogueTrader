@@ -3,8 +3,8 @@
     {
       "PatchType": "Insert",
       "NewElement": {
-        "$type": "67bd9d5235e74484bb1d673b885ab430, WarhammerWeaponHitTriggerInitiator",
-        "name": "$WarhammerWeaponHitTriggerInitiator$2917edc5-19d1-4b79-a4bb-ab5735764100",
+        "$type": "f08844ce14d498a45a9fc64582489a2a, AddContextStatBonus",
+        "name": "$AddContextStatBonus$c6ea55da-2263-483d-95f0-3e2d48b154d1",
         "m_Flags": 0,
         "PrototypeLink": {
           "guid": "",
@@ -17,66 +17,25 @@
             "TargetType": "CurrentEntity",
             "TargetEvaluator": null,
             "FailSilentlyIfNoTarget": false,
-            "Getters": [
-              {
-                "$type": "76fa6ff8c9162f9489df4de07a55750c, CheckAbilityAttackTypeGetter",
-                "name": "$CheckAbilityAttackTypeGetter$b14fb3e1416d43289cc99a4c5231d54b",
-                "Settings": {
-                  "Progression": "AsIs",
-                  "m_CustomProgression": [],
-                  "m_StartLevel": 0,
-                  "m_StepLevel": 0,
-                  "Negate": false,
-                  "Limit": "None",
-                  "Min": 0,
-                  "Max": 0
-                },
-                "Type": "SingleShot"
-              }
-            ]
+            "Getters": []
           }
         },
-        "ActionOnSelfHit": {
-          "Actions": [
-            {
-              "$type": "d1933e412cc64482ae7990aaacdf44a8, WarhammerContextActionRestoreActionPoints",
-              "name": "$WarhammerContextActionRestoreActionPoints$9bebb6d0-f0d5-49fd-afb6-4211ca009c34",
-              "ActionPoints": {
-                "ValueType": "Simple",
-                "Value": 0,
-                "ValueRank": "Default",
-                "ValueShared": "Damage",
-                "Property": "None",
-                "m_CustomProperty": null,
-                "PropertyName": "Value1"
-              },
-              "MovePoints": {
-                "ValueType": "Simple",
-                "Value": 3,
-                "ValueRank": "Default",
-                "ValueShared": "Damage",
-                "Property": "None",
-                "m_CustomProperty": null,
-                "PropertyName": "Value1"
-              },
-              "ActionPointsToMax": false,
-              "MovePointsToMax": false,
-              "IgnoreMovePointsMaximum": false,
-              "IgnoreActionPointsMaximum": false
-            }
-          ]
+        "Descriptor": "None",
+        "Stat": "WarhammerInitialAPBlue",
+        "Multiplier": 1,
+        "Value": {
+          "ValueType": "Simple",
+          "Value": 3,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null,
+          "PropertyName": "Value1"
         },
-        "ActionOnSelfMiss": {
+        "IsPercentModifier": false,
+        "m_ActionsOnAdd": {
           "Actions": []
-        },
-        "ActionsOnTargetHit": {
-          "Actions": []
-        },
-        "ActionsOnTargetMiss": {
-          "Actions": []
-        },
-        "OnlyRighteousFury": true,
-        "OnlyMelee": false
+        }
       },
       "InsertAfterTarget": "$TurnBasedModeEventsTrigger$6232292e-1064-4552-a3fd-5c3926e900e3"
     }

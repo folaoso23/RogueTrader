@@ -16,14 +16,14 @@
         "m_Overrides": [],
         "Restrictions": {
           "Property": {
-            "Operation": "Sum",
+            "Operation": "And",
             "TargetType": "CurrentEntity",
             "TargetEvaluator": null,
             "FailSilentlyIfNoTarget": false,
             "Getters": [
               {
-                "$type": "82e9cd41675f4262b09a9ae2e42a537a, CheckTargetHasBuffFromEntity",
-                "name": "$CheckTargetHasBuffFromEntity$02651ca3-bc82-4d75-924c-1ee78fffe6dc",
+                "$type": "d04a8b4d1fec4545b9e4d90b81ce2498, HasFactGetter",
+                "name": "$HasFactGetter$784e308a139343e2a2f02d8feda2f86a",
                 "Settings": {
                   "Progression": "AsIs",
                   "m_CustomProgression": [],
@@ -34,8 +34,24 @@
                   "Min": 0,
                   "Max": 0
                 },
-                "m_Buff": "!bp_a2c8d30542b84a84bcc6480cf374c516",
-                "CheckTargetHasBuffFrom": "CurrentEntity"
+                "m_Fact": "!bp_a2c8d30542b84a84bcc6480cf374c516",
+                "Target": "CurrentTarget"
+              },
+              {
+                "$type": "d04a8b4d1fec4545b9e4d90b81ce2498, HasFactGetter",
+                "name": "$HasFactGetter$fd505043b5d74358b1ddc28467b506d2",
+                "Settings": {
+                  "Progression": "AsIs",
+                  "m_CustomProgression": [],
+                  "m_StartLevel": 0,
+                  "m_StepLevel": 0,
+                  "Negate": false,
+                  "Limit": "None",
+                  "Min": 0,
+                  "Max": 0
+                },
+                "m_Fact": "!bp_66e7b370e32b43118315ab0fd24a7f0d",
+                "Target": "CurrentTarget"
               }
             ]
           }

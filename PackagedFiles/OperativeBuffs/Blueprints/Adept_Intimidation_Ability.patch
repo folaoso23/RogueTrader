@@ -12,36 +12,6 @@
               "ElementPatch": {
                 "Permanent": false
               }
-            },
-            {
-              "PatchType": "Insert",
-              "NewElement": {
-                "$type": "d1933e412cc64482ae7990aaacdf44a8, WarhammerContextActionRestoreActionPoints",
-                "name": "$WarhammerContextActionRestoreActionPoints$b905509c81ef46489603c6b66ef2394b",
-                "ActionPoints": {
-                  "ValueType": "Simple",
-                  "Value": 0,
-                  "ValueRank": "Default",
-                  "ValueShared": "Damage",
-                  "Property": "None",
-                  "m_CustomProperty": null,
-                  "PropertyName": "Value1"
-                },
-                "MovePoints": {
-                  "ValueType": "Simple",
-                  "Value": 6,
-                  "ValueRank": "Default",
-                  "ValueShared": "Damage",
-                  "Property": "None",
-                  "m_CustomProperty": null,
-                  "PropertyName": "Value1"
-                },
-                "ActionPointsToMax": false,
-                "MovePointsToMax": false,
-                "IgnoreMovePointsMaximum": true,
-                "IgnoreActionPointsMaximum": false
-              },
-              "InsertAfterTarget": "$Conditional$db3b93a0793644be82478f507ba1cffa"
             }
           ]
         }
